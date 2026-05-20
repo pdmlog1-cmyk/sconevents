@@ -8,10 +8,12 @@ import { useState, useEffect } from 'react';
 import LandingLeadModal from '@/components/LandingLeadModal';
 import InfoStrip from '@/components/InfoStrip';
 import type { ConferenceConfig } from '@/lib/config';
+import type { ConferenceTheme } from '@/lib/conferences';
 
 interface LandingClientProps {
   conf: ConferenceConfig;
   mainSiteUrl: string;
+  theme: ConferenceTheme;
 }
 /* Previous-edition imagery pool — sourced directly from the live
    cardiology-conference.com main site (hero + carousel /assets/legacy).
@@ -74,10 +76,27 @@ function BentoTile({
   );
 }
 
-export default function LandingClient({ conf, mainSiteUrl }: LandingClientProps) {
+export default function LandingClient({ conf, mainSiteUrl, theme }: LandingClientProps) {
   const MAIN = mainSiteUrl;
+
+  // Dynamic theme CSS variables
+  const themeStyles = `
+    :root {
+      --ink: ${theme.ink};
+      --paper: ${theme.paper};
+      --accent: ${theme.accent};
+      --muted: ${theme.muted};
+      --ink-soft: ${theme.inkSoft};
+      --accent-soft: ${theme.accentSoft};
+      --paper-2: ${theme.paper2};
+      --line: ${theme.line};
+      --line-2: ${theme.line2};
+    }
+  `;
+
   return (
     <main className="lpb">
+      <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
       <InfoStrip baseUrl={MAIN} conf={conf} />
 
       {/* Header — wraps content in .container so brand + nav left-edge align
