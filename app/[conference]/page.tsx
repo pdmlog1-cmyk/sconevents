@@ -34,5 +34,5 @@ export default async function ConferencePage({ params }: PageProps) {
     notFound();
   }
 
-  return <LandingClient conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} />;
+  return <LandingClient conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} slug={conference} />;
 }

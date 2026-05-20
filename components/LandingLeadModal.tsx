@@ -19,11 +19,13 @@ type FieldKey = 'first_name' | 'email' | 'phone' | 'country' | 'captcha';
 interface Props {
   conf?: ConferenceConfig;
   mainSiteUrl?: string;
+  slug?: string;
 }
 
-export default function LandingLeadModal({ conf: confProp, mainSiteUrl }: Props = {}) {
+export default function LandingLeadModal({ conf: confProp, mainSiteUrl, slug }: Props = {}) {
   const conf = confProp || defaultConf;
   const MAIN = mainSiteUrl || DEFAULT_MAIN;
+  const API_BASE = slug ? `/${slug}` : '';
   const [open, setOpen] = useState(false);
   useHCaptchaRender(open);
 
@@ -117,9 +119,8 @@ export default function LandingLeadModal({ conf: confProp, mainSiteUrl }: Props 
 
     setSubmitting(true);
     try {
-      // Same-origin call — the landing page and the brochure API both run on
-      // this Next.js app, so a relative URL works on localhost AND production.
-      const r = await fetch(`/api/brochure`, {
+      // API route is at /[conference]/api/brochure, so we need the slug prefix
+      const r = await fetch(`${API_BASE}/api/brochure`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

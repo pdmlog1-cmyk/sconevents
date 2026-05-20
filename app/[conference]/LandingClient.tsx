@@ -14,6 +14,7 @@ interface LandingClientProps {
   conf: ConferenceConfig;
   mainSiteUrl: string;
   theme: ConferenceTheme;
+  slug: string;
 }
 /* Previous-edition imagery pool — sourced directly from the live
    cardiology-conference.com main site (hero + carousel /assets/legacy).
@@ -76,7 +77,7 @@ function BentoTile({
   );
 }
 
-export default function LandingClient({ conf, mainSiteUrl, theme }: LandingClientProps) {
+export default function LandingClient({ conf, mainSiteUrl, theme, slug }: LandingClientProps) {
   const MAIN = mainSiteUrl;
 
   // Dynamic theme CSS variables
@@ -624,7 +625,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme }: LandingClien
         </div>
       </footer>
 
-      <LandingLeadModal conf={conf} mainSiteUrl={MAIN} />
+      <LandingLeadModal conf={conf} mainSiteUrl={MAIN} slug={slug} />
     </main>
   );
 }
