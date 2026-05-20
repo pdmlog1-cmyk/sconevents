@@ -1,0 +1,130 @@
+{
+  "tracks": [
+    {
+      "title": "Food Safety & Microbiology",
+      "tagline": "Pathogen detection, HACCP and regulatory compliance.",
+      "details": "Food safety in 2027 is being reshaped by FSMA Section 204 traceability rules taking full effect, whole-genome sequencing of foodborne pathogens through GenomeTrakr and PulseNet 2.0, and rapid molecular detection platforms displacing classical culture methods. The track will examine Listeria monocytogenes harborage in ready-to-eat environments, Salmonella outbreaks linked to low-moisture foods and produce, the EU FBO and FSIS pathogen-reduction standards, and the integration of AI-driven environmental monitoring into HACCP and HARPC plans. Sessions will also cover blockchain-backed traceability (IBM Food Trust, Connecting Food) and CRISPR-Cas-based biosensors for on-line pathogen detection.",
+      "subtopics": [
+        "FSMA 204 traceability rule: KDEs, CTEs and digital recordkeeping",
+        "Whole-genome sequencing for outbreak attribution (GenomeTrakr, PulseNet)",
+        "CRISPR-Cas12/13 and isothermal amplification biosensors",
+        "Listeria environmental monitoring and Zone 1-4 sampling programs",
+        "Mycotoxins and PFAS contamination in the food supply",
+        "Blockchain traceability: IBM Food Trust, GS1 EPCIS standards",
+        "Cleaning validation and bacteriophage interventions in processing"
+      ]
+    },
+    {
+      "title": "Novel Protein Sources",
+      "tagline": "Plant-based, fermentation-derived, cultivated meat and insect protein.",
+      "details": "The alternative protein landscape has matured beyond the first-generation burger, with precision fermentation companies (Perfect Day whey, Remilk and Formo casein, The EVERY Company egg proteins) achieving cost parity in select applications and cultivated meat receiving FDA and USDA clearance for Upside Foods, GOOD Meat and Mission Barns. The track will dissect scale-up economics, regulatory pathways through FDA pre-market consultation and EU novel foods (EFSA), bioreactor design for adherent vs suspension cell lines, and serum-free media cost reduction. Plant-based 2.0 reformulations targeting clean-label, mycoprotein platforms (Quorn, Nature's Fynd, Enough), microalgae and insect protein (Aspire, Ynsect) will receive dedicated sessions.",
+      "subtopics": [
+        "Cultivated meat: bioreactor scale-up, serum-free media, FDA/USDA pathway",
+        "Precision fermentation: Perfect Day, Remilk, Formo dairy and egg proteins",
+        "Plant-based 2.0: clean-label reformulation and texture engineering",
+        "Mycoprotein platforms: Quorn, Nature's Fynd Fy, Enough ABUNDA",
+        "Microalgae (Chlorella, Spirulina) and single-cell protein systems",
+        "Edible insects: Aspire cricket, Ynsect mealworm — EU novel food approvals",
+        "Techno-economic analysis and life-cycle assessment of alt-proteins"
+      ]
+    },
+    {
+      "title": "Functional Foods & Nutraceuticals",
+      "tagline": "Bioactive compounds, probiotics and personalized nutrition.",
+      "details": "Functional foods are converging with the gut microbiome and personalized nutrition movements, supported by next-generation probiotics (Akkermansia muciniphila, Faecalibacterium prausnitzii), postbiotics, and human milk oligosaccharide (HMO) fortification entering mainstream products. The track will cover the regulatory status of structure-function claims under FDA and EFSA Article 13 health claims, microencapsulation strategies for delivering bioactives past the gastric environment, and the rapid expansion of GLP-1-supportive nutrition products following the SELECT and SURMOUNT outcomes data. Sessions will examine continuous glucose monitor-driven personalized diets (ZOE, Levels, January AI), nutrigenomics, and the polyphenol-microbiome axis.",
+      "subtopics": [
+        "Next-gen probiotics: Akkermansia, Faecalibacterium, consortia",
+        "Postbiotics and short-chain fatty acid-targeted formulations",
+        "Human milk oligosaccharides (2'-FL, LNnT) in infant and adult nutrition",
+        "CGM-driven personalized nutrition: ZOE, Levels, January AI evidence",
+        "Microencapsulation and targeted delivery of bioactives",
+        "GLP-1-supportive and satiety-engineered functional foods",
+        "Polyphenols, prebiotic fibers and the gut-brain axis"
+      ]
+    },
+    {
+      "title": "Food Packaging & Shelf Life",
+      "tagline": "Active packaging, sustainable materials and cold chain.",
+      "details": "Packaging is at the center of the sustainability and food-waste agenda, with EU Packaging and Packaging Waste Regulation (PPWR) mandates, EPR schemes, and US state-level extended producer responsibility laws driving rapid material substitution. The track will review fiber-based and PHA/PLA bio-based barriers, mono-material recyclable structures replacing multi-layer laminates, and the phase-out of PFAS food-contact substances under FDA and California AB 1200. Active and intelligent packaging — oxygen scavengers, antimicrobial sachets, time-temperature indicators, and freshness-sensing labels — will be examined alongside cold-chain digitization and modified atmosphere packaging for fresh-cut produce.",
+      "subtopics": [
+        "PFAS phase-out in food contact materials: FDA, California AB 1200",
+        "Bio-based and compostable polymers: PHA, PLA, cellulose nanofibers",
+        "Mono-material recyclable structures and design-for-recycling",
+        "Active packaging: oxygen scavengers, ethylene absorbers, antimicrobials",
+        "Intelligent packaging: TTIs, freshness biosensors, NFC traceability",
+        "EU PPWR and US state EPR compliance strategies",
+        "Cold chain integrity: IoT loggers, predictive shelf-life modelling"
+      ]
+    },
+    {
+      "title": "Sensory Science & Consumer Research",
+      "tagline": "Flavour, texture and the science of taste preferences.",
+      "details": "Sensory science is increasingly data-driven, integrating rapid descriptive methods (CATA, RATA, projective mapping) with implicit measures, biometrics (eye-tracking, fEMG, GSR) and AI-assisted texture and aroma profiling. The track will cover sodium and sugar reduction without bitterness penalty, flavor modulation in plant-based meats and dairy analogues to mask off-notes (beany, sulfurous), and the emerging neuroscience of palatability under GLP-1-mediated appetite suppression. Cross-cultural sensory work, virtual and augmented reality consumer testing environments, and the validation of e-tongue/e-nose platforms (Alpha MOS, Aryballe) for quality control will receive focused sessions.",
+      "subtopics": [
+        "Sodium and sugar reduction: KCl, allulose, brazzein, modulators",
+        "Off-flavor masking in plant-based meat and dairy alternatives",
+        "Implicit and biometric methods: eye-tracking, fEMG, GSR",
+        "Rapid sensory: CATA, RATA, flash profiling, projective mapping",
+        "Sensory testing under GLP-1 induced satiety and altered preferences",
+        "E-nose and e-tongue: Aryballe NeOse, Alpha MOS for QC",
+        "VR/AR-augmented consumer environments and contextual testing"
+      ]
+    },
+    {
+      "title": "Food Engineering & Processing",
+      "tagline": "Extrusion, high-pressure processing and novel technologies.",
+      "details": "Non-thermal and minimal processing technologies are scaling from pilot to commercial deployment, led by high-pressure processing (HPP at 600 MPa) for juices, RTE meats and guacamole, pulsed electric field (PEF) for potato and juice extraction (Elea, Pulsemaster), and cold plasma for surface decontamination. The track will examine high-moisture extrusion (HME) cooking — the workhorse of plant-based meat texturization — alongside 3D food printing for personalized geriatric and dysphagia diets, ultrasound-assisted processing, and ohmic heating for aseptic particulates. Hybrid processes that combine mild thermal with non-thermal hurdles will be discussed in the context of clean-label preservation.",
+      "subtopics": [
+        "High-pressure processing (HPP): juices, RTE meats, dairy applications",
+        "Pulsed electric field (PEF): Elea, Pulsemaster commercial deployments",
+        "High-moisture extrusion for plant-based meat fibrousness",
+        "Cold atmospheric plasma for surface decontamination",
+        "3D food printing: dysphagia, geriatric and personalized formats",
+        "Ohmic heating and microwave-assisted aseptic processing",
+        "Ultrasound, supercritical CO2 and hurdle technology integration"
+      ]
+    },
+    {
+      "title": "Nutrition & Public Health",
+      "tagline": "Dietary patterns, fortification and food-based interventions.",
+      "details": "Public-health nutrition is contending with the ultra-processed foods (UPF) debate sparked by the NOVA classification and Hall et al. controlled-feeding trials, alongside the GLP-1 obesity revolution that is reshaping food consumption patterns at population scale. The track will cover sodium reduction policy (FDA voluntary targets, UK reformulation), front-of-pack labelling (Nutri-Score, US FDA proposed scheme), peanut oral immunotherapy (Palforzia) and omalizumab for multi-food allergy management. Sessions will also examine large-scale fortification (folate, vitamin D, iron), the Mediterranean and EAT-Lancet planetary health diets, and food-as-medicine produce prescription programs covered under Medicare and Medicaid pilots.",
+      "subtopics": [
+        "Ultra-processed foods: NOVA classification, Hall RCT, mechanisms of overeating",
+        "GLP-1 era food consumption: portion shifts, protein adequacy",
+        "Front-of-pack labelling: Nutri-Score, FDA proposed scheme",
+        "Food allergy: Palforzia peanut OIT, omalizumab multi-food trials",
+        "Sodium reduction: FDA voluntary targets, UK and Chile case studies",
+        "Food-as-medicine: produce prescriptions, medically tailored meals",
+        "Fortification: folate, vitamin D, iron, biofortified staple crops"
+      ]
+    },
+    {
+      "title": "Sustainable Food Systems",
+      "tagline": "Circular economy, food waste reduction and regenerative sourcing.",
+      "details": "Food systems account for roughly one-third of global greenhouse gas emissions, and the path to a 1.5°C-aligned food economy demands action across loss, waste, sourcing and land use. The track will cover EU Farm-to-Fork and the proposed Food Waste Reduction Targets, US EPA Wasted Food Scale, and the rapid commercialization of upcycled ingredients certified by the Upcycled Food Association. Climate-resilient and biofortified crops (drought-tolerant maize, Golden Rice, HarvestPlus iron-pearl millet), regenerative agriculture outcome metrics (SOC, biodiversity), vertical farming unit economics post-AeroFarms/Bowery, and Scope 3 emissions accounting under SBTi FLAG guidance will be addressed.",
+      "subtopics": [
+        "EU Farm-to-Fork and food waste reduction targets",
+        "Upcycled ingredients: spent grain, okara, coffee cherry, fruit pomace",
+        "Climate-resilient crops: drought-tolerant maize, biofortified staples",
+        "Regenerative agriculture metrics: SOC, biodiversity, water",
+        "Vertical farming economics post-AeroFarms, Plenty, Bowery",
+        "Scope 3 emissions and SBTi FLAG guidance for food companies",
+        "Methane reduction in dairy and beef: feed additives (Bovaer, seaweed)"
+      ]
+    },
+    {
+      "title": "Food Informatics & AI",
+      "tagline": "Computer vision for quality, predictive analytics and smart supply.",
+      "details": "AI and digitalization are penetrating every layer of the food value chain, from foundation-model-driven recipe and flavor design (NotCo Giuseppe, Climax Foods, Shiru) to computer-vision sorting (TOMRA, Key Technology) deployed across produce and protein lines. The track will cover predictive shelf-life and demand forecasting models, large-language-model assistants for regulatory dossiers and label compliance, digital twins of fermentation and extrusion lines, and generative-AI-driven novel ingredient discovery. Sessions will examine hyperspectral imaging for foreign-object detection, IoT-enabled cold-chain analytics, and the data-governance and explainability challenges of deploying AI under FSMA and EU AI Act constraints.",
+      "subtopics": [
+        "Foundation models for ingredient and flavor discovery: NotCo, Shiru, Climax",
+        "Computer vision sorting: TOMRA, Key Technology, hyperspectral imaging",
+        "Digital twins of fermentation, extrusion and thermal processing",
+        "LLM assistants for regulatory dossiers and label compliance",
+        "Demand forecasting and waste reduction with ML in retail",
+        "Blockchain plus IoT for end-to-end cold-chain analytics",
+        "AI governance: EU AI Act, FSMA data integrity, explainability"
+      ]
+    }
+  ]
+}

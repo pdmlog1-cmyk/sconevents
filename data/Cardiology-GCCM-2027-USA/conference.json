@@ -1,0 +1,79 @@
+{
+  "name": "Global Congress on Cardiology & Cardiovascular Medicine",
+  "short": "GCCM 2027",
+  "initials": "GCCM",
+  "year_suffix": "27",
+  "tagline": "Global Congress on Cardiology & Cardiovascular Medicine",
+  "edition": "Inaugural Edition · International",
+  "volume": "Vol. I",
+  "issue": "No. 1",
+  "dateline": "APRIL 22–23, 2027",
+  "discipline": "Cardiology",
+  "email": "gccm@meetings.llc",
+  "phone": "+1 775 243 6888",
+  "base": "",
+  "hcaptcha_sitekey": "4b4e844a-46e4-42b6-9b82-06b07b969d70",
+  "theme_primary": "Translating discovery into practice — and into patient outcomes",
+  "theme_pillars": [
+    "Discovery",
+    "Practice",
+    "Outcomes"
+  ],
+  "theme_blurb": "Translating discovery into practice — and into patient outcomes. Where breakthrough cardiology research becomes everyday clinical care for every patient.",
+  "hero_title_lead": "Global Congress on",
+  "hero_title_main": "Cardiology & Cardiovascular Medicine",
+  "hero_title_year": "2027",
+  "hero_cta": {
+    "register_label": "Register Now",
+    "abstract_label": "Submit Abstract",
+    "brochure_label": "Download Brochure"
+  },
+  "hero_card": {
+    "status": "Open for Registration",
+    "venue_label": "Venue",
+    "venue_fallback": "To be announced",
+    "countdown_label": "Event Begins In"
+  },
+  "hero_subtitle": "An intimate two-day congress convening cardiology's researchers, clinicians and industry leaders.",
+  "hero_image": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1400&q=85",
+  "dates": "April 22-23, 2027",
+  "dates_short": "Apr 2027",
+  "start_date_iso": "2027-04-22T09:00:00",
+  "city": "",
+  "country": "USA",
+  "venue": "",
+  "venue_tagline": "",
+  "venue_desc": "",
+  "venue_image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80",
+  "abstract_deadline": "December 20, 2026",
+  "early_bird_deadline": "July 14, 2026",
+  "about_eyebrow": "Welcome Message",
+  "about_heading": "Where Cardiology meets the next decade.",
+  "about_lead": "GCCM 2027 is a global forum for pioneering research, clinical translation and cross-disciplinary dialogue across the full spectrum of cardiology.",
+  "about_body": "Across two days of keynotes, parallel technical tracks, poster sessions and focused workshops, we convene the brightest minds to chart the frontier of cardiology — from laboratory science to clinical impact.",
+  "about_image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=900&q=80",
+  "stats": [
+    [
+      "02",
+      "Days"
+    ],
+    [
+      "14",
+      "Tracks"
+    ],
+    [
+      "Hybrid",
+      "Format"
+    ],
+    [
+      "12+",
+      "Countries"
+    ]
+  ],
+  "social": {
+    "twitter": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#"
+  }
+}

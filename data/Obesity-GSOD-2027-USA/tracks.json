@@ -1,0 +1,130 @@
+{
+  "tracks": [
+    {
+      "title": "GLP-1 & Incretin Therapies",
+      "tagline": "Semaglutide, tirzepatide and next-generation weight-loss medications.",
+      "details": "Incretin-based pharmacotherapy has redefined obesity medicine, with semaglutide 2.4 mg (Wegovy) and tirzepatide (Zepbound) now delivering 15–22% mean weight loss in the STEP and SURMOUNT programs. GSOD 2027 will present long-term data including SELECT cardiovascular outcomes, SUMMIT in HFpEF-obesity, FLOW in diabetic kidney disease, and the MASH readouts that are reshaping hepatology. Sessions will also examine the next wave: retatrutide (GGG triple agonist), oral orforglipron, survodutide, CagriSema, mazdutide, and OASIS oral semaglutide — alongside supply, compounding exit, and Medicare coverage debates.",
+      "subtopics": [
+        "SELECT, SURMOUNT-MMO and cardiovascular outcomes of GLP-1 RAs",
+        "Triple agonists: retatrutide GGG and survodutide phase 3 readouts",
+        "Oral incretins: orforglipron, OASIS oral semaglutide, danuglipron",
+        "CagriSema, mazdutide and amylin/glucagon co-agonism",
+        "SUMMIT HFpEF, FLOW kidney and ESSENCE MASH indication expansion",
+        "Weight regain on discontinuation and maintenance dosing strategies",
+        "Medicare coverage, compounded shortage exit and global access"
+      ]
+    },
+    {
+      "title": "Bariatric Surgery",
+      "tagline": "Sleeve gastrectomy, gastric bypass and metabolic surgery outcomes.",
+      "details": "Bariatric and metabolic surgery remains the most durable intervention for class II–III obesity, with 10–20 year data from RYGB and sleeve gastrectomy demonstrating sustained weight loss, diabetes remission, and reduced all-cause mortality. The track will examine SG long-term reflux and Barrett risk, RYGB versus SG head-to-head outcomes (SLEEVEPASS, SM-BOSS), single-anastomosis duodeno-ileal bypass (SADI-S), and the rapidly maturing endoscopic sleeve gastroplasty (ESG, MERIT trial). Sessions will also address combination therapy — surgery plus GLP-1 RA — and revisional strategies for weight regain.",
+      "subtopics": [
+        "RYGB vs sleeve gastrectomy: 10-year SLEEVEPASS, SM-BOSS, STAMPEDE",
+        "Endoscopic sleeve gastroplasty (ESG): MERIT trial and durability",
+        "SADI-S and duodenal switch for super-obesity and diabetes",
+        "Post-sleeve GERD, Barrett surveillance and conversion to RYGB",
+        "Revisional surgery and pharmacotherapy for weight regain",
+        "Metabolic surgery in BMI 30–35 with type 2 diabetes",
+        "Lean mass and bone density preservation post-bariatric"
+      ]
+    },
+    {
+      "title": "Childhood & Adolescent Obesity",
+      "tagline": "Pediatric prevention, early intervention and family-based care.",
+      "details": "Pediatric obesity affects nearly one in five US children and is now treated as a chronic disease in the 2023 AAP Clinical Practice Guideline, which endorses intensive health behavior and lifestyle treatment from age 6, pharmacotherapy from age 12, and surgery evaluation from age 13. The track will review safety and efficacy of liraglutide, semaglutide, and tirzepatide in adolescents (STEP TEENS, SURMOUNT-ADOLESCENTS), the long-term Teen-LABS surgical cohort, family-based behavioral therapy, and the controversial debate over screening and stigma. Early-life origins — gestational, infant feeding, and adverse childhood experiences — will receive a dedicated session.",
+      "subtopics": [
+        "AAP 2023 guideline: IHBLT, pharmacotherapy and surgery in youth",
+        "STEP TEENS and SURMOUNT adolescent GLP-1/GIP trial data",
+        "Teen-LABS: 10-year metabolic surgery outcomes in adolescents",
+        "Family-based behavioral therapy and parent-only models",
+        "Early-life origins: gestational diabetes, breastfeeding, ACEs",
+        "Screen time, sleep and adolescent eating behavior",
+        "School food policy and SNAP-Ed evidence"
+      ]
+    },
+    {
+      "title": "Obesity Genetics & Epigenetics",
+      "tagline": "Monogenic obesity, GWAS findings and precision weight medicine.",
+      "details": "The leptin–melanocortin pathway underpins both rare monogenic obesity and emerging precision therapies. Setmelanotide (Imcivree), an MC4R agonist, is now approved for POMC, LEPR, PCSK1, and Bardet-Biedl syndrome, with expanded indications under review. The track will cover whole-exome screening pathways, polygenic risk scores stratifying lifetime obesity risk, FTO and MC4R variant biology, and epigenetic programming from in-utero exposures. Sessions will also examine pharmacogenomic predictors of GLP-1 response, the emerging role of clonal mosaicism, and ancestry-aware risk modeling.",
+      "subtopics": [
+        "Setmelanotide in POMC, LEPR, PCSK1 and Bardet-Biedl syndrome",
+        "Monogenic obesity: when and how to genotype",
+        "Polygenic risk scores for early-onset and severe obesity",
+        "FTO, MC4R and leptin–melanocortin pathway biology",
+        "Epigenetic programming: DOHaD and transgenerational effects",
+        "Pharmacogenomics of GLP-1 RA response variability",
+        "Ancestry diversity in obesity GWAS and clinical translation"
+      ]
+    },
+    {
+      "title": "Metabolic Syndrome",
+      "tagline": "Insulin resistance, NAFLD and cardiometabolic risk.",
+      "details": "Cardiovascular-Kidney-Metabolic (CKM) syndrome, formalized by the AHA in 2023, reframes obesity, insulin resistance, MASLD, CKD, and ASCVD as a single pathophysiologic continuum. The track will cover resmetirom (Rezdiffra), the first FDA-approved MASH therapy, alongside GLP-1 and GGG agonist data in steatohepatitis (ESSENCE, SYNERGY-NASH). Sessions will address sarcopenic obesity and lean-mass preservation during rapid weight loss, the epidemiology of obesity-driven HFpEF, obstructive sleep apnea response to tirzepatide (SURMOUNT-OSA), and the integration of CKM staging into primary-care risk assessment.",
+      "subtopics": [
+        "AHA CKM syndrome staging and primary-care implementation",
+        "Resmetirom and the MASH pharmacotherapy pipeline",
+        "GLP-1 and GGG agonists in MASLD/MASH (ESSENCE, SYNERGY-NASH)",
+        "Sarcopenic obesity: lean-mass preservation during weight loss",
+        "SURMOUNT-OSA: tirzepatide for obstructive sleep apnea",
+        "Obesity-driven HFpEF and incretin-based therapy",
+        "Insulin resistance, ectopic fat and visceral adiposity imaging"
+      ]
+    },
+    {
+      "title": "Behavioral & Lifestyle Interventions",
+      "tagline": "Nutrition counseling, physical activity and CBT.",
+      "details": "Even in the GLP-1 era, intensive lifestyle therapy remains foundational and amplifies pharmacologic and surgical outcomes. The track will review modern dietary patterns — Mediterranean, very-low-carbohydrate, time-restricted eating, and protein-prioritized approaches for lean-mass preservation — alongside the Look AHEAD long-term cohort, the role of resistance training, and digital CBT for binge eating and emotional eating. AI-assisted dietary intake (food recognition, continuous glucose feedback), wearable activity tracking, and the integration of behavioral therapy with anti-obesity medications will receive dedicated sessions.",
+      "subtopics": [
+        "Mediterranean, VLCD and time-restricted eating: head-to-head data",
+        "Resistance training and protein targets for lean-mass preservation",
+        "CBT for binge eating disorder and emotional eating",
+        "AI-assisted dietary intake and continuous glucose monitoring",
+        "Look AHEAD long-term cardiovascular and weight outcomes",
+        "Behavioral therapy as adjunct to GLP-1 RA pharmacotherapy",
+        "Sleep, circadian rhythm and weight regulation"
+      ]
+    },
+    {
+      "title": "Gut Microbiome & Metabolism",
+      "tagline": "Bacterial diversity, bile acids and metabolic health.",
+      "details": "The gut microbiome is increasingly understood as a metabolic organ regulating energy harvest, bile acid signaling, and incretin secretion. The track will cover bile acid–FXR–FGF19 axis pharmacology, Akkermansia muciniphila supplementation trials, the durable microbiome shifts after RYGB and sleeve gastrectomy, and emerging fecal microbiota–derived therapeutics. Sessions will examine short-chain fatty acid signaling, the gut–brain axis and reward circuitry, and the interaction between microbiome composition and GLP-1 RA response. Methodologically, multi-omic integration and standardization of clinical microbiome trials will be addressed.",
+      "subtopics": [
+        "Bile acid–FXR–FGF19 axis and obeticholic-class agents",
+        "Akkermansia muciniphila and next-generation probiotics",
+        "Microbiome shifts after RYGB and sleeve gastrectomy",
+        "Short-chain fatty acids, gut–brain axis and reward signaling",
+        "Microbiome predictors of GLP-1 RA response",
+        "Fecal microbiota transplantation in metabolic disease",
+        "Multi-omics and clinical trial standardization"
+      ]
+    },
+    {
+      "title": "Health Equity in Obesity Care",
+      "tagline": "Disparities, stigma and access to evidence-based care.",
+      "details": "The promise of GLP-1 therapeutics has thrown disparities into sharp relief: list prices exceed $1,000 per month, Medicare Part D coverage remains restricted to cardiovascular and MASH indications, and Black, Hispanic, and rural patients are underrepresented in both clinical trials and prescribing. The track will examine weight stigma in clinical encounters (the Rudd Center evidence base), patient-first language, structural racism and the social determinants of obesity, and policy levers including the Treat and Reduce Obesity Act. Sessions will also address culturally tailored interventions and community-based participatory research.",
+      "subtopics": [
+        "Weight stigma in clinical care and patient-first language",
+        "Race, ethnicity and rural disparities in GLP-1 prescribing",
+        "Medicare Part D, Treat and Reduce Obesity Act and policy reform",
+        "Social determinants and structural drivers of obesity",
+        "Culturally tailored lifestyle and behavioral interventions",
+        "Community-based participatory research and trust-building",
+        "Insurance prior authorization and step-therapy reform"
+      ]
+    },
+    {
+      "title": "Policy, Environment & Prevention",
+      "tagline": "Food environment, built environment and population-level policy.",
+      "details": "Population-level prevention has gained renewed urgency as ultra-processed foods now supply over half of US caloric intake. The track will review evidence on sugar-sweetened beverage taxes (Mexico, Philadelphia, UK soft drinks levy), front-of-package warning labels, ultra-processed food classification (NOVA) and the recent NIH metabolic ward studies, restrictions on child-directed marketing, and built-environment interventions including walkability and food-desert remediation. Sessions will also address the FDA Healthy claim, USDA dietary guidelines, school-food standards, and the political economy of obesity prevention in low- and middle-income countries.",
+      "subtopics": [
+        "Sugar-sweetened beverage taxes: Mexico, UK, Philadelphia outcomes",
+        "Ultra-processed foods, NOVA classification and NIH ward studies",
+        "Front-of-package warning labels and FDA Healthy claim",
+        "Restrictions on child-directed food marketing",
+        "Built environment: walkability, food access, transit",
+        "School food standards and USDA dietary guidelines",
+        "Obesity prevention in low- and middle-income countries"
+      ]
+    }
+  ]
+}

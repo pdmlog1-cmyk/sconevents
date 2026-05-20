@@ -1,0 +1,189 @@
+{
+  "intro": "Registration fees vary by phase and category. All fees are in USD and inclusive of two-day access, the official program book, certificate of participation, lunches, refreshment breaks and the welcome reception.",
+  "phases": [
+    {
+      "id": "early",
+      "label": "Early Bird",
+      "closes": "October 30, 2026"
+    },
+    {
+      "id": "mid",
+      "label": "Standard",
+      "closes": "February 28, 2027"
+    },
+    {
+      "id": "late",
+      "label": "Late / On-site",
+      "closes": "May 27-28"
+    }
+  ],
+  "categories": [
+    {
+      "id": "presenter",
+      "label": "Speaker / Presenter",
+      "desc": "Oral or poster presenter (after abstract acceptance).",
+      "prices": {
+        "early": 899,
+        "mid": 999,
+        "late": 1099
+      }
+    },
+    {
+      "id": "listener",
+      "label": "Delegate / Listener",
+      "desc": "Attend all sessions, posters and the welcome reception.",
+      "prices": {
+        "early": 699,
+        "mid": 799,
+        "late": 899
+      }
+    },
+    {
+      "id": "student",
+      "label": "Student",
+      "desc": "Valid full-time student ID required at registration desk.",
+      "prices": {
+        "early": 499,
+        "mid": 599,
+        "late": 799
+      }
+    }
+  ],
+  "inclusions": [
+    "Two-day access to all keynote, plenary and parallel sessions",
+    "Certificate of participation (or presentation, if applicable)",
+    "Conference program book and abstract proceedings",
+    "Lunches and refreshment breaks on both days",
+    "Welcome reception on day one",
+    "Access to the sponsor and exhibition hall"
+  ],
+  "exclusions": [
+    "Hotel accommodation (optional add-on at registration)",
+    "Gala dinner (optional add-on)",
+    "Airport transfers and travel",
+    "Pre/post-congress workshops (priced separately)"
+  ],
+  "group_discount": {
+    "label": "Group of 3+",
+    "pct": 10,
+    "desc": "Register three or more delegates from the same institution and receive 10% off each registration."
+  },
+  "hotel": {
+    "single": {
+      "label": "Single occupancy",
+      "price": 220,
+      "desc": "1 guest \u00b7 king bed \u00b7 Wi-Fi \u00b7 breakfast"
+    },
+    "double": {
+      "label": "Double occupancy",
+      "price": 260,
+      "desc": "2 guests \u00b7 twin/queen \u00b7 Wi-Fi \u00b7 breakfast"
+    }
+  },
+  "cancellation": [
+    "A full refund, minus a processing fee, will be issued for cancellations made 90 days before the conference begins.",
+    "Registrations or accommodations cancelled within 90 days of the conference start date are non-refundable; however, they can be transferred to your colleague/friend or to an upcoming event.",
+    "For more queries regarding our cancellation policy please write to us at gcgd@meetings.llc."
+  ],
+  "benefits_inperson": {
+    "heading": "Registration Benefits for In-Person Attendees",
+    "lead": "As an in-person attendee at GCGD 2027, you will enjoy the following benefits:",
+    "items": [
+      "Eligibility to attend all conference sessions, workshops and poster sessions",
+      "Oral presenters will have a 25-minute presentation followed by a 5-minute Q&A.",
+      "Refreshments (morning and evening) and lunch daily during conference days.",
+      "Attendees will receive hard copies of both the abstract book and the conference proceedings.",
+      "Endorsed certificate for presenters or attendance certificate for non-presenters.",
+      "Conference photo coverage."
+    ]
+  },
+  "benefits_virtual": {
+    "heading": "Registration Benefits for Virtual Attendees",
+    "lead": "If you attend the conference virtually, you will receive the following benefits:",
+    "items": [
+      "Live Zoom presentation slot (20 minute presentation and Q&A) if you are an oral presenter.",
+      "Pre-recorded video presentation slot (20 minutes) if you are a virtual presenter.",
+      "Full virtual conference experience through Zoom.",
+      "Access to all keynotes, plenary sessions, technical sessions, and workshops.",
+      "Ability to engage with other presenters and attendees online.",
+      "Abstract book and conference proceedings in soft copy.",
+      "Virtual participation certificate."
+    ]
+  },
+  "form": {
+    "tabs": [
+      {
+        "id": "inperson",
+        "label": "In-Person",
+        "categories": [
+          {
+            "id": "presenter",
+            "label": "Presenter (In-Person)",
+            "standard_price": 1499,
+            "total": 749,
+            "discount_pct": 50
+          },
+          {
+            "id": "listener",
+            "label": "Listener (In-Person)",
+            "standard_price": 999,
+            "total": 499,
+            "discount_pct": 50
+          },
+          {
+            "id": "student",
+            "label": "Student / Young Researcher",
+            "standard_price": 699,
+            "total": 349,
+            "discount_pct": 50
+          }
+        ]
+      },
+      {
+        "id": "virtual",
+        "label": "Virtual",
+        "categories": [
+          {
+            "id": "presenter_v",
+            "label": "Presenter (Virtual)",
+            "standard_price": 499,
+            "total": 249,
+            "discount_pct": 50
+          },
+          {
+            "id": "listener_v",
+            "label": "Listener (Virtual)",
+            "standard_price": 399,
+            "total": 199,
+            "discount_pct": 50
+          }
+        ]
+      }
+    ],
+    "accommodation": {
+      "single": 220,
+      "double": 260,
+      "accompanying_per_person": 150
+    },
+    "checkin_dates": [
+      "May 26, 2027",
+      "May 27, 2027",
+      "May 28, 2027",
+      "May 29, 2027"
+    ],
+    "checkout_dates": [
+      "May 27, 2027",
+      "May 28, 2027",
+      "May 29, 2027",
+      "May 30, 2027"
+    ],
+    "title_options": [
+      "Dr.",
+      "Prof.",
+      "Mr.",
+      "Mrs.",
+      "Miss",
+      "Ms."
+    ]
+  }
+}

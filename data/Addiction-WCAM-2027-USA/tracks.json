@@ -1,0 +1,130 @@
+{
+  "tracks": [
+    {
+      "title": "Opioid Use Disorder",
+      "tagline": "Buprenorphine, methadone, naltrexone, fentanyl crisis.",
+      "details": "The fourth wave of the overdose crisis — driven by illicitly manufactured fentanyl, fentanyl analogs, and the veterinary sedative xylazine — has reshaped opioid use disorder care. WCAM 2027 will examine high-dose buprenorphine inductions, microinduction (Bernese) and macroinduction protocols for fentanyl-tolerant patients, the post-X-waiver prescribing landscape, and emerging long-acting depot formulations (Sublocade, Brixadi). Sessions will also cover extended-release naltrexone retention strategies, methadone access reform under the updated 42 CFR Part 8, lofexidine for withdrawal, and the management of xylazine-associated wounds and protracted sedation now complicating fentanyl exposures.",
+      "subtopics": [
+        "Buprenorphine microinduction and high-dose strategies for fentanyl",
+        "Long-acting depot buprenorphine: Sublocade and Brixadi outcomes",
+        "Methadone access post-42 CFR Part 8 reform and pharmacy dispensing pilots",
+        "Extended-release naltrexone (Vivitrol): induction, retention, and reversal",
+        "Xylazine-adulterated supply: wound care, withdrawal, and detection",
+        "Lofexidine and adjunctive agents for opioid withdrawal",
+        "MOUD in pregnancy: buprenorphine vs methadone and NOWS management"
+      ]
+    },
+    {
+      "title": "Alcohol Use Disorder",
+      "tagline": "Behavioral therapies, naltrexone, acamprosate, AUDIT screening.",
+      "details": "Alcohol use disorder remains the most prevalent substance use disorder yet the most undertreated, with fewer than ten percent of patients receiving evidence-based pharmacotherapy. The track will cover the established triad — naltrexone (oral and extended-release), acamprosate, and disulfiram — alongside off-label evidence for topiramate, gabapentin, and baclofen. A dedicated session will examine the rapidly accumulating signal that GLP-1 receptor agonists (semaglutide, tirzepatide) reduce alcohol craving and consumption, including readouts from semaglutide AUD trials. Behavioral content covers CBT, MET, the COMBINE study legacy, and integration of AUDIT-C screening into primary care.",
+      "subtopics": [
+        "GLP-1 receptor agonists for AUD: semaglutide and tirzepatide trial data",
+        "Naltrexone (oral, extended-release) and the Sinclair method",
+        "Acamprosate, disulfiram, and supervised dosing models",
+        "Off-label pharmacotherapy: topiramate, gabapentin, baclofen evidence",
+        "AUDIT-C screening and SBIRT in primary care workflows",
+        "Alcohol-associated liver disease and early transplant referral",
+        "Managed alcohol programs and harm-reduction approaches to AUD"
+      ]
+    },
+    {
+      "title": "Stimulants & Polysubstance Use",
+      "tagline": "Cocaine, methamphetamine, contingency management.",
+      "details": "Stimulant use disorder has surged alongside the opioid crisis, with methamphetamine and cocaine now frequently co-detected with fentanyl in overdose decedents. No FDA-approved pharmacotherapy exists, but the ADAPT-2 trial of injectable naltrexone plus oral bupropion, along with evidence for topiramate, mirtazapine, and modafinil, provides a partial pharmacologic toolkit. The strongest evidence remains contingency management — operant reinforcement of stimulant abstinence — now scaled through the VA and state Medicaid demonstrations. Sessions will also address polysubstance overdose response, stimulant-induced cardiomyopathy, methamphetamine psychosis management, and the overlap with HIV and HCV transmission.",
+      "subtopics": [
+        "Contingency management: VA implementation and Medicaid pilots",
+        "ADAPT-2: injectable naltrexone plus bupropion for methamphetamine",
+        "Topiramate, mirtazapine, and modafinil evidence in stimulant use",
+        "Polysubstance overdose: fentanyl-stimulant co-detection trends",
+        "Stimulant-induced cardiomyopathy and reversibility",
+        "Methamphetamine-associated psychosis and acute management",
+        "Cocaine vaccine and immunotherapy pipeline"
+      ]
+    },
+    {
+      "title": "Behavioral Addictions",
+      "tagline": "Gambling, gaming, internet — DSM frameworks and treatment.",
+      "details": "Behavioral addictions occupy a contested but expanding diagnostic space, with gambling disorder formally classified in DSM-5-TR and ICD-11, internet gaming disorder under continued study, and compulsive sexual behavior disorder added to ICD-11. The track will cover neurobiological convergence with substance use disorders (mesolimbic dopamine, reward prediction error), the surge in problem gambling tied to legalized US sports betting, and CBT, motivational interviewing, and Gamblers Anonymous outcomes. Pharmacotherapy sessions will examine naltrexone for pathological gambling, SSRIs in compulsive sexual behavior, and the controversies around screen-time interventions for adolescent gaming disorder.",
+      "subtopics": [
+        "Sports betting expansion and rising gambling disorder prevalence",
+        "DSM-5-TR gambling disorder and ICD-11 compulsive sexual behavior",
+        "Naltrexone and SSRIs in behavioral addiction pharmacotherapy",
+        "Internet gaming disorder: diagnostic criteria and treatment evidence",
+        "CBT, motivational interviewing, and 12-step in behavioral addictions",
+        "Neuroimaging convergence with substance use disorders",
+        "Screen-time interventions and family-based adolescent programs"
+      ]
+    },
+    {
+      "title": "Harm Reduction",
+      "tagline": "Naloxone, syringe services, overdose prevention sites.",
+      "details": "Harm reduction has moved from the margins to the center of US addiction policy following the 2022 federal endorsement of syringe services and OTC naloxone (Narcan, RiVive) approval. WCAM 2027 will examine the New York City and Rhode Island overdose prevention center evaluations, fentanyl and xylazine test strip distribution under updated state paraphernalia laws, and drug checking services using FTIR spectrometry. The track will also cover safer supply pilots in British Columbia, take-home naloxone saturation modeling, the role of community health workers in post-overdose outreach, and the evidence base for medicalized supervised consumption.",
+      "subtopics": [
+        "OTC naloxone (Narcan, RiVive) and community distribution saturation",
+        "Overdose prevention centers: NYC and Rhode Island evaluation data",
+        "Fentanyl and xylazine test strips: legality and field utility",
+        "Drug checking with FTIR and mass spectrometry at music festivals",
+        "Safer supply pilots: British Columbia hydromorphone programs",
+        "Syringe services programs: HIV/HCV prevention and linkage to care",
+        "Post-overdose outreach teams and peer-led engagement models"
+      ]
+    },
+    {
+      "title": "Medication-Assisted Treatment",
+      "tagline": "Implementation science, low-threshold access, stigma.",
+      "details": "Medications for addiction treatment remain dramatically underutilized despite decades of evidence, with fewer than a quarter of patients with OUD receiving buprenorphine, methadone, or naltrexone. This track focuses on implementation science: emergency department buprenorphine initiation (the CA Bridge model), low-threshold telehealth prescribing protected by the post-COVID DEA flexibilities, jail and prison MOUD per the 2024 DOJ ADA guidance, and integration into primary care, OB, and HIV clinics. Sessions will address provider stigma, the elimination of the X-waiver under MAT Act, and pay-for-performance and bundled-payment models accelerating MAT scale-up.",
+      "subtopics": [
+        "ED-initiated buprenorphine and the CA Bridge model",
+        "Telehealth MOUD prescribing post-DEA flexibility extensions",
+        "Carceral MOUD: DOJ ADA enforcement and jail induction protocols",
+        "MAT Act implementation and post-X-waiver prescribing patterns",
+        "Office-based opioid treatment in primary care, HIV, and OB clinics",
+        "Provider stigma measurement and bias-reduction interventions",
+        "Bundled payment and value-based contracting for SUD treatment"
+      ]
+    },
+    {
+      "title": "Recovery Support Services",
+      "tagline": "Peer recovery coaches, recovery housing, employment.",
+      "details": "Recovery-oriented systems of care extend beyond acute treatment into the long-term supports that sustain remission. The track will cover the certified peer recovery specialist workforce — now Medicaid-billable in most states — and the evidence base from RCTs of peer navigators following ED overdose and hospitalization. Recovery housing sessions will address NARR Level I-IV standards, Oxford House outcomes, and the integration of MOUD-friendly housing. Additional content covers recovery community organizations, collegiate recovery programs, recovery-friendly workplace certifications, fair-chance hiring, and the evolving evidence on contingency management as a recovery support, not just an acute treatment.",
+      "subtopics": [
+        "Certified peer recovery specialists and Medicaid billing models",
+        "NARR-accredited recovery housing: Levels I-IV and MOUD inclusion",
+        "Oxford House and democratic recovery residence outcomes",
+        "Collegiate recovery programs and high school recovery academies",
+        "Recovery-friendly workplace certification and fair-chance hiring",
+        "Recovery community organizations and mutual-aid pluralism",
+        "Recovery capital measurement: BARC-10 and ARC scales"
+      ]
+    },
+    {
+      "title": "Prevention & Early Intervention",
+      "tagline": "School programs, SBIRT, family-based prevention.",
+      "details": "Primary and secondary prevention strategies have shifted toward evidence-based, developmentally targeted interventions following decades of disappointing results from didactic programs like DARE. The track will cover the Strengthening Families Program, LifeSkills Training, and Communities That Care as prevention infrastructures with replicated outcomes data. SBIRT (Screening, Brief Intervention, Referral to Treatment) implementation in adolescent primary care, integrated with the CRAFFT and S2BI screeners, will receive dedicated sessions. Additional content covers naloxone in schools post-2024 federal guidance, fentanyl awareness curricula, social-host liability laws, and the youth vaping and nicotine pouch (Zyn) prevention landscape.",
+      "subtopics": [
+        "LifeSkills Training and Strengthening Families: replication data",
+        "CRAFFT and S2BI screening in adolescent primary care",
+        "SBIRT implementation in pediatric and school-based clinics",
+        "Naloxone in schools and fentanyl awareness curricula",
+        "Communities That Care: coalition-driven prevention infrastructure",
+        "Youth vaping, nicotine pouch (Zyn), and cannabis vape prevention",
+        "Adverse childhood experiences (ACEs) and trauma-informed prevention"
+      ]
+    },
+    {
+      "title": "Neuroscience of Addiction",
+      "tagline": "Reward circuitry, craving, neurostimulation, biomarkers.",
+      "details": "The neurobiology of addiction has moved beyond the mesolimbic dopamine model into a circuit-level understanding spanning the ventral and dorsal striatum, prefrontal cortex, insula, and habenula. WCAM 2027 will showcase translational work on deep brain stimulation of the nucleus accumbens for treatment-refractory OUD and AUD (FDA breakthrough designation pathway), repetitive TMS of the dorsolateral prefrontal cortex for cocaine and methamphetamine craving, and ketamine and psilocybin-assisted therapy for AUD (Bogenschutz trials) and tobacco cessation (Johnson lab). Sessions will also cover real-time fMRI neurofeedback, GLP-1 mechanism in addiction, and digital biomarkers for craving prediction.",
+      "subtopics": [
+        "Deep brain stimulation of nucleus accumbens for refractory OUD/AUD",
+        "rTMS of dorsolateral prefrontal cortex for stimulant craving",
+        "Psilocybin-assisted therapy for AUD: Bogenschutz Phase 2/3 data",
+        "MDMA-assisted therapy for PTSD-SUD comorbidity",
+        "GLP-1 receptor signaling in mesolimbic reward circuitry",
+        "Real-time fMRI neurofeedback for craving regulation",
+        "Digital phenotyping and wearable biomarkers for relapse prediction"
+      ]
+    }
+  ]
+}

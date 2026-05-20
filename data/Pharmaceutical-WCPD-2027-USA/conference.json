@@ -1,0 +1,68 @@
+{
+  "name": "World Congress on Pharmaceutical Sciences & Drug Development",
+  "short": "WCPD 2027",
+  "initials": "WCPD",
+  "year_suffix": "27",
+  "tagline": "World Congress on Pharmaceutical Sciences & Drug Development",
+  "edition": "Inaugural Edition · International",
+  "volume": "Vol. I",
+  "issue": "No. 1",
+  "dateline": "MARCH 25–26, 2027",
+  "discipline": "Pharmaceutical Sciences",
+  "email": "wcpd@meetings.llc",
+  "phone": "+1 775 243 6888",
+  "base": "",
+  "hcaptcha_sitekey": "4b4e844a-46e4-42b6-9b82-06b07b969d70",
+  "theme_primary": "Bridging Pharmaceutical Science, Practice, and Global Health",
+  "theme_pillars": [
+    "Science",
+    "Practice",
+    "Access"
+  ],
+  "theme_blurb": "Bridging Pharmaceutical Science, Practice, and Global Health — uniting drug discovery, clinical translation and global access in one inaugural congress.",
+  "hero_title_lead": "World Congress on",
+  "hero_title_main": "Pharmaceutical Sciences & Drug Development",
+  "hero_title_year": "2027",
+  "hero_subtitle": "An intimate two-day congress convening scientists, regulators and industry leaders at the forefront of pharmaceutical sciences and drug development.",
+  "hero_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1400&q=85",
+  "dates": "March 25-26, 2027",
+  "dates_short": "Mar 2027",
+  "start_date_iso": "2027-03-25T09:00:00",
+  "city": "Singapore",
+  "country": "Singapore",
+  "venue": "",
+  "venue_tagline": "",
+  "venue_desc": "",
+  "venue_image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&q=80",
+  "abstract_deadline": "December 20, 2026",
+  "early_bird_deadline": "July 14, 2026",
+  "about_eyebrow": "Welcome Message",
+  "about_heading": "Where pharmaceutical science meets the next decade.",
+  "about_lead": "WCPD 2027 is a global forum for pioneering research, clinical translation and cross-disciplinary dialogue across the full spectrum of pharmaceutical sciences and drug development.",
+  "about_body": "Across two days of keynotes, parallel technical tracks, poster sessions and focused workshops, we convene the brightest minds to chart the frontier of pharmaceutical sciences — from laboratory science to clinical impact.",
+  "about_image": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=900&q=80",
+  "stats": [
+    [
+      "02",
+      "Days"
+    ],
+    [
+      "09",
+      "Tracks"
+    ],
+    [
+      "Hybrid",
+      "Format"
+    ],
+    [
+      "12+",
+      "Countries"
+    ]
+  ],
+  "social": {
+    "twitter": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#"
+  }
+}

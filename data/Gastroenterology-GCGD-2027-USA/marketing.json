@@ -1,0 +1,116 @@
+{
+  "marquee_items": [
+    [
+      "Inflammatory",
+      "fa-flask"
+    ],
+    [
+      "Hepatology",
+      "fa-atom"
+    ],
+    [
+      "Endoscopy",
+      "fa-microscope"
+    ],
+    [
+      "GI",
+      "fa-dna"
+    ],
+    [
+      "Functional",
+      "fa-bolt"
+    ]
+  ],
+  "why_eyebrow": "Why Attend",
+  "why_heading": "Six reasons to join GCGD 2027.",
+  "why_intro": "GCGD 2027 is more than a conference — it is a launchpad for your research, your clinical practice, and your next translational collaboration.",
+  "why_attend": [
+    [
+      "fa-microscope",
+      "Frontier Research",
+      "Hear first on breakthrough findings across 9 scientific tracks in gastroenterology."
+    ],
+    [
+      "fa-user-tie",
+      "World-Class Speakers",
+      "Keynote, plenary and invited speakers from leading US and international institutions."
+    ],
+    [
+      "fa-handshake",
+      "Global Networking",
+      "Connect with researchers, clinicians and industry leaders across 12+ countries — in one room, over two days."
+    ],
+    [
+      "fa-book-open",
+      "Publication Opportunities",
+      "All accepted abstracts published in the ISBN-allocated proceedings; selected papers invited to partner journals."
+    ],
+    [
+      "fa-award",
+      "Awards & Recognition",
+      "Best Paper, Best Poster and Young Investigator awards with global visibility and certificates of excellence."
+    ],
+    [
+      "fa-globe",
+      "Hybrid Experience",
+      "Two days of curated networking and a gala dinner — attend on-site in the USA or stream every session live, worldwide."
+    ]
+  ],
+  "testimonials_heading": "Voices from past editions.",
+  "testimonials_intro": "What delegates, speakers and partners said about previous editions.",
+  "testimonials": [
+    [
+      "GCGD was the most well-organized gastroenterology conference I have attended in years. The quality of keynotes and the depth of discussions were exceptional.",
+      "Prof. Linda Morrison",
+      "Keynote Speaker"
+    ],
+    [
+      "An incredibly valuable forum for early-career researchers. I connected with three potential collaborators within the first day.",
+      "Dr. Ahmad Yusuf",
+      "Postdoctoral Fellow"
+    ],
+    [
+      "The blend of academic rigour and industry relevance is unmatched. As a sponsor, our team generated 40+ qualified leads.",
+      "Ms. Priya Sharma",
+      "VP R&D"
+    ]
+  ],
+  "key_dates": [
+    [
+      "20",
+      "Dec 2026",
+      "Abstract Deadline",
+      "Final submissions due"
+    ],
+    [
+      "14",
+      "Jul 2026",
+      "Early Bird Ends",
+      "Save 20% on fees"
+    ],
+    [
+      "15",
+      "Jan 2027",
+      "Acceptance",
+      "Author notifications"
+    ],
+    [
+      "27",
+      "May 2027",
+      "Conference Opens",
+      "Two days"
+    ]
+  ],
+  "partners": [
+    "GCGD PARTNER A",
+    "GCGD LABS",
+    "RESEARCH INST.",
+    "GLOBAL HEALTH",
+    "MEDTECH CO",
+    "INNOVATE GRP",
+    "ACADEMIA X",
+    "FOUNDATION Y",
+    "JOURNAL Z",
+    "CONSORTIUM"
+  ]
+}

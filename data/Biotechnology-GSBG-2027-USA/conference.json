@@ -1,0 +1,68 @@
+{
+  "name": "Global Summit on Biotechnology, Genomics & Bioengineering",
+  "short": "GSBG 2027",
+  "initials": "GSBG",
+  "year_suffix": "27",
+  "tagline": "Global Summit on Biotechnology, Genomics & Bioengineering",
+  "edition": "Inaugural Edition · International",
+  "volume": "Vol. I",
+  "issue": "No. 1",
+  "dateline": "MARCH 25–26, 2027",
+  "discipline": "Biotechnology",
+  "email": "gsbg@meetings.llc",
+  "phone": "+1 775 243 6888",
+  "base": "",
+  "hcaptcha_sitekey": "4b4e844a-46e4-42b6-9b82-06b07b969d70",
+  "theme_primary": "Engineering Tomorrow: Bioscience, Genomics, and the Future of Medicine",
+  "theme_pillars": [
+    "Bioscience",
+    "Genomics",
+    "Medicine"
+  ],
+  "theme_blurb": "Engineering Tomorrow: Bioscience, Genomics, and the Future of Medicine — convening the scientists, engineers and clinicians authoring the next decade of biotechnology.",
+  "hero_title_lead": "Global Summit on",
+  "hero_title_main": "Biotechnology, Genomics & Bioengineering",
+  "hero_title_year": "2027",
+  "hero_subtitle": "An intimate two-day congress convening scientists, engineers and industry leaders at the forefront of biotechnology, genomics and bioengineering.",
+  "hero_image": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=1400&q=85",
+  "dates": "March 25-26, 2027",
+  "dates_short": "Mar 2027",
+  "start_date_iso": "2027-03-25T09:00:00",
+  "city": "Singapore",
+  "country": "Singapore",
+  "venue": "",
+  "venue_tagline": "",
+  "venue_desc": "",
+  "venue_image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=1200&q=80",
+  "abstract_deadline": "December 20, 2026",
+  "early_bird_deadline": "July 14, 2026",
+  "about_eyebrow": "Welcome Message",
+  "about_heading": "Where biotechnology meets the next decade.",
+  "about_lead": "GSBG 2027 is a global forum for pioneering research, clinical translation and cross-disciplinary dialogue across the full spectrum of biotechnology, genomics and bioengineering.",
+  "about_body": "Across two days of keynotes, parallel technical tracks, poster sessions and focused workshops, we convene the brightest minds to chart the frontier of biotechnology — from laboratory science to clinical impact.",
+  "about_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=900&q=80",
+  "stats": [
+    [
+      "02",
+      "Days"
+    ],
+    [
+      "09",
+      "Tracks"
+    ],
+    [
+      "Hybrid",
+      "Format"
+    ],
+    [
+      "12+",
+      "Countries"
+    ]
+  ],
+  "social": {
+    "twitter": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#"
+  }
+}

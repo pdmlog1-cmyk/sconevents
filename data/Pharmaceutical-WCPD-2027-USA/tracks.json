@@ -1,0 +1,130 @@
+{
+  "tracks": [
+    {
+      "title": "Drug Discovery & Design",
+      "tagline": "Target ID, fragment-based, AI/ML-driven design.",
+      "details": "Drug discovery is being reshaped by generative AI, structure prediction, and a renewed appetite for previously undruggable targets. WCPD 2027 will examine clinical-stage molecules designed end-to-end with machine learning — Insilico Medicine's INS018_055 for idiopathic pulmonary fibrosis, Recursion's phenomics-driven pipeline, Isomorphic Labs' AlphaFold 3-enabled programs — alongside the fragment-based and DNA-encoded library workflows that remain industry workhorses. Sessions will cover targeted protein degradation (PROTACs, molecular glues including ARV-471 vepdegestrant), KRAS G12C/G12D inhibitors, and the rapid expansion of macrocycles and oral peptides into traditionally biologic-only target space.",
+      "subtopics": [
+        "Generative chemistry and AlphaFold 3-guided structure-based design",
+        "Targeted protein degradation: PROTACs, molecular glues, ARV-471",
+        "KRAS, p53, and previously undruggable target classes",
+        "DNA-encoded libraries and fragment-based lead discovery",
+        "Oral peptides, macrocycles, and beyond-rule-of-five chemistry",
+        "Phenotypic screening and AI-driven phenomics (Recursion, Insitro)",
+        "Covalent drug design and chemoproteomics target ID"
+      ]
+    },
+    {
+      "title": "Clinical Pharmacology",
+      "tagline": "PK/PD, dose-finding, adaptive trials, special populations.",
+      "details": "Clinical pharmacology is moving away from MTD-driven oncology dose selection toward the FDA Project Optimus paradigm of optimized, tolerable dosing in registrational trials. The track will cover model-informed drug development (MIDD), population PK/PD with non-linear mixed effects modeling, exposure-response analyses, and the increasing role of physiologically based PK (PBPK) for pediatric, pregnancy, hepatic, and renal impairment dosing. Sessions will also address adaptive and platform trial designs, decentralized clinical trials with wearables and home dosing, and dose-finding in cell therapies and bispecifics where traditional 3+3 designs are inadequate.",
+      "subtopics": [
+        "Project Optimus: oncology dose optimization beyond MTD",
+        "Model-informed drug development and PBPK in special populations",
+        "Decentralized clinical trials, wearables, and remote dosing",
+        "Adaptive, platform, and master protocol trial designs",
+        "First-in-human dosing for bispecifics, CAR-T, and radioligands",
+        "Pediatric, pregnancy, and lactation pharmacology (PREA, BPCA)",
+        "Drug-drug interactions: transporter and CYP-mediated risk"
+      ]
+    },
+    {
+      "title": "Pharmacogenomics & Precision Medicine",
+      "tagline": "CYP variants, biomarker-guided dosing, companion diagnostics.",
+      "details": "Pharmacogenomics is finally entering routine practice, driven by CPIC guidelines, payer coverage expansion, and pre-emptive panel testing in major US health systems. WCPD 2027 will cover the high-impact actionable gene-drug pairs — DPYD before fluoropyrimidines, TPMT/NUDT15 for thiopurines, CYP2C19 for clopidogrel and SSRIs, HLA-B*57:01 for abacavir, HLA-B*15:02 for carbamazepine — and the implementation science required to embed results in the EHR. Sessions will also address ancestry diversity gaps in pharmacogenomic evidence, polygenic risk scores in drug response, and companion diagnostic co-development for targeted oncology therapies.",
+      "subtopics": [
+        "CPIC-actionable pairs: DPYD, TPMT, CYP2C19, CYP2D6, HLA-B",
+        "Pre-emptive panel testing and EHR clinical decision support",
+        "Companion diagnostics: KRAS, EGFR, BRCA, MSI/dMMR, NTRK",
+        "Ancestry diversity in pharmacogenomic reference data",
+        "Tumor-agnostic approvals and basket trial pharmacology",
+        "Polygenic scores for drug response and adverse events",
+        "Pharmacogenomics in psychiatry: SSRI, antipsychotic dosing"
+      ]
+    },
+    {
+      "title": "Drug Delivery Systems",
+      "tagline": "Nanoparticles, microneedles, oral peptides, gene delivery.",
+      "details": "Lipid nanoparticles transformed RNA medicine during the pandemic and now anchor an expanding pipeline of mRNA, siRNA, and CRISPR therapeutics including Casgevy, the first approved CRISPR-Cas9 product. The track will cover next-generation LNPs with tissue tropism beyond the liver, GalNAc-conjugated siRNA durability (inclisiran, vutrisiran, zilebesiran), and the engineering breakthroughs enabling oral peptides such as semaglutide and orforglipron. Sessions will also address microneedle patches, intratumoral and intrathecal delivery, AAV capsid engineering for in-vivo gene therapy, and the emerging non-viral platforms targeting hematopoietic stem cells in situ.",
+      "subtopics": [
+        "LNP engineering: extrahepatic tropism and ionizable lipids",
+        "GalNAc-siRNA platforms: inclisiran, vutrisiran, zilebesiran",
+        "Oral peptide delivery: SNAC, permeation enhancers, orforglipron",
+        "AAV capsid engineering and re-dosing strategies",
+        "In-vivo CRISPR delivery and Casgevy ex-vivo manufacturing",
+        "Microneedle patches and long-acting injectable depots",
+        "Blood-brain barrier crossing: transferrin-receptor shuttles"
+      ]
+    },
+    {
+      "title": "Toxicology & Safety Pharmacology",
+      "tagline": "Organ-on-chip, predictive toxicology, immune-related toxicities.",
+      "details": "The FDA Modernization Act 2.0 has formally opened the door to non-animal alternatives, accelerating adoption of organ-on-chip, microphysiological systems, and AI-based in silico tox prediction in IND-enabling packages. WCPD 2027 will cover validated liver, cardiac, and kidney chip platforms (Emulate, CN Bio, TissUse), the FDA's ongoing qualification programs, and predictive DILI and proarrhythmia models. Immune-mediated toxicities will receive dedicated sessions: cytokine release syndrome and ICANS in CAR-T and bispecifics, immune checkpoint inhibitor irAEs, and the ocular and ILD risks emerging across the antibody-drug conjugate class.",
+      "subtopics": [
+        "FDA Modernization Act 2.0 and microphysiological systems",
+        "Organ-on-chip: liver, cardiac, kidney, gut, BBB platforms",
+        "CAR-T and bispecific toxicity: CRS, ICANS, on-target off-tumor",
+        "ADC class toxicities: ocular, ILD, neutropenia management",
+        "In silico DILI and hERG/proarrhythmia prediction",
+        "Genotoxicity and nitrosamine impurity risk assessment",
+        "Immune-related adverse events from checkpoint inhibitors"
+      ]
+    },
+    {
+      "title": "Regulatory Science & Policy",
+      "tagline": "FDA, EMA, ICH guidelines, accelerated approval.",
+      "details": "The regulatory environment in 2027 is defined by accelerated approval reform under FDORA, the rolling implementation of the Inflation Reduction Act's Medicare drug price negotiation, and ongoing harmonization through ICH. WCPD 2027 will cover the FDA's post-Aduhelm tightening of confirmatory trial requirements, the new pre-approval inspection expectations for cell and gene therapy facilities, and the EMA's parallel moves on PRIME and conditional marketing authorization. Sessions will also examine the IRA's impact on R&D portfolio decisions, the small-molecule vs biologic price-negotiation timeline asymmetry, PBM reform proposals, and the global divergence on AI/ML-enabled software as a medical device.",
+      "subtopics": [
+        "IRA Medicare price negotiation: 2026/2027/2028 selected drugs",
+        "Accelerated approval reform and confirmatory trial mandates",
+        "Cell and gene therapy CMC and pre-approval inspections",
+        "FDA, EMA, PMDA, NMPA harmonization and ICH E6(R3)",
+        "AI/ML-enabled software as a medical device (SaMD)",
+        "PBM reform, 340B, and biosimilar interchangeability",
+        "Real-world evidence in regulatory submissions (21st Century Cures)"
+      ]
+    },
+    {
+      "title": "Pharmacovigilance",
+      "tagline": "Real-world evidence, signal detection, patient registries.",
+      "details": "Pharmacovigilance is being transformed by claims and EHR-based real-world evidence, NLP-driven signal detection on social media and call-center transcripts, and the FDA Sentinel system's expanding role in active surveillance. WCPD 2027 will cover post-marketing experience with novel modalities — gene therapy long-term follow-up registries, GLP-1 agonist gastrointestinal and ocular signals, and the safety profile of compounded GLP-1s entering the market during shortages. Sessions will also address pregnancy registries, REMS modernization, machine learning for ICSR triage, and the global divergence in ADR reporting standards across FDA FAERS, EMA EudraVigilance, and WHO VigiBase.",
+      "subtopics": [
+        "FDA Sentinel and active surveillance for novel modalities",
+        "GLP-1 receptor agonist safety: GI, ocular, suicidality signals",
+        "Compounded GLP-1 quality and adverse event reporting",
+        "Gene therapy long-term registries and delayed toxicities",
+        "NLP and ML for ICSR triage and social-media signal detection",
+        "REMS modernization and risk minimization measurement",
+        "Pregnancy and lactation registries; teratovigilance"
+      ]
+    },
+    {
+      "title": "Biopharmaceuticals",
+      "tagline": "Monoclonal antibodies, ADCs, bispecifics, gene/cell therapies.",
+      "details": "Biologics now account for the majority of new molecular entity revenue, led by an exploding ADC pipeline (trastuzumab deruxtecan, datopotamab deruxtecan, sacituzumab govitecan) and a new generation of T-cell engagers including teclistamab, talquetamab, and tarlatamab. WCPD 2027 will cover next-generation ADC linker-payload chemistry, dual-payload and bispecific ADCs, and the rapid maturation of in-vivo CAR-T using LNP-delivered mRNA. Sessions will also address the anti-amyloid mAb class (lecanemab, donanemab) and reimbursement barriers, biosimilar uptake and interchangeability, allogeneic and iPSC-derived cell therapies, and the first AAV gene therapies entering broad use (Hemgenix, Elevidys, Roctavian).",
+      "subtopics": [
+        "ADC platform expansion: linker-payload chemistry, dual payloads",
+        "T-cell engagers: teclistamab, talquetamab, tarlatamab, blinatumomab",
+        "In-vivo CAR-T via LNP-mRNA and engineered AAV",
+        "Anti-amyloid mAbs: lecanemab, donanemab, ARIA management",
+        "Biosimilar interchangeability and Humira/Stelara market dynamics",
+        "AAV gene therapy: Hemgenix, Elevidys, Roctavian, Zolgensma",
+        "Allogeneic and iPSC-derived off-the-shelf cell therapies"
+      ]
+    },
+    {
+      "title": "Pharmaceutical Manufacturing",
+      "tagline": "Continuous manufacturing, QbD, biosimilars, supply-chain.",
+      "details": "Pharmaceutical manufacturing is under unprecedented scrutiny following nitrosamine recalls, the GLP-1 shortage and compounding controversy, and the geopolitical re-shoring push under the CHIPS-and-Science-era industrial policy. WCPD 2027 will cover continuous manufacturing adoption (Janssen, Vertex, Eli Lilly), Quality-by-Design implementation under ICH Q12, and PAT-driven release. Sessions will also address mRNA and LNP manufacturing scale-up post-pandemic, viral vector capacity constraints, generics quality and the FDA's GDUFA III commitments, drug shortage prevention under the CARES Act reporting requirements, and the emerging role of distributed and point-of-care manufacturing for personalized cell therapies.",
+      "subtopics": [
+        "Continuous manufacturing and ICH Q13 implementation",
+        "mRNA, LNP, and viral vector manufacturing scale-up",
+        "Nitrosamine impurity control and root-cause investigation",
+        "GLP-1 supply chain, compounding, and FDA shortage list",
+        "Generics quality: GDUFA III, FDA foreign inspections",
+        "Distributed and point-of-care cell therapy manufacturing",
+        "PAT, real-time release, and Quality-by-Design (ICH Q8-Q12)"
+      ]
+    }
+  ]
+}

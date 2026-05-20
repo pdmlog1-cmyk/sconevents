@@ -1,0 +1,68 @@
+{
+  "name": "Global Summit on Food Innovation, Safety & Processing",
+  "short": "GSFS 2027",
+  "initials": "GSFS",
+  "year_suffix": "27",
+  "tagline": "Global Summit on Food Innovation, Safety & Processing",
+  "edition": "Inaugural Edition · International",
+  "volume": "Vol. I",
+  "issue": "No. 1",
+  "dateline": "MAY 27–28, 2027",
+  "discipline": "Food Technology",
+  "email": "gsfs@meetings.llc",
+  "phone": "+1 775 243 6888",
+  "base": "",
+  "hcaptcha_sitekey": "4b4e844a-46e4-42b6-9b82-06b07b969d70",
+  "theme_primary": "Reimagining the Global Food System: Innovation, Safety, and Sustainability",
+  "theme_pillars": [
+    "Innovation",
+    "Safety",
+    "Sustainability"
+  ],
+  "theme_blurb": "Reimagining the Global Food System: Innovation, Safety, and Sustainability — convening food scientists, technologists and policy leaders to feed the next billion.",
+  "hero_title_lead": "Global Summit on",
+  "hero_title_main": "Food Innovation, Safety & Processing",
+  "hero_title_year": "2027",
+  "hero_subtitle": "An intimate two-day congress convening food scientists, technologists and industry leaders shaping the future of food.",
+  "hero_image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=1400&q=85",
+  "dates": "May 27-28, 2027",
+  "dates_short": "May 2027",
+  "start_date_iso": "2027-05-27T09:00:00",
+  "city": "Singapore",
+  "country": "Singapore",
+  "venue": "",
+  "venue_tagline": "",
+  "venue_desc": "",
+  "venue_image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=1200&q=80",
+  "abstract_deadline": "February 20, 2027",
+  "early_bird_deadline": "July 14, 2026",
+  "about_eyebrow": "Welcome Message",
+  "about_heading": "Where food science meets the next decade.",
+  "about_lead": "GSFS 2027 is a global forum for pioneering research, regulatory translation and cross-disciplinary dialogue across the full food technology spectrum.",
+  "about_body": "Across two days of keynotes, parallel tracks and applied workshops, we convene the brightest minds to chart the frontier of food innovation, safety and processing.",
+  "about_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=900&q=80",
+  "stats": [
+    [
+      "02",
+      "Days"
+    ],
+    [
+      "09",
+      "Tracks"
+    ],
+    [
+      "Hybrid",
+      "Format"
+    ],
+    [
+      "12+",
+      "Countries"
+    ]
+  ],
+  "social": {
+    "twitter": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#"
+  }
+}

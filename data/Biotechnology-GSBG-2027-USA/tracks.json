@@ -1,0 +1,130 @@
+{
+  "tracks": [
+    {
+      "title": "Synthetic Biology & Biomanufacturing",
+      "tagline": "Cell-free systems, metabolic engineering and industrial biotech.",
+      "details": "Synthetic biology has matured from artisanal pathway construction into a design-build-test-learn discipline backed by AI-guided enzyme engineering and high-throughput strain screening. GSBG 2027 will examine cell-free protein synthesis platforms (Sutro, Nuclera), Ginkgo Bioworks-style automated foundries, and the use of generative models like ESM3 and ProGen to design novel biosynthetic enzymes. Sessions will cover continuous biomanufacturing, perfusion bioreactor scale-up for mRNA and AAV production, and the rapid expansion of precision fermentation for recombinant proteins, alternative proteins, and cultivated meat.",
+      "subtopics": [
+        "Cell-free protein synthesis: Sutro XpressCF, Nuclera eProtein",
+        "AI-guided enzyme design: ESM3, ProGen, RFdiffusion for biocatalysts",
+        "Automated strain engineering foundries and DBTL cycles",
+        "Perfusion bioreactors and continuous biomanufacturing",
+        "Precision fermentation: recombinant proteins and cultivated meat",
+        "CHO and HEK293 cell line development for biologics",
+        "mRNA and AAV manufacturing scale-up and analytics"
+      ]
+    },
+    {
+      "title": "Genetic Engineering & CRISPR",
+      "tagline": "Base editing, prime editing, gene drives and delivery systems.",
+      "details": "Gene editing has crossed into the clinic with Casgevy (exa-cel) approved for sickle cell disease and beta-thalassemia, and in vivo programs from Verve Therapeutics (VERVE-102 for hypercholesterolemia) and Intellia (NTLA-2001 for ATTR amyloidosis, NTLA-2002 for HAE) reporting durable knockdown with single LNP-delivered doses. The track will dissect base editing (David Liu lab, Beam Therapeutics), prime editing (Prime Medicine), epigenetic editing, and the next-generation delivery toolbox spanning lipid nanoparticles, engineered AAV capsids, and virus-like particles. Off-target detection, immunogenicity, and regulatory frameworks for heritable edits will receive dedicated sessions.",
+      "subtopics": [
+        "In vivo base editing: Verve VERVE-102, Beam BEAM-301 readouts",
+        "Prime editing: PASSIGE, twinPE, and Prime Medicine pipeline",
+        "CRISPR-Cas9 ex vivo: Casgevy clinical and manufacturing experience",
+        "LNP and engineered AAV capsid delivery for gene editing",
+        "Epigenetic editing: dCas9-DNMT3A/TET1 for durable silencing",
+        "Off-target detection: GUIDE-seq, CIRCLE-seq, ONE-seq",
+        "Gene drives and ecological containment strategies"
+      ]
+    },
+    {
+      "title": "Tissue Engineering & Biomaterials",
+      "tagline": "Scaffolds, 3D bioprinting and regenerative medicine.",
+      "details": "Tissue engineering is converging with high-resolution bioprinting, induced pluripotent stem cell biology, and decellularized scaffolds to produce functional tissue constructs at clinically relevant scales. Sessions will cover volumetric bioprinting and digital light processing approaches (Prellis, Readily3D) for vascularized constructs, organoid and assembloid systems modeling brain, liver, and intestine, and the BIO-X and Aspect Biosystems platforms moving toward bioprinted therapeutic tissues. The track will also feature self-assembling peptide hydrogels, GelMA and decellularized ECM bioinks, and translational progress in bioengineered skin (Vericel), cartilage, and pancreatic islet replacement (Vertex VX-880, ViaCyte).",
+      "subtopics": [
+        "Volumetric and DLP bioprinting for vascularized constructs",
+        "iPSC-derived organoids and assembloids for disease modeling",
+        "Bioengineered islets: Vertex VX-880, encapsulation strategies",
+        "Decellularized ECM scaffolds and recellularization",
+        "GelMA, alginate, and self-assembling peptide bioinks",
+        "Vascularization strategies: sacrificial templating, angiogenic factors",
+        "Bioprinted skin and cartilage: clinical translation pathways"
+      ]
+    },
+    {
+      "title": "Medical Devices & Sensors",
+      "tagline": "Implantables, point-of-care diagnostics and biosensors.",
+      "details": "The medical device frontier is increasingly defined by miniaturized, AI-enabled, and continuously sensing platforms. GSBG 2027 will examine brain-computer interfaces from Neuralink (N1 implant clinical experience), Synchron (Stentrode), and Paradromics, alongside Precision Neuroscience's thin-film cortical arrays. The track will cover continuous glucose monitoring evolution (Dexcom G7, Abbott Libre 3) and its expansion into non-diabetic populations, multi-analyte wearables for stress and metabolic monitoring, ingestible diagnostics, and CRISPR-based point-of-care platforms (SHERLOCK, DETECTR). Implantable bioelectronic medicine — vagus nerve stimulation, closed-loop neuromodulation — will round out the program.",
+      "subtopics": [
+        "Brain-computer interfaces: Neuralink N1, Synchron Stentrode, Paradromics",
+        "Continuous glucose monitoring and multi-analyte wearable biosensors",
+        "CRISPR-based diagnostics: SHERLOCK, DETECTR for point-of-care",
+        "Ingestible electronic capsules and gut-targeted sensing",
+        "Bioelectronic medicine and closed-loop neuromodulation",
+        "Microfluidic lab-on-chip and droplet-based diagnostics",
+        "FDA SaMD pathways and AI/ML medical device regulation"
+      ]
+    },
+    {
+      "title": "Bioinformatics & Computational Biology",
+      "tagline": "Genomics pipelines, AI-driven drug discovery.",
+      "details": "Computational biology has been transformed by foundation models for protein structure (AlphaFold 3, RoseTTAFold All-Atom, ESMFold) and de novo design (RFdiffusion, Chroma), shifting drug discovery from screening to designing. The track will explore AI-first discovery platforms (Isomorphic Labs, Recursion, Insilico Medicine, Xaira), single-cell multi-omics atlases including the Human Cell Atlas, and large language models trained on biological sequences such as Evo and Nucleotide Transformer. Sessions will also cover spatial transcriptomics (Visium HD, MERFISH, Stereo-seq), perturbation screens with Perturb-seq, and federated learning for multi-institutional clinical genomics.",
+      "subtopics": [
+        "AlphaFold 3 and RFdiffusion for structure prediction and design",
+        "AI drug discovery: Isomorphic, Recursion, Insilico, Xaira",
+        "Single-cell and spatial transcriptomics: Visium HD, MERFISH, Stereo-seq",
+        "Genomic foundation models: Evo, Nucleotide Transformer, scGPT",
+        "Perturb-seq and CRISPR screen analysis at genome scale",
+        "Long-read sequencing: Oxford Nanopore, PacBio HiFi pipelines",
+        "Federated learning and privacy-preserving clinical genomics"
+      ]
+    },
+    {
+      "title": "Drug Delivery Systems",
+      "tagline": "Nanocarriers, controlled release, targeted therapeutics.",
+      "details": "Drug delivery is the linchpin of modern therapeutics, with lipid nanoparticles (Acuitas, Genevant, Moderna SM-102) carrying mRNA and CRISPR payloads, and antibody-drug conjugates (Enhertu, Trodelvy, datopotamab deruxtecan) delivering cytotoxic warheads with unprecedented therapeutic indices. The track will examine extra-hepatic LNP targeting (SORT particles, GalNAc-conjugated systems for non-liver tissue), engineered exosomes (Codiak, Evox), polymer micelles, and stimuli-responsive depots. Oral biologics, intranasal CNS delivery, and ultrasound-mediated blood-brain barrier opening (Insightec) will be examined alongside the regulatory and CMC challenges of next-generation modalities.",
+      "subtopics": [
+        "Lipid nanoparticles for mRNA and gene editing payloads",
+        "Antibody-drug conjugates: linker chemistry and bystander effects",
+        "Extra-hepatic targeting: SORT LNPs, GalNAc, peptide-conjugates",
+        "Engineered exosomes: Codiak, Evox therapeutic platforms",
+        "Focused-ultrasound BBB opening for CNS drug delivery",
+        "Oral biologics and intestinal permeation enhancers",
+        "Stimuli-responsive hydrogels and long-acting injectables"
+      ]
+    },
+    {
+      "title": "Biomechanics & Prosthetics",
+      "tagline": "Rehabilitation engineering, exoskeletons and smart prosthetics.",
+      "details": "Biomechanics and prosthetics are being redefined by direct neural interfaces, soft robotics, and machine-learning gait control. The track will feature osseointegrated prostheses with implanted myoelectric sensors (Integrum, DEKA LUKE arm), targeted muscle and sensory reinnervation, and bidirectional peripheral nerve interfaces restoring proprioception and touch. Lower-limb exoskeletons for spinal cord injury rehabilitation (ReWalk, Ekso, Wandercraft Atalante self-balancing), AI-controlled microprocessor knees, and soft wearable exosuits (Harvard Wyss) will be examined alongside biomechanical modeling, OpenSim simulation, and IMU-based gait analysis for clinical decision support.",
+      "subtopics": [
+        "Osseointegrated prostheses and implanted myoelectric sensors",
+        "Targeted muscle and sensory reinnervation for sensory feedback",
+        "Self-balancing exoskeletons: Wandercraft Atalante, ReWalk, Ekso",
+        "Soft exosuits and wearable robotics for stroke rehabilitation",
+        "Microprocessor knees and AI gait-phase classification",
+        "OpenSim musculoskeletal modeling and inverse dynamics",
+        "Peripheral nerve interfaces: Utah arrays, regenerative electrodes"
+      ]
+    },
+    {
+      "title": "Regulatory & Bioethics",
+      "tagline": "FDA pathways, clinical trial design, responsible innovation.",
+      "details": "Regulatory science is racing to keep pace with cell and gene therapies, AI/ML-enabled devices, and the first generation of in vivo edits. The track will dissect FDA accelerated and platform pathways (Project Orbis, RMAT designation, the new ARC for individualized therapies), EMA PRIME, and the evolving framework for AI-enabled SaMD with predetermined change control plans. Bioethics sessions will tackle germline editing governance post-He Jiankui, equitable access to million-dollar gene therapies, dual-use research of concern in synthetic biology, and informed consent for BCI and neural-data privacy. Real-world evidence, decentralized trials, and N-of-1 trial designs will be examined.",
+      "subtopics": [
+        "FDA RMAT, accelerated approval, and platform technology designation",
+        "AI/ML SaMD: predetermined change control plans and GMLP",
+        "Germline editing governance and international heritable-edit policy",
+        "Bespoke and N-of-1 ASO and gene therapy regulatory pathways",
+        "Neural data privacy and BCI informed consent frameworks",
+        "Decentralized clinical trials and real-world evidence",
+        "Dual-use research of concern in synthetic biology"
+      ]
+    },
+    {
+      "title": "Industrial Biotechnology",
+      "tagline": "Enzyme engineering, bioprocessing and sustainable production.",
+      "details": "Industrial biotechnology is central to the bioeconomy transition, replacing petrochemical processes with engineered microbial routes for fuels, materials, and chemicals. GSBG 2027 will cover directed evolution and machine-learning-guided enzyme design for plastic depolymerization (PETase, MHETase, FAST-PETase), CO2-fixing chemolithoautotrophs (LanzaTech), and engineered yeast for cannabinoids, opioids, and rare natural products. Sessions will examine continuous bioprocessing, downstream purification advances (single-pass tangential flow, magnetic bead capture), digital twins for bioreactor control, and the scale-up bottlenecks that determine whether a strain in flask becomes a 200,000-liter commercial product.",
+      "subtopics": [
+        "PET-degrading enzymes: PETase, FAST-PETase, leaf-branch compost cutinase",
+        "Gas fermentation: LanzaTech, Kiverdi for CO and CO2 valorization",
+        "Engineered yeast for cannabinoids, opioids, and terpenoids",
+        "Directed evolution and ML-guided enzyme engineering",
+        "Continuous downstream processing and single-use bioreactors",
+        "Digital twins and process analytical technology (PAT)",
+        "Techno-economic analysis and scale-up from bench to commercial"
+      ]
+    }
+  ]
+}

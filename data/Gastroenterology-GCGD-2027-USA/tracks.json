@@ -1,0 +1,130 @@
+{
+  "tracks": [
+    {
+      "title": "Inflammatory Bowel Disease",
+      "tagline": "Crohn’s, UC, biologics, JAK inhibitors and treat-to-target.",
+      "details": "IBD therapeutics have entered a multi-mechanism era, with selective IL-23 inhibitors (risankizumab, mirikizumab), the S1P receptor modulator etrasimod, and the JAK1-selective upadacitinib joining established anti-TNFs and vedolizumab. STRIDE-II treat-to-target endpoints — clinical remission, biomarker normalization, and endoscopic healing — are reshaping monitoring, with intestinal ultrasound and fecal calprotectin replacing repeat colonoscopy in many programs. Sessions will examine head-to-head positioning (SEQUENCE, VEGA), perianal Crohn’s, pouchitis after IPAA, and the operationalization of therapeutic drug monitoring.",
+      "subtopics": [
+        "IL-23 inhibitors: risankizumab and mirikizumab in moderate-to-severe disease",
+        "Etrasimod (S1P modulator) and upadacitinib (JAK1) positioning",
+        "STRIDE-II treat-to-target and intestinal ultrasound monitoring",
+        "Head-to-head trials: SEQUENCE, VEGA combination induction",
+        "Perianal Crohn’s disease and stem-cell therapy (darvadstrocel)",
+        "Therapeutic drug monitoring for anti-TNFs and vedolizumab",
+        "Pouchitis and chronic antibiotic-refractory pouch inflammation"
+      ]
+    },
+    {
+      "title": "Hepatology & Liver Disease",
+      "tagline": "NAFLD/NASH, viral hepatitis, cirrhosis and transplantation.",
+      "details": "Hepatology in 2027 is defined by the first FDA-approved MASH therapy — resmetirom (THR-beta agonist) following MAESTRO-NASH — and the rapid expansion of GLP-1 and dual agonists (semaglutide ESSENCE, survodutide, tirzepatide) into metabolic liver disease. HCV elimination programs are being benchmarked against WHO 2030 targets, while HBV functional cure pipelines (siRNA bepirovirsen, capsid assembly modulators) advance through phase 3. The track also covers BAVENO VII portal hypertension, normothermic machine perfusion expanding the DCD donor pool, and acute-on-chronic liver failure stratification.",
+      "subtopics": [
+        "Resmetirom and the MAESTRO-NASH biopsy endpoints",
+        "GLP-1 and dual agonists in MASH: ESSENCE, survodutide phase 3",
+        "HBV functional cure: bepirovirsen siRNA and capsid inhibitors",
+        "BAVENO VII: non-selective beta-blockers and CARENA data",
+        "Normothermic and hypothermic machine perfusion in DCD livers",
+        "HCC surveillance and systemic therapy (atezolizumab/bevacizumab, durvalumab/tremelimumab)",
+        "Acute-on-chronic liver failure: CLIF-C scoring and transplant timing"
+      ]
+    },
+    {
+      "title": "Endoscopy & Interventional GI",
+      "tagline": "Advanced endoscopy, ERCP, EUS and third-space procedures.",
+      "details": "Third-space endoscopy has matured into a discipline of its own, with endoscopic submucosal dissection (ESD) increasingly preferred over EMR for high-risk early GI neoplasia and POEM established as a durable achalasia therapy. EndoFLIP impedance planimetry now guides both diagnosis and intra-procedural calibration. ERCP advances include digital cholangioscopy with electrohydraulic and laser lithotripsy for difficult stones, lumen-apposing metal stents for walled-off necrosis and gallbladder drainage, and EUS-guided gastroenterostomy. Bariatric endoscopy — endoscopic sleeve gastroplasty and intragastric balloons — is examined alongside GLP-1 perioperative aspiration risk and ASA guidance.",
+      "subtopics": [
+        "ESD vs EMR for early gastric, esophageal and colorectal neoplasia",
+        "POEM and EndoFLIP-guided achalasia management",
+        "Cholangioscopy with electrohydraulic and laser lithotripsy",
+        "EUS-guided gastroenterostomy and lumen-apposing metal stents",
+        "Endoscopic sleeve gastroplasty and intragastric balloons",
+        "GLP-1 receptor agonists and perioperative aspiration (ASA guidance)",
+        "AI-assisted polyp detection and characterization (CADe/CADx)"
+      ]
+    },
+    {
+      "title": "GI Oncology",
+      "tagline": "Colorectal, gastric, pancreatic and esophageal cancers.",
+      "details": "GI oncology is being reshaped by molecularly stratified care: ctDNA-guided adjuvant decisions in stage II/III colon cancer (DYNAMIC, GALAXY), MSI-high tumors responding to neoadjuvant dostarlimab and pembrolizumab (with watch-and-wait emerging in rectal cancer), and HER2-positive gastric/GEJ disease driven by trastuzumab deruxtecan and zolbetuximab (CLDN18.2). Pancreatic cancer remains the hardest target, but mRNA neoantigen vaccines, KRAS G12C/G12D inhibitors, and FOLFIRINOX intensification offer incremental gains. Sessions also cover Barrett’s surveillance with WATS3D and AI, and cholangiocarcinoma FGFR2/IDH1-targeted therapy.",
+      "subtopics": [
+        "ctDNA-guided adjuvant therapy in colon cancer (DYNAMIC, GALAXY)",
+        "Neoadjuvant immunotherapy in MMR-deficient rectal and colon cancer",
+        "HER2 and CLDN18.2 in gastric/GEJ: trastuzumab deruxtecan, zolbetuximab",
+        "Pancreatic cancer: KRAS G12C/G12D inhibitors and mRNA neoantigen vaccines",
+        "Barrett’s esophagus surveillance: WATS3D, AI and EET",
+        "Cholangiocarcinoma: FGFR2 fusions, IDH1 mutations, targeted therapy",
+        "Hereditary GI cancer syndromes and universal MMR screening"
+      ]
+    },
+    {
+      "title": "Functional GI & Motility",
+      "tagline": "IBS, gastroparesis and neurogastroenterology.",
+      "details": "Disorders of gut-brain interaction are being reframed by Rome IV, high-resolution manometry, and the wireless motility capsule. IBS-D management now integrates eluxadoline, rifaximin re-treatment, and low-FODMAP diets, while linaclotide, plecanatide, and tenapanor anchor IBS-C care. EndoFLIP and HRM with the Chicago Classification 4.0 differentiate achalasia subtypes and EGJ outflow obstruction. Gastroparesis sees renewed interest in prucalopride, ghrelin agonists (relamorelin), and gastric peroral endoscopic myotomy (G-POEM). Sessions also cover cyclic vomiting syndrome, rumination, and the central neuromodulator class for visceral hypersensitivity.",
+      "subtopics": [
+        "IBS-D: eluxadoline, rifaximin and low-FODMAP evidence",
+        "IBS-C: linaclotide, plecanatide, tenapanor mechanisms and outcomes",
+        "Achalasia subtyping: HRM Chicago Classification 4.0 and EndoFLIP",
+        "Gastroparesis: prucalopride, relamorelin and G-POEM outcomes",
+        "GERD long-term PPI safety and vonoprazan as PCAB alternative",
+        "Central neuromodulators in DGBI: TCAs, SNRIs, atypical agents",
+        "Cyclic vomiting and cannabinoid hyperemesis syndrome"
+      ]
+    },
+    {
+      "title": "Gut Microbiome",
+      "tagline": "FMT, microbiota-based therapeutics and dysbiosis.",
+      "details": "Microbiota therapeutics have transitioned from investigational FMT into FDA-approved live biotherapeutic products: Rebyota (RBL-2660) and Vowst (SER-109) for prevention of recurrent C. difficile infection. The track examines real-world durability, cost-effectiveness vs. fidaxomicin and bezlotoxumab, and emerging applications in IBD, hepatic encephalopathy, and ICI-refractory melanoma. Mechanistic sessions cover bile-acid signaling, short-chain fatty acid production, and engineered consortia. Diagnostic content addresses shotgun metagenomics standardization, the limits of 16S rRNA profiling, and the regulatory pathway for next-generation probiotics under FDA biologic frameworks.",
+      "subtopics": [
+        "Vowst (SER-109) and Rebyota for recurrent C. difficile prevention",
+        "FMT in ulcerative colitis and pouchitis: donor selection and outcomes",
+        "Microbiota modulation of immune checkpoint inhibitor response",
+        "Engineered consortia and defined live biotherapeutic products",
+        "Shotgun metagenomics standardization and clinical reporting",
+        "Bile acid–microbiome axis in cholestatic and metabolic disease",
+        "Helicobacter pylori AMR: vonoprazan-amoxicillin and rifabutin regimens"
+      ]
+    },
+    {
+      "title": "Pediatric Gastroenterology",
+      "tagline": "Pediatric IBD, celiac disease and feeding disorders.",
+      "details": "Pediatric GI is increasingly aligned with adult therapeutic advances while preserving developmental and growth-specific endpoints. Pediatric IBD now uses ustekinumab, vedolizumab, risankizumab, and upadacitinib with weight-based dosing supported by PK extrapolation studies. Eosinophilic esophagitis management has been transformed by dupilumab (FDA-approved down to age 1), with budesonide oral suspension as a steroid-sparing option. Celiac screening strategies, gluten challenge protocols, and the role of HLA-DQ2/DQ8 are revisited. Sessions also address pediatric MASLD, ARFID and feeding disorders, intestinal failure with teduglutide, and very-early-onset IBD genetic workup (IL10RA, XIAP).",
+      "subtopics": [
+        "Pediatric IBD: weight-based biologics and small-molecule extrapolation",
+        "Eosinophilic esophagitis: dupilumab and budesonide oral suspension",
+        "Very-early-onset IBD: monogenic workup (IL10R, XIAP, CYBB)",
+        "Pediatric MASLD: lifestyle, vitamin E and emerging pharmacotherapy",
+        "Intestinal failure and short bowel: teduglutide and autologous reconstruction",
+        "Avoidant/restrictive food intake disorder (ARFID) and feeding clinics",
+        "Transition of care from pediatric to adult IBD programs"
+      ]
+    },
+    {
+      "title": "Nutrition & Celiac Disease",
+      "tagline": "Enteral/parenteral nutrition and gluten-related disorders.",
+      "details": "Nutrition support in 2027 emphasizes early enteral feeding in critical illness, ESPEN-aligned protein targets, and structured home parenteral nutrition programs with teduglutide for intestinal failure. Celiac disease pharmacotherapy is finally moving beyond the gluten-free diet, with the transglutaminase 2 inhibitor ZED1227 demonstrating mucosal protection in phase 2 and latiglutenase, IMGX003, and AMG 714 (anti-IL-15) advancing through trials. Sessions cover non-responsive and refractory celiac disease, enteropathy-associated T-cell lymphoma surveillance, micronutrient deficiencies after bariatric surgery, and the metabolic management of obesity with GLP-1 and dual incretin agonists.",
+      "subtopics": [
+        "ZED1227 (TG2 inhibitor) and latiglutenase in celiac disease",
+        "Refractory celiac disease and EATL surveillance",
+        "Anti-IL-15 (AMG 714) and immunomodulators for celiac",
+        "Home parenteral nutrition and teduglutide in short bowel syndrome",
+        "Post-bariatric micronutrient deficiencies and surveillance",
+        "GLP-1/GIP dual agonists: tirzepatide, retatrutide in obesity",
+        "ESPEN protein and energy targets in critical illness"
+      ]
+    },
+    {
+      "title": "AI in GI",
+      "tagline": "Polyp detection, histology prediction and decision support.",
+      "details": "AI is now embedded in routine endoscopy, with CADe systems (GI Genius, ENDO-AID, CAD EYE) demonstrating consistent adenoma detection rate (ADR) gains in randomized trials and real-world registries. CADx optical biopsy is approaching a credible diagnose-and-leave or resect-and-discard strategy for diminutive polyps. The track covers AI for Barrett’s neoplasia, capsule endoscopy reading, ulcerative colitis endoscopic Mayo scoring, and histopathology deep-learning models for dysplasia and MSI prediction. Implementation sessions address regulatory pathways (FDA SaMD, EU MDR), bias and generalizability, prospective ADR drift studies, and integration with electronic health records.",
+      "subtopics": [
+        "CADe systems: GI Genius, ENDO-AID, CAD EYE ADR outcomes",
+        "CADx and resect-and-discard for diminutive polyps",
+        "AI for Barrett’s dysplasia and early esophageal neoplasia",
+        "Deep learning in capsule endoscopy and small-bowel imaging",
+        "Automated UCEIS and Mayo endoscopic scoring",
+        "Histopathology AI: dysplasia, MSI and HER2 prediction",
+        "Regulatory pathways (FDA SaMD, EU MDR) and post-market surveillance"
+      ]
+    }
+  ]
+}

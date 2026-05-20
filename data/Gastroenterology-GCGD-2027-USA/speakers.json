@@ -1,0 +1,142 @@
+{
+  "featured_speakers": [
+    [
+      "Prof. Alexandra Chen",
+      "Keynote",
+      "Harvard Medical School, USA",
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+    ],
+    [
+      "Dr. Rajesh Kumar",
+      "Plenary",
+      "Mayo Clinic, USA",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+    ],
+    [
+      "Prof. Emma Schmidt",
+      "Keynote",
+      "Karolinska Institute, Sweden",
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+    ],
+    [
+      "Prof. Hiroshi Tanaka",
+      "Invited",
+      "University of Tokyo, Japan",
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+    ]
+  ],
+  "ocm": [
+    [
+      "Prof. Alexandra Chen",
+      "Conference Chair",
+      "Harvard Medical School, USA",
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+    ],
+    [
+      "Prof. Liu Wei",
+      "Co-Chair · Scientific",
+      "Tsinghua University, China",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80"
+    ],
+    [
+      "Dr. Sarah Okonkwo",
+      "Program Chair",
+      "Imperial College London, UK",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+    ],
+    [
+      "Prof. Ahmed Al-Rashid",
+      "Local Host",
+      "NIH, USA",
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+    ],
+    [
+      "Dr. Priya Menon",
+      "Publications Chair",
+      "Johns Hopkins, USA",
+      "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&q=80"
+    ],
+    [
+      "Prof. Daniel Weber",
+      "Industry Liaison",
+      "Stanford University, USA",
+      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
+    ]
+  ],
+  "keynotes": [
+    [
+      "Prof. Alexandra Chen",
+      "Frontiers in Gastroenterology",
+      "Harvard Medical School, USA",
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+    ],
+    [
+      "Prof. Emma Schmidt",
+      "Translational Research & Clinical Impact",
+      "Karolinska, Sweden",
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+    ],
+    [
+      "Dr. Rajesh Kumar",
+      "Global Perspectives in Gastroenterology",
+      "Mayo Clinic, USA",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+    ],
+    [
+      "Prof. Hiroshi Tanaka",
+      "The Next Decade of Innovation",
+      "Univ. of Tokyo, Japan",
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+    ]
+  ],
+  "speakers_all": [
+    [
+      "Dr. Sarah Okonkwo",
+      "Invited",
+      "Imperial College London, UK",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+    ],
+    [
+      "Prof. Liu Wei",
+      "Plenary",
+      "Tsinghua University, China",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80"
+    ],
+    [
+      "Dr. Maria Gonzalez",
+      "Invited",
+      "ETH Zurich, Switzerland",
+      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&q=80"
+    ],
+    [
+      "Prof. Ahmed Al-Rashid",
+      "Plenary",
+      "NIH, USA",
+      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+    ],
+    [
+      "Dr. Jennifer Park",
+      "Invited",
+      "Stanford University, USA",
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80"
+    ],
+    [
+      "Prof. Kai Nakamura",
+      "Plenary",
+      "Kyoto University, Japan",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+    ],
+    [
+      "Dr. Priya Menon",
+      "Invited",
+      "Johns Hopkins, USA",
+      "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&q=80"
+    ],
+    [
+      "Prof. Daniel Weber",
+      "Invited",
+      "TU Munich, Germany",
+      "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
+    ]
+  ]
+}

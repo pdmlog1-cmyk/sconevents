@@ -1,0 +1,68 @@
+{
+  "name": "Global Summit on Obesity, Diabetes & Weight Management",
+  "short": "GSOD 2027",
+  "initials": "GSOD",
+  "year_suffix": "27",
+  "tagline": "Global Summit on Obesity, Diabetes & Weight Management",
+  "edition": "Inaugural Edition · International",
+  "volume": "Vol. I",
+  "issue": "No. 1",
+  "dateline": "MAY 27–28, 2027",
+  "discipline": "Obesity",
+  "email": "gsod@meetings.llc",
+  "phone": "+1 775 243 6888",
+  "base": "",
+  "hcaptcha_sitekey": "4b4e844a-46e4-42b6-9b82-06b07b969d70",
+  "theme_primary": "The Cardiometabolic Era: Advances in Obesity, Diabetes, and Weight Management",
+  "theme_pillars": [
+    "Mechanism",
+    "Medicine",
+    "Movement"
+  ],
+  "theme_blurb": "The Cardiometabolic Era: Advances in Obesity, Diabetes, and Weight Management — uniting endocrinology, cardiology and lifestyle medicine in the GLP-1 generation.",
+  "hero_title_lead": "Global Summit on",
+  "hero_title_main": "Obesity, Diabetes & Weight Management",
+  "hero_title_year": "2027",
+  "hero_subtitle": "An intimate two-day congress convening endocrinologists, nutritionists and metabolic scientists shaping the future of weight care.",
+  "hero_image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400&q=85",
+  "dates": "May 27-28, 2027",
+  "dates_short": "May 2027",
+  "start_date_iso": "2027-05-27T09:00:00",
+  "city": "Singapore",
+  "country": "Singapore",
+  "venue": "",
+  "venue_tagline": "",
+  "venue_desc": "",
+  "venue_image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=1200&q=80",
+  "abstract_deadline": "February 20, 2027",
+  "early_bird_deadline": "July 14, 2026",
+  "about_eyebrow": "Welcome Message",
+  "about_heading": "Where metabolic medicine meets the next decade.",
+  "about_lead": "GSOD 2027 is a global forum for pioneering research, clinical translation and cross-disciplinary dialogue across obesity, diabetes and weight management.",
+  "about_body": "Across two days of keynotes, parallel technical tracks, poster sessions and applied workshops, we convene the brightest minds to chart the frontier of metabolic care.",
+  "about_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=900&q=80",
+  "stats": [
+    [
+      "02",
+      "Days"
+    ],
+    [
+      "09",
+      "Tracks"
+    ],
+    [
+      "Hybrid",
+      "Format"
+    ],
+    [
+      "12+",
+      "Countries"
+    ]
+  ],
+  "social": {
+    "twitter": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#"
+  }
+}

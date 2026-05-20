@@ -1,0 +1,130 @@
+{
+  "tracks": [
+    {
+      "title": "Neurorehabilitation",
+      "tagline": "Stroke recovery, spinal cord injury and traumatic brain injury.",
+      "details": "Neurorehabilitation has been transformed by neuromodulation, robotics, and brain-computer interfaces translating from research into routine practice. GCPR 2027 will examine paired vagus nerve stimulation (Vivistim) for chronic upper-limb stroke deficits, robotic gait trainers (Lokomat, Andago) and soft exosuits (Wandercraft Atalante, Ekso Indego, ReWalk Personal 6.0) for ambulation recovery, and epidural and transcutaneous spinal stimulation (Onward ARC-EX, NeuroRecovery Technologies) for motor and autonomic restoration after SCI. Sessions will also cover cognitive rehabilitation after TBI, post-stroke spasticity management, and the integration of implantable BCIs (Synchron Stentrode, Neuralink, Blackrock) into communication and motor rehabilitation pathways.",
+      "subtopics": [
+        "Paired VNS (Vivistim) for chronic upper-limb stroke deficits",
+        "Robotic gait training: Lokomat, Andago, Ekso Indego, ReWalk Personal 6.0",
+        "Soft exosuits: Wandercraft Atalante and overground walking outcomes",
+        "Epidural and transcutaneous spinal stimulation (Onward ARC-EX, ARC-IM)",
+        "Implantable BCIs in motor and communication rehab: Synchron, Neuralink, Blackrock",
+        "TBI cognitive rehabilitation and disorders of consciousness protocols",
+        "Spasticity management: intrathecal baclofen, onabotulinumtoxinA, cryoneurolysis"
+      ]
+    },
+    {
+      "title": "Musculoskeletal Rehabilitation",
+      "tagline": "Sports injury, orthopedics and post-surgical recovery.",
+      "details": "Musculoskeletal rehabilitation is increasingly driven by diagnostic ultrasound, regenerative interventions, and protocolized post-surgical pathways. The track will cover MSK ultrasound for dynamic joint and tendon assessment and ultrasound-guided interventions, the evolving evidence base for orthobiologics (leukocyte-poor PRP for knee OA and lateral epicondylosis, BMAC, prolotherapy), and ERAS-style protocols after total joint arthroplasty and rotator cuff repair. Sessions will also examine hydrodissection for peripheral nerve entrapments, blood-flow-restriction training in early post-operative loading, and AI-driven movement analysis (DorsaVi, Sparta, markerless 3D motion capture) for return-to-sport criteria.",
+      "subtopics": [
+        "Diagnostic and interventional MSK ultrasound techniques",
+        "Orthobiologics evidence: PRP, BMAC, prolotherapy, MFAT",
+        "Blood-flow restriction training in post-surgical loading",
+        "ERAS pathways after TKA, THA, and rotator cuff repair",
+        "Hydrodissection for carpal tunnel and peripheral nerve entrapments",
+        "AI movement analysis and markerless 3D motion capture for RTS",
+        "Tendinopathy: eccentric loading, percutaneous tenotomy, shockwave"
+      ]
+    },
+    {
+      "title": "Cardiopulmonary Rehabilitation",
+      "tagline": "Cardiac rehab, pulmonary rehab and chronic disease management.",
+      "details": "Cardiopulmonary rehabilitation is being redefined by hybrid and home-based delivery models, post-COVID syndrome cohorts, and integration with disease-modifying pharmacotherapy. The track will address phase II/III cardiac rehab after PCI, CABG, TAVR, and LVAD implantation; pulmonary rehab in COPD, ILD, and post-lung-transplant populations; and structured exercise programming alongside SGLT2 inhibitors and GLP-1 agonists. Long COVID and post-acute sequelae of SARS-CoV-2 will receive dedicated sessions, including autonomic dysfunction, post-exertional malaise pacing, and graded return-to-activity protocols. Telemonitored home-based cardiac rehabilitation evidence and reimbursement pathways will be reviewed.",
+      "subtopics": [
+        "Home-based and hybrid cardiac rehab: outcomes and reimbursement",
+        "Rehab after TAVR, LVAD, and heart transplantation",
+        "Pulmonary rehab in COPD, ILD, and post-lung-transplant care",
+        "Long COVID rehabilitation: autonomic dysfunction, PEM pacing",
+        "Exercise prescription with SGLT2 inhibitors and GLP-1 agonists",
+        "CPET-guided individualized exercise prescription",
+        "Inspiratory muscle training and airway clearance techniques"
+      ]
+    },
+    {
+      "title": "Pediatric Rehabilitation",
+      "tagline": "Developmental delays, cerebral palsy and pediatric mobility.",
+      "details": "Pediatric rehabilitation has been reshaped by disease-modifying therapies in neuromuscular disease and refined surgical and pharmacologic options for cerebral palsy. The track will cover the rehabilitative implications of onasemnogene abeparvovec (Zolgensma), risdiplam, and nusinersen in SMA, exon-skipping and gene therapy in DMD (delandistrogene moxeparvovec), and longitudinal motor outcomes. CP content includes selective dorsal rhizotomy patient selection, intrathecal baclofen pump management, and single-event multilevel surgery rehabilitation. Sessions will also address constraint-induced movement therapy in hemiplegic CP, pediatric power mobility provision, and transition-of-care models from pediatric to adult rehabilitation services.",
+      "subtopics": [
+        "Rehab implications of SMA therapies: onasemnogene, risdiplam, nusinersen",
+        "DMD gene therapy and exon-skipping rehabilitation outcomes",
+        "Selective dorsal rhizotomy and intrathecal baclofen in CP",
+        "Single-event multilevel surgery (SEMLS) post-op rehabilitation",
+        "Constraint-induced movement therapy in hemiplegic CP",
+        "Pediatric power mobility and seating provision",
+        "Transition of care from pediatric to adult rehabilitation"
+      ]
+    },
+    {
+      "title": "Geriatric Rehabilitation",
+      "tagline": "Fall prevention, frailty and age-related mobility.",
+      "details": "Geriatric rehabilitation sits at the intersection of sarcopenia, frailty, multimorbidity, and cognitive decline. The track will cover EWGSOP2-aligned sarcopenia diagnosis (SARC-F, grip strength, DXA), progressive resistance training and leucine-enriched protein supplementation, and the emerging pharmacologic pipeline (myostatin inhibitors, apitegromab). Falls prevention sessions will examine the Otago and STEADI programs, multifactorial assessment, and home-modification evidence. Hip fracture rehabilitation, post-ICU syndrome in older adults, and rehabilitation considerations alongside GLP-1 agonist-induced weight loss in older patients will also be addressed, along with cognitive-motor dual-task training.",
+      "subtopics": [
+        "Sarcopenia diagnosis (EWGSOP2) and progressive resistance training",
+        "Frailty assessment: Fried phenotype, clinical frailty scale",
+        "Falls prevention: Otago, STEADI, multifactorial intervention",
+        "Hip fracture rehabilitation and orthogeriatric co-management",
+        "Post-ICU syndrome and ICU-acquired weakness recovery",
+        "Cognitive-motor dual-task training and dementia rehabilitation",
+        "Rehab considerations during GLP-1-induced weight loss in elders"
+      ]
+    },
+    {
+      "title": "Pain Management",
+      "tagline": "Chronic pain, interventional pain medicine and opioid alternatives.",
+      "details": "Pain medicine is being transformed by selective Nav1.8 sodium channel inhibition (suzetrigine/Journavx) for acute pain, expanded neuromodulation indications, and refined interventional techniques. The track will examine suzetrigine post-operative outcomes, low-dose ketamine infusions for refractory chronic pain and CRPS, and the maturation of dorsal root ganglion stimulation, closed-loop and high-frequency spinal cord stimulation, and peripheral nerve stimulation (Nalu, SPRINT). Interventional spine content covers cooled and conventional radiofrequency ablation for facet and SI joint pain, kyphoplasty, and minimally invasive SI joint fusion (iFuse, SI-Bone). Opioid stewardship, buprenorphine micro-induction, and cannabinoid evidence will be reviewed.",
+      "subtopics": [
+        "Suzetrigine (Nav1.8 inhibition) for acute and post-operative pain",
+        "Closed-loop and high-frequency spinal cord stimulation",
+        "Dorsal root ganglion and peripheral nerve stimulation (Nalu, SPRINT)",
+        "Cooled RFA for facet and SI joint pain; genicular RFA for knee OA",
+        "Minimally invasive SI joint fusion (iFuse, SI-Bone) outcomes",
+        "Ketamine infusions in chronic pain, CRPS, and depression overlap",
+        "Buprenorphine micro-induction and opioid stewardship"
+      ]
+    },
+    {
+      "title": "Prosthetics & Orthotics",
+      "tagline": "Smart prosthetics, exoskeletons and assistive technology.",
+      "details": "Limb-loss care has advanced from socket-based prosthetics to direct skeletal attachment and intuitive neural control. The track will cover osseointegration (OPRA, OPL implants) outcomes and complication management, targeted muscle reinnervation (TMR) and targeted sensory reinnervation (TSR) for neuroma prevention and intuitive prosthetic control, and the latest mind-controlled and proprioceptive prosthetic systems including agonist-antagonist myoneural interfaces. Microprocessor knees (Ottobock Genium X4, Ossur Power Knee), powered ankles (BiOM/Empower), and bionic hands (Ottobock bebionic, Ossur i-Limb) will be benchmarked. Exoskeleton content addresses both rehabilitative and assistive personal-use devices and emerging Medicare coverage pathways.",
+      "subtopics": [
+        "Osseointegration (OPRA, OPL): outcomes, infection management",
+        "TMR and TSR for neuroma prevention and intuitive control",
+        "Microprocessor knees and powered ankle-foot prostheses",
+        "Multi-articulating myoelectric hands and pattern recognition",
+        "Agonist-antagonist myoneural interface (AMI) and proprioception",
+        "Personal-use exoskeletons: ReWalk, Ekso, Atalante coverage",
+        "Pediatric prosthetic prescription and growth accommodation"
+      ]
+    },
+    {
+      "title": "Telerehabilitation",
+      "tagline": "Remote physical therapy, wearables and digital health.",
+      "details": "Telerehabilitation matured rapidly during the pandemic and is now sustained by validated digital therapeutics, wearables, and remote therapeutic monitoring (RTM) reimbursement. The track will cover non-inferiority evidence for telerehab in stroke, total joint arthroplasty, and chronic low back pain; FDA-cleared digital MSK platforms (Hinge Health, Sword Health, Kaia Health); and AI-augmented home exercise adherence tools using smartphone pose estimation. Sessions will examine wearable IMU and EMG systems for remote gait and movement monitoring, asynchronous video assessment workflows, and the integration of CPT RTM codes (98975-98981) into outpatient rehab practice.",
+      "subtopics": [
+        "Telerehab non-inferiority evidence in stroke, TKA, and LBP",
+        "Digital MSK platforms: Hinge Health, Sword Health, Kaia Health",
+        "Smartphone pose estimation for home exercise feedback",
+        "Wearable IMUs and surface EMG for remote movement monitoring",
+        "Remote therapeutic monitoring (RTM) CPT codes and workflows",
+        "VR/AR rehabilitation: Penumbra REAL, MindMaze, XRHealth",
+        "Hybrid in-person/virtual care model design and outcomes"
+      ]
+    },
+    {
+      "title": "Adaptive Sports & Exercise Medicine",
+      "tagline": "Paralympic medicine, adaptive fitness and return-to-play.",
+      "details": "Adaptive sports medicine spans the Paralympic athlete, the recreational adaptive participant, and the role of structured exercise as medicine across disability populations. The track will cover Paralympic classification science, autonomic dysreflexia and boosting prevention in SCI athletes, thermoregulation in tetraplegia, and concussion management in adaptive sport. Sessions will examine adaptive equipment provision (racing wheelchairs, monoskis, hand-cycles), exercise prescription in MS, Parkinson disease, and post-stroke populations, and emerging high-intensity interval and resistance protocols. Return-to-play frameworks after stroke, TBI, and orthopedic injury, alongside the integration of GLP-1 agonists with exercise, will be addressed.",
+      "subtopics": [
+        "Paralympic classification science and evidence-based grouping",
+        "Autonomic dysreflexia and boosting in SCI athletes",
+        "Thermoregulation strategies in tetraplegic athletes",
+        "Exercise prescription in MS, Parkinson disease, post-stroke",
+        "Adaptive equipment: racing wheelchairs, monoskis, hand-cycles",
+        "Return-to-play after stroke, TBI, and orthopedic injury",
+        "High-intensity interval training and resistance protocols in disability"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Global Congress on Surgery & Anaesthesia",
+  "short": "GCSA 2027",
+  "initials": "GCSA",
+  "year_suffix": "27",
+  "tagline": "Global Congress on Surgery & Anaesthesia",
+  "edition": "Inaugural Edition · International",
+  "volume": "Vol. I",
+  "issue": "No. 1",
+  "dateline": "APRIL 26–27, 2027",
+  "discipline": "Surgery & Anaesthesia",
+  "email": "gcsa@meetings.llc",
+  "phone": "+1 775 243 6888",
+  "base": "",
+  "hcaptcha_sitekey": "4b4e844a-46e4-42b6-9b82-06b07b969d70",
+  "theme_primary": "The Modern Operating Room: Innovation, Precision, and Patient Outcomes",
+  "theme_pillars": [
+    "Innovation",
+    "Precision",
+    "Outcomes"
+  ],
+  "theme_blurb": "The Modern Operating Room: Innovation, Precision, and Patient Outcomes — from robotic technique to perioperative care, redefining operative medicine for 2027 and beyond.",
+  "hero_title_lead": "Global Congress on",
+  "hero_title_main": "Surgery & Anaesthesia",
+  "hero_title_year": "2027",
+  "hero_subtitle": "An intimate two-day congress convening surgeons, anaesthesiologists and industry leaders advancing operative care.",
+  "hero_image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1400&q=85",
+  "dates": "April 26-27, 2027",
+  "dates_short": "Apr 2027",
+  "start_date_iso": "2027-04-26T09:00:00",
+  "city": "",
+  "country": "USA",
+  "venue": "",
+  "venue_tagline": "",
+  "venue_desc": "",
+  "venue_image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1200&q=80",
+  "abstract_deadline": "January 20, 2027",
+  "early_bird_deadline": "July 14, 2026",
+  "about_eyebrow": "Welcome Message",
+  "about_heading": "Where surgery meets the next decade.",
+  "about_lead": "GCSA 2027 is a global forum for pioneering technique, perioperative research and cross-disciplinary dialogue across surgery and anaesthesia.",
+  "about_body": "Across two days of keynotes, parallel technical tracks, video sessions and hands-on workshops, we convene the brightest minds to chart the frontier of operative medicine.",
+  "about_image": "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=900&q=80",
+  "stats": [
+    [
+      "02",
+      "Days"
+    ],
+    [
+      "09",
+      "Tracks"
+    ],
+    [
+      "Hybrid",
+      "Format"
+    ],
+    [
+      "12+",
+      "Countries"
+    ]
+  ],
+  "social": {
+    "twitter": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#"
+  }
+}

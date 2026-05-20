@@ -1,0 +1,68 @@
+{
+  "name": "World Congress on Addiction Medicine & Behavioral Health",
+  "short": "WCAM 2027",
+  "initials": "WCAM",
+  "year_suffix": "27",
+  "tagline": "World Congress on Addiction Medicine & Behavioral Health",
+  "edition": "Inaugural Edition · International",
+  "volume": "Vol. I",
+  "issue": "No. 1",
+  "dateline": "APRIL 26–27, 2027",
+  "discipline": "Addiction Medicine",
+  "email": "wcam@meetings.llc",
+  "phone": "+1 775 243 6888",
+  "base": "",
+  "hcaptcha_sitekey": "4b4e844a-46e4-42b6-9b82-06b07b969d70",
+  "theme_primary": "From Neurobiology to Recovery: Advancing Addiction Medicine",
+  "theme_pillars": [
+    "Neurobiology",
+    "Treatment",
+    "Recovery"
+  ],
+  "theme_blurb": "From Neurobiology to Recovery: Advancing Addiction Medicine — translating the latest neuroscience into evidence-based treatment and lasting recovery.",
+  "hero_title_lead": "World Congress on",
+  "hero_title_main": "Addiction Medicine & Behavioral Health",
+  "hero_title_year": "2027",
+  "hero_subtitle": "An intimate two-day congress convening clinicians, researchers and recovery leaders advancing addiction medicine and behavioral health.",
+  "hero_image": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1400&q=85",
+  "dates": "April 26-27, 2027",
+  "dates_short": "Apr 2027",
+  "start_date_iso": "2027-04-26T09:00:00",
+  "city": "",
+  "country": "USA",
+  "venue": "",
+  "venue_tagline": "",
+  "venue_desc": "",
+  "venue_image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80",
+  "abstract_deadline": "January 20, 2027",
+  "early_bird_deadline": "July 14, 2026",
+  "about_eyebrow": "Welcome Message",
+  "about_heading": "Where addiction medicine meets the next decade.",
+  "about_lead": "WCAM 2027 is a global forum for pioneering research, clinical translation and cross-disciplinary dialogue across the full spectrum of addiction medicine and behavioral health.",
+  "about_body": "Across two days of keynotes, parallel technical tracks, poster sessions and focused workshops, we convene clinicians, researchers and policy leaders to chart the frontier of recovery medicine.",
+  "about_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=900&q=80",
+  "stats": [
+    [
+      "02",
+      "Days"
+    ],
+    [
+      "09",
+      "Tracks"
+    ],
+    [
+      "Hybrid",
+      "Format"
+    ],
+    [
+      "12+",
+      "Countries"
+    ]
+  ],
+  "social": {
+    "twitter": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#"
+  }
+}

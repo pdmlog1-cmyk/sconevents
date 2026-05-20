@@ -1,0 +1,84 @@
+{
+  "guidelines": {
+    "speaker": [
+      "Speakers are requested to adhere to the time allotted for their presentation as indicated in the program schedule.",
+      "Open with a title slide listing the presentation title, speaker name and affiliation, followed by a brief self-introduction.",
+      "Use clear, concise content with bullet points and visuals; tables and graphs should be easily readable.",
+      "Send presentation slides to the program manager at least one month before the conference and bring a flash-drive backup.",
+      "Submit presentations in 16:9 PPT or PDF format. Ensure visuals are highly legible.",
+      "Slight program changes may occur — please be present in the room from the start of your session day.",
+      "Follow time cues from session chairs, maintain professionalism and engage in Q&A.",
+      "For any support, reach out to the speaker coordinator via the conference email."
+    ],
+    "poster": [
+      "Posters should measure 36\" × 48\" (3 × 4 ft). Confirm dimensions with organizers before printing.",
+      "Text should be readable from 3–4 feet — body 24 pt, headings 36–48 pt, sans-serif fonts (Arial, Helvetica).",
+      "Use a contrasting colour scheme and adequate spacing for clarity.",
+      "Use high-resolution images and well-aligned graphics.",
+      "On-site printing is not available — arrange printing in advance.",
+      "Presenters should remain at their poster throughout the assigned poster session.",
+      "Collect your poster by end of day; uncollected posters will be disposed of."
+    ],
+    "participant": [
+      "All participants must pre-register online; on-site registration is available at standard rates.",
+      "Wear your conference badge at all times within the venue.",
+      "Engage actively in sessions — ask questions, contribute to discussions, respect speakers and fellow delegates.",
+      "Embrace diversity and an inclusive environment. Harassment of any kind will not be tolerated.",
+      "Use breaks, meals and networking sessions to exchange ideas and build relationships.",
+      "In case of emergency, follow venue staff instructions and familiarize yourself with the exits."
+    ]
+  },
+  "terms": [
+    "By registering for GCSA 2027, you agree to comply with the following terms and conditions.",
+    "The organizer reserves the right to make changes to the program, date or venue without prior notice.",
+    "While we strive to follow the published schedule, unforeseen circumstances may necessitate alterations.",
+    "The organizer may cancel the conference due to unavoidable circumstances; in that event, the organizer's liability is limited as set out in the cancellation policy.",
+    "If the conference is postponed for reasons beyond the organizer's control, registrations remain valid for the rescheduled event or future editions; refund policy may not apply.",
+    "Cancellation notices will be communicated through reasonable means, including the conference website.",
+    "Delegates are responsible for checking the website regularly for updates.",
+    "We do not accept liability for personal injuries or loss/damage to personal property occurring during the event.",
+    "By attending, you acknowledge and agree to these terms."
+  ],
+  "privacy": [
+    "We collect only the information you submit through the registration, abstract submission, sponsorship and contact forms.",
+    "Your information is used solely to administer your participation, communicate program updates and process payments.",
+    "We do not sell or rent your personal information to third parties.",
+    "Anonymous, aggregated analytics may be used to improve the website and the conference.",
+    "Where required by law, we will respond to data access, correction and deletion requests submitted to the conference email.",
+    "Payments are processed by PCI-compliant third-party providers; we do not store full card details on our servers."
+  ],
+  "faq": [
+    {
+      "q": "Who should attend GCSA 2027?",
+      "a": "Surgery & Anaesthesia researchers, clinicians, industry professionals, government officials, entrepreneurs and students working on surgery & anaesthesia."
+    },
+    {
+      "q": "How can I register for the conference?",
+      "a": "Visit the Register page on this site and follow the instructions. Early-bird discounts apply through October 30, 2026."
+    },
+    {
+      "q": "Does the registration fee include hotel accommodation?",
+      "a": "No — accommodation is a separate optional add-on at registration. Hotel rates are listed on the Registration Details page."
+    },
+    {
+      "q": "Are group discounts available?",
+      "a": "Yes — three or more delegates from the same institution receive 10% off each registration. Contact us for larger groups."
+    },
+    {
+      "q": "Will the organizer fund my travel or accommodation?",
+      "a": "We do not provide travel or accommodation funding, but registered participants receive substantial discounts and an invitation letter for visa purposes."
+    },
+    {
+      "q": "Can I get a letter of invitation for visa purposes?",
+      "a": "Yes — invitation letters are issued to registered participants only. Please complete your registration first."
+    },
+    {
+      "q": "How many abstracts can I submit?",
+      "a": "Up to two abstracts per author. See the Submit Abstract page for guidelines."
+    },
+    {
+      "q": "What is the abstract submission deadline?",
+      "a": "December 20, 2026 for full consideration. Late submissions are reviewed subject to space."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "intro": "Highlights from previous editions of our pharmacology meetings — keynotes, networking moments, gala dinners and the people who make WCPD what it is.",
+  "editions": [
+    {
+      "year": "2025",
+      "city": "Boston, USA",
+      "summary": "Hybrid edition with 480+ in-person attendees, 9 tracks, oral and poster presentations.",
+      "images": [
+        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80",
+        "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&q=80",
+        "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80",
+        "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=1200&q=80",
+        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1200&q=80",
+        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200&q=80"
+      ]
+    },
+    {
+      "year": "2024",
+      "city": "London, UK",
+      "summary": "Inaugural keynote on the next decade of pharmacology.",
+      "images": [
+        "https://images.unsplash.com/photo-1531058020387-3be344556be6?w=1200&q=80",
+        "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200&q=80",
+        "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80",
+        "https://images.unsplash.com/photo-1582719188393-bb71ca45dbb9?w=1200&q=80",
+        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=80",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80"
+      ]
+    },
+    {
+      "year": "2023",
+      "city": "Singapore",
+      "summary": "Asia-Pacific edition focused on precision pharmacology and digital health integration.",
+      "images": [
+        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200&q=80",
+        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&q=80",
+        "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&q=80",
+        "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&q=80",
+        "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&q=80",
+        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80"
+      ]
+    }
+  ]
+}

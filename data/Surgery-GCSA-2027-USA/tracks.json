@@ -1,0 +1,130 @@
+{
+  "tracks": [
+    {
+      "title": "Minimally Invasive Surgery",
+      "tagline": "Laparoscopic, robotic and endoscopic techniques.",
+      "details": "Minimally invasive surgery has matured into the default approach for most abdominal, thoracic, and pelvic procedures, with single-port and reduced-port platforms pushing the envelope further. GCSA 2027 will showcase advances in laparoscopic and endoscopic suturing, intraoperative fluorescence (ICG) for perfusion and lymph node mapping, and the rapid expansion of endoluminal techniques such as POEM, ESD, and EUS-guided gastrojejunostomy. Sessions will examine the integration of AI-driven intraoperative decision support, augmented reality navigation, and the trade-offs between conventional laparoscopy and emerging robotic single-port systems.",
+      "subtopics": [
+        "Single-port and reduced-port laparoscopy: outcomes and ergonomics",
+        "ICG fluorescence for perfusion, biliary anatomy, and sentinel nodes",
+        "Endoluminal surgery: POEM, ESD, EUS-guided anastomosis",
+        "Augmented reality navigation and intraoperative AI decision support",
+        "Hernia repair: TAPP, TEP, eTEP and robotic mesh innovations",
+        "Bariatric MIS: SADI-S, MGB/OAGB, and revisional surgery",
+        "Enhanced recovery pathways tailored to MIS workflows"
+      ]
+    },
+    {
+      "title": "Robotic Surgery",
+      "tagline": "da Vinci systems, autonomous surgical robots, AI-assisted surgery.",
+      "details": "The robotic surgery landscape has shifted from a single-platform market to a competitive ecosystem including the da Vinci SP and Xi, Medtronic Hugo RAS, CMR Versius, and Distalmotion Dexter, each with distinct ergonomics, modularity, and cost profiles. GCSA 2027 will benchmark these systems across urology, gynecology, colorectal, and head-and-neck surgery, with sessions on single-port transoral and transanal applications. The track also addresses AI-driven surgical scene understanding, automated skill assessment, telesurgery over 5G, and the regulatory and credentialing frameworks needed for safe scale-up.",
+      "subtopics": [
+        "Multi-platform comparison: da Vinci SP/Xi, Hugo, Versius, Dexter",
+        "Single-port robotics: transoral, transanal, and urologic applications",
+        "AI for surgical phase recognition and automated skill assessment",
+        "Telesurgery, 5G latency, and remote proctoring models",
+        "Robotic credentialing, learning curves, and simulation-based training",
+        "Cost-effectiveness and value-based adoption of robotic platforms",
+        "Robotic hepatobiliary and pancreatic surgery: Whipple and beyond"
+      ]
+    },
+    {
+      "title": "Cardiothoracic Surgery",
+      "tagline": "Valve repair, transplantation and thoracic oncology.",
+      "details": "Cardiothoracic surgery is being reshaped by transcatheter encroachment on traditional terrain, the maturation of donation after circulatory death (DCD) heart transplantation, and ex-vivo organ perfusion technologies (TransMedics OCS, normothermic regional perfusion). GCSA 2027 will cover minimally invasive and robotic mitral repair, aortic valve neocuspidization (Ozaki procedure), and contemporary CABG with multi-arterial grafting. Thoracic sessions focus on robotic lobectomy and segmentectomy, uniportal VATS, lung transplantation with EVLP, and the integration of neoadjuvant immunotherapy into resectable NSCLC pathways.",
+      "subtopics": [
+        "DCD heart transplantation and normothermic regional perfusion (NRP)",
+        "Ex-vivo organ perfusion: OCS Heart, Lung, and Liver platforms",
+        "Robotic and minimally invasive mitral and tricuspid repair",
+        "Aortic valve neocuspidization (Ozaki) and root reconstruction",
+        "Uniportal VATS and robotic segmentectomy for early-stage NSCLC",
+        "Multi-arterial CABG and hybrid coronary revascularization",
+        "Mechanical circulatory support: HeartMate 3, Impella 5.5, ECMO bridging"
+      ]
+    },
+    {
+      "title": "Neurosurgery",
+      "tagline": "Awake craniotomy, spine surgery and minimally invasive approaches.",
+      "details": "Neurosurgery continues to push toward maximal safe resection and minimally disruptive access, supported by intraoperative MRI, 5-ALA fluorescence, awake mapping, and laser interstitial thermal therapy (LITT). GCSA 2027 will cover endoscopic endonasal and supraorbital keyhole approaches, robotic stereotactic platforms (ROSA, Mazor X) for spine and functional cases, and the expanding role of focused ultrasound for tremor and emerging psychiatric indications. Spine sessions address endoscopic discectomy, expandable cages, augmented-reality pedicle screw placement, and enhanced recovery pathways tailored to complex deformity and oncologic reconstruction.",
+      "subtopics": [
+        "Awake craniotomy with cortical mapping and intraoperative MRI",
+        "5-ALA fluorescence and supramaximal resection in glioma",
+        "Robotic stereotaxy: ROSA, Mazor X, and AR-guided pedicle screws",
+        "Focused ultrasound for tremor, OCD, and emerging indications",
+        "Endoscopic spine surgery: full-endoscopic discectomy and decompression",
+        "LITT for epilepsy, deep-seated tumors, and radiation necrosis",
+        "ERAS in cranial and complex spine surgery"
+      ]
+    },
+    {
+      "title": "Regional Anaesthesia",
+      "tagline": "Ultrasound-guided blocks and multimodal analgesia.",
+      "details": "Regional anaesthesia is central to opioid-sparing perioperative care, with fascial plane blocks expanding the toolkit beyond traditional peripheral nerve techniques. GCSA 2027 will detail evidence and technique for PECS I/II, serratus anterior plane, erector spinae plane (ESP), quadratus lumborum (QL), and pericapsular nerve group (PENG) blocks, alongside continuous catheters and liposomal bupivacaine. Sessions will also examine ultrasound and AI-assisted needle guidance, cryoneurolysis for thoracotomy and post-mastectomy pain, and the integration of regional techniques into ERAS pathways for thoracic, abdominal, breast, and orthopedic surgery.",
+      "subtopics": [
+        "Fascial plane blocks: ESP, QL, PECS, serratus, PENG",
+        "Continuous catheters and liposomal bupivacaine pharmacology",
+        "AI- and ultrasound-assisted needle guidance and block automation",
+        "Cryoneurolysis for thoracotomy and post-mastectomy pain",
+        "Regional techniques in ambulatory and same-day discharge surgery",
+        "Anticoagulation and neuraxial/peripheral block safety (ASRA 2023)",
+        "Block-driven opioid-sparing pathways within ERAS protocols"
+      ]
+    },
+    {
+      "title": "Obstetric Anaesthesia",
+      "tagline": "Labor analgesia and maternal-fetal medicine.",
+      "details": "Obstetric anaesthesia has shifted toward programmed intermittent epidural boluses (PIEB), dural puncture epidural (DPE) techniques, and point-of-care ultrasound for difficult neuraxial placement. GCSA 2027 will cover management of the morbidly obese parturient, the rising incidence of placenta accreta spectrum (PAS) and resuscitative endovascular balloon occlusion of the aorta (REBOA), and viscoelastic-guided transfusion in postpartum hemorrhage. Sessions also address anaesthesia for fetal surgery, cardiac disease in pregnancy, the maternal mortality crisis and equity gaps, and post-cesarean multimodal analgesia using TAP, QL, and intrathecal morphine.",
+      "subtopics": [
+        "PIEB and DPE: optimizing labor analgesia quality",
+        "Placenta accreta spectrum: multidisciplinary planning and REBOA",
+        "Viscoelastic-guided transfusion in postpartum hemorrhage",
+        "Anaesthesia for fetal surgery and EXIT procedures",
+        "Cardiac disease in pregnancy: CARPREG II and modified WHO classes",
+        "Post-cesarean multimodal analgesia: TAP, QL, intrathecal morphine",
+        "Maternal mortality, racial disparities, and quality-improvement bundles"
+      ]
+    },
+    {
+      "title": "Critical Care & Perioperative Medicine",
+      "tagline": "ERAS protocols, ICU management and sepsis.",
+      "details": "Perioperative medicine is converging with critical care around prehabilitation, individualized hemodynamic targets, and reduction of intraoperative hypotension to prevent AKI and myocardial injury (MINS). GCSA 2027 will cover GLP-1 agonists and aspiration risk under updated ASA guidance, perioperative management of SGLT2 inhibitors and euglycemic DKA, and the evolving evidence on dexmedetomidine versus propofol for ICU sedation (MENDS2, A2B). Sessions also address sepsis bundles in the post-Surviving-Sepsis-2021 era, balanced crystalloids, restrictive transfusion, and structured handover and rapid-response systems.",
+      "subtopics": [
+        "Prehabilitation: exercise, nutrition, and psychological optimization",
+        "Intraoperative hypotension, AKI, and myocardial injury (MINS)",
+        "GLP-1 agonists, SGLT2 inhibitors, and perioperative aspiration/DKA risk",
+        "ICU sedation: dexmedetomidine vs propofol (MENDS2, A2B)",
+        "Sepsis bundles, balanced crystalloids, and vasopressor selection",
+        "ERAS across colorectal, hepatobiliary, gynae-onc, and orthopedics",
+        "Postoperative delirium prevention and cognitive recovery"
+      ]
+    },
+    {
+      "title": "Patient Safety & Quality",
+      "tagline": "Surgical checklists, never-events and team-based care.",
+      "details": "Patient safety in surgery and anaesthesia now extends well beyond the WHO checklist into human factors engineering, crisis resource management, and the systemic prevention of wrong-site, retained-item, and medication errors. GCSA 2027 will cover sugammadex-driven reduction of residual neuromuscular blockade, quantitative train-of-four monitoring, BIS and processed EEG to limit anaesthetic exposure, and the environmental footprint of inhaled anaesthetics — including the global desflurane phaseout and low-flow practice. Sessions also address surgeon and anaesthetist burnout, second-victim support, and AI-enabled safety event detection from the EHR.",
+      "subtopics": [
+        "Quantitative neuromuscular monitoring and sugammadex-driven extubation",
+        "Processed EEG/BIS-guided anaesthetic depth and elderly outcomes",
+        "Environmental footprint: desflurane phaseout, low-flow, TIVA shift",
+        "Human factors, crisis resource management, and simulation training",
+        "Wrong-site, retained-item, and medication-error prevention systems",
+        "Surgeon and anaesthetist burnout, wellbeing, and second-victim care",
+        "AI-enabled safety surveillance and EHR-driven event detection"
+      ]
+    },
+    {
+      "title": "Pain Medicine",
+      "tagline": "Acute postoperative pain and chronic pain interventions.",
+      "details": "Pain medicine has been reshaped by the opioid crisis, opioid-sparing perioperative pathways, and a growing armamentarium of interventional and neuromodulation techniques. GCSA 2027 will cover transitional pain services to prevent persistent postsurgical pain, multimodal regimens combining acetaminophen, NSAIDs, gabapentinoids (used judiciously), ketamine, and lidocaine infusions, and the role of suzetrigine (Nav1.8 inhibitor) as a non-opioid acute pain option. Interventional sessions address dorsal root ganglion stimulation, high-frequency and closed-loop spinal cord stimulation, radiofrequency ablation for facet and genicular pain, and intrathecal drug delivery.",
+      "subtopics": [
+        "Transitional pain services and prevention of persistent postsurgical pain",
+        "Suzetrigine (Nav1.8) and emerging non-opioid acute pain agents",
+        "Ketamine and lidocaine infusions in opioid-sparing pathways",
+        "Dorsal root ganglion and closed-loop spinal cord stimulation",
+        "Radiofrequency ablation: facet, genicular, and SI joint targets",
+        "Intrathecal drug delivery and cancer pain management",
+        "Cannabinoids, psychedelics, and evolving evidence in chronic pain"
+      ]
+    }
+  ]
+}

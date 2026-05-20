@@ -1,0 +1,200 @@
+{
+  "tracks": [
+    {
+      "title": "Interventional Cardiology",
+      "tagline": "TAVR, complex PCI, structural heart and tricuspid/mitral interventions.",
+      "details": "Interventional cardiology in 2027 spans low-risk and bicuspid TAVR, transcatheter mitral and tricuspid edge-to-edge repair (TriClip, PASCAL, MitraClip), and a maturing valve-in-valve and valve-in-MAC ecosystem. Coronary work is increasingly imaging- and physiology-guided, with OCT- and IVUS-driven PCI now backed by ILUMIEN IV and OCTOBER, and STEMI strategy reshaped by COMPLETE-2 multivessel data and the STEMI Door-to-Unload Impella program. Sessions also examine LAA closure after CHAMPION-AF, post-RoPE PFO selection, MINOCA workup, and HI-PEITHO-era catheter-directed pulmonary embolism therapy.",
+      "subtopics": [
+        "TAVR in low-risk, bicuspid, and small-annulus anatomy",
+        "Mitral and tricuspid TEER, replacement, and valve-in-MAC",
+        "OCT/IVUS-guided complex and bifurcation PCI (ILUMIEN IV, OCTOBER)",
+        "Coronary physiology: FFR, iFR, QFR and microvascular angina",
+        "LAA closure post-CHAMPION-AF and PFO closure post-RoPE",
+        "Chronic total occlusion: DECISION-CTO, EUROCTO and hybrid crossing algorithms",
+        "Catheter-directed pulmonary embolism therapy (HI-PEITHO)"
+      ]
+    },
+    {
+      "title": "Heart Failure & Transplant",
+      "tagline": "Four-pillar GDMT, vericiguat, LVADs and DCD heart transplantation.",
+      "details": "Heart failure care is being rebuilt around the four-pillar foundation (ARNI, beta-blocker, MRA, SGLT2i), with vericiguat (VICTOR), finerenone (FINEARTS-HF), and dapagliflozin in acute HF (DAPA ACT HF-TIMI 68) extending the toolkit across the LVEF spectrum. The track addresses HFpEF phenotyping, GLP-1 use in obesity-driven HFpEF (STEP-HFpEF, SUMMIT), iron repletion, and rapid-titration protocols. Advanced therapy sessions cover HeartMate 3 destination outcomes, Impella 5.5 bridging, donation after circulatory death (DCD) transplantation, and the expanding multi-organ heart-kidney population. Cardiomyopathy-targeted therapy includes mavacamten, aficamten, acoramidis, vutrisiran and patisiran.",
+      "subtopics": [
+        "Four-pillar GDMT and rapid sequencing protocols",
+        "Vericiguat (VICTOR) and finerenone (FINEARTS-HF) integration",
+        "HFpEF phenotyping and GLP-1 agonists (STEP-HFpEF, SUMMIT)",
+        "Acute HF: DAPA ACT HF-TIMI 68 and decongestion strategies",
+        "Mechanical circulatory support: HeartMate 3, Impella 5.5",
+        "DCD heart transplantation and donor pool expansion",
+        "HCM and ATTR-CM: mavacamten, aficamten, acoramidis, vutrisiran"
+      ]
+    },
+    {
+      "title": "Electrophysiology",
+      "tagline": "Pulsed field ablation, conduction system pacing and AI arrhythmia detection.",
+      "details": "Pulsed field ablation (PFA) has become the dominant atrial fibrillation energy modality, with FARAPULSE, PulseSelect, and Volt platforms generating durability data from ADVENT, MANIFEST-17K, and ongoing persistent-AF programs. The track covers ALONE-AF anticoagulation cessation, conduction system pacing as a CRT alternative (LBBP-RESYNC, LEFT-BUNDLE-CRT), and the leadless and extravascular ICD evolution (Aurora EV-ICD, AVEIR DR). VT ablation sessions examine substrate mapping, stereotactic radioablation, and emerging applications of PFA in ventricular arrhythmias.",
+      "subtopics": [
+        "Pulsed field ablation: durability, persistent AF, VT applications",
+        "Conduction system pacing: His-bundle and LBBAP vs biventricular",
+        "Leadless pacemakers (AVEIR DR) and extravascular ICDs",
+        "VT ablation: substrate mapping and stereotactic radiotherapy",
+        "AI-ECG and wearable arrhythmia screening",
+        "Anticoagulation post-ablation: ALONE-AF and OPTION",
+        "SCD risk in non-ischemic cardiomyopathy"
+      ]
+    },
+    {
+      "title": "Preventive Cardiology & Lipidology",
+      "tagline": "Lp(a) lowering, PCSK9 trials, baxdrostat and residual risk.",
+      "details": "Prevention is moving toward earlier and deeper lipid lowering, with VESALIUS-CV testing evolocumab in primary prevention, ESSENCE-TIMI 73 establishing olezarsen for severe hypertriglyceridemia, and the first wave of Lp(a)-lowering therapies (pelacarsen in Lp(a)HORIZON, olpasiran in OCEAN(a)-Outcomes, lepodisiran, muvalaplin) reading out. Hypertension is being reshaped by aldosterone synthase inhibition (BaxHTN baxdrostat), zilebesiran siRNA (KARDIA-3), and renal denervation re-emergence. The track integrates colchicine and IL-6 pathway inhibition for residual inflammatory risk, CAC and polygenic risk in ASCVD prediction, and ancestry-aware risk equations.",
+      "subtopics": [
+        "Lp(a)-lowering: pelacarsen, olpasiran, lepodisiran, muvalaplin",
+        "PCSK9 and inclisiran: VESALIUS-CV in primary prevention",
+        "Olezarsen and APOC3-targeted hypertriglyceridemia therapy",
+        "Hypertension: baxdrostat (BaxHTN) and zilebesiran (KARDIA-3)",
+        "Colchicine and IL-6 inhibition: residual inflammatory risk",
+        "CAC, polygenic risk, and ancestry-aware ASCVD prediction",
+        "Renal denervation: post-approval real-world outcomes"
+      ]
+    },
+    {
+      "title": "Cardiometabolic Medicine",
+      "tagline": "GLP-1 agonists, obesity, diabetes-CV-kidney axis and CKM syndrome.",
+      "details": "The cardiometabolic field has been redefined by incretin-based therapy: SELECT (semaglutide), SURMOUNT-MMO (tirzepatide), STEP-HFpEF, and FLOW have positioned GLP-1 and dual GIP/GLP-1 agonists as cardiovascular and kidney drugs. The track formalizes the AHA Cardiovascular-Kidney-Metabolic (CKM) staging framework, examines retatrutide and orforglipron in upcoming readouts, and integrates finerenone across the diabetic-CKD-HF spectrum. Sessions address obesity as a primary CV risk factor, MASLD/MASH as an emerging cardiometabolic node, and the operational shift to multi-disciplinary CKM clinics.",
+      "subtopics": [
+        "GLP-1 and dual agonists: SELECT, SURMOUNT-MMO, STEP-HFpEF, FLOW",
+        "Pipeline: retatrutide, orforglipron, survodutide",
+        "CKM syndrome: AHA staging and clinic operational models",
+        "Finerenone across diabetic CKD and HFpEF (FINEARTS-HF)",
+        "MASLD/MASH and cardiovascular risk",
+        "Obesity as a primary cardiovascular risk factor",
+        "Type 2 diabetes prevention and pre-diabetes management"
+      ]
+    },
+    {
+      "title": "Cardio-Oncology",
+      "tagline": "ICI myocarditis, CAR-T toxicity and surveillance imaging.",
+      "details": "Cardio-oncology has become a defined subspecialty with codified ESC and ASCO management algorithms. Immune checkpoint inhibitor myocarditis remains the highest-mortality complication, with sessions covering steroid-refractory regimens (abatacept, ruxolitinib) informed by the ATRIUM trial. The track addresses CAR-T cytokine-release cardiomyopathy, anthracycline and trastuzumab surveillance with GLS and T1/T2 mapping, BTK-inhibitor AF and hypertension, radiotherapy-induced disease, and DOAC selection in cancer-associated thrombosis (Caravaggio, HOKUSAI-VTE Cancer).",
+      "subtopics": [
+        "ICI myocarditis: ATRIUM, abatacept, ruxolitinib protocols",
+        "CAR-T cell therapy cardiovascular toxicity",
+        "Anthracycline and HER2 surveillance: GLS and CMR mapping",
+        "BTK and kinase inhibitors: AF and hypertension management",
+        "Radiation-induced coronary, valvular, and pericardial disease",
+        "Cancer-associated thrombosis and DOAC selection",
+        "Survivorship cardiology and primary-care interface"
+      ]
+    },
+    {
+      "title": "Cardiac Imaging",
+      "tagline": "Photon-counting CT, CMR mapping and AI-augmented echocardiography.",
+      "details": "Imaging is being transformed by photon-counting CT — now in routine use at major centers for ultra-high-resolution coronary, calcium-blooming-resistant stent, and TAVR planning imaging — alongside FFR-CT, plaque burden quantification, and pericoronary fat attenuation as an inflammation marker. CMR sessions cover T1/T2 and ECV mapping in amyloid, myocarditis, and sarcoid, contrast-free protocols, and 4D flow. Echocardiography programming features AI-automated EF and strain (Ultromics, Us2.ai), valve quantification, and PET-MR for endocarditis and sarcoidosis.",
+      "subtopics": [
+        "Photon-counting CT: coronary, stent, and TAVR planning",
+        "CCTA gatekeeping: FFR-CT, plaque burden, perivascular fat",
+        "CMR mapping: T1, T2, ECV in amyloid, myocarditis, sarcoid",
+        "AI echo: automated EF, strain, valve quantification",
+        "Hybrid PET-MR for sarcoidosis and infective endocarditis",
+        "Multimodality assessment of structural heart interventions",
+        "Imaging biomarkers in trials and registries"
+      ]
+    },
+    {
+      "title": "Digital Health & AI in Cardiology",
+      "tagline": "AI-ECG, wearables, foundation models and clinical implementation.",
+      "details": "AI in cardiology has moved from algorithm publications to FDA-cleared products and live deployment. The track covers AI-ECG screening for low EF, amyloid, and aortic stenosis (PREVUE-VALVE, EAGLE), retinal-image CV risk stratification, and foundation-model approaches to multimodal CV data. Sessions examine wearable-driven AF detection (Apple Heart, Fitbit Heart Study), continuous remote monitoring in HF (CardioMEMS, FIRE1), and the operational and governance challenges of large-scale deployment, including bias, dataset shift, EHR integration, and reimbursement under the new CMS AI codes.",
+      "subtopics": [
+        "AI-ECG: low EF, amyloid, AS, hyperkalemia screening",
+        "AI structural-heart screening: PREVUE-VALVE, EchoNet",
+        "Wearables and consumer devices: AF, sleep, hemodynamics",
+        "Remote monitoring in HF: CardioMEMS and pressure sensors",
+        "Foundation models and multimodal cardiovascular AI",
+        "Implementation science: bias, dataset shift, governance",
+        "Reimbursement, regulation, and the FDA AI/ML pathway"
+      ]
+    },
+    {
+      "title": "Critical Care Cardiology",
+      "tagline": "Cardiogenic shock, mechanical support, ECMO and the modern CICU.",
+      "details": "Critical care cardiology has crystallized as a subspecialty around the cardiogenic shock literature: DanGer Shock established Impella CP mortality benefit in STEMI shock, ECLS-SHOCK challenged routine VA-ECMO, and the SCAI shock stages have become standard. The track covers shock-team protocols, escalation/de-escalation algorithms, LV venting strategies, and the STEMI Door-to-Unload program. Sessions also examine massive PE management (HI-PEITHO, FlowTriever), refractory VT in the CICU, post-arrest neuroprognostication, and the staffing/training models for level-1 cardiac ICUs.",
+      "subtopics": [
+        "Cardiogenic shock: DanGer Shock, ECLS-SHOCK, SCAI staging",
+        "Impella, IABP, and VA-ECMO: selection and weaning",
+        "STEMI Door-to-Unload and pre-PCI mechanical support",
+        "Massive and submassive PE: HI-PEITHO, FlowTriever",
+        "Refractory ventricular arrhythmias in the CICU",
+        "Post-cardiac-arrest care and TTM-2 era protocols",
+        "Shock teams, regionalization, and CICU staffing models"
+      ]
+    },
+    {
+      "title": "Pulmonary Hypertension & Right Heart",
+      "tagline": "Sotatercept (STELLAR/CADENCE), CTEPH, BPA and right-heart imaging.",
+      "details": "Pulmonary hypertension treatment has been redefined by sotatercept — the first activin-signaling inhibitor approved for PAH after STELLAR demonstrated dramatic 6-minute walk gains, with CADENCE extending the data. The track covers risk-stratified upfront triple therapy, the modern role of macitentan/tadalafil combinations (A DUE), and the expanding indications for balloon pulmonary angioplasty (BPA) and pulmonary endarterectomy in CTEPH. Right-ventricular imaging and assessment receive dedicated programming, including CMR-derived RV strain, exercise hemodynamics, and the emerging Group 2 PH (HFpEF) phenotype with sotatercept readouts (HYPERION, ZENITH).",
+      "subtopics": [
+        "Sotatercept in PAH: STELLAR, CADENCE, ZENITH (Group 2)",
+        "Risk-stratified upfront combination therapy",
+        "CTEPH: balloon pulmonary angioplasty and PEA selection",
+        "Right ventricular imaging: CMR strain and 4D flow",
+        "Exercise hemodynamics and unmasking PH",
+        "Group 2 PH (HFpEF) and Group 3 PH (lung disease)",
+        "Lung transplantation referral in advanced PH"
+      ]
+    },
+    {
+      "title": "Inflammatory, Pericardial & Myocarditis",
+      "tagline": "ESC 2025 myocarditis guidelines, IL-1 inhibitors and infective endocarditis.",
+      "details": "Inflammatory cardiac disease received its biggest guideline update in years with the ESC 2025 statements on myocarditis, pericarditis, and CV disease in pregnancy. Recurrent pericarditis has been transformed by IL-1 pathway inhibition — rilonacept (RHAPSODY) and anakinra are now first-line steroid-sparing therapy. The track covers immune-mediated and viral myocarditis (including post-COVID and post-vaccine cohorts), endomyocardial biopsy with the Updated Lake Louise CMR criteria, and modern infective endocarditis management with OPAT, the POET-derived oral step-down, and TEER for valvular destruction. Sessions also address cardiac sarcoidosis, eosinophilic and giant-cell myocarditis, and Chagas (PARACHUTE-HF).",
+      "subtopics": [
+        "Myocarditis: ESC 2025 guidelines and Updated Lake Louise CMR",
+        "Recurrent pericarditis: rilonacept (RHAPSODY) and anakinra",
+        "Infective endocarditis: OPAT, POET oral step-down",
+        "Post-COVID and post-vaccine myocarditis cohorts",
+        "Cardiac sarcoidosis: PET-guided immunosuppression",
+        "Giant-cell and eosinophilic myocarditis",
+        "Chagas cardiomyopathy: PARACHUTE-HF and global burden"
+      ]
+    },
+    {
+      "title": "Sports & Exercise Cardiology",
+      "tagline": "Athlete screening, inherited arrhythmias and exercise prescription.",
+      "details": "Sports cardiology balances the cardioprotective effects of exercise against diagnostic challenges in remodeled athletes. Sessions address pre-participation ECG screening (ESC vs AHA), differentiation of athlete's heart from HCM, ARVC, and DCM using CMR and genotype, and shared decision-making for return-to-play in inherited arrhythmia syndromes following the 2024 AHA/ACC guidelines. Masters athlete content covers exercise-induced AF, accelerated coronary calcification in lifelong endurance athletes, and post-myocarditis return-to-play, including post-COVID and post-vaccine cohorts.",
+      "subtopics": [
+        "Pre-participation screening: ECG criteria, ESC vs AHA",
+        "Athlete's heart vs HCM, ARVC, and DCM",
+        "Inherited arrhythmias: LQTS, CPVT, Brugada in athletes",
+        "AF and coronary calcification in masters athletes",
+        "Return-to-play after myocarditis and SCD events",
+        "Exercise prescription in established CV disease",
+        "Shared decision-making and 2024 RTP guidelines"
+      ]
+    },
+    {
+      "title": "Cardiovascular Genomics & Precision Medicine",
+      "tagline": "Polygenic risk, FH, gene editing (VERVE-102) and clonal hematopoiesis.",
+      "details": "Genomic cardiology is becoming clinically actionable. The track covers VERVE-102 base-editing of PCSK9 in heterozygous FH (HEART-2), NTLA-2001 CRISPR for ATTR, MYBPC3 AAV gene therapy for HCM, and RP-A501 for Danon disease. Sessions examine polygenic risk scores validated across diverse ancestries, cascade screening operational models for FH, ACMG variant interpretation in inherited arrhythmias, and clonal hematopoiesis (CHIP) as an emerging modifier of HF, AS, and post-MI outcomes. Lamin A/C and titin-truncating dilated cardiomyopathy management is increasingly genotype-driven.",
+      "subtopics": [
+        "VERVE-102 PCSK9 base editing and CRISPR cardiology",
+        "Familial hypercholesterolemia: cascade screening models",
+        "ATTR-CM: NTLA-2001 CRISPR and silencer therapy",
+        "Polygenic risk scores: ancestry-aware ASCVD prediction",
+        "Clonal hematopoiesis (CHIP) as a CV risk modifier",
+        "Inherited arrhythmias: ACMG variant interpretation",
+        "DCM genotype-driven management: titin, lamin A/C, Danon"
+      ]
+    },
+    {
+      "title": "Global Cardiovascular Health",
+      "tagline": "Rheumatic heart disease, LMIC delivery, fixed-dose combinations and equity.",
+      "details": "Global cardiovascular health programming addresses the disproportionate CV disease burden in low- and middle-income countries, where 80 percent of CV deaths now occur. The track features the WHF rheumatic heart disease (RHD) elimination roadmap, Dig-RHD AI-echo screening programs, secondary penicillin prophylaxis registries, and the operational realities of valve surgery in resource-limited settings. Sessions also cover fixed-dose combination polypills (HOPE-3, TIPS-3), task-shifting cardiovascular care to community health workers, hypertension control strategies (May Measurement Month), Chagas in non-endemic regions, and equity in clinical trial enrollment.",
+      "subtopics": [
+        "Rheumatic heart disease: WHF roadmap and Dig-RHD AI screening",
+        "Secondary penicillin prophylaxis and valve surgery in LMICs",
+        "Fixed-dose combination polypills (HOPE-3, TIPS-3)",
+        "Task-shifting CV care to community health workers",
+        "Hypertension control programs (May Measurement Month)",
+        "Chagas in non-endemic regions and migrant populations",
+        "Equity in clinical trial enrollment and guideline applicability"
+      ]
+    }
+  ]
+}

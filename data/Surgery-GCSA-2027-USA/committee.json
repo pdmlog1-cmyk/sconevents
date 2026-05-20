@@ -1,0 +1,110 @@
+{
+  "intro": "Meet the international committee guiding GCSA 2027 — a group of clinicians, researchers and educators shaping the program, the abstract review and the scientific direction of the congress.",
+  "groups": [
+    {
+      "key": "organizing",
+      "title": "Organizing Committee",
+      "blurb": "Sets the strategic direction, oversees logistics, and coordinates with sponsors and partners.",
+      "members": [
+        [
+          "Prof. Alexandra Chen",
+          "Conference Chair",
+          "Harvard Medical School, USA",
+          "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+        ],
+        [
+          "Prof. Liu Wei",
+          "Co-Chair · Scientific",
+          "Tsinghua University, China",
+          "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80"
+        ],
+        [
+          "Dr. Sarah Okonkwo",
+          "Program Chair",
+          "Imperial College London, UK",
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+        ],
+        [
+          "Prof. Ahmed Al-Rashid",
+          "Local Host",
+          "NIH, USA",
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+        ],
+        [
+          "Dr. Priya Menon",
+          "Publications Chair",
+          "Johns Hopkins, USA",
+          "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&q=80"
+        ],
+        [
+          "Prof. Daniel Weber",
+          "Industry Liaison",
+          "Stanford University, USA",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
+        ]
+      ]
+    },
+    {
+      "key": "scientific",
+      "title": "Scientific Committee",
+      "blurb": "Curates the scientific program, reviews submitted abstracts and chairs sessions.",
+      "members": [
+        [
+          "Dr. Sarah Okonkwo",
+          "Track Lead · Minimally Invasive Surgery",
+          "Imperial College London, UK",
+          "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+        ],
+        [
+          "Prof. Liu Wei",
+          "Track Lead · Robotic Surgery",
+          "Tsinghua University, China",
+          "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80"
+        ],
+        [
+          "Dr. Maria Gonzalez",
+          "Track Lead · Cardiothoracic Surgery",
+          "ETH Zurich, Switzerland",
+          "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&q=80"
+        ],
+        [
+          "Prof. Ahmed Al-Rashid",
+          "Track Lead · Neurosurgery",
+          "NIH, USA",
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80"
+        ],
+        [
+          "Dr. Jennifer Park",
+          "Track Lead · Regional Anaesthesia",
+          "Stanford University, USA",
+          "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80"
+        ],
+        [
+          "Prof. Kai Nakamura",
+          "Track Lead · Obstetric Anaesthesia",
+          "Kyoto University, Japan",
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+        ]
+      ]
+    },
+    {
+      "key": "advisory",
+      "title": "Advisory Board",
+      "blurb": "Senior leaders providing guidance on long-term direction, partnerships and standards.",
+      "members": [
+        [
+          "Dr. Priya Menon",
+          "Senior Advisor",
+          "Johns Hopkins, USA",
+          "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&q=80"
+        ],
+        [
+          "Prof. Daniel Weber",
+          "Senior Advisor",
+          "TU Munich, Germany",
+          "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Global Congress on Neurology & Neuroscience",
+  "short": "GCNN 2027",
+  "initials": "GCNN",
+  "year_suffix": "27",
+  "tagline": "Global Congress on Neurology & Neuroscience",
+  "edition": "Inaugural Edition · International",
+  "volume": "Vol. I",
+  "issue": "No. 1",
+  "dateline": "APRIL 26–27, 2027",
+  "discipline": "Neurology",
+  "email": "gcnn@meetings.llc",
+  "phone": "+1 775 243 6888",
+  "base": "",
+  "hcaptcha_sitekey": "4b4e844a-46e4-42b6-9b82-06b07b969d70",
+  "theme_primary": "The Connected Brain: Advancing Neuroscience, Neurology, and Patient Care",
+  "theme_pillars": [
+    "Neuroscience",
+    "Neurology",
+    "Care"
+  ],
+  "theme_blurb": "The Connected Brain: Advancing Neuroscience, Neurology, and Patient Care — where bench discoveries become bedside therapies for the world's most complex organ.",
+  "hero_title_lead": "Global Congress on",
+  "hero_title_main": "Neurology & Neuroscience",
+  "hero_title_year": "2027",
+  "hero_subtitle": "An intimate two-day congress convening neurologists, neuroscientists and industry leaders at the forefront of brain science.",
+  "hero_image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1400&q=85",
+  "dates": "April 26-27, 2027",
+  "dates_short": "Apr 2027",
+  "start_date_iso": "2027-04-26T09:00:00",
+  "city": "",
+  "country": "USA",
+  "venue": "",
+  "venue_tagline": "",
+  "venue_desc": "",
+  "venue_image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80",
+  "abstract_deadline": "January 20, 2027",
+  "early_bird_deadline": "July 14, 2026",
+  "about_eyebrow": "Welcome Message",
+  "about_heading": "Where neuroscience meets the next decade.",
+  "about_lead": "GCNN 2027 is a global forum for pioneering research, clinical translation and cross-disciplinary dialogue across the full spectrum of neurology and neuroscience.",
+  "about_body": "Across two days of keynotes, parallel technical tracks, poster sessions and focused workshops, we convene the brightest minds to chart the frontier of brain science — from molecular mechanisms to clinical impact.",
+  "about_image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=900&q=80",
+  "stats": [
+    [
+      "02",
+      "Days"
+    ],
+    [
+      "09",
+      "Tracks"
+    ],
+    [
+      "Hybrid",
+      "Format"
+    ],
+    [
+      "12+",
+      "Countries"
+    ]
+  ],
+  "social": {
+    "twitter": "#",
+    "linkedin": "#",
+    "facebook": "#",
+    "youtube": "#"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "header": [
+    { "label": "Sessions", "href": "/sessions" },
+    { "label": "Program", "href": "/scientific-program" },
+    {
+      "label": "People",
+      "dropdown": [
+        { "label": "Speakers", "href": "/speakers" },
+        { "label": "Committee", "href": "/committee" }
+      ]
+    },
+    {
+      "label": "Info",
+      "dropdown": [
+        { "label": "Sponsor / Exhibitor", "href": "/sponsor-exhibitor" },
+        { "label": "Guidelines", "href": "/guidelines" },
+        { "label": "FAQs", "href": "/faqs" }
+      ]
+    },
+    { "label": "Venue", "href": "/venue" },
+    { "label": "Submit Abstract", "href": "/call-for-abstract-submission", "cta": true }
+  ],
+
+  "footer_columns": [
+    {
+      "heading": "Explore",
+      "items": [
+        { "label": "Sessions", "href": "/sessions" },
+        { "label": "Scientific Program", "href": "/scientific-program" },
+        { "label": "Speakers", "href": "/speakers" },
+        { "label": "Committee", "href": "/committee" },
+        { "label": "Venue", "href": "/venue" }
+      ]
+    },
+    {
+      "heading": "Participate",
+      "items": [
+        { "label": "Submit Abstract", "href": "/call-for-abstract-submission" },
+        { "label": "Registration", "href": "/register" },
+        { "label": "Sponsor / Exhibit", "href": "/sponsor-exhibitor" },
+        { "label": "Guidelines", "href": "/guidelines" },
+        { "label": "FAQs", "href": "/faqs" },
+        { "label": "Contact", "href": "/contact" }
+      ]
+    }
+  ],
+
+  "footer_legal": [
+    { "label": "Terms of Use", "href": "/terms-of-use" },
+    { "label": "Privacy Policy", "href": "/privacy-policy" }
+  ]
+}
