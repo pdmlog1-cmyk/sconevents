@@ -589,7 +589,6 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
           <nav className="lpb-foot-col" aria-label="Attendees">
             <h5>Attendees</h5>
             <a href={`${MAIN}/register`}>Register</a>
-            <a href={`${MAIN}/register_details`}>Pricing &amp; details</a>
             <a href={`${MAIN}/call-for-abstract-submission`}>Submit abstract</a>
             <a href={`${MAIN}/guidelines`}>Author guidelines</a>
             <a href={`${MAIN}/venue`}>Venue &amp; travel</a>
