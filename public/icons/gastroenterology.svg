@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="0" y="0" width="32" height="32" rx="6" fill="#3a0a3d"/>
+  <path d="M 32 0 L 32 10 L 22 0 Z" fill="#86198f"/>
+
+  <!-- Anatomical stomach silhouette -->
+  <path d="M 12 8 L 12 12 C 8 13, 6 17, 8 22 C 10 27, 16 28, 21 25 C 25 22, 25 17, 22 15 C 20 13, 19 13, 19 12 L 19 8 Z" fill="#ffffff"/>
+  <!-- Inlet/outlet curve hint -->
+  <path d="M 12 15 C 14 18, 19 18, 22 16" stroke="#86198f" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+</svg>

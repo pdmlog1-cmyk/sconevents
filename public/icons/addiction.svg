@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="0" y="0" width="32" height="32" rx="6" fill="#1f0606"/>
+  <path d="M 32 0 L 32 10 L 22 0 Z" fill="#7f1d1d"/>
+
+  <!-- Side-profile head silhouette (cognitive theme) -->
+  <path d="M 7 24 L 7 15 C 7 10, 11 7, 16 8 C 20 9, 22 12, 22 15 L 23 17 L 22 18 L 22 21 C 22 22.5, 20.5 24, 18.5 24 Z" fill="#ffffff"/>
+  <!-- Eye -->
+  <circle cx="17" cy="14" r="0.7" fill="#1f0606"/>
+
+  <!-- Pill capsule (substance) -->
+  <g transform="translate(26 9) rotate(-25)">
+    <rect x="-3.5" y="-1.4" width="7" height="2.8" rx="1.4" fill="#7f1d1d"/>
+    <rect x="0" y="-1.4" width="3.5" height="2.8" rx="1.4" fill="rgba(255,255,255,0.4)"/>
+  </g>
+  <!-- Thought bubble dots between head and capsule -->
+  <circle cx="24" cy="14" r="0.7" fill="#7f1d1d"/>
+  <circle cx="22" cy="16" r="0.5" fill="#7f1d1d"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="0" y="0" width="32" height="32" rx="6" fill="#001833"/>
+  <path d="M 32 0 L 32 10 L 22 0 Z" fill="#005EB8"/>
+
+  <!-- Person silhouette + measuring tape around waist (weight management) -->
+  <circle cx="16" cy="9" r="2.5" fill="#ffffff"/>
+  <path d="M 12.5 12 L 12.5 17 L 12 19 L 12 23 L 14.5 23 L 14.5 27 L 17.5 27 L 17.5 23 L 20 23 L 20 19 L 19.5 17 L 19.5 12 Z" fill="#ffffff"/>
+  <rect x="11" y="17" width="10" height="2.4" rx="0.4" fill="#005EB8"/>
+  <g stroke="rgba(255,255,255,0.6)" stroke-width="0.3">
+    <line x1="13" y1="17" x2="13" y2="19.4"/>
+    <line x1="15" y1="17" x2="15" y2="19.4"/>
+    <line x1="17" y1="17" x2="17" y2="19.4"/>
+    <line x1="19" y1="17" x2="19" y2="19.4"/>
+  </g>
+</svg>

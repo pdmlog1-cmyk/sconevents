@@ -16,6 +16,16 @@ interface LandingClientProps {
   theme: ConferenceTheme;
   slug: string;
 }
+
+// Map conference slug prefix to icon filename
+function getIconName(slug: string): string {
+  const prefix = slug.split('-')[0].toLowerCase();
+  const validIcons = [
+    'addiction', 'biotechnology', 'cardiology', 'food', 'gastroenterology',
+    'neurology', 'obesity', 'pharmaceutical', 'physicalmedicine', 'surgery'
+  ];
+  return validIcons.includes(prefix) ? prefix : 'cardiology';
+}
 /* Previous-edition imagery pool — sourced directly from the live
    cardiology-conference.com main site (hero + carousel /assets/legacy).
    Each bento tile cycles through this pool every ~12 s with crossfade.
@@ -110,38 +120,13 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
         <div className="lpb-head-row container">
           <a href={MAIN} className="brand brand-v3" aria-label={`${conf.short} home`}>
             <div className="brand-icon">
-              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-label={`${conf.short} logo`}>
-                <defs>
-                  <linearGradient id="lpbTile" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%"   style={{ stopColor: 'var(--ink-soft)' }} />
-                    <stop offset="55%"  style={{ stopColor: 'var(--ink)' }} />
-                    <stop offset="100%" style={{ stopColor: 'var(--ink)' }} />
-                  </linearGradient>
-                  <linearGradient id="lpbAcc" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%"   style={{ stopColor: 'var(--accent)', stopOpacity: 0.9 }} />
-                    <stop offset="100%" style={{ stopColor: 'var(--accent)' }} />
-                  </linearGradient>
-                  <linearGradient id="lpbHi" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%"  stopColor="#ffffff" stopOpacity="0.16" />
-                    <stop offset="45%" stopColor="#ffffff" stopOpacity="0" />
-                  </linearGradient>
-                </defs>
-                <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#lpbTile)" />
-                <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#lpbHi)" />
-                <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="0.8" />
-                <path d="M 77 3 L 77 31 L 49 3 Z" fill="url(#lpbAcc)" />
-                <path d="M 77 3 L 77 31 L 49 3 Z" fill="none" stroke="rgba(255,255,255,0.16)" strokeWidth="0.6" />
-                <path d="M 40 60 L 20 40 C 12 28, 22 14, 32 20 C 36 22, 40 26, 40 26 C 40 26, 44 22, 48 20 C 58 14, 68 28, 60 40 L 40 60 Z" fill="#ffffff" />
-                <polyline points="16,42 26,42 30,34 34,50 38,30 42,46 64,46" stroke="var(--accent)" strokeWidth="2.8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="11" cy="11" r="1.2" fill="rgba(255,255,255,0.28)" />
-                <circle cx="11" cy="69" r="1.2" fill="rgba(255,255,255,0.18)" />
-                <g transform="translate(44 57)">
-                  <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)" stroke="rgba(255,255,255,0.22)" strokeWidth="0.6" />
-                  <text x="14" y="12" textAnchor="middle" fontFamily="'JetBrains Mono', monospace" fontSize="7.5" fontWeight="700" fill="#ffffff" letterSpacing="0.5">
-                    {conf.initials.slice(0, 4)}
-                  </text>
-                </g>
-              </svg>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`/icons/${getIconName(slug)}.svg`}
+                alt={`${conf.short} logo`}
+                width={80}
+                height={80}
+              />
             </div>
             <div className="brand-divider" />
             <div className="brand-lockup">
@@ -520,33 +505,13 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
           <div className="lpb-foot-brand">
             <a href={MAIN} className="brand brand-v3 brand-footer" aria-label={`${conf.short} home`}>
               <div className="brand-icon">
-                <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-label={`${conf.short} logo`}>
-                  <defs>
-                    <linearGradient id="lpfTile" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%"   style={{ stopColor: 'rgba(255,255,255,0.06)' }} />
-                      <stop offset="55%"  style={{ stopColor: 'rgba(255,255,255,0.08)' }} />
-                      <stop offset="100%" style={{ stopColor: 'rgba(255,255,255,0.04)' }} />
-                    </linearGradient>
-                    <linearGradient id="lpfAcc" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%"   style={{ stopColor: 'var(--accent)', stopOpacity: 0.9 }} />
-                      <stop offset="100%" style={{ stopColor: 'var(--accent)' }} />
-                    </linearGradient>
-                  </defs>
-                  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#lpfTile)" />
-                  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.10)" strokeWidth="0.8" />
-                  <path d="M 77 3 L 77 31 L 49 3 Z" fill="url(#lpfAcc)" />
-                  <path d="M 77 3 L 77 31 L 49 3 Z" fill="none" stroke="rgba(255,255,255,0.16)" strokeWidth="0.6" />
-                  <path d="M 40 60 L 20 40 C 12 28, 22 14, 32 20 C 36 22, 40 26, 40 26 C 40 26, 44 22, 48 20 C 58 14, 68 28, 60 40 L 40 60 Z" fill="#ffffff" />
-                  <polyline points="16,42 26,42 30,34 34,50 38,30 42,46 64,46" stroke="var(--accent)" strokeWidth="2.8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                  <circle cx="11" cy="11" r="1.2" fill="rgba(255,255,255,0.3)" />
-                  <circle cx="11" cy="69" r="1.2" fill="rgba(255,255,255,0.2)" />
-                  <g transform="translate(44 57)">
-                    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.36)" stroke="rgba(255,255,255,0.22)" strokeWidth="0.6" />
-                    <text x="14" y="12" textAnchor="middle" fontFamily="'JetBrains Mono', monospace" fontSize="7.5" fontWeight="700" fill="#ffffff" letterSpacing="0.5">
-                      {conf.initials.slice(0, 4)}
-                    </text>
-                  </g>
-                </svg>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/icons/${getIconName(slug)}.svg`}
+                  alt={`${conf.short} logo`}
+                  width={80}
+                  height={80}
+                />
               </div>
               <div className="brand-divider" />
               <div className="brand-lockup">
