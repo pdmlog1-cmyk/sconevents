@@ -371,13 +371,6 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
           </article>
         </div>
 
-        <p className="lpb-reg-foot">
-          <span><strong>Virtual rates</strong> start at $199</span>
-          <span className="lpb-reg-foot-sep">·</span>
-          <span><strong>Group of 3+</strong> saves another 10% per seat</span>
-          <span className="lpb-reg-foot-sep">·</span>
-          <a href={`${MAIN}/register_details`}>See full pricing details <i className="fas fa-arrow-up-right-from-square" /></a>
-        </p>
       </section>
 
       {/* §04 Important Dates — redesigned as a chronological roadmap.
