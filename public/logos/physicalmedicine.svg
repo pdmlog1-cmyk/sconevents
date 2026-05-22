@@ -1,32 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- GCPR 2027 brand mark — primary (full colour) -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="1024" height="1024">
+<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-label="GCPR 2027 logo">
   <defs>
-    <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3a1006" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#3a1006"/>
+    <linearGradient id="tileH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5a1a0a"/>
+      <stop offset="55%" stop-color="#3a1006"/>
+      <stop offset="100%" stop-color="#3a1006"/>
+    </linearGradient>
+    <linearGradient id="accH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <radialGradient id="glowH" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hiH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tileGrad)"/>
-  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
-  <path d="M 77 3 L 77 31 L 49 3 Z" fill="#ea580c"/>
-  <g transform="scale(2.5)">
-    <!-- Stylized running figure -->
-  <circle cx="20" cy="8" r="2.4" fill="#ffffff"/>
-  <g stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round">
-    <path d="M 21 11 L 16 17 L 22 20 L 20 27"/>
-    <path d="M 16 17 L 10 19"/>
-    <path d="M 20 27 L 24 28"/>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tileH)"/>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#hiH)"/>
+  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="url(#accH)"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="0.6"/>
+  <ellipse cx="40" cy="40" rx="22" ry="22" fill="url(#glowH)"/>
+  <circle cx="46" cy="22" r="5.5" fill="#ffffff"/>
+  <g stroke="#ffffff" stroke-width="3.6" stroke-linecap="round" fill="none">
+    <path d="M 46 28 L 38 44 L 30 56"/>
+    <path d="M 38 44 L 50 50"/>
+    <path d="M 50 50 L 56 64"/>
+    <path d="M 38 44 L 28 36"/>
+    <path d="M 38 44 L 50 36"/>
   </g>
-  <!-- Speed lines -->
-  <g stroke="#ea580c" stroke-width="1.2" stroke-linecap="round">
-    <line x1="5" y1="14" x2="9" y2="14"/>
-    <line x1="4" y1="22" x2="8" y2="22"/>
+  <g stroke="#ea580c" stroke-width="2.4" stroke-linecap="round">
+    <line x1="14" y1="26" x2="22" y2="26"/>
+    <line x1="12" y1="36" x2="20" y2="36"/>
+    <line x1="14" y1="46" x2="22" y2="46"/>
   </g>
-  </g>
+  <circle cx="11" cy="11" r="1.2" fill="rgba(255,255,255,0.28)"/>
+  <circle cx="11" cy="69" r="1.2" fill="rgba(255,255,255,0.18)"/>
   <g transform="translate(44 57)">
-    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)"/>
-    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.5"/>
-    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">GCPR</text>
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)" stroke="rgba(255,255,255,0.22)" stroke-width="0.6"/>
+    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">GCPR</text>
   </g>
 </svg>
