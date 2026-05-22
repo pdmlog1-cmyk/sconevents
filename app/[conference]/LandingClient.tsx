@@ -17,14 +17,14 @@ interface LandingClientProps {
   slug: string;
 }
 
-// Map conference slug prefix to icon filename
-function getIconName(slug: string): string {
+// Map conference slug prefix to logo filename
+function getLogoName(slug: string): string {
   const prefix = slug.split('-')[0].toLowerCase();
-  const validIcons = [
+  const validLogos = [
     'addiction', 'biotechnology', 'cardiology', 'food', 'gastroenterology',
     'neurology', 'obesity', 'pharmaceutical', 'physicalmedicine', 'surgery'
   ];
-  return validIcons.includes(prefix) ? prefix : 'cardiology';
+  return validLogos.includes(prefix) ? prefix : 'cardiology';
 }
 /* Previous-edition imagery pool — sourced directly from the live
    cardiology-conference.com main site (hero + carousel /assets/legacy).
@@ -122,7 +122,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
             <div className="brand-icon">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`/icons/${getIconName(slug)}.svg`}
+                src={`/logos/${getLogoName(slug)}.svg`}
                 alt={`${conf.short} logo`}
                 width={80}
                 height={80}
@@ -507,7 +507,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <div className="brand-icon">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/icons/${getIconName(slug)}.svg`}
+                  src={`/logos/${getLogoName(slug)}.svg`}
                   alt={`${conf.short} logo`}
                   width={80}
                   height={80}

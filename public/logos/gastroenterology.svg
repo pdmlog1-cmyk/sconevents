@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GCGD 2027 brand mark — primary (full colour) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="1024" height="1024">
+  <defs>
+    <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a0a3d" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#3a0a3d"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tileGrad)"/>
+  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="#86198f"/>
+  <g transform="scale(2.5)">
+    <!-- Anatomical stomach silhouette -->
+  <path d="M 12 8 L 12 12 C 8 13, 6 17, 8 22 C 10 27, 16 28, 21 25 C 25 22, 25 17, 22 15 C 20 13, 19 13, 19 12 L 19 8 Z" fill="#ffffff"/>
+  <!-- Inlet/outlet curve hint -->
+  <path d="M 12 15 C 14 18, 19 18, 22 16" stroke="#86198f" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(44 57)">
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)"/>
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.5"/>
+    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">GCGD</text>
+  </g>
+</svg>

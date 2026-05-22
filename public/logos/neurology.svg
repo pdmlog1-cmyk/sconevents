@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GCNN 2027 brand mark — primary (full colour) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="1024" height="1024">
+  <defs>
+    <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b0764" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#3b0764"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tileGrad)"/>
+  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="#7e22ce"/>
+  <g transform="scale(2.5)">
+    <path d="M 10 13 C 9 8, 13 5, 16 7 C 19 5, 23 8, 22 13 C 26 15, 25 21, 20 24 C 17 27, 15 27, 12 24 C 8 21, 7 15, 10 13 Z" fill="#ffffff"/>
+  <path d="M 16 7 Q 15 13, 16 18 Q 15 23, 16 27" stroke="#7e22ce" stroke-width="1.1" fill="none"/>
+  </g>
+  <g transform="translate(44 57)">
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)"/>
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.5"/>
+    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">GCNN</text>
+  </g>
+</svg>

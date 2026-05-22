@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GSFS 2027 brand mark — primary (full colour) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="1024" height="1024">
+  <defs>
+    <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c1f06" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#2c1f06"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tileGrad)"/>
+  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="#ca8a04"/>
+  <g transform="scale(2.5)">
+    <!-- Apple silhouette + leaf (food/freshness) -->
+  <path d="M 12 10 C 8 10, 6 14, 6 18 C 6 23, 11 28, 16 27 C 21 28, 26 23, 26 18 C 26 14, 24 10, 20 10 C 18 10, 17 11, 16 12 C 15 11, 14 10, 12 10 Z" fill="#ffffff"/>
+  <path d="M 16 12 L 16 7" stroke="#ca8a04" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 17 9 C 20 6, 23 7, 23 10 C 21 11, 18 11, 17 10" fill="#ca8a04"/>
+  </g>
+  <g transform="translate(44 57)">
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)"/>
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.5"/>
+    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">GSFS</text>
+  </g>
+</svg>

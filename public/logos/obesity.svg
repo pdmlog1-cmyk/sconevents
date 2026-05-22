@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GSOD 2027 brand mark — primary (full colour) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="1024" height="1024">
+  <defs>
+    <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#001833" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#001833"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tileGrad)"/>
+  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="#005EB8"/>
+  <g transform="scale(2.5)">
+    <!-- Person silhouette + measuring tape around waist (weight management) -->
+  <circle cx="16" cy="9" r="2.5" fill="#ffffff"/>
+  <path d="M 12.5 12 L 12.5 17 L 12 19 L 12 23 L 14.5 23 L 14.5 27 L 17.5 27 L 17.5 23 L 20 23 L 20 19 L 19.5 17 L 19.5 12 Z" fill="#ffffff"/>
+  <rect x="11" y="17" width="10" height="2.4" rx="0.4" fill="#005EB8"/>
+  <g stroke="rgba(255,255,255,0.6)" stroke-width="0.3">
+    <line x1="13" y1="17" x2="13" y2="19.4"/>
+    <line x1="15" y1="17" x2="15" y2="19.4"/>
+    <line x1="17" y1="17" x2="17" y2="19.4"/>
+    <line x1="19" y1="17" x2="19" y2="19.4"/>
+  </g>
+  </g>
+  <g transform="translate(44 57)">
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)"/>
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.5"/>
+    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">GSOD</text>
+  </g>
+</svg>

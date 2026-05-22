@@ -13,14 +13,14 @@ export async function generateStaticParams() {
   }));
 }
 
-// Map conference slug prefix to icon filename
-function getIconName(slug: string): string {
+// Map conference slug prefix to logo filename
+function getLogoName(slug: string): string {
   const prefix = slug.split('-')[0].toLowerCase();
-  const validIcons = [
+  const validLogos = [
     'addiction', 'biotechnology', 'cardiology', 'food', 'gastroenterology',
     'neurology', 'obesity', 'pharmaceutical', 'physicalmedicine', 'surgery'
   ];
-  return validIcons.includes(prefix) ? prefix : 'cardiology';
+  return validLogos.includes(prefix) ? prefix : 'cardiology';
 }
 
 export async function generateMetadata({ params }: PageProps) {
@@ -28,16 +28,16 @@ export async function generateMetadata({ params }: PageProps) {
   const conf = await getConferenceConfig(conference);
   if (!conf) return { title: 'Conference Not Found' };
 
-  const iconName = getIconName(conference);
+  const logoName = getLogoName(conference);
 
   return {
     title: `Register · ${conf.short}`,
     description: `${conf.theme_primary} — ${conf.dates}, ${conf.country}. Reserve your seat at ${conf.short}.`,
     robots: { index: false, follow: true },
     icons: {
-      icon: `/icons/${iconName}.svg`,
-      shortcut: `/icons/${iconName}.svg`,
-      apple: `/icons/${iconName}.svg`,
+      icon: `/logos/${logoName}.svg`,
+      shortcut: `/logos/${logoName}.svg`,
+      apple: `/logos/${logoName}.svg`,
     },
   };
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WCPD 2027 brand mark — primary (full colour) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="1024" height="1024">
+  <defs>
+    <linearGradient id="tileGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#073b3a" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#073b3a"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tileGrad)"/>
+  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.6"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="#0a9396"/>
+  <g transform="scale(2.5)">
+    <g transform="rotate(-30 16 16)">
+    <rect x="8" y="13.5" width="16" height="5.5" rx="2.75" fill="#ffffff"/>
+    <path d="M 16 13.5 L 21.25 13.5 A 2.75 2.75 0 0 1 21.25 19 L 16 19 Z" fill="#0a9396"/>
+    <line x1="16" y1="13.5" x2="16" y2="19" stroke="rgba(0,0,0,0.22)" stroke-width="0.5"/>
+  </g>
+  </g>
+  <g transform="translate(44 57)">
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)"/>
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="0.5"/>
+    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">WCPD</text>
+  </g>
+</svg>
