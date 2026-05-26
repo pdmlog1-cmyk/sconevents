@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l data/Addiction-WCAM-2027-USA/*.json)",
+      "Bash(npx tsc --noEmit)"
+    ]
+  }
+}
