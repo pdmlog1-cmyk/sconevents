@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 import { getConferenceConfig } from '@/lib/getConfig';
 import { getConferenceMeta, getAllConferenceSlugs } from '@/lib/conferences';
 import LandingClient from './LandingClient';
@@ -51,5 +52,21 @@ export default async function ConferencePage({ params }: PageProps) {
     notFound();
   }
 
-  return <LandingClient conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} slug={conference} />;
+  const gtagId = meta.gtagId;
+
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtagId}`}
+        strategy="afterInteractive"
+      />
+      <Script id={`gtag-init-${gtagId}`} strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${gtagId}');
+      `}</Script>
+      <LandingClient conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} slug={conference} />
+    </>
+  );
 }

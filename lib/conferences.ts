@@ -20,6 +20,7 @@ export interface ConferenceMeta {
   short: string;
   mainSiteUrl: string;
   dataFolder: string;
+  gtagId: string;
   theme: ConferenceTheme;
 }
 
@@ -30,6 +31,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'WCAM 2027',
     mainSiteUrl: 'https://addictionmedicine-conference.com',
     dataFolder: 'Addiction-WCAM-2027-USA',
+    gtagId: 'G-72FTRCQRZ4',
     theme: {
       ink: '#1f0606',
       paper: '#ffffff',
@@ -48,6 +50,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSBG 2027',
     mainSiteUrl: 'https://biotech-meetings.com',
     dataFolder: 'Biotechnology-GSBG-2027-USA',
+    gtagId: 'G-JT6X560R8W',
     theme: {
       ink: '#052e1c',
       paper: '#ffffff',
@@ -66,6 +69,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCCM 2027',
     mainSiteUrl: 'https://cardiology-conference.com',
     dataFolder: 'Cardiology-GCCM-2027-USA',
+    gtagId: 'G-2D43ZLN9QT',
     theme: {
       ink: '#3a1419',
       paper: '#ffffff',
@@ -84,6 +88,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSFS 2027',
     mainSiteUrl: 'https://foodtech-conference.com',
     dataFolder: 'Food-GSFS-2027-USA',
+    gtagId: 'G-798GQ78F1N',
     theme: {
       ink: '#2c1f06',
       paper: '#ffffff',
@@ -102,6 +107,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCGD 2027',
     mainSiteUrl: 'https://gastro-meetings.com',
     dataFolder: 'Gastroenterology-GCGD-2027-USA',
+    gtagId: 'G-04T0LN74N3',
     theme: {
       ink: '#3a0a3d',
       paper: '#ffffff',
@@ -120,6 +126,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCNN 2027',
     mainSiteUrl: 'https://neuroscience-conference.com',
     dataFolder: 'Neurology-GCNN-2027-USA',
+    gtagId: 'G-ZB8SD5NTTC',
     theme: {
       ink: '#3b0764',
       paper: '#ffffff',
@@ -138,6 +145,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSOD 2027',
     mainSiteUrl: 'https://obesity-conferences.com',
     dataFolder: 'Obesity-GSOD-2027-USA',
+    gtagId: 'G-T4RNDJ9138',
     theme: {
       ink: '#001833',
       paper: '#ffffff',
@@ -156,6 +164,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'WCPD 2027',
     mainSiteUrl: 'https://pharmaworldconference.com',
     dataFolder: 'Pharmaceutical-WCPD-2027-USA',
+    gtagId: 'G-65Z87PRHBE',
     theme: {
       ink: '#073b3a',
       paper: '#ffffff',
@@ -174,6 +183,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCPR 2027',
     mainSiteUrl: 'https://physicalmedicine-conference.com',
     dataFolder: 'PhysicalMedicine-GCPR-2027-USA',
+    gtagId: 'G-7PDQEEPLB6',
     theme: {
       ink: '#3a1006',
       paper: '#ffffff',
@@ -192,6 +202,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCSA 2027',
     mainSiteUrl: 'https://surgery-meetings.com',
     dataFolder: 'Surgery-GCSA-2027-USA',
+    gtagId: 'G-KVQS21YME0',
     theme: {
       ink: '#1e3a8a',
       paper: '#ffffff',
