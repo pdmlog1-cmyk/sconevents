@@ -120,11 +120,9 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
       <header className="lpb-head">
         <div className="lpb-head-row container">
           <a href={MAIN} className="brand brand-v3" aria-label={`${conf.short} home`}>
-            <div className="brand-icon">
-              {getLogoSvg(slug)
-                ? <span dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
-                : <img src={`/logos/${getLogoName(slug)}.svg`} alt={`${conf.short} logo`} width={80} height={80} />}
-            </div>
+            {getLogoSvg(slug)
+              ? <div className="brand-icon" dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
+              : <div className="brand-icon"><img src={`/logos/${getLogoName(slug)}.svg`} alt={`${conf.short} logo`} width={80} height={80} /></div>}
             <div className="brand-divider" />
             <div className="brand-lockup">
               <div className="brand-line-1">{conf.discipline}-<span className="brand-year">20{conf.year_suffix}</span></div>
@@ -501,11 +499,9 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               for the footer and adapted for the dark background. */}
           <div className="lpb-foot-brand">
             <a href={MAIN} className="brand brand-v3 brand-footer" aria-label={`${conf.short} home`}>
-              <div className="brand-icon">
-                {getLogoSvg(slug)
-                  ? <span dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
-                  : <img src={`/logos/${getLogoName(slug)}.svg`} alt={`${conf.short} logo`} width={80} height={80} />}
-              </div>
+              {getLogoSvg(slug)
+                ? <div className="brand-icon" dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
+                : <div className="brand-icon"><img src={`/logos/${getLogoName(slug)}.svg`} alt={`${conf.short} logo`} width={80} height={80} /></div>}
               <div className="brand-divider" />
               <div className="brand-lockup">
                 <div className="brand-line-1">{conf.discipline}-<span className="brand-year">20{conf.year_suffix}</span></div>
