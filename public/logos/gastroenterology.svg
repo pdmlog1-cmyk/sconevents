@@ -1,52 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- GCGD 2027 brand mark — Gastroenterology. Vector source; scales to any size. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="1024" height="1024">
-  <defs>
-    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#4a044e"/>
-      <stop offset="55%"  stop-color="#3a0a3d"/>
-      <stop offset="100%" stop-color="#3a0a3d"/>
-    </linearGradient>
-    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%"   stop-color="#86198f" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#86198f"/>
-    </linearGradient>
-    <linearGradient id="hi" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.16"/>
-      <stop offset="45%" stop-color="#ffffff" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.6">
-      <stop offset="0%"   stop-color="#86198f" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#86198f" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="0" y="0" width="32" height="32" rx="6" fill="#3a0a3d"/>
+  <path d="M 32 0 L 32 10 L 22 0 Z" fill="#86198f"/>
 
-  <!-- Rounded tile -->
-  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tile)"/>
-  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#hi)"/>
-  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"/>
-
-  <!-- Accent ribbon (top-right) -->
-  <path d="M 77 3 L 77 31 L 49 3 Z" fill="url(#acc)"/>
-  <path d="M 77 3 L 77 31 L 49 3 Z" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="0.6"/>
-
-  <!-- Soft radial glow -->
-  <ellipse cx="40" cy="40" rx="22" ry="22" fill="url(#glow)"/>
-
-  <!-- Stomach/Digestive organ -->
-  <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round">
-    <path d="M 30 18 L 30 25 Q 25 30 25 38 Q 25 50 35 55 Q 45 60 55 55 Q 60 50 58 40 Q 56 32 50 28 L 50 18"/>
-    <path d="M 30 18 Q 35 15 40 15 Q 45 15 50 18"/>
-    <path d="M 32 30 Q 40 35 48 30" stroke-width="2"/>
-  </g>
-
-  <!-- Corner technical dots -->
-  <circle cx="11" cy="11" r="1.2" fill="rgba(255,255,255,0.28)"/>
-  <circle cx="11" cy="69" r="1.2" fill="rgba(255,255,255,0.18)"/>
-
-  <!-- Initials chip -->
-  <g transform="translate(44 57)">
-    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)" stroke="rgba(255,255,255,0.22)" stroke-width="0.6"/>
-    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">GCGD</text>
-  </g>
+  <path d="M 12 8 L 12 12 C 8 13, 6 17, 8 22 C 10 27, 16 28, 21 25 C 25 22, 25 17, 22 15 C 20 13, 19 13, 19 12 L 19 8 Z" fill="#ffffff"/>
+  <path d="M 12 15 C 14 18, 19 18, 22 16" stroke="#86198f" stroke-width="0.9" fill="none" stroke-linecap="round"/>
 </svg>
