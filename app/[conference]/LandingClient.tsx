@@ -9,6 +9,7 @@ import LandingLeadModal from '@/components/LandingLeadModal';
 import InfoStrip from '@/components/InfoStrip';
 import type { ConferenceConfig } from '@/lib/config';
 import type { ConferenceTheme } from '@/lib/conferences';
+import { getLogoSvg } from '@/lib/logoSvgs';
 
 interface LandingClientProps {
   conf: ConferenceConfig;
@@ -120,13 +121,9 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
         <div className="lpb-head-row container">
           <a href={MAIN} className="brand brand-v3" aria-label={`${conf.short} home`}>
             <div className="brand-icon">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={`/logos/${getLogoName(slug)}.svg`}
-                alt={`${conf.short} logo`}
-                width={80}
-                height={80}
-              />
+              {getLogoSvg(slug)
+                ? <span dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
+                : <img src={`/logos/${getLogoName(slug)}.svg`} alt={`${conf.short} logo`} width={80} height={80} />}
             </div>
             <div className="brand-divider" />
             <div className="brand-lockup">
@@ -505,13 +502,9 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
           <div className="lpb-foot-brand">
             <a href={MAIN} className="brand brand-v3 brand-footer" aria-label={`${conf.short} home`}>
               <div className="brand-icon">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`/logos/${getLogoName(slug)}.svg`}
-                  alt={`${conf.short} logo`}
-                  width={80}
-                  height={80}
-                />
+                {getLogoSvg(slug)
+                  ? <span dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
+                  : <img src={`/logos/${getLogoName(slug)}.svg`} alt={`${conf.short} logo`} width={80} height={80} />}
               </div>
               <div className="brand-divider" />
               <div className="brand-lockup">
