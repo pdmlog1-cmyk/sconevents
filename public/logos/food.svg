@@ -1,8 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect x="0" y="0" width="32" height="32" rx="6" fill="#2c1f06"/>
-  <path d="M 32 0 L 32 10 L 22 0 Z" fill="#ca8a04"/>
-
-  <path d="M 12 10 C 8 10, 6 14, 6 18 C 6 23, 11 28, 16 27 C 21 28, 26 23, 26 18 C 26 14, 24 10, 20 10 C 18 10, 17 11, 16 12 C 15 11, 14 10, 12 10 Z" fill="#ffffff"/>
-  <path d="M 16 12 L 16 7" stroke="#ca8a04" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  <path d="M 17 9 C 20 6, 23 7, 23 10 C 21 11, 18 11, 17 10" fill="#ca8a04"/>
+<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-label="GSFS 2027 logo">
+  <defs>
+    <linearGradient id="tileH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#422006"/>
+      <stop offset="55%" stop-color="#2c1f06"/>
+      <stop offset="100%" stop-color="#2c1f06"/>
+    </linearGradient>
+    <linearGradient id="accH" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ca8a04" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <radialGradient id="glowH" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#ca8a04" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ca8a04" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hiH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#tileH)"/>
+  <rect x="3" y="3" width="74" height="74" rx="20" fill="url(#hiH)"/>
+  <rect x="7" y="7" width="66" height="66" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="url(#accH)"/>
+  <path d="M 77 3 L 77 31 L 49 3 Z" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="0.6"/>
+  <ellipse cx="40" cy="42" rx="22" ry="22" fill="url(#glowH)"/>
+  <path d="M 30 25 C 20 25, 15 35, 15 45 C 15 57.5, 27.5 70, 40 67.5 C 52.5 70, 65 57.5, 65 45 C 65 35, 60 25, 50 25 C 45 25, 42.5 27.5, 40 30 C 37.5 27.5, 35 25, 30 25 Z" fill="#ffffff"/>
+  <path d="M 40 30 L 40 17.5" stroke="#ca8a04" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 42.5 22.5 C 50 15, 57.5 17.5, 57.5 25 C 52.5 27.5, 45 27.5, 42.5 25" fill="#ca8a04"/>
+  <circle cx="11" cy="11" r="1.2" fill="rgba(255,255,255,0.28)"/>
+  <circle cx="11" cy="69" r="1.2" fill="rgba(255,255,255,0.18)"/>
+  <g transform="translate(44 57)">
+    <rect x="0" y="0" width="28" height="16" rx="4.5" fill="rgba(0,0,0,0.42)" stroke="rgba(255,255,255,0.22)" stroke-width="0.6"/>
+    <text x="14" y="12" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="700" fill="#ffffff" letter-spacing="0.5">GSFS</text>
+  </g>
 </svg>
