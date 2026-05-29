@@ -178,11 +178,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'PhysicalMedicine-GCPR-2027-USA',
+    slug: 'PhysicalMedicine-WSPR-2027-USA',
     name: 'Global Congress on Physical Medicine & Rehabilitation',
-    short: 'GCPR 2027',
+    short: 'WSPR 2027',
     mainSiteUrl: 'https://physicalmedicine-conference.com',
-    dataFolder: 'PhysicalMedicine-GCPR-2027-USA',
+    dataFolder: 'PhysicalMedicine-WSPR-2027-USA',
     gtagId: 'G-7PDQEEPLB6',
     theme: {
       ink: '#3a1006',
