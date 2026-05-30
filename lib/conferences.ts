@@ -183,7 +183,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'WSPR 2027',
     mainSiteUrl: 'https://physicalmedicine-conference.com',
     dataFolder: 'PhysicalMedicine-WSPR-2027-USA',
-    gtagId: 'G-7PDQEEPLB6',
+    gtagId: 'G-6EYK8TYWQL',
     theme: {
       ink: '#3a1006',
       paper: '#ffffff',
