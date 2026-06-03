@@ -125,6 +125,110 @@
         "Real-time fMRI neurofeedback for craving regulation",
         "Digital phenotyping and wearable biomarkers for relapse prediction"
       ]
+    },
+    {
+      "title": "Trauma & PTSD-Related Use",
+      "tagline": "PTSD-substance comorbidity, trauma-informed care models."
+    },
+    {
+      "title": "Adolescent Addiction",
+      "tagline": "Youth substance use, brain development and early intervention."
+    },
+    {
+      "title": "Pregnancy & Addiction",
+      "tagline": "Prenatal substance exposure, NOWS management and maternal care."
+    },
+    {
+      "title": "Co-occurring Mental Illness",
+      "tagline": "Dual diagnosis, integrated treatment and psychiatric comorbidity."
+    },
+    {
+      "title": "Tobacco & Nicotine Cessation",
+      "tagline": "Varenicline, NRT, vaping cessation and tobacco policy."
+    },
+    {
+      "title": "Cannabis Use Disorder",
+      "tagline": "CUD assessment, treatment approaches and legalization impact."
+    },
+    {
+      "title": "Psychedelic-Assisted Therapy",
+      "tagline": "Psilocybin, MDMA-assisted therapy and clinical trial outcomes."
+    },
+    {
+      "title": "Digital Therapeutics in Addiction",
+      "tagline": "App-based interventions, reSET and virtual treatment platforms."
+    },
+    {
+      "title": "Addiction Policy & Public Health",
+      "tagline": "Drug scheduling, public health frameworks and legislation."
+    },
+    {
+      "title": "Methadone & Buprenorphine Programs",
+      "tagline": "OTP operations, dosing protocols and access expansion."
+    },
+    {
+      "title": "Naloxone & Overdose Prevention",
+      "tagline": "Community distribution, OTC access and response training."
+    },
+    {
+      "title": "Recovery Housing",
+      "tagline": "Sober living standards, NARR accreditation and outcomes."
+    },
+    {
+      "title": "Peer Support Specialists",
+      "tagline": "Certification, Medicaid billing and workforce integration."
+    },
+    {
+      "title": "Addiction Medicine Training",
+      "tagline": "Fellowship programs, medical education and workforce development."
+    },
+    {
+      "title": "Stigma & Communication",
+      "tagline": "Language, bias reduction and public perception change."
+    },
+    {
+      "title": "Drug Policy Reform",
+      "tagline": "Decriminalization, harm reduction policy and global approaches."
+    },
+    {
+      "title": "International Drug Trends",
+      "tagline": "Global substance patterns, synthetic drugs and cross-border issues."
+    },
+    {
+      "title": "Older Adults & Addiction",
+      "tagline": "Geriatric substance use, polypharmacy and age-specific care."
+    },
+    {
+      "title": "Veterans & Addiction",
+      "tagline": "Military service-related use, VA programs and reintegration."
+    },
+    {
+      "title": "Criminal Justice & Treatment",
+      "tagline": "Diversion programs, drug courts and carceral treatment."
+    },
+    {
+      "title": "Family Therapy",
+      "tagline": "CRAFT, family systems and relational recovery models."
+    },
+    {
+      "title": "Spirituality & Recovery",
+      "tagline": "12-step programs, faith-based approaches and meaning-making."
+    },
+    {
+      "title": "Genetics of Addiction",
+      "tagline": "Heritability, risk alleles and pharmacogenomic applications."
+    },
+    {
+      "title": "Polysubstance Use Trends",
+      "tagline": "Multi-drug patterns, co-use epidemiology and treatment."
+    },
+    {
+      "title": "Emerging Drugs of Abuse",
+      "tagline": "Novel psychoactive substances, designer drugs and surveillance."
+    },
+    {
+      "title": "Workforce Development",
+      "tagline": "Staffing shortages, training pipelines and retention strategies."
     }
   ]
 }

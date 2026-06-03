@@ -125,6 +125,110 @@
         "Return-to-play after stroke, TBI, and orthopedic injury",
         "High-intensity interval training and resistance protocols in disability"
       ]
+    },
+    {
+      "title": "Stroke Rehabilitation",
+      "tagline": "Motor recovery, constraint therapy and neuroplasticity."
+    },
+    {
+      "title": "Spinal Cord Injury Rehab",
+      "tagline": "Mobility restoration, autonomic management and community reentry."
+    },
+    {
+      "title": "Traumatic Brain Injury Rehab",
+      "tagline": "Cognitive recovery, behavioral management and return-to-function."
+    },
+    {
+      "title": "Amputee Rehabilitation",
+      "tagline": "Prosthetic training, phantom pain and pre-prosthetic care."
+    },
+    {
+      "title": "Sports & Exercise Medicine",
+      "tagline": "Injury prevention, exercise prescription and athlete rehabilitation."
+    },
+    {
+      "title": "Chronic Pain Rehabilitation",
+      "tagline": "Interdisciplinary programs, graded activity and pain neuroscience."
+    },
+    {
+      "title": "Robotics in Rehabilitation",
+      "tagline": "Robotic exoskeletons, gait trainers and upper-limb devices."
+    },
+    {
+      "title": "Wearables & Sensors",
+      "tagline": "IMU-based monitoring, biofeedback and remote assessment."
+    },
+    {
+      "title": "Vocational Rehabilitation",
+      "tagline": "Return-to-work programs, job coaching and disability employment."
+    },
+    {
+      "title": "Spasticity Management",
+      "tagline": "Botulinum toxin, intrathecal baclofen and physical modalities."
+    },
+    {
+      "title": "Orthotic Devices",
+      "tagline": "AFOs, spinal orthoses and custom bracing solutions."
+    },
+    {
+      "title": "Functional Electrical Stimulation",
+      "tagline": "FES cycling, neuroprostheses and motor retraining."
+    },
+    {
+      "title": "Hydrotherapy",
+      "tagline": "Aquatic rehabilitation, pool-based exercise and buoyancy therapy."
+    },
+    {
+      "title": "Manual Therapy",
+      "tagline": "Joint mobilization, soft tissue techniques and manual assessment."
+    },
+    {
+      "title": "Acupuncture & Rehab",
+      "tagline": "Electroacupuncture, dry needling and integrative pain management."
+    },
+    {
+      "title": "Yoga & Mind-Body",
+      "tagline": "Therapeutic yoga, tai chi and mindfulness-based movement."
+    },
+    {
+      "title": "Mindfulness in Rehab",
+      "tagline": "MBSR, acceptance-based therapy and psychological wellbeing."
+    },
+    {
+      "title": "Occupational Therapy",
+      "tagline": "ADL training, upper-limb rehabilitation and home modifications."
+    },
+    {
+      "title": "Speech-Language Therapy",
+      "tagline": "Dysphagia, aphasia and communication rehabilitation."
+    },
+    {
+      "title": "Music & Art Therapy",
+      "tagline": "Creative arts interventions, neurologic music therapy."
+    },
+    {
+      "title": "Recreational Therapy",
+      "tagline": "Leisure-based interventions, community participation and wellbeing."
+    },
+    {
+      "title": "Workplace Ergonomics",
+      "tagline": "Injury prevention, workstation design and ergonomic assessment."
+    },
+    {
+      "title": "Driving Rehabilitation",
+      "tagline": "Driving assessment, adaptive vehicles and return-to-drive programs."
+    },
+    {
+      "title": "Community Reintegration",
+      "tagline": "Social participation, independent living and peer support."
+    },
+    {
+      "title": "Caregiver Support",
+      "tagline": "Caregiver burden, respite care and family training programs."
+    },
+    {
+      "title": "Disability Rights & Advocacy",
+      "tagline": "ADA compliance, accessibility standards and policy advocacy."
     }
   ]
 }

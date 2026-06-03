@@ -125,6 +125,110 @@
         "Blockchain plus IoT for end-to-end cold-chain analytics",
         "AI governance: EU AI Act, FSMA data integrity, explainability"
       ]
+    },
+    {
+      "title": "Cultivated Meat & Cellular Agriculture",
+      "tagline": "Cell-cultured proteins, bioreactor scale-up and regulatory approval."
+    },
+    {
+      "title": "Precision Fermentation",
+      "tagline": "Microbial production of dairy, egg and specialty proteins."
+    },
+    {
+      "title": "Allergen Management",
+      "tagline": "Labelling, cross-contact prevention and analytical detection."
+    },
+    {
+      "title": "Food Fraud & Authenticity",
+      "tagline": "Adulteration detection, traceability and supply chain integrity."
+    },
+    {
+      "title": "Plant-Based Nutrition",
+      "tagline": "Nutrient adequacy, protein quality and whole-food plant diets."
+    },
+    {
+      "title": "Ultra-Processed Foods",
+      "tagline": "NOVA classification, health outcomes and reformulation strategies."
+    },
+    {
+      "title": "Climate-Smart Agriculture",
+      "tagline": "Carbon sequestration, regenerative practices and climate adaptation."
+    },
+    {
+      "title": "Food Allergies & Intolerances",
+      "tagline": "Oral immunotherapy, desensitization and allergy management."
+    },
+    {
+      "title": "Postharvest & Cold Chain",
+      "tagline": "Storage optimization, logistics and loss reduction."
+    },
+    {
+      "title": "Dairy Innovation",
+      "tagline": "Fermentation, A2 milk, whey valorization and novel dairy."
+    },
+    {
+      "title": "Beverage Science",
+      "tagline": "Functional beverages, fermentation and formulation technology."
+    },
+    {
+      "title": "Bakery & Confectionery",
+      "tagline": "Dough science, sugar reduction and clean-label baking."
+    },
+    {
+      "title": "Meat & Poultry Science",
+      "tagline": "Processing technology, quality assurance and safety."
+    },
+    {
+      "title": "Aquaculture",
+      "tagline": "Sustainable fish farming, feed innovation and seafood safety."
+    },
+    {
+      "title": "Insect Proteins",
+      "tagline": "Edible insects, cricket flour and regulatory pathways."
+    },
+    {
+      "title": "Algae & Marine Foods",
+      "tagline": "Microalgae, seaweed and marine bioactives."
+    },
+    {
+      "title": "Probiotics & Postbiotics",
+      "tagline": "Strain selection, clinical evidence and product development."
+    },
+    {
+      "title": "Dietary Fiber",
+      "tagline": "Prebiotic fibers, gut health and fortification strategies."
+    },
+    {
+      "title": "Culinary Science",
+      "tagline": "Cooking techniques, flavor development and gastronomy."
+    },
+    {
+      "title": "Food Education",
+      "tagline": "Nutrition literacy, training programs and public awareness."
+    },
+    {
+      "title": "Food Service Innovation",
+      "tagline": "Restaurant technology, ghost kitchens and catering solutions."
+    },
+    {
+      "title": "Indigenous & Heritage Foods",
+      "tagline": "Traditional food systems, cultural preservation and biodiversity."
+    },
+    {
+      "title": "Spices & Bioactives",
+      "tagline": "Phytochemicals, turmeric, bioactive extraction and health benefits."
+    },
+    {
+      "title": "Food Waste Reduction",
+      "tagline": "Upcycling, surplus redistribution and waste valorization."
+    },
+    {
+      "title": "Pet Food Science",
+      "tagline": "Companion animal nutrition, formulation and regulatory standards."
+    },
+    {
+      "title": "Personalised Nutrition",
+      "tagline": "Nutrigenomics, CGM-based diets and AI-driven meal planning."
     }
   ]
 }

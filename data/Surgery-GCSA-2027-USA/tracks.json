@@ -125,6 +125,110 @@
         "Intrathecal drug delivery and cancer pain management",
         "Cannabinoids, psychedelics, and evolving evidence in chronic pain"
       ]
+    },
+    {
+      "title": "General Surgery",
+      "tagline": "Appendectomy, cholecystectomy, hernia and abdominal surgery."
+    },
+    {
+      "title": "Trauma Surgery",
+      "tagline": "Damage control, hemorrhage management and polytrauma care."
+    },
+    {
+      "title": "Pediatric Surgery",
+      "tagline": "Neonatal surgery, congenital anomalies and minimally invasive approaches."
+    },
+    {
+      "title": "Surgical Oncology",
+      "tagline": "Tumor resection, margins, lymphadenectomy and multimodal therapy."
+    },
+    {
+      "title": "Plastic & Reconstructive Surgery",
+      "tagline": "Microsurgery, flap techniques, burns and aesthetic reconstruction."
+    },
+    {
+      "title": "Vascular Surgery",
+      "tagline": "Aortic aneurysm, peripheral arterial disease and endovascular repair."
+    },
+    {
+      "title": "Orthopedic Surgery",
+      "tagline": "Joint replacement, fracture fixation and sports surgery."
+    },
+    {
+      "title": "Anesthesiology",
+      "tagline": "General anesthesia, airway management and pharmacology."
+    },
+    {
+      "title": "ICU & Critical Care",
+      "tagline": "Ventilation, hemodynamics, sepsis and organ support."
+    },
+    {
+      "title": "Burns & Wound Care",
+      "tagline": "Burn resuscitation, skin grafting and wound healing."
+    },
+    {
+      "title": "Hand Surgery",
+      "tagline": "Tendon repair, nerve reconstruction and replantation."
+    },
+    {
+      "title": "Endocrine Surgery",
+      "tagline": "Thyroidectomy, parathyroid and adrenal surgery."
+    },
+    {
+      "title": "ENT Surgery",
+      "tagline": "Head and neck oncology, sinus surgery and airway procedures."
+    },
+    {
+      "title": "Ophthalmic Surgery",
+      "tagline": "Cataract, retinal surgery and oculoplastics."
+    },
+    {
+      "title": "Urological Surgery",
+      "tagline": "Prostatectomy, nephrectomy and robotic urology."
+    },
+    {
+      "title": "Gynaecological Surgery",
+      "tagline": "Hysterectomy, endometriosis excision and fertility-sparing surgery."
+    },
+    {
+      "title": "Maxillofacial Surgery",
+      "tagline": "Jaw reconstruction, facial trauma and orthognathic surgery."
+    },
+    {
+      "title": "Hepatobiliary Surgery",
+      "tagline": "Liver resection, pancreaticoduodenectomy and biliary surgery."
+    },
+    {
+      "title": "Bariatric Surgery",
+      "tagline": "Sleeve gastrectomy, gastric bypass and metabolic surgery."
+    },
+    {
+      "title": "Transplant Surgery",
+      "tagline": "Organ procurement, immunosuppression and graft outcomes."
+    },
+    {
+      "title": "Geriatric Surgery",
+      "tagline": "Frailty assessment, perioperative optimization and shared decision-making."
+    },
+    {
+      "title": "Day-Care Surgery",
+      "tagline": "Ambulatory procedures, fast-track pathways and patient selection."
+    },
+    {
+      "title": "Surgical Education",
+      "tagline": "Simulation training, competency assessment and curriculum design."
+    },
+    {
+      "title": "Global Surgery",
+      "tagline": "Surgical access, LMIC capacity building and Lancet Commission."
+    },
+    {
+      "title": "Surgical Innovation",
+      "tagline": "Emerging technologies, AI-assisted surgery and future platforms."
+    },
+    {
+      "title": "Disaster & Field Surgery",
+      "tagline": "Mass casualty triage, military surgery and humanitarian response."
     }
   ]
 }

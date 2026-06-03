@@ -125,6 +125,110 @@
         "Digital twins and process analytical technology (PAT)",
         "Techno-economic analysis and scale-up from bench to commercial"
       ]
+    },
+    {
+      "title": "AI in Drug Discovery",
+      "tagline": "ML-guided lead optimization, virtual screening and target ID."
+    },
+    {
+      "title": "Cell & Gene Therapy",
+      "tagline": "CAR-T, AAV gene therapy and ex-vivo cell engineering."
+    },
+    {
+      "title": "Stem Cell Research",
+      "tagline": "iPSC differentiation, organoids and regenerative medicine."
+    },
+    {
+      "title": "Antibody-Drug Conjugates",
+      "tagline": "Linker-payload design, bystander effect and ADC pipelines."
+    },
+    {
+      "title": "Vaccines & Immunotherapy",
+      "tagline": "mRNA vaccines, cancer immunotherapy and adjuvant platforms."
+    },
+    {
+      "title": "Microbiome Engineering",
+      "tagline": "Engineered consortia, live biotherapeutics and gut ecology."
+    },
+    {
+      "title": "Nanomedicine",
+      "tagline": "Nanoparticle delivery, theranostics and targeted nanomaterials."
+    },
+    {
+      "title": "Personalized Medicine",
+      "tagline": "Biomarker-guided therapy, companion diagnostics and precision care."
+    },
+    {
+      "title": "Bioethics & Governance",
+      "tagline": "Responsible innovation, equity in genomics and policy frameworks."
+    },
+    {
+      "title": "Marine Biotechnology",
+      "tagline": "Ocean-derived bioactives, marine enzymes and blue bioeconomy."
+    },
+    {
+      "title": "Plant Biotechnology",
+      "tagline": "Crop engineering, gene editing in agriculture and molecular farming."
+    },
+    {
+      "title": "Agricultural Biotech",
+      "tagline": "Biopesticides, soil microbiome and sustainable farming."
+    },
+    {
+      "title": "Environmental Biotech",
+      "tagline": "Bioremediation, waste treatment and pollution management."
+    },
+    {
+      "title": "Single-Cell Biology",
+      "tagline": "scRNA-seq, single-cell proteomics and cell atlas projects."
+    },
+    {
+      "title": "Spatial Biology",
+      "tagline": "Spatial transcriptomics, MERFISH and tissue architecture."
+    },
+    {
+      "title": "Organoids & Organ-on-Chip",
+      "tagline": "Microphysiological systems, disease models and drug screening."
+    },
+    {
+      "title": "Lab Automation",
+      "tagline": "High-throughput screening, robotic liquid handling and LIMS."
+    },
+    {
+      "title": "Biosecurity",
+      "tagline": "Dual-use research, biosafety and pandemic preparedness."
+    },
+    {
+      "title": "Synthetic Genomics",
+      "tagline": "Whole-genome synthesis, minimal cells and designer organisms."
+    },
+    {
+      "title": "Bioprinting",
+      "tagline": "3D tissue printing, bioinks and vascularized construct fabrication."
+    },
+    {
+      "title": "Biosensors & Diagnostics",
+      "tagline": "Point-of-care testing, lateral flow and electrochemical sensors."
+    },
+    {
+      "title": "Liquid Biopsy",
+      "tagline": "ctDNA, circulating tumor cells and non-invasive cancer detection."
+    },
+    {
+      "title": "Multi-Cancer Early Detection",
+      "tagline": "MCED tests, Galleri and population screening strategies."
+    },
+    {
+      "title": "Continuous Biomanufacturing",
+      "tagline": "Perfusion culture, integrated bioprocessing and PAT."
+    },
+    {
+      "title": "Decentralised Manufacturing",
+      "tagline": "Point-of-care production, modular facilities and cell therapy manufacturing."
+    },
+    {
+      "title": "RNA Editing",
+      "tagline": "ADAR-mediated editing, site-directed RNA modification and therapeutics."
     }
   ]
 }

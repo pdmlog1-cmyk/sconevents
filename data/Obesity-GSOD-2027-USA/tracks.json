@@ -125,6 +125,110 @@
         "School food standards and USDA dietary guidelines",
         "Obesity prevention in low- and middle-income countries"
       ]
+    },
+    {
+      "title": "Weight Loss Maintenance",
+      "tagline": "Sustained weight management, regain prevention and long-term strategies."
+    },
+    {
+      "title": "Eating Disorders & Obesity",
+      "tagline": "BED, bulimia, binge eating and comorbid management."
+    },
+    {
+      "title": "Sarcopenic Obesity",
+      "tagline": "Muscle loss, body composition and resistance training."
+    },
+    {
+      "title": "Hormonal Drivers",
+      "tagline": "Leptin, ghrelin, thyroid and endocrine influences on weight."
+    },
+    {
+      "title": "Cardiometabolic Complications",
+      "tagline": "Cardiovascular risk, CKM syndrome and multi-organ impact."
+    },
+    {
+      "title": "MASH & Obesity-Liver Axis",
+      "tagline": "Metabolic liver disease, resmetirom and hepatic outcomes."
+    },
+    {
+      "title": "Sleep & Obesity",
+      "tagline": "OSA, sleep deprivation and circadian influences on weight."
+    },
+    {
+      "title": "Workplace & School Programs",
+      "tagline": "Occupational health, school wellness and community interventions."
+    },
+    {
+      "title": "Pharmacotherapy Pipeline",
+      "tagline": "Emerging anti-obesity drugs, combination therapies and trials."
+    },
+    {
+      "title": "Type 1 Diabetes",
+      "tagline": "Autoimmune management, insulin therapy and teplizumab."
+    },
+    {
+      "title": "Type 2 Diabetes",
+      "tagline": "SGLT2 inhibitors, GLP-1 agents and glycemic control."
+    },
+    {
+      "title": "Diabetic Retinopathy",
+      "tagline": "Screening, anti-VEGF therapy and vision preservation."
+    },
+    {
+      "title": "Diabetic Neuropathy",
+      "tagline": "Peripheral neuropathy, pain management and nerve protection."
+    },
+    {
+      "title": "Diabetic Kidney Disease",
+      "tagline": "Nephroprotection, finerenone, SGLT2i and CKD management."
+    },
+    {
+      "title": "Polycystic Ovary Syndrome",
+      "tagline": "PCOS management, metabolic features and fertility."
+    },
+    {
+      "title": "Thyroid & Weight",
+      "tagline": "Hypothyroidism, thyroid hormones and metabolic rate."
+    },
+    {
+      "title": "Insulin Resistance",
+      "tagline": "Pathophysiology, biomarkers and therapeutic targets."
+    },
+    {
+      "title": "Lipid Metabolism",
+      "tagline": "Dyslipidemia, cholesterol management and lipid-lowering agents."
+    },
+    {
+      "title": "Body Composition",
+      "tagline": "DXA, bioimpedance, visceral fat measurement and lean mass."
+    },
+    {
+      "title": "Body Image & Mental Health",
+      "tagline": "Psychological impact, self-esteem and mental health support."
+    },
+    {
+      "title": "Diabetes in Pregnancy",
+      "tagline": "Gestational diabetes, maternal outcomes and fetal health."
+    },
+    {
+      "title": "Telemedicine in Obesity",
+      "tagline": "Remote monitoring, virtual consultations and digital interventions."
+    },
+    {
+      "title": "Endocrine Disruptors",
+      "tagline": "Obesogens, environmental chemicals and metabolic disruption."
+    },
+    {
+      "title": "Health Coaching",
+      "tagline": "Motivational interviewing, behavioral coaching and patient engagement."
+    },
+    {
+      "title": "Geriatric Obesity",
+      "tagline": "Elderly weight management, frailty and age-specific approaches."
+    },
+    {
+      "title": "Stigma & Communication",
+      "tagline": "Weight bias, patient-first language and advocacy."
     }
   ]
 }

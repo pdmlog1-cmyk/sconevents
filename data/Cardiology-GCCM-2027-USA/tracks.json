@@ -43,7 +43,7 @@
       ]
     },
     {
-      "title": "Preventive Cardiology & Lipidology",
+      "title": "Preventive Cardiology",
       "tagline": "Lp(a) lowering, PCSK9 trials, baxdrostat and residual risk.",
       "details": "Prevention is moving toward earlier and deeper lipid lowering, with VESALIUS-CV testing evolocumab in primary prevention, ESSENCE-TIMI 73 establishing olezarsen for severe hypertriglyceridemia, and the first wave of Lp(a)-lowering therapies (pelacarsen in Lp(a)HORIZON, olpasiran in OCEAN(a)-Outcomes, lepodisiran, muvalaplin) reading out. Hypertension is being reshaped by aldosterone synthase inhibition (BaxHTN baxdrostat), zilebesiran siRNA (KARDIA-3), and renal denervation re-emergence. The track integrates colchicine and IL-6 pathway inhibition for residual inflammatory risk, CAC and polygenic risk in ASCVD prediction, and ancestry-aware risk equations.",
       "subtopics": [
@@ -54,20 +54,6 @@
         "Colchicine and IL-6 inhibition: residual inflammatory risk",
         "CAC, polygenic risk, and ancestry-aware ASCVD prediction",
         "Renal denervation: post-approval real-world outcomes"
-      ]
-    },
-    {
-      "title": "Cardiometabolic Medicine",
-      "tagline": "GLP-1 agonists, obesity, diabetes-CV-kidney axis and CKM syndrome.",
-      "details": "The cardiometabolic field has been redefined by incretin-based therapy: SELECT (semaglutide), SURMOUNT-MMO (tirzepatide), STEP-HFpEF, and FLOW have positioned GLP-1 and dual GIP/GLP-1 agonists as cardiovascular and kidney drugs. The track formalizes the AHA Cardiovascular-Kidney-Metabolic (CKM) staging framework, examines retatrutide and orforglipron in upcoming readouts, and integrates finerenone across the diabetic-CKD-HF spectrum. Sessions address obesity as a primary CV risk factor, MASLD/MASH as an emerging cardiometabolic node, and the operational shift to multi-disciplinary CKM clinics.",
-      "subtopics": [
-        "GLP-1 and dual agonists: SELECT, SURMOUNT-MMO, STEP-HFpEF, FLOW",
-        "Pipeline: retatrutide, orforglipron, survodutide",
-        "CKM syndrome: AHA staging and clinic operational models",
-        "Finerenone across diabetic CKD and HFpEF (FINEARTS-HF)",
-        "MASLD/MASH and cardiovascular risk",
-        "Obesity as a primary cardiovascular risk factor",
-        "Type 2 diabetes prevention and pre-diabetes management"
       ]
     },
     {
@@ -96,6 +82,20 @@
         "Hybrid PET-MR for sarcoidosis and infective endocarditis",
         "Multimodality assessment of structural heart interventions",
         "Imaging biomarkers in trials and registries"
+      ]
+    },
+    {
+      "title": "Cardiometabolic Medicine",
+      "tagline": "GLP-1 agonists, obesity, diabetes-CV-kidney axis and CKM syndrome.",
+      "details": "The cardiometabolic field has been redefined by incretin-based therapy: SELECT (semaglutide), SURMOUNT-MMO (tirzepatide), STEP-HFpEF, and FLOW have positioned GLP-1 and dual GIP/GLP-1 agonists as cardiovascular and kidney drugs. The track formalizes the AHA Cardiovascular-Kidney-Metabolic (CKM) staging framework, examines retatrutide and orforglipron in upcoming readouts, and integrates finerenone across the diabetic-CKD-HF spectrum. Sessions address obesity as a primary CV risk factor, MASLD/MASH as an emerging cardiometabolic node, and the operational shift to multi-disciplinary CKM clinics.",
+      "subtopics": [
+        "GLP-1 and dual agonists: SELECT, SURMOUNT-MMO, STEP-HFpEF, FLOW",
+        "Pipeline: retatrutide, orforglipron, survodutide",
+        "CKM syndrome: AHA staging and clinic operational models",
+        "Finerenone across diabetic CKD and HFpEF (FINEARTS-HF)",
+        "MASLD/MASH and cardiovascular risk",
+        "Obesity as a primary cardiovascular risk factor",
+        "Type 2 diabetes prevention and pre-diabetes management"
       ]
     },
     {
@@ -195,6 +195,90 @@
         "Chagas in non-endemic regions and migrant populations",
         "Equity in clinical trial enrollment and guideline applicability"
       ]
+    },
+    {
+      "title": "Hypertension",
+      "tagline": "Blood pressure management, aldosterone inhibitors and guidelines."
+    },
+    {
+      "title": "Lipidology",
+      "tagline": "Cholesterol lowering, PCSK9 inhibitors and triglyceride therapy."
+    },
+    {
+      "title": "Valvular Heart Disease",
+      "tagline": "Aortic stenosis, mitral regurgitation and valve intervention."
+    },
+    {
+      "title": "Heart Rhythm Disorders",
+      "tagline": "Atrial fibrillation, SVT, ventricular arrhythmias and management."
+    },
+    {
+      "title": "Coronary Artery Disease",
+      "tagline": "Stable angina, ACS management and revascularization strategies."
+    },
+    {
+      "title": "Pediatric Cardiology",
+      "tagline": "Congenital defects, fetal cardiology and pediatric interventions."
+    },
+    {
+      "title": "Geriatric Cardiology",
+      "tagline": "Age-related CV disease, frailty and shared decision-making."
+    },
+    {
+      "title": "Cardiac Rehabilitation",
+      "tagline": "Exercise-based rehab, secondary prevention and remote models."
+    },
+    {
+      "title": "Congenital Heart Disease",
+      "tagline": "ACHD, surgical repair and long-term follow-up."
+    },
+    {
+      "title": "Pericardial Diseases",
+      "tagline": "Pericarditis, pericardial effusion and constrictive disease."
+    },
+    {
+      "title": "Cardiovascular Surgery",
+      "tagline": "CABG, aortic surgery and minimally invasive approaches."
+    },
+    {
+      "title": "Vascular & Aortic Diseases",
+      "tagline": "Aortic aneurysm, dissection and peripheral vascular disease."
+    },
+    {
+      "title": "Sudden Cardiac Arrest",
+      "tagline": "SCD prevention, ICD therapy and community AED programs."
+    },
+    {
+      "title": "Echocardiography",
+      "tagline": "Transthoracic, TEE, strain imaging and point-of-care echo."
+    },
+    {
+      "title": "Nuclear Cardiology",
+      "tagline": "SPECT, PET perfusion and cardiac amyloid imaging."
+    },
+    {
+      "title": "Cardiovascular Pharmacology",
+      "tagline": "Anticoagulants, antiplatelets and heart failure medications."
+    },
+    {
+      "title": "Women's Cardiovascular Health",
+      "tagline": "Sex-specific risk, SCAD, peripartum cardiomyopathy."
+    },
+    {
+      "title": "Rheumatic Heart Disease",
+      "tagline": "Global burden, penicillin prophylaxis and valve surgery."
+    },
+    {
+      "title": "Cardiac Nursing",
+      "tagline": "Nursing practice, patient education and multidisciplinary care."
+    },
+    {
+      "title": "Structural Heart Disease",
+      "tagline": "Transcatheter interventions, device closure and structural repair."
+    },
+    {
+      "title": "Cardiomyopathies",
+      "tagline": "HCM, DCM, ARVC, amyloid and genotype-directed therapy."
     }
   ]
 }

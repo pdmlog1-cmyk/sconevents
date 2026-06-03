@@ -125,6 +125,110 @@
         "Distributed and point-of-care cell therapy manufacturing",
         "PAT, real-time release, and Quality-by-Design (ICH Q8-Q12)"
       ]
+    },
+    {
+      "title": "mRNA & RNA Therapeutics",
+      "tagline": "mRNA vaccines, siRNA drugs and RNA platform technologies."
+    },
+    {
+      "title": "Antibody Engineering",
+      "tagline": "Bispecifics, nanobodies, Fc engineering and antibody formats."
+    },
+    {
+      "title": "Oligonucleotide Therapeutics",
+      "tagline": "ASOs, siRNA, aptamers and nucleic acid drug design."
+    },
+    {
+      "title": "AI for Drug Design",
+      "tagline": "Generative chemistry, molecular modeling and in silico screening."
+    },
+    {
+      "title": "Real-World Evidence",
+      "tagline": "RWD sources, regulatory applications and pragmatic studies."
+    },
+    {
+      "title": "Adaptive Clinical Trials",
+      "tagline": "Platform trials, Bayesian designs and seamless protocols."
+    },
+    {
+      "title": "Pharmaceutical Quality",
+      "tagline": "GMP compliance, ICH Q12, impurity control and testing."
+    },
+    {
+      "title": "Generic & Biosimilars",
+      "tagline": "ANDA pathway, biosimilar interchangeability and market access."
+    },
+    {
+      "title": "Access & Pricing",
+      "tagline": "Drug affordability, IRA negotiation and global pricing models."
+    },
+    {
+      "title": "Antimicrobial Drug Development",
+      "tagline": "New antibiotics, AMR pipeline and PASTEUR Act incentives."
+    },
+    {
+      "title": "Antiviral Drug Development",
+      "tagline": "Pandemic preparedness, protease inhibitors and broad-spectrum antivirals."
+    },
+    {
+      "title": "Anticancer Therapies",
+      "tagline": "Targeted oncology, immunotherapy combinations and novel agents."
+    },
+    {
+      "title": "CNS Drugs",
+      "tagline": "Neuropsychiatry, blood-brain barrier delivery and neurodegenerative targets."
+    },
+    {
+      "title": "Endocrine Drugs",
+      "tagline": "Diabetes, thyroid, hormonal therapies and metabolic agents."
+    },
+    {
+      "title": "Pediatric Drug Development",
+      "tagline": "PREA, age-appropriate formulations and pediatric trial design."
+    },
+    {
+      "title": "Geriatric Pharmacology",
+      "tagline": "Polypharmacy, deprescribing and age-adjusted dosing."
+    },
+    {
+      "title": "Herbal & Natural Products",
+      "tagline": "Botanical drugs, phytochemicals and regulatory pathways."
+    },
+    {
+      "title": "Drug Repurposing",
+      "tagline": "Existing drug repositioning, computational screening and trials."
+    },
+    {
+      "title": "Orphan Drugs",
+      "tagline": "Rare disease therapies, incentives and patient access."
+    },
+    {
+      "title": "Combination Therapies",
+      "tagline": "Fixed-dose combinations, synergy assessment and co-formulation."
+    },
+    {
+      "title": "Drug-Drug Interactions",
+      "tagline": "CYP-mediated interactions, transporter effects and clinical management."
+    },
+    {
+      "title": "Pharmacoeconomics",
+      "tagline": "Cost-effectiveness, QALY analysis and health technology assessment."
+    },
+    {
+      "title": "Compounding Pharmacy",
+      "tagline": "503A/503B outsourcing, sterile compounding and quality assurance."
+    },
+    {
+      "title": "Hospital Pharmacy",
+      "tagline": "Clinical pharmacy, antimicrobial stewardship and formulary management."
+    },
+    {
+      "title": "Targeted Protein Degraders",
+      "tagline": "PROTACs, molecular glues and induced proximity pharmacology."
+    },
+    {
+      "title": "Pharmacovigilance Innovation",
+      "tagline": "AI signal detection, NLP-driven reporting and active surveillance."
     }
   ]
 }

@@ -125,6 +125,110 @@
         "Histopathology AI: dysplasia, MSI and HER2 prediction",
         "Regulatory pathways (FDA SaMD, EU MDR) and post-market surveillance"
       ]
+    },
+    {
+      "title": "Eosinophilic Esophagitis",
+      "tagline": "Dupilumab, budesonide and dietary elimination therapy."
+    },
+    {
+      "title": "Gastric & Esophageal Cancer",
+      "tagline": "Neoadjuvant therapy, HER2-targeted treatment and surgery."
+    },
+    {
+      "title": "Pancreatic Disease",
+      "tagline": "Pancreatitis, pancreatic cancer and endoscopic drainage."
+    },
+    {
+      "title": "Biliary & Liver Surgery",
+      "tagline": "Cholecystectomy, bile duct repair and hepatic resection."
+    },
+    {
+      "title": "Therapeutic Endoscopy",
+      "tagline": "Hemostasis, stenting, dilation and advanced interventions."
+    },
+    {
+      "title": "Bariatric & Metabolic Endoscopy",
+      "tagline": "Endoscopic sleeve gastroplasty, intragastric balloons."
+    },
+    {
+      "title": "Fatty Liver Disease (MASH)",
+      "tagline": "Resmetirom, GLP-1 agents and fibrosis assessment."
+    },
+    {
+      "title": "Viral Hepatitis",
+      "tagline": "HCV elimination, HBV functional cure and DAA therapy."
+    },
+    {
+      "title": "GI Bleeding",
+      "tagline": "Variceal and non-variceal hemorrhage, endoscopic hemostasis."
+    },
+    {
+      "title": "Diverticular Disease",
+      "tagline": "Acute diverticulitis management, elective surgery and prevention."
+    },
+    {
+      "title": "Colon Polyps & Screening",
+      "tagline": "Colonoscopy quality, polypectomy and cancer prevention."
+    },
+    {
+      "title": "Helicobacter pylori",
+      "tagline": "Eradication regimens, antibiotic resistance and screening."
+    },
+    {
+      "title": "GERD & Reflux Disease",
+      "tagline": "PPI therapy, vonoprazan and anti-reflux procedures."
+    },
+    {
+      "title": "Achalasia & Motility",
+      "tagline": "POEM, HRM classification and esophageal dysmotility."
+    },
+    {
+      "title": "Anorectal Disorders",
+      "tagline": "Hemorrhoids, fissures, fistulas and pelvic floor dysfunction."
+    },
+    {
+      "title": "Small Bowel Disease",
+      "tagline": "Capsule endoscopy, Crohn's and small bowel tumors."
+    },
+    {
+      "title": "Mesenteric Disease",
+      "tagline": "Mesenteric ischemia, venous thrombosis and vascular disorders."
+    },
+    {
+      "title": "IBS & Functional Pain",
+      "tagline": "Gut-brain interaction, neuromodulators and dietary therapy."
+    },
+    {
+      "title": "Cystic Fibrosis & GI",
+      "tagline": "Pancreatic insufficiency, CFTR modulators and nutrition."
+    },
+    {
+      "title": "Geriatric GI",
+      "tagline": "Age-related GI conditions, polypharmacy and endoscopy safety."
+    },
+    {
+      "title": "Women's GI Health",
+      "tagline": "Pregnancy GI issues, hormonal influences and gender-specific care."
+    },
+    {
+      "title": "Tropical GI Disease",
+      "tagline": "Tropical infections, parasitic diseases and traveler's diarrhea."
+    },
+    {
+      "title": "Liver Transplantation",
+      "tagline": "Donor selection, immunosuppression and long-term outcomes."
+    },
+    {
+      "title": "GI Imaging",
+      "tagline": "CT/MR enterography, contrast-enhanced ultrasound and radiology."
+    },
+    {
+      "title": "Capsule Endoscopy",
+      "tagline": "Small bowel visualization, AI-assisted reading and colon capsule."
+    },
+    {
+      "title": "Health Equity in GI",
+      "tagline": "Disparities in GI care access, screening and outcomes."
     }
   ]
 }
