@@ -419,7 +419,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
             </div>
             <span className="lpb-dl-arrow"><i className="fas fa-arrow-down" /></span>
           </a>
-          <a href={`${MAIN}/assets/${conf.short} - Abstract Template.docx`} className="lpb-dl-card" target="_blank" rel="noopener noreferrer" download>
+          <a href={`${MAIN}/assets/abstract-template.docx`} className="lpb-dl-card" target="_blank" rel="noopener noreferrer" download>
             <div className="lpb-dl-icon"><i className="fas fa-file-word" /></div>
             <div className="lpb-dl-body">
               <h3>Abstract template</h3>
@@ -428,7 +428,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
             </div>
             <span className="lpb-dl-arrow"><i className="fas fa-arrow-down" /></span>
           </a>
-          <a href={`${MAIN}/assets/${conf.short} - PowerPoint.pptx`} className="lpb-dl-card" target="_blank" rel="noopener noreferrer" download>
+          <a href={`${MAIN}/assets/presentation-template.pptx`} className="lpb-dl-card" target="_blank" rel="noopener noreferrer" download>
             <div className="lpb-dl-icon"><i className="fas fa-file-powerpoint" /></div>
             <div className="lpb-dl-body">
               <h3>Sample presentation</h3>
