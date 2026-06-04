@@ -133,12 +133,14 @@ export default function LandingLeadModal({ conf: confProp, mainSiteUrl, slug }: 
       const data = await r.json();
       if (!r.ok || !data.success) throw new Error(data.error || 'Submission failed');
 
-      setSuccess({ ref: data.ref, downloadUrl: data.downloadUrl });
+      const brochureUrl = `${MAIN}/assets/brochure.pdf`;
+      const brochureFilename = `${conf.short} - Brochure.pdf`;
+      setSuccess({ ref: data.ref, downloadUrl: brochureUrl });
 
       try {
         const a = document.createElement('a');
-        a.href = data.downloadUrl;
-        a.download = '';
+        a.href = brochureUrl;
+        a.download = brochureFilename;
         a.rel = 'noopener';
         document.body.appendChild(a);
         a.click();
@@ -174,7 +176,7 @@ export default function LandingLeadModal({ conf: confProp, mainSiteUrl, slug }: 
             <h4>Your download is ready.</h4>
             <p style={{ color: 'var(--muted)', fontSize: 13 }}>Reference: <strong>{success.ref}</strong></p>
             <p style={{ color: 'var(--muted)', fontSize: 13 }}>If the download didn&apos;t start automatically:</p>
-            <a href={success.downloadUrl} className="btn btn-primary" download style={{ marginTop: 6 }}>
+            <a href={success.downloadUrl} className="btn btn-primary" download={`${conf.short} - Brochure.pdf`} style={{ marginTop: 6 }}>
               <i className="fas fa-file-arrow-down" /> Download manually
             </a>
             <p className="lead-modal-note" style={{ marginTop: 16 }}>We&apos;ve also emailed a copy to your inbox.</p>
