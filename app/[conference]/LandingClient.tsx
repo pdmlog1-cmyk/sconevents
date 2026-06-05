@@ -295,7 +295,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <li>Lunches &amp; refreshments</li>
               <li>Welcome reception</li>
             </ul>
-            <a href={`${MAIN}/register`} className="btn btn-outline-ink btn-block">
+            <a href={`${MAIN}/register?category=student`} className="btn btn-outline-ink btn-block">
               Register as Student
             </a>
           </article>
@@ -321,7 +321,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <li>Welcome reception · Day 1</li>
               <li>Certificate of participation</li>
             </ul>
-            <a href={`${MAIN}/register`} className="btn btn-primary btn-block">
+            <a href={`${MAIN}/register?category=listener`} className="btn btn-primary btn-block">
               Register as Listener
             </a>
           </article>
@@ -345,7 +345,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <li>Published abstract (ISBN)</li>
               <li>Best Paper / Poster award eligibility</li>
             </ul>
-            <a href={`${MAIN}/register`} className="btn btn-outline-ink btn-block">
+            <a href={`${MAIN}/register?category=presenter`} className="btn btn-outline-ink btn-block">
               Register as Presenter
             </a>
           </article>
