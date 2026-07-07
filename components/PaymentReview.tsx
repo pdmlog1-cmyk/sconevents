@@ -220,7 +220,7 @@ export default function PaymentReview({
         web_token: o.web_token,
         total_amount: p.total,
         currency: o.currency,
-        description: `WCAM 2027 — ${o.category_label}`,
+        description: `WCAB 2027 — ${o.category_label}`,
       }),
     });
     const data = await r.json();

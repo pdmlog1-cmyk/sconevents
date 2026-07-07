@@ -177,7 +177,7 @@ export default function RegisterForm() {
     setSubmitting(true);
 
     // Generate the unique date/time-based token client-side. Format:
-    // WCAM-YYYYMMDD-HHmmss-XXXXXX. SAME token threads through every stage:
+    // WCAB-YYYYMMDD-HHmmss-XXXXXX. SAME token threads through every stage:
     //   - /api/register → CMS or=1
     //   - /api/save-register-user → R2 registration record
     //   - /payment-gateway URL
@@ -185,7 +185,7 @@ export default function RegisterForm() {
     //   - /api/paypal/capture-order
     //   - /api/save-payment-user → CMS or_payment=1 + R2 payment record
     //   - /payment-success URL ref
-    const webToken = generateWebToken('WCAM');
+    const webToken = generateWebToken('WCAB');
     // eslint-disable-next-line no-console
     console.log(`[client:register] generated web_token=${webToken}`);
 

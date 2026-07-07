@@ -1,7 +1,7 @@
 /* =============================================================================
    Web token generator
    -----------------------------------------------------------------------------
-   Format: WCAM-YYYYMMDD-HHmmss-XXXXXX
+   Format: WCAB-YYYYMMDD-HHmmss-XXXXXX
      - YYYYMMDD-HHmmss → UTC date/time in compact, sortable form
      - XXXXXX           → 6 random base36 chars (~2 billion combinations)
    Total uniqueness: timestamp (1-second resolution) × ~2.18e9 random space.
@@ -28,9 +28,9 @@ function randomSuffix(len = 6): string {
  *   generateWebToken('REG')  → "REG-20260508-170134-K3F2A9"
  *   generateWebToken('PAY')  → "PAY-20260508-170201-X8M2J4"
  *
- * Defaults to "WCAM" prefix when called with no args.
+ * Defaults to "WCAB" prefix when called with no args.
  */
-export function generateWebToken(prefix = 'WCAM'): string {
+export function generateWebToken(prefix = 'WCAB'): string {
   const d = new Date();
   const ymd = `${d.getUTCFullYear()}${pad(d.getUTCMonth() + 1, 2)}${pad(d.getUTCDate(), 2)}`;
   const hms = `${pad(d.getUTCHours(), 2)}${pad(d.getUTCMinutes(), 2)}${pad(d.getUTCSeconds(), 2)}`;

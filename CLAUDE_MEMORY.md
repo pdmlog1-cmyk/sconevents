@@ -23,7 +23,7 @@ ns2.vercel-dns.com
 
 | # | Slug | Short | Main Site URL | Landing Page URL |
 |---|------|-------|---------------|------------------|
-| 1 | Addiction-WCAM-2027-USA | WCAM 2027 | https://addictionmedicine-conference.com | https://sconevents.com/Addiction-WCAM-2027-USA |
+| 1 | Addiction-WCAB-2027-CzechRepublic | WCAB 2027 | https://addictionmedicine-conference.com | https://sconevents.com/Addiction-WCAB-2027-CzechRepublic |
 | 2 | Biotechnology-GSBG-2027-USA | GSBG 2027 | https://biotech-meetings.com | https://sconevents.com/Biotechnology-GSBG-2027-USA |
 | 3 | Cardiology-GCCM-2027-USA | GCCM 2027 | https://cardiology-conference.com | https://sconevents.com/Cardiology-GCCM-2027-USA |
 | 4 | Food-GSFS-2027-USA | GSFS 2027 | https://foodtech-conference.com | https://sconevents.com/Food-GSFS-2027-USA |
@@ -31,7 +31,7 @@ ns2.vercel-dns.com
 | 6 | Neurology-GCNN-2027-USA | GCNN 2027 | https://neuroscience-conference.com | https://sconevents.com/Neurology-GCNN-2027-USA |
 | 7 | Obesity-GSOD-2027-USA | GSOD 2027 | https://obesity-conferences.com | https://sconevents.com/Obesity-GSOD-2027-USA |
 | 8 | Pharmaceutical-WCPD-2027-USA | WCPD 2027 | https://pharmaworldconference.com | https://sconevents.com/Pharmaceutical-WCPD-2027-USA |
-| 9 | PhysicalMedicine-GCPR-2027-USA | GCPR 2027 | https://physicalmedicine-conference.com | https://sconevents.com/PhysicalMedicine-GCPR-2027-USA |
+| 9 | PhysicalMedicine-WSPR-2027-USA | WSPR 2027 | https://physicalmedicine-conference.com | https://sconevents.com/PhysicalMedicine-WSPR-2027-USA |
 | 10 | Surgery-GCSA-2027-USA | GCSA 2027 | https://surgery-meetings.com | https://sconevents.com/Surgery-GCSA-2027-USA |
 
 ## Key Files Structure

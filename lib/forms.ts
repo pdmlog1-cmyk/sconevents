@@ -290,7 +290,7 @@ export function requireFields<T extends Record<string, unknown>>(
 /*  Misc                                                                      */
 /* -------------------------------------------------------------------------- */
 
-export function generateToken(prefix = 'WCAM'): string {
+export function generateToken(prefix = 'WCAB'): string {
   const rand = Math.random().toString(36).slice(2, 10);
   const ts = Date.now().toString(36);
   return `${prefix}-${ts}-${rand}`.toUpperCase();
