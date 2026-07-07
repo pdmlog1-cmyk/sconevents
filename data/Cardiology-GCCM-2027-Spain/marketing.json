@@ -1,34 +1,34 @@
 {
   "marquee_items": [
     [
-      "Minimally",
+      "Interventional",
       "fa-flask"
     ],
     [
-      "Robotic",
+      "Heart",
       "fa-atom"
     ],
     [
-      "Cardiothoracic",
+      "Electrophysiology",
       "fa-microscope"
     ],
     [
-      "Neurosurgery",
+      "Preventive",
       "fa-dna"
     ],
     [
-      "Regional",
+      "Cardio-Oncology",
       "fa-bolt"
     ]
   ],
   "why_eyebrow": "Why Attend",
-  "why_heading": "Six reasons to join GCSA 2027.",
-  "why_intro": "GCSA 2027 is more than a conference — it is a launchpad for your research, your clinical practice, and your next translational collaboration.",
+  "why_heading": "Six reasons to join GCCM 2027.",
+  "why_intro": "GCCM 2027 is more than a conference — it is a launchpad for your research, your clinical practice, and your next translational collaboration.",
   "why_attend": [
     [
       "fa-microscope",
       "Frontier Research",
-      "Hear first on breakthrough findings across 9 scientific tracks in surgery & anaesthesia."
+      "Hear first on breakthrough findings across 14 scientific tracks in cardiology."
     ],
     [
       "fa-user-tie",
@@ -53,14 +53,14 @@
     [
       "fa-globe",
       "Hybrid Experience",
-      "Two days of curated networking and a gala dinner — attend on-site in the USA or stream every session live, worldwide."
+      "Two days of curated networking and a gala dinner — attend on-site in Barcelona or stream every session live, worldwide."
     ]
   ],
   "testimonials_heading": "Voices from past editions.",
   "testimonials_intro": "What delegates, speakers and partners said about previous editions.",
   "testimonials": [
     [
-      "GCSA was the most well-organized surgery & anaesthesia conference I have attended in years. The quality of keynotes and the depth of discussions were exceptional.",
+      "GCCM was the most well-organized cardiology conference I have attended in years. The quality of keynotes and the depth of discussions were exceptional.",
       "Prof. Linda Morrison",
       "Keynote Speaker"
     ],
@@ -86,7 +86,7 @@
       "14",
       "Jul 2026",
       "Early Bird Ends",
-      "Save 20% on fees"
+      "Save 50% on fees"
     ],
     [
       "15",
@@ -95,15 +95,15 @@
       "Author notifications"
     ],
     [
-      "26",
+      "22",
       "Apr 2027",
       "Conference Opens",
       "Two days"
     ]
   ],
   "partners": [
-    "GCSA PARTNER A",
-    "GCSA LABS",
+    "GCCM PARTNER A",
+    "GCCM LABS",
     "RESEARCH INST.",
     "GLOBAL HEALTH",
     "MEDTECH CO",

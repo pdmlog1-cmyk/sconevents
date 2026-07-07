@@ -64,11 +64,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Cardiology-GCCM-2027-USA',
+    slug: 'Cardiology-GCCM-2027-Spain',
     name: 'Global Congress on Cardiology & Cardiovascular Medicine',
     short: 'GCCM 2027',
     mainSiteUrl: 'https://cardiology-conference.com',
-    dataFolder: 'Cardiology-GCCM-2027-USA',
+    dataFolder: 'Cardiology-GCCM-2027-Spain',
     gtagId: 'G-2D43ZLN9QT',
     theme: {
       ink: '#3a1419',
@@ -121,11 +121,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Neurology-GCNN-2027-USA',
+    slug: 'Neurology-GCNN-2027-CzechRepublic',
     name: 'Global Congress on Neurology & Neuroscience',
     short: 'GCNN 2027',
     mainSiteUrl: 'https://neuroscience-conference.com',
-    dataFolder: 'Neurology-GCNN-2027-USA',
+    dataFolder: 'Neurology-GCNN-2027-CzechRepublic',
     gtagId: 'G-ZB8SD5NTTC',
     theme: {
       ink: '#3b0764',
@@ -197,11 +197,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Surgery-GCSA-2027-USA',
+    slug: 'Surgery-GCSA-2027-Spain',
     name: 'Global Congress on Surgery & Anesthesia',
     short: 'GCSA 2027',
     mainSiteUrl: 'https://surgery-meetings.com',
-    dataFolder: 'Surgery-GCSA-2027-USA',
+    dataFolder: 'Surgery-GCSA-2027-Spain',
     gtagId: 'G-KVQS21YME0',
     theme: {
       ink: '#1e3a8a',

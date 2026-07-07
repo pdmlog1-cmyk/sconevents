@@ -14,7 +14,7 @@
     {
       "id": "late",
       "label": "Late / On-site",
-      "closes": "April 26-27"
+      "closes": "June 22-23"
     }
   ],
   "categories": [
@@ -166,16 +166,16 @@
       "accompanying_per_person": 150
     },
     "checkin_dates": [
-      "April 25, 2027",
-      "April 26, 2027",
-      "April 27, 2027",
-      "April 28, 2027"
+      "June 21, 2027",
+      "June 22, 2027",
+      "June 23, 2027",
+      "June 24, 2027"
     ],
     "checkout_dates": [
-      "April 26, 2027",
-      "April 27, 2027",
-      "April 28, 2027",
-      "April 29, 2027"
+      "June 22, 2027",
+      "June 23, 2027",
+      "June 24, 2027",
+      "June 25, 2027"
     ],
     "title_options": [
       "Dr.",
