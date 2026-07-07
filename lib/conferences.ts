@@ -69,7 +69,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCCM 2027',
     mainSiteUrl: 'https://cardiology-conference.com',
     dataFolder: 'Cardiology-GCCM-2027-Spain',
-    gtagId: 'G-2D43ZLN9QT',
+    gtagId: 'G-CWZPWGYS63',
     theme: {
       ink: '#3a1419',
       paper: '#ffffff',
@@ -126,7 +126,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCNN 2027',
     mainSiteUrl: 'https://neuroscience-conference.com',
     dataFolder: 'Neurology-GCNN-2027-CzechRepublic',
-    gtagId: 'G-ZB8SD5NTTC',
+    gtagId: 'G-H21Z28P7R4',
     theme: {
       ink: '#3b0764',
       paper: '#ffffff',
@@ -202,7 +202,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCSA 2027',
     mainSiteUrl: 'https://surgery-meetings.com',
     dataFolder: 'Surgery-GCSA-2027-Spain',
-    gtagId: 'G-KVQS21YME0',
+    gtagId: 'G-HXWD11GKN9',
     theme: {
       ink: '#1e3a8a',
       paper: '#ffffff',
