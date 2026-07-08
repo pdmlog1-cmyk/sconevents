@@ -164,7 +164,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'WCPD 2027',
     mainSiteUrl: 'https://pharmaworldconference.com',
     dataFolder: 'Pharmaceutical-WCPD-2027-Singapore',
-    gtagId: 'G-65Z87PRHBE',
+    gtagId: 'G-8814RF0TYP',
     theme: {
       ink: '#073b3a',
       paper: '#ffffff',
