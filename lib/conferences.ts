@@ -145,7 +145,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSOD 2027',
     mainSiteUrl: 'https://obesity-conferences.com',
     dataFolder: 'Obesity-GSOD-2027-Singapore',
-    gtagId: 'G-T4RNDJ9138',
+    gtagId: 'G-1P6PESNKQV',
     theme: {
       ink: '#001833',
       paper: '#ffffff',
