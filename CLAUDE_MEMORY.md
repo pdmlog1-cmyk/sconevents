@@ -26,7 +26,7 @@ ns2.vercel-dns.com
 | 1 | Addiction-WCAB-2027-CzechRepublic | WCAB 2027 | https://addictionmedicine-conference.com | https://sconevents.com/Addiction-WCAB-2027-CzechRepublic |
 | 2 | Biotechnology-GSBG-2027-Singapore | GSBG 2027 | https://biotech-meetings.com | https://sconevents.com/Biotechnology-GSBG-2027-Singapore |
 | 3 | Cardiology-GCCM-2027-Spain | GCCM 2027 | https://cardiology-conference.com | https://sconevents.com/Cardiology-GCCM-2027-Spain |
-| 4 | Food-GSFS-2027-USA | GSFS 2027 | https://foodtech-conference.com | https://sconevents.com/Food-GSFS-2027-USA |
+| 4 | Food-GSFS-2027-Singapore | GSFS 2027 | https://foodtech-conference.com | https://sconevents.com/Food-GSFS-2027-Singapore |
 | 5 | Gastroenterology-GCGD-2027-Singapore | GCGD 2027 | https://gastro-meetings.com | https://sconevents.com/Gastroenterology-GCGD-2027-Singapore |
 | 6 | Neurology-GCNN-2027-CzechRepublic | GCNN 2027 | https://neuroscience-conference.com | https://sconevents.com/Neurology-GCNN-2027-CzechRepublic |
 | 7 | Obesity-GSOD-2027-Singapore | GSOD 2027 | https://obesity-conferences.com | https://sconevents.com/Obesity-GSOD-2027-Singapore |

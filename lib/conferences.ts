@@ -83,11 +83,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Food-GSFS-2027-USA',
+    slug: 'Food-GSFS-2027-Singapore',
     name: 'Global Summit on Food Science & Technology',
     short: 'GSFS 2027',
     mainSiteUrl: 'https://foodtech-conference.com',
-    dataFolder: 'Food-GSFS-2027-USA',
+    dataFolder: 'Food-GSFS-2027-Singapore',
     gtagId: 'G-798GQ78F1N',
     theme: {
       ink: '#2c1f06',
