@@ -140,11 +140,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Obesity-GSOD-2027-USA',
+    slug: 'Obesity-GSOD-2027-Singapore',
     name: 'Global Summit on Obesity & Diabetes',
     short: 'GSOD 2027',
     mainSiteUrl: 'https://obesity-conferences.com',
-    dataFolder: 'Obesity-GSOD-2027-USA',
+    dataFolder: 'Obesity-GSOD-2027-Singapore',
     gtagId: 'G-T4RNDJ9138',
     theme: {
       ink: '#001833',
