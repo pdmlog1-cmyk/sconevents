@@ -88,7 +88,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSFS 2027',
     mainSiteUrl: 'https://foodtech-conference.com',
     dataFolder: 'Food-GSFS-2027-Singapore',
-    gtagId: 'G-798GQ78F1N',
+    gtagId: 'G-03VL0LQE98',
     theme: {
       ink: '#2c1f06',
       paper: '#ffffff',
