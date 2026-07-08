@@ -50,7 +50,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSBG 2027',
     mainSiteUrl: 'https://biotech-meetings.com',
     dataFolder: 'Biotechnology-GSBG-2027-Singapore',
-    gtagId: 'G-JT6X560R8W',
+    gtagId: 'G-L0G0SDS5DJ',
     theme: {
       ink: '#052e1c',
       paper: '#ffffff',
@@ -183,7 +183,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'WSPR 2027',
     mainSiteUrl: 'https://physicalmedicine-conference.com',
     dataFolder: 'PhysicalMedicine-WSPR-2027-Singapore',
-    gtagId: 'G-6EYK8TYWQL',
+    gtagId: 'G-JJWRK17881',
     theme: {
       ink: '#3a1006',
       paper: '#ffffff',
