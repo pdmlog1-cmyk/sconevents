@@ -30,7 +30,7 @@ ns2.vercel-dns.com
 | 5 | Gastroenterology-GCGD-2027-Singapore | GCGD 2027 | https://gastro-meetings.com | https://sconevents.com/Gastroenterology-GCGD-2027-Singapore |
 | 6 | Neurology-GCNN-2027-CzechRepublic | GCNN 2027 | https://neuroscience-conference.com | https://sconevents.com/Neurology-GCNN-2027-CzechRepublic |
 | 7 | Obesity-GSOD-2027-Singapore | GSOD 2027 | https://obesity-conferences.com | https://sconevents.com/Obesity-GSOD-2027-Singapore |
-| 8 | Pharmaceutical-WCPD-2027-USA | WCPD 2027 | https://pharmaworldconference.com | https://sconevents.com/Pharmaceutical-WCPD-2027-USA |
+| 8 | Pharmaceutical-WCPD-2027-Singapore | WCPD 2027 | https://pharmaworldconference.com | https://sconevents.com/Pharmaceutical-WCPD-2027-Singapore |
 | 9 | PhysicalMedicine-WSPR-2027-Singapore | WSPR 2027 | https://physicalmedicine-conference.com | https://sconevents.com/PhysicalMedicine-WSPR-2027-Singapore |
 | 10 | Surgery-GCSA-2027-Spain | GCSA 2027 | https://surgery-meetings.com | https://sconevents.com/Surgery-GCSA-2027-Spain |
 

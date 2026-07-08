@@ -159,11 +159,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Pharmaceutical-WCPD-2027-USA',
+    slug: 'Pharmaceutical-WCPD-2027-Singapore',
     name: 'World Congress on Pharmaceutical Development',
     short: 'WCPD 2027',
     mainSiteUrl: 'https://pharmaworldconference.com',
-    dataFolder: 'Pharmaceutical-WCPD-2027-USA',
+    dataFolder: 'Pharmaceutical-WCPD-2027-Singapore',
     gtagId: 'G-65Z87PRHBE',
     theme: {
       ink: '#073b3a',
