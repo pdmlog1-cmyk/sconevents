@@ -8,7 +8,7 @@
 sconevents-landing/
 ├── conferences/           # Individual Next.js apps
 │   ├── Addiction-WCAB-2027-CzechRepublic/
-│   ├── Biotechnology-GSBG-2027-USA/
+│   ├── Biotechnology-GSBG-2027-Singapore/
 │   ├── Cardiology-GCCM-2027-Spain/
 │   └── ... (10 total)
 ├── out/                   # Combined static output (after build)
@@ -20,7 +20,7 @@ sconevents-landing/
 
 After deployment:
 - `sconevents.com/Addiction-WCAB-2027-CzechRepublic/`
-- `sconevents.com/Biotechnology-GSBG-2027-USA/`
+- `sconevents.com/Biotechnology-GSBG-2027-Singapore/`
 - `sconevents.com/Cardiology-GCCM-2027-Spain/`
 - etc.
 

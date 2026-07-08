@@ -45,11 +45,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Biotechnology-GSBG-2027-USA',
+    slug: 'Biotechnology-GSBG-2027-Singapore',
     name: 'Global Summit on Biotechnology & Genetic Engineering',
     short: 'GSBG 2027',
     mainSiteUrl: 'https://biotech-meetings.com',
-    dataFolder: 'Biotechnology-GSBG-2027-USA',
+    dataFolder: 'Biotechnology-GSBG-2027-Singapore',
     gtagId: 'G-JT6X560R8W',
     theme: {
       ink: '#052e1c',

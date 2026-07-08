@@ -24,7 +24,7 @@ ns2.vercel-dns.com
 | # | Slug | Short | Main Site URL | Landing Page URL |
 |---|------|-------|---------------|------------------|
 | 1 | Addiction-WCAB-2027-CzechRepublic | WCAB 2027 | https://addictionmedicine-conference.com | https://sconevents.com/Addiction-WCAB-2027-CzechRepublic |
-| 2 | Biotechnology-GSBG-2027-USA | GSBG 2027 | https://biotech-meetings.com | https://sconevents.com/Biotechnology-GSBG-2027-USA |
+| 2 | Biotechnology-GSBG-2027-Singapore | GSBG 2027 | https://biotech-meetings.com | https://sconevents.com/Biotechnology-GSBG-2027-Singapore |
 | 3 | Cardiology-GCCM-2027-Spain | GCCM 2027 | https://cardiology-conference.com | https://sconevents.com/Cardiology-GCCM-2027-Spain |
 | 4 | Food-GSFS-2027-USA | GSFS 2027 | https://foodtech-conference.com | https://sconevents.com/Food-GSFS-2027-USA |
 | 5 | Gastroenterology-GCGD-2027-USA | GCGD 2027 | https://gastro-meetings.com | https://sconevents.com/Gastroenterology-GCGD-2027-USA |
