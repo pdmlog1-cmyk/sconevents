@@ -178,11 +178,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'PhysicalMedicine-WSPR-2027-USA',
+    slug: 'PhysicalMedicine-WSPR-2027-Singapore',
     name: 'World Summit on Physical Medicine & Rehabilitation',
     short: 'WSPR 2027',
     mainSiteUrl: 'https://physicalmedicine-conference.com',
-    dataFolder: 'PhysicalMedicine-WSPR-2027-USA',
+    dataFolder: 'PhysicalMedicine-WSPR-2027-Singapore',
     gtagId: 'G-6EYK8TYWQL',
     theme: {
       ink: '#3a1006',
