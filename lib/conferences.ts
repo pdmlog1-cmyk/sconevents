@@ -102,11 +102,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Gastroenterology-GCGD-2027-USA',
+    slug: 'Gastroenterology-GCGD-2027-Singapore',
     name: 'Global Congress on Gastroenterology & Digestive Disorders',
     short: 'GCGD 2027',
     mainSiteUrl: 'https://gastro-meetings.com',
-    dataFolder: 'Gastroenterology-GCGD-2027-USA',
+    dataFolder: 'Gastroenterology-GCGD-2027-Singapore',
     gtagId: 'G-04T0LN74N3',
     theme: {
       ink: '#3a0a3d',
