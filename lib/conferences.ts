@@ -107,7 +107,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCGD 2027',
     mainSiteUrl: 'https://gastro-meetings.com',
     dataFolder: 'Gastroenterology-GCGD-2027-Singapore',
-    gtagId: 'G-04T0LN74N3',
+    gtagId: 'G-9Q9VNP5F3P',
     theme: {
       ink: '#3a0a3d',
       paper: '#ffffff',
