@@ -69,7 +69,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCCM 2027',
     mainSiteUrl: 'https://cardiology-conference.com',
     dataFolder: 'cardiology',
-    gtagId: 'G-2D43ZLN9QT',
+    gtagId: 'G-EWQ82M98Q3',
     theme: {
       ink: '#3a1419',
       paper: '#ffffff',
