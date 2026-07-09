@@ -24,15 +24,15 @@ ns2.vercel-dns.com
 | # | Slug | Short | Main Site URL | Landing Page URL |
 |---|------|-------|---------------|------------------|
 | 1 | addiction | WCAB 2027 | https://addictionmedicine-conference.com | https://sconevents.com/addiction |
-| 2 | Biotechnology-GSBG-2027-Singapore | GSBG 2027 | https://biotech-meetings.com | https://sconevents.com/Biotechnology-GSBG-2027-Singapore |
-| 3 | Cardiology-GCCM-2027-Spain | GCCM 2027 | https://cardiology-conference.com | https://sconevents.com/Cardiology-GCCM-2027-Spain |
-| 4 | Food-GSFS-2027-Singapore | GSFS 2027 | https://foodtech-conference.com | https://sconevents.com/Food-GSFS-2027-Singapore |
-| 5 | Gastroenterology-GCGD-2027-Singapore | GCGD 2027 | https://gastro-meetings.com | https://sconevents.com/Gastroenterology-GCGD-2027-Singapore |
-| 6 | Neurology-GCNN-2027-CzechRepublic | GCNN 2027 | https://neuroscience-conference.com | https://sconevents.com/Neurology-GCNN-2027-CzechRepublic |
-| 7 | Obesity-GSOD-2027-Singapore | GSOD 2027 | https://obesity-conferences.com | https://sconevents.com/Obesity-GSOD-2027-Singapore |
-| 8 | Pharmaceutical-WCPD-2027-Singapore | WCPD 2027 | https://pharmaworldconference.com | https://sconevents.com/Pharmaceutical-WCPD-2027-Singapore |
-| 9 | PhysicalMedicine-WSPR-2027-Singapore | WSPR 2027 | https://physicalmedicine-conference.com | https://sconevents.com/PhysicalMedicine-WSPR-2027-Singapore |
-| 10 | Surgery-GCSA-2027-Spain | GCSA 2027 | https://surgery-meetings.com | https://sconevents.com/Surgery-GCSA-2027-Spain |
+| 2 | biotechnology | GSBG 2027 | https://biotech-meetings.com | https://sconevents.com/biotechnology |
+| 3 | cardiology | GCCM 2027 | https://cardiology-conference.com | https://sconevents.com/cardiology |
+| 4 | food | GSFS 2027 | https://foodtech-conference.com | https://sconevents.com/food |
+| 5 | gastroenterology | GCGD 2027 | https://gastro-meetings.com | https://sconevents.com/gastroenterology |
+| 6 | neurology | GCNN 2027 | https://neuroscience-conference.com | https://sconevents.com/neurology |
+| 7 | obesity | GSOD 2027 | https://obesity-conferences.com | https://sconevents.com/obesity |
+| 8 | pharmaceutical | WCPD 2027 | https://pharmaworldconference.com | https://sconevents.com/pharmaceutical |
+| 9 | physicalmedicine | WSPR 2027 | https://physicalmedicine-conference.com | https://sconevents.com/physicalmedicine |
+| 10 | surgery | GCSA 2027 | https://surgery-meetings.com | https://sconevents.com/surgery |
 
 ## Key Files Structure
 

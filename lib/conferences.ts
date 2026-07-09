@@ -45,11 +45,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Biotechnology-GSBG-2027-Singapore',
+    slug: 'biotechnology',
     name: 'Global Summit on Biotechnology & Genetic Engineering',
     short: 'GSBG 2027',
     mainSiteUrl: 'https://biotech-meetings.com',
-    dataFolder: 'Biotechnology-GSBG-2027-Singapore',
+    dataFolder: 'biotechnology',
     gtagId: 'G-L0G0SDS5DJ',
     theme: {
       ink: '#052e1c',
@@ -64,11 +64,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Cardiology-GCCM-2027-Spain',
+    slug: 'cardiology',
     name: 'Global Congress on Cardiology & Cardiovascular Medicine',
     short: 'GCCM 2027',
     mainSiteUrl: 'https://cardiology-conference.com',
-    dataFolder: 'Cardiology-GCCM-2027-Spain',
+    dataFolder: 'cardiology',
     gtagId: 'G-2D43ZLN9QT',
     theme: {
       ink: '#3a1419',
@@ -83,11 +83,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Food-GSFS-2027-Singapore',
+    slug: 'food',
     name: 'Global Summit on Food Science & Technology',
     short: 'GSFS 2027',
     mainSiteUrl: 'https://foodtech-conference.com',
-    dataFolder: 'Food-GSFS-2027-Singapore',
+    dataFolder: 'food',
     gtagId: 'G-03VL0LQE98',
     theme: {
       ink: '#2c1f06',
@@ -102,11 +102,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Gastroenterology-GCGD-2027-Singapore',
+    slug: 'gastroenterology',
     name: 'Global Congress on Gastroenterology & Digestive Disorders',
     short: 'GCGD 2027',
     mainSiteUrl: 'https://gastro-meetings.com',
-    dataFolder: 'Gastroenterology-GCGD-2027-Singapore',
+    dataFolder: 'gastroenterology',
     gtagId: 'G-9Q9VNP5F3P',
     theme: {
       ink: '#3a0a3d',
@@ -121,11 +121,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Neurology-GCNN-2027-CzechRepublic',
+    slug: 'neurology',
     name: 'Global Congress on Neurology & Neuroscience',
     short: 'GCNN 2027',
     mainSiteUrl: 'https://neuroscience-conference.com',
-    dataFolder: 'Neurology-GCNN-2027-CzechRepublic',
+    dataFolder: 'neurology',
     gtagId: 'G-ZB8SD5NTTC',
     theme: {
       ink: '#3b0764',
@@ -140,11 +140,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Obesity-GSOD-2027-Singapore',
+    slug: 'obesity',
     name: 'Global Summit on Obesity & Diabetes',
     short: 'GSOD 2027',
     mainSiteUrl: 'https://obesity-conferences.com',
-    dataFolder: 'Obesity-GSOD-2027-Singapore',
+    dataFolder: 'obesity',
     gtagId: 'G-Q79C9D7F7Y',
     theme: {
       ink: '#001833',
@@ -159,11 +159,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Pharmaceutical-WCPD-2027-Singapore',
+    slug: 'pharmaceutical',
     name: 'World Congress on Pharmaceutical Development',
     short: 'WCPD 2027',
     mainSiteUrl: 'https://pharmaworldconference.com',
-    dataFolder: 'Pharmaceutical-WCPD-2027-Singapore',
+    dataFolder: 'pharmaceutical',
     gtagId: 'G-8814RF0TYP',
     theme: {
       ink: '#073b3a',
@@ -178,11 +178,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'PhysicalMedicine-WSPR-2027-Singapore',
+    slug: 'physicalmedicine',
     name: 'World Summit on Physical Medicine & Rehabilitation',
     short: 'WSPR 2027',
     mainSiteUrl: 'https://physicalmedicine-conference.com',
-    dataFolder: 'PhysicalMedicine-WSPR-2027-Singapore',
+    dataFolder: 'physicalmedicine',
     gtagId: 'G-JJWRK17881',
     theme: {
       ink: '#3a1006',
@@ -197,11 +197,11 @@ export const CONFERENCES: ConferenceMeta[] = [
     },
   },
   {
-    slug: 'Surgery-GCSA-2027-Spain',
+    slug: 'surgery',
     name: 'Global Congress on Surgery & Anesthesia',
     short: 'GCSA 2027',
     mainSiteUrl: 'https://surgery-meetings.com',
-    dataFolder: 'Surgery-GCSA-2027-Spain',
+    dataFolder: 'surgery',
     gtagId: 'G-KVQS21YME0',
     theme: {
       ink: '#1e3a8a',
