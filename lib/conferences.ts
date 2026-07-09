@@ -88,7 +88,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSFS 2027',
     mainSiteUrl: 'https://foodtech-conference.com',
     dataFolder: 'food',
-    gtagId: 'G-03VL0LQE98',
+    gtagId: 'G-VVWPRKXW5B',
     theme: {
       ink: '#2c1f06',
       paper: '#ffffff',
