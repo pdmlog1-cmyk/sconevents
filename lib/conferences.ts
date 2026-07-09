@@ -183,7 +183,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'WSPR 2027',
     mainSiteUrl: 'https://physicalmedicine-conference.com',
     dataFolder: 'physicalmedicine',
-    gtagId: 'G-JJWRK17881',
+    gtagId: 'G-MLZTFBP55Q',
     theme: {
       ink: '#3a1006',
       paper: '#ffffff',
@@ -202,7 +202,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCSA 2027',
     mainSiteUrl: 'https://surgery-meetings.com',
     dataFolder: 'surgery',
-    gtagId: 'G-KVQS21YME0',
+    gtagId: 'G-JDN2EQXJBG',
     theme: {
       ink: '#1e3a8a',
       paper: '#ffffff',
