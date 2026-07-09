@@ -7,7 +7,7 @@
 ```
 sconevents-landing/
 ├── conferences/           # Individual Next.js apps
-│   ├── Addiction-WCAB-2027-CzechRepublic/
+│   ├── addiction/
 │   ├── Biotechnology-GSBG-2027-Singapore/
 │   ├── Cardiology-GCCM-2027-Spain/
 │   └── ... (10 total)
@@ -19,7 +19,7 @@ sconevents-landing/
 ## URLs
 
 After deployment:
-- `sconevents.com/Addiction-WCAB-2027-CzechRepublic/`
+- `sconevents.com/addiction/`
 - `sconevents.com/Biotechnology-GSBG-2027-Singapore/`
 - `sconevents.com/Cardiology-GCCM-2027-Spain/`
 - etc.
@@ -63,7 +63,7 @@ Set in Vercel dashboard under project settings:
 ## Local Development
 
 ```bash
-cd conferences/Addiction-WCAB-2027-CzechRepublic
+cd conferences/addiction
 npm install
 npm run dev
 # Open http://localhost:3000

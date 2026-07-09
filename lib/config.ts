@@ -10,10 +10,10 @@
    ============================================================================= */
 
 // Default to Addiction conference for backwards compatibility
-import conferenceJson from '@/data/Addiction-WCAB-2027-CzechRepublic/conference.json';
-import tracksJson from '@/data/Addiction-WCAB-2027-CzechRepublic/tracks.json';
-import speakersJson from '@/data/Addiction-WCAB-2027-CzechRepublic/speakers.json';
-import marketingJson from '@/data/Addiction-WCAB-2027-CzechRepublic/marketing.json';
+import conferenceJson from '@/data/addiction/conference.json';
+import tracksJson from '@/data/addiction/tracks.json';
+import speakersJson from '@/data/addiction/speakers.json';
+import marketingJson from '@/data/addiction/marketing.json';
 
 /* -------------------------------------------------------------------------- */
 /*  Shared tuple types (unchanged — preserves API for existing components)    */
@@ -167,12 +167,12 @@ export const conf: ConferenceConfig = {
 /*  Uses Addiction conference as default for backwards compatibility          */
 /* -------------------------------------------------------------------------- */
 
-export { default as committeeData } from '@/data/Addiction-WCAB-2027-CzechRepublic/committee.json';
-export { default as galleryData } from '@/data/Addiction-WCAB-2027-CzechRepublic/gallery.json';
-export { default as registrationData } from '@/data/Addiction-WCAB-2027-CzechRepublic/registration.json';
-export { default as commonData } from '@/data/Addiction-WCAB-2027-CzechRepublic/common.json';
-export { default as seoData } from '@/data/Addiction-WCAB-2027-CzechRepublic/seo.json';
-export { default as navigationData } from '@/data/Addiction-WCAB-2027-CzechRepublic/navigation.json';
+export { default as committeeData } from '@/data/addiction/committee.json';
+export { default as galleryData } from '@/data/addiction/gallery.json';
+export { default as registrationData } from '@/data/addiction/registration.json';
+export { default as commonData } from '@/data/addiction/common.json';
+export { default as seoData } from '@/data/addiction/seo.json';
+export { default as navigationData } from '@/data/addiction/navigation.json';
 
 /* Navigation typing — used by Header.tsx + Footer.tsx */
 export type NavLink = { label: string; href: string; cta?: boolean };

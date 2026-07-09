@@ -26,11 +26,11 @@ export interface ConferenceMeta {
 
 export const CONFERENCES: ConferenceMeta[] = [
   {
-    slug: 'Addiction-WCAB-2027-CzechRepublic',
+    slug: 'addiction',
     name: 'World Congress on Addiction Medicine & Behavioral Health',
     short: 'WCAB 2027',
     mainSiteUrl: 'https://addictionmedicine-conference.com',
-    dataFolder: 'Addiction-WCAB-2027-CzechRepublic',
+    dataFolder: 'addiction',
     gtagId: 'G-72FTRCQRZ4',
     theme: {
       ink: '#1f0606',

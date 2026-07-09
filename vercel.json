@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/addiction",
-      "destination": "/Addiction-WCAB-2027-CzechRepublic"
-    }
-  ]
-}
