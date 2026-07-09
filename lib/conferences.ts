@@ -126,7 +126,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GCNN 2027',
     mainSiteUrl: 'https://neuroscience-conference.com',
     dataFolder: 'Neurology-GCNN-2027-CzechRepublic',
-    gtagId: 'G-H21Z28P7R4',
+    gtagId: 'G-ZB8SD5NTTC',
     theme: {
       ink: '#3b0764',
       paper: '#ffffff',
