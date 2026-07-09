@@ -145,7 +145,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSOD 2027',
     mainSiteUrl: 'https://obesity-conferences.com',
     dataFolder: 'obesity',
-    gtagId: 'G-Q79C9D7F7Y',
+    gtagId: 'G-G90SNS2J3B',
     theme: {
       ink: '#001833',
       paper: '#ffffff',
@@ -164,7 +164,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'WCPD 2027',
     mainSiteUrl: 'https://pharmaworldconference.com',
     dataFolder: 'pharmaceutical',
-    gtagId: 'G-8814RF0TYP',
+    gtagId: 'G-3FBTFN36QY',
     theme: {
       ink: '#073b3a',
       paper: '#ffffff',
