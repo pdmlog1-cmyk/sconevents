@@ -31,7 +31,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'WCAB 2027',
     mainSiteUrl: 'https://addictionmedicine-conference.com',
     dataFolder: 'addiction',
-    gtagId: 'G-72FTRCQRZ4',
+    gtagId: 'G-1H9MQ5CWHD',
     theme: {
       ink: '#1f0606',
       paper: '#ffffff',
