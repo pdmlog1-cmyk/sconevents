@@ -50,7 +50,7 @@ export const CONFERENCES: ConferenceMeta[] = [
     short: 'GSBG 2027',
     mainSiteUrl: 'https://biotech-meetings.com',
     dataFolder: 'biotechnology',
-    gtagId: 'G-L0G0SDS5DJ',
+    gtagId: 'G-SP7NVERHLL',
     theme: {
       ink: '#052e1c',
       paper: '#ffffff',
