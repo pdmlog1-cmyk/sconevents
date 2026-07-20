@@ -13,6 +13,7 @@ import {
   generateToken,
 } from '@/lib/forms';
 import { utf8ToBase64 } from '@/lib/encode';
+import { getConferenceMeta } from '@/lib/conferences';
 
 // Cloudflare Workers runs at the edge by default — no explicit runtime needed.
 
@@ -29,10 +30,7 @@ type Body = {
   captchaToken?: string;
 };
 
-const DOWNLOAD_URLS: Record<string, string> = {
-  brochure: '/assets/brochure.pdf',
-  scientific_program: '/assets/program.pdf',
-};
+const R2_BASE = 'https://pub-1fbb410750e4679a8df245c20298d9a.r2.dev/brochures';
 
 const WEBSITE_FORM: Record<string, string> = {
   brochure: 'brochure_download',
@@ -102,7 +100,7 @@ async function forwardBrochureToCms(body: Body, kind: string): Promise<{ ok: boo
   }
 }
 
-export async function POST(req: Request) {
+export async function POST(req: Request, { params }: { params: { conference: string } }) {
   let body: Body;
   try {
     body = await req.json();
@@ -120,7 +118,9 @@ export async function POST(req: Request) {
   if (!captchaOk) return jsonError('Captcha verification failed', 400);
 
   const kind = body.modalType === 'scientific_program' ? 'scientific_program' : 'brochure';
-  const downloadUrl = DOWNLOAD_URLS[kind];
+  const confMeta = getConferenceMeta(params.conference);
+  const brochureSlug = confMeta ? confMeta.short.toLowerCase().replace(/\s+/g, '-') : params.conference;
+  const downloadUrl = `${R2_BASE}/${brochureSlug}.pdf`;
   const ref = generateToken('DL');
 
   const [cmsResult] = await Promise.all([

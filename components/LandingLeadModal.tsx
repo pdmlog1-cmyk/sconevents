@@ -133,7 +133,9 @@ export default function LandingLeadModal({ conf: confProp, mainSiteUrl, slug }: 
       const data = await r.json();
       if (!r.ok || !data.success) throw new Error(data.error || 'Submission failed');
 
-      const brochureUrl = `${MAIN}/assets/brochure.pdf`;
+      const R2_BASE = 'https://pub-1fbb410750e4679a8df245c20298d9a.r2.dev/brochures';
+      const brochureSlug = conf.short.toLowerCase().replace(/\s+/g, '-');
+      const brochureUrl = `${R2_BASE}/${brochureSlug}.pdf`;
       const brochureFilename = `${conf.short} - Brochure.pdf`;
       setSuccess({ ref: data.ref, downloadUrl: brochureUrl });
 
