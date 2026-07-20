@@ -14,7 +14,7 @@ import {
 } from '@/lib/forms';
 import { utf8ToBase64 } from '@/lib/encode';
 
-export const runtime = 'edge';
+// Cloudflare Workers runs at the edge by default — no explicit runtime needed.
 
 const CMS_TIMEOUT_MS = 25_000;
 
