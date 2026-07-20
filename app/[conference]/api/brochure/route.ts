@@ -14,7 +14,7 @@ import {
 } from '@/lib/forms';
 import { utf8ToBase64 } from '@/lib/encode';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 const CMS_TIMEOUT_MS = 25_000;
 

@@ -140,7 +140,10 @@ async function sendEmail({ formType, subject, replyTo, payload }: DeliverInput) 
  * UTF-8 string → base64 (Node.js).
  */
 function utf8ToBase64(s: string): string {
-  return Buffer.from(s, 'utf-8').toString('base64');
+  const bytes = new TextEncoder().encode(s);
+  let binary = '';
+  bytes.forEach(b => { binary += String.fromCharCode(b); });
+  return btoa(binary);
 }
 
 /**

@@ -19,23 +19,17 @@ const KEEP_PLAIN = new Set([
 ]);
 
 export function utf8ToBase64(s: string): string {
-  if (typeof window !== 'undefined') {
-    const bytes = new TextEncoder().encode(s);
-    let binary = '';
-    bytes.forEach(b => { binary += String.fromCharCode(b); });
-    return btoa(binary);
-  }
-  return Buffer.from(s, 'utf-8').toString('base64');
+  const bytes = new TextEncoder().encode(s);
+  let binary = '';
+  bytes.forEach(b => { binary += String.fromCharCode(b); });
+  return btoa(binary);
 }
 
 export function base64ToUtf8(s: string): string {
-  if (typeof window !== 'undefined') {
-    const binary = atob(s);
-    const bytes = new Uint8Array(binary.length);
-    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-    return new TextDecoder().decode(bytes);
-  }
-  return Buffer.from(s, 'base64').toString('utf-8');
+  const binary = atob(s);
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
 }
 
 /** Client → server: encode every string value except plaintext keys. */
