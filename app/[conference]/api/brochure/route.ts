@@ -30,7 +30,7 @@ type Body = {
   captchaToken?: string;
 };
 
-const R2_BASE = 'https://pub-1fbb410750e4679a8df245c20298d9a.r2.dev/brochures';
+const BROCHURE_BASE = '/brochures';
 
 const WEBSITE_FORM: Record<string, string> = {
   brochure: 'brochure_download',
@@ -120,7 +120,7 @@ export async function POST(req: Request, { params }: { params: { conference: str
   const kind = body.modalType === 'scientific_program' ? 'scientific_program' : 'brochure';
   const confMeta = getConferenceMeta(params.conference);
   const brochureSlug = confMeta ? confMeta.short.toLowerCase().replace(/\s+/g, '-') : params.conference;
-  const downloadUrl = `${R2_BASE}/${brochureSlug}.pdf`;
+  const downloadUrl = `${BROCHURE_BASE}/${brochureSlug}.pdf`;
   const ref = generateToken('DL');
 
   const [cmsResult] = await Promise.all([
