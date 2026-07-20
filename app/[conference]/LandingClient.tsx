@@ -31,7 +31,7 @@ function getLogoName(slug: string): string {
    cardiology-conference.com main site (hero + carousel /assets/legacy).
    Each bento tile cycles through this pool every ~12 s with crossfade.
    Reused across every conference landing for visual consistency. */
-const LEGACY = 'https://cardiology-conference.com/assets/legacy';
+const LEGACY = '/assets/legacy';
 const BENTO_POOL = [
   'speaker.jpg', 'audience.jpg', 'panel.jpg', 'networking.jpg', 'awards.jpg',
   'audience3.jpg', 'applause.jpg', 'networking2.jpg', 'panel2.jpg', 'podium.jpg',
