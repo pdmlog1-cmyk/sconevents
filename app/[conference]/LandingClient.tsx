@@ -364,14 +364,19 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
         </div>
         <ol className="lpb-roadmap">
           {(() => {
-            // Re-sort key_dates chronologically by parsing "Day Month YYYY".
+            // Sort key_dates by fixed logical order, not chronological.
+            const ORDER = ['Early Bird Ends', 'Abstract Deadline', 'Acceptance', 'Conference Opens'];
             const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
             const parsed = conf.key_dates.map(([d, m, t, desc]) => {
               const monthName = (m.split(' ')[0] || '').slice(0, 3);
               const yr = parseInt(m.split(' ')[1] || '2027', 10);
               const dateObj = new Date(yr, months.indexOf(monthName), parseInt(d, 10));
               return { d, m, t, desc, date: dateObj };
-            }).sort((a, b) => a.date.getTime() - b.date.getTime());
+            }).sort((a, b) => {
+              const ai = ORDER.indexOf(a.t);
+              const bi = ORDER.indexOf(b.t);
+              return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+            });
             const now = Date.now();
             const nextIdx = parsed.findIndex(p => p.date.getTime() >= now);
             return parsed.map(({ d, m, t, desc, date }, i) => {
