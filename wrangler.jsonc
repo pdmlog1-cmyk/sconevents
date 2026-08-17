@@ -7,5 +7,8 @@
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
+  },
+  "vars": {
+    "HCAPTCHA_SECRET_KEY": "ES_d73cec7dfa444ce38db00cc32bb295b4"
   }
 }
