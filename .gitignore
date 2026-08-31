@@ -33,3 +33,6 @@ yarn-error.log*
 
 # OpenNext / Cloudflare
 .open-next/
+
+# Wrangler local state
+.wrangler/
