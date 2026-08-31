@@ -4,7 +4,7 @@
     {
       "id": "early",
       "label": "Early Bird",
-      "closes": "October 30, 2026"
+      "closes": "November 14, 2026"
     },
     {
       "id": "mid",
@@ -14,7 +14,7 @@
     {
       "id": "late",
       "label": "Late / On-site",
-      "closes": "June 24-25"
+      "closes": "June 24-25, 2027"
     }
   ],
   "categories": [

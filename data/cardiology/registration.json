@@ -4,7 +4,7 @@
     {
       "id": "early",
       "label": "Early Bird",
-      "closes": "July 12, 2026"
+      "closes": "October 15, 2026"
     },
     {
       "id": "mid",
@@ -14,7 +14,7 @@
     {
       "id": "late",
       "label": "Late / On-site",
-      "closes": "April 27, 2027"
+      "closes": "April 27-28, 2027"
     }
   ],
   "categories": [
@@ -150,7 +150,7 @@
       "April 27, 2027",
       "April 28, 2027",
       "April 29, 2027",
-      "April 25, 2027"
+      "April 30, 2027"
     ],
     "title_options": [
       "Dr.",
