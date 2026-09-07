@@ -390,7 +390,13 @@ Do this before every brochure commit — verify the PDF against the site data.
   reverts `8ab617c`. Changed in `common.json`, `conference.json`, `marketing.json` (`key_dates`
   day `15` → `14`) and `seo.json`. `npm run build` — Compiled successfully.
 - The four blobs hash back to their pre-`8ab617c` values, so the diff is an exact revert.
-- **Live still serves Feb 15 until someone deploys.** See §8 — a push alone changes nothing.
+- Committed as `7caaaec`, pushed, and **deployed 07 Sep 2026** — worker version
+  `e7cadea1-c605-4b81-9a20-0b13bd1c0cd1`. Live verified: `/addiction` now serves
+  `February 14, 2027` in both the FAQ and the abstract meta, and the Important Dates
+  tile reads `["14","Feb 2027","Abstract Deadline"`. Zero hits for Feb 15.
+- Build ran in `C:\xampp\htdocs\SCON\sconevents-landing` (the only copy with `.env`);
+  `npx wrangler whoami` confirmed `pdmlog1@gmail.com` / `71e2bd85…` first. Both local
+  copies are on `7caaaec`.
 
 ### 07 Sep 2026 — sync
 - Both local copies were **one commit behind `origin/main`** and behind the live site.
