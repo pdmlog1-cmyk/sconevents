@@ -49,7 +49,7 @@ Full names worth noting:
 
 ---
 
-## 3. Dates, Venues and Deadlines — authoritative (31 Aug 2026)
+## 3. Dates, Venues and Deadlines — authoritative (07 Sep 2026)
 
 | Short | City | Country | Venue | Dates | Early Bird Ends | Abstract Deadline | Acceptance |
 |-------|------|---------|-------|-------|-----------------|-------------------|------------|
@@ -87,6 +87,10 @@ dates. There is no single source of truth.
 | `data/<slug>/registration.json` | `phases[Early Bird].closes`, `phases[Late].closes`, `form.checkin_dates`, `form.checkout_dates` |
 | `data/<slug>/common.json` | FAQ "How can I register" (early bird) + "abstract submission deadline" |
 | `data/<slug>/seo.json` | `pages.index.description` (conf dates), `pages.abstract.description` (deadline) |
+
+**Acceptance is the exception — it lives in `marketing.json` only.** It is not in
+`conference.json`, `common.json` or `seo.json`, so changing an acceptance date is a
+one-file edit, not five. Every other date really does need all five.
 
 ### Important Dates sort order
 `LandingClient.tsx` uses a **fixed** order, not chronological:
@@ -240,13 +244,22 @@ officially support Next.js 14. Do not remove it.
 ### Push
 
 ```bash
-git push origin main
-# if the gh credential helper misbehaves:
 git -c credential.https://github.com.helper=manager push origin main
 ```
 
-GitHub CLI is not installed on the original machine; the `credential.helper=manager` form
-routes auth through Windows Credential Manager instead of the broken `gh.exe` helper.
+**Use that form, not a plain `git push`.** Confirmed again 07 Sep 2026: a bare
+`git push origin main` fails on this machine with
+
+```
+'C:\Program Files\GitHub CLI\gh.exe' auth git-credential get: No such file or directory
+fatal: could not read Username for 'https://github.com'
+```
+
+Git's config still points the credential helper at `gh.exe`, but **GitHub CLI is not
+installed here** — the path does not exist. The `credential.helper=manager` override routes
+auth through Windows Credential Manager instead and works. It still prints the same gh.exe
+errors on stderr; ignore them and read the last line — a successful push ends with
+`<old>..<new>  main -> main`.
 
 ### Cloudflare deploy auth
 
@@ -447,6 +460,8 @@ Do this before every brochure commit — verify the PDF against the site data.
 
 ## 12. Open items
 
+- **`TEAM-GUIDE.txt` is NOT in the repo.** It is untracked and exists only in the team
+  folder, so a fresh `git clone` will not have it. Hand it over separately, or commit it.
 - **`BrochureModal.tsx` is dead code** and could be deleted.
 - **This file is committed to a public repo.** It deliberately contains no secrets — only
   the hCaptcha *sitekey* (public by design), the Cloudflare account ID, and file paths.
