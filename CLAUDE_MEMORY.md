@@ -1,6 +1,6 @@
 # SCON Events Landing Pages — Project Memory
 
-**Last updated: 07 Sep 2026**
+**Last updated: 10 Sep 2026**
 For step-by-step working instructions, read **`TEAM-GUIDE.txt`** in this same folder.
 This file is the technical reference: architecture, current data, and known traps.
 
@@ -18,6 +18,7 @@ This file is the technical reference: architecture, current data, and known trap
 | **Node version** | 22 |
 | **Team folder** | `D:\Companies\SCON\Websites\SCON_landing-Pages` |
 | **Original working copy** | `C:\xampp\htdocs\SCON\sconevents-landing` |
+| **Third working copy** | `D:\SCON_landing-Pages\SCON_landing-Pages` — has its own `.env`, built and deployed from here on 10 Sep 2026 |
 
 One code base serves all 10 conference landing pages through the dynamic route
 `app/[conference]/page.tsx`.
@@ -132,8 +133,10 @@ Each `data/<slug>/` folder holds 10 JSON files:
 | `lib/config.ts` | `ConferenceConfig` type + default Addiction data (backwards compat) |
 | `lib/getConfig.ts` | Loads the per-conference JSON; `trackFromJson()` adapter |
 | `lib/forms.ts` | Form helpers incl. `verifyCaptcha()` |
-| `app/[conference]/page.tsx` | Conference route + gtag scripts |
-| `app/[conference]/LandingClient.tsx` | The entire landing page UI |
+| `app/[conference]/page.tsx` | Conference route + gtag scripts + the `MAIN_SITE_MIRROR` switch |
+| `app/[conference]/LandingClient.tsx` | The landing page UI for the **nine** non-mirrored conferences |
+| `app/[conference]/NeurologyLanding.tsx` | `/neurology` only — mirrors the main-site home page (§11, 10 Sep) |
+| `components/MainSiteChrome.tsx` | Prop-driven main-site info strip / header / footer, used only by the mirror |
 | `app/[conference]/api/brochure/route.ts` | Brochure lead capture → CMS + email |
 | `components/LandingLeadModal.tsx` | The brochure download modal |
 | `public/logos/*.svg` | Static SVGs — used as **favicons only**, not in the header |
@@ -240,6 +243,17 @@ npx @opennextjs/cloudflare build --dangerouslyUseUnsupportedNextVersion
 
 The `--dangerouslyUseUnsupportedNextVersion` flag is required because OpenNext does not
 officially support Next.js 14. Do not remove it.
+
+> **`build:cf` needs a bigger Node heap on Windows.** Export this first:
+>
+> ```bash
+> export NODE_OPTIONS=--max-old-space-size=4096
+> npm run build:cf
+> ```
+>
+> Without it the build dies with `Next.js build worker exited with code: 3221226505`.
+> See trap 9 in §10 — that is an out-of-memory abort, **not** a Windows incompatibility,
+> and it does not mean you need WSL.
 
 ### Push
 
@@ -371,9 +385,72 @@ Do this before every brochure commit — verify the PDF against the site data.
 8. **An interrupted `npm run build` leaves `.next` without `routes-manifest.json`**, and
    the dev server then 500s on every route. Delete `.next` and restart.
 
+9. **`npm run build:cf` failing with exit code `3221226505` is an out-of-memory abort,
+   not a Windows problem.** `3221226505` is `0xC0000409`, which Node raises when it aborts
+   on OOM. Fix by exporting `NODE_OPTIONS=--max-old-space-size=4096` before the build —
+   confirmed working 10 Sep 2026, built and deployed from Windows with no WSL.
+   Plain `npm run build` succeeds unaided; it only dies under OpenNext, which runs
+   `next build` as a subprocess while holding its own memory, so the default heap has to
+   cover both. `NODE_OPTIONS` is inherited by the subprocess.
+   **Do not read OpenNext's "not fully compatible with Windows — use WSL" banner as the
+   cause and hand the deploy off to someone else.** That banner prints on every run,
+   including successful ones. This was misdiagnosed once and cost a deploy cycle.
+
 ---
 
 ## 11. Recent changes
+
+### 10 Sep 2026 — `/neurology` now mirrors its main site — `6b8cbcb`
+
+`/neurology` reproduces the **neuroscience-conference.com home page** instead of the
+shared `LandingClient` layout. `app/[conference]/page.tsx` selects it via a
+`MAIN_SITE_MIRROR` set holding only `'neurology'`, so **the other nine are untouched** —
+verified live: `/addiction`, `/cardiology`, `/surgery` still serve 300 `lpb-` markers and
+zero new ones. Deployed, worker version `027b2cc8-5117-4971-920e-99fec18d1693`.
+
+**Where the source came from.** Each main site has a local checkout at
+`D:\SCON_landing-Pages\Sconconferences\Sconconferences\<slug>` — neurology's is the
+reference for this port. Read that, not the live URL: the live sites 403 to curl.
+
+New files, all prop-driven so nothing shared moved:
+
+| File | Ported from |
+|---|---|
+| `app/[conference]/NeurologyLanding.tsx` | main `app/page.tsx` |
+| `components/MainSiteChrome.tsx` | main `InfoStrip` + `Header` + `Footer` |
+| `components/EarlyBirdBanner.tsx` | main `EarlyBirdBanner.tsx` — sticky countdown bar |
+| `components/HeroSpeakerSlider.tsx` | main `HeroSpeakerSlider.tsx` |
+| `components/HomepageFaqsLanding.tsx` | main `HomepageFaqs.tsx` |
+
+The originals all read one hard-coded conference from `lib/config.ts`; these take `conf`
+and `baseUrl` as props, and every internal link is an absolute `<a>` to the main site,
+because this deployment only serves `/<slug>`.
+
+**`globals.css` was missing only two blocks** — `.hero-spk-*` and `.eb-*`, appended from
+the main site. Every other class the home page needs (`.hero-poster`, `.topics-grid`,
+`.pricing-grid`, `.dates-timeline`, `.cta-banner`, `.site-header`, `.site-footer`) was
+already here. **If a mirrored page renders unstyled, diff the CSS before rewriting it** —
+an earlier attempt that day guessed the markup from a screenshot, used correct class names
+with no backing CSS, and had to be reverted wholesale.
+
+Data: copied neurology's 9 data files from the main site, plus `sessions.json`, which had
+no counterpart here. Also copied `public/assets/images/prague-hero.jpg` and
+`public/assets/speakers/` (2 files).
+
+> ⚠️ **Do not copy `hcaptcha_sitekey` from a main site's `conference.json`.** Each key is
+> registered to its own domain; the main site's `4b4e844a…` would break the brochure form
+> on sconevents.com. The landing key `e3021954…` was restored by hand after the copy.
+> `base` was left pointing at the main site — it is only passed through `getConfig` and
+> never rendered.
+
+**Hero speakers read `speakers.json` → `speakers`, sliced to 4** — the same array, in the
+same order, that the main site's `/speakers` page renders. Deliberately *not*
+`featured_speakers`: that field is a hand-maintained copy of the first three and had
+already drifted (3 entries against a real list of 9). `HERO_SPEAKER_COUNT` is a one-number
+edit. Only speaker 1 has a photo; the rest carry `"photo": ""` and fall back to initials —
+same as the main site.
+
+The page keeps `robots: noindex`, so it does not compete with the main site in search.
 
 ### 07 Sep 2026 — acceptance dates confirmed
 - The user supplied the authoritative acceptance-date list for all 10 conferences. Checked
@@ -462,6 +539,14 @@ Do this before every brochure commit — verify the PDF against the site data.
 
 - **`TEAM-GUIDE.txt` is NOT in the repo.** It is untracked and exists only in the team
   folder, so a fresh `git clone` will not have it. Hand it over separately, or commit it.
+- **Three of the four `/neurology` hero speakers have no photo** — `speakers.json` carries
+  `"photo": ""` for Neuman, Danilov and Sunkara, so they render initials placeholders. The
+  main site has the same gap. Drop images into `public/assets/speakers/` and set the paths.
+- **The other nine landing pages could be mirrored the same way**, one at a time: add the
+  slug to `MAIN_SITE_MIRROR` and give it a component like `NeurologyLanding.tsx`. Neurology
+  alone was a deliberate choice on 10 Sep, to keep the blast radius at one page. Anything
+  done to `LandingClient.tsx` or `InfoStrip.tsx` instead would move all nine at once —
+  see TEAM-GUIDE rule 6.
 - **`BrochureModal.tsx` is dead code** and could be deleted.
 - **This file is committed to a public repo.** It deliberately contains no secrets — only
   the hCaptcha *sitekey* (public by design), the Cloudflare account ID, and file paths.
