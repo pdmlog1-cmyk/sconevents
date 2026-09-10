@@ -33,7 +33,7 @@
     "The organizer reserves the right to make changes to the program, date or venue without prior notice.",
     "While we strive to follow the published schedule, unforeseen circumstances may necessitate alterations.",
     "The organizer may cancel the conference due to unavoidable circumstances; in that event, the organizer's liability is limited as set out in the cancellation policy.",
-    "If the conference is postponed for reasons beyond the organizer's control, registrations remain valid for the rescheduled event or future editions; refund policy may not apply.",
+    "If the conference is postponed for reasons beyond the organizer's control, the Organizer will make reasonable efforts to preserve the Event through rescheduling, relocation, format changes, virtual participation or registration credit. Any refund will depend on the circumstances and the extent to which committed expenses can be recovered.",
     "Cancellation notices will be communicated through reasonable means, including the conference website.",
     "Delegates are responsible for checking the website regularly for updates.",
     "We do not accept liability for personal injuries or loss/damage to personal property occurring during the event.",
@@ -54,7 +54,7 @@
     },
     {
       "q": "How can I register for the conference?",
-      "a": "Visit the Register page on this site and follow the instructions. Early-bird discounts apply through November 14, 2026."
+      "a": "Visit the Register page on this site and follow the instructions. Early-bird discounts apply through October 30, 2026."
     },
     {
       "q": "Does the registration fee include hotel accommodation?",
@@ -79,6 +79,10 @@
     {
       "q": "What is the abstract submission deadline?",
       "a": "February 14, 2027 for full consideration. Late submissions are reviewed subject to space."
+    },
+    {
+      "q": "What is the cancellation and refund policy?",
+      "a": "Registration fees are generally non-refundable. Where a written request is received more than 60 calendar days before the Event, the Organizer may consider substitution, transfer to another edition, a time-limited registration credit, or in exceptional circumstances a partial refund after deducting non-recoverable costs. During the final 60 days, a monetary refund cannot ordinarily be provided, though substitution or a credit toward a future Event may be considered at the Organizer’s discretion. Approved refunds are ordinarily initiated within 15 business days. Please refer to our Terms & Conditions for the complete policy."
     }
   ]
 }

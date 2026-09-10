@@ -1,0 +1,555 @@
+{
+  "sessions": [
+    {
+      "title": "Stroke & Cerebrovascular Disease",
+      "slug": "stroke-and-cerebrovascular-disease",
+      "featured": true,
+      "description": "Acute stroke care has been redefined by tenecteplase displacing alteplase as the preferred thrombolytic, late-window thrombectomy out to 24 hours guided by perfusion imaging (DAWN, DEFUSE-3), and increasingly the treatment of medium and distal vessel occlusions. GCNN 2027 will examine direct-to-angio-suite workflows, mobile stroke units, and the expanding evidence for thrombectomy in large core infarcts (SELECT2, ANGEL-ASPECT). The track will also cover secondary prevention with factor XI inhibitors, PFO closure post-RoPE, and the persistent gap in primary prevention for cerebral small vessel disease.",
+      "topics": [
+        "Tenecteplase vs alteplase: AcT, ATTEST-2, and dosing strategies",
+        "Late-window and large-core thrombectomy: SELECT2, ANGEL-ASPECT",
+        "Medium and distal vessel occlusion thrombectomy trials",
+        "Mobile stroke units and direct-to-angio-suite workflows",
+        "Factor XI inhibitors (asundexian, abelacimab) in secondary prevention",
+        "Cerebral small vessel disease and vascular cognitive impairment",
+        "Intracerebral hemorrhage: bundle care, minimally invasive evacuation"
+      ]
+    },
+    {
+      "title": "Alzheimer’s & Dementia",
+      "slug": "alzheimer-s-and-dementia",
+      "featured": true,
+      "description": "The approval of lecanemab and donanemab has transformed Alzheimer’s disease into a treatable condition for patients with early symptomatic disease and confirmed amyloid pathology. GCNN 2027 will present long-term CLARITY-AD and TRAILBLAZER-ALZ open-label extension data, real-world ARIA-E and ARIA-H rates stratified by APOE4 status, and operational models for safe infusion-clinic delivery. Sessions will examine the rapid emergence of plasma p-tau217 as a triage biomarker rivaling CSF and amyloid-PET, the next-wave tau-directed therapeutics, and GLP-1 receptor agonists (evoke, evoke+) as a potential disease-modifying class.",
+      "topics": [
+        "Lecanemab and donanemab: long-term efficacy, ARIA monitoring, APOE4 stratification",
+        "Plasma p-tau217 and the blood biomarker triage pathway",
+        "Tau-directed therapeutics: antisense oligonucleotides and active immunotherapy",
+        "GLP-1 receptor agonists in neurodegeneration: evoke, evoke+ readouts",
+        "Lewy body and frontotemporal dementia: TDP-43 and progranulin programs",
+        "Subcutaneous lecanemab and at-home administration models",
+        "Preclinical AD: DIAN-TU, AHEAD 3-45 and primary prevention"
+      ]
+    },
+    {
+      "title": "Multiple Sclerosis",
+      "slug": "multiple-sclerosis",
+      "featured": true,
+      "description": "The MS pipeline is converging on the central goal of halting smoldering, compartmentalized CNS inflammation that drives progression independent of relapse activity (PIRA). GCNN 2027 will review head-to-head data on anti-CD20 therapies (ocrelizumab, ofatumumab, ublituximab) and the maturing BTK inhibitor class — tolebrutinib (GEMINI, HERCULES), evobrutinib, fenebrutinib and remibrutinib — which uniquely penetrate the CNS to target microglia and B cells. The track also covers EBV as a causal driver, remyelination strategies, and the role of serum neurofilament light and GFAP as routine monitoring biomarkers.",
+      "topics": [
+        "BTK inhibitors in MS: tolebrutinib HERCULES, evobrutinib, fenebrutinib",
+        "Anti-CD20 therapies: ocrelizumab, ofatumumab, ublituximab subcutaneous",
+        "Progression independent of relapse activity (PIRA) and smoldering MS",
+        "Remyelination strategies: clemastine, elezanumab, anti-LINGO-1",
+        "EBV as a causal driver and EBV-directed T-cell therapies",
+        "Serum neurofilament light and GFAP as monitoring biomarkers",
+        "High-efficacy first vs escalation: DELIVER-MS, TREAT-MS"
+      ]
+    },
+    {
+      "title": "Parkinson’s & Movement Disorders",
+      "slug": "parkinson-s-and-movement-disorders",
+      "featured": true,
+      "description": "Movement disorders are entering a precision-medicine era, with genetically stratified trials in GBA1 (LTI-291/venglustat lessons, BIA 28-6156) and LRRK2 (BIIB122/DNL151) carriers redefining trial design. GCNN 2027 will cover the expanding device-aided therapy landscape — subcutaneous levodopa (ND0612, ABBV-951/foslevodopa-foscarbidopa), adaptive closed-loop DBS, and MRI-guided focused ultrasound subthalamotomy and pallidotomy. The track also addresses alpha-synuclein seed amplification assays as a biological diagnostic, prasinezumab and other anti-aggregation programs, and the emerging GLP-1 signal in Parkinson’s (exenatide LixiPark readout).",
+      "topics": [
+        "GBA1 and LRRK2 stratified trials: ambroxol, BIIB122, BIA 28-6156",
+        "Subcutaneous levodopa pumps: ND0612, foslevodopa-foscarbidopa",
+        "Adaptive closed-loop DBS and directional leads",
+        "MRI-guided focused ultrasound: subthalamotomy, pallidotomy, tremor",
+        "Alpha-synuclein seed amplification assays as a biological diagnostic",
+        "Disease modification: prasinezumab, GLP-1 agonists (exenatide, lixisenatide)",
+        "Atypical parkinsonism: PSP, MSA tau and synuclein programs"
+      ]
+    },
+    {
+      "title": "Epilepsy",
+      "slug": "epilepsy",
+      "featured": true,
+      "description": "Drug-resistant epilepsy continues to affect roughly a third of patients despite an expanding pharmacopeia, prompting earlier escalation to surgical and neuromodulation approaches. GCNN 2027 will examine cenobamate’s seizure-freedom rates in focal epilepsy, ganaxolone for CDKL5 deficiency disorder, and the genetic-epilepsy pipeline targeting SCN1A (Dravet — STK-001 antisense), SCN2A, SCN8A and KCNQ2. Surgical content covers MRI-guided laser interstitial thermal therapy, robotic stereo-EEG, focused ultrasound for hypothalamic hamartoma, and the maturation of responsive neurostimulation (RNS) and deep brain stimulation of the anterior nucleus of the thalamus.",
+      "topics": [
+        "Cenobamate and the new wave of focal-epilepsy ASMs",
+        "Genetic epilepsies: STK-001 for Dravet, ganaxolone for CDKL5",
+        "SCN2A, SCN8A, KCNQ2 precision medicine and ASOs",
+        "MRI-guided laser interstitial thermal therapy and robotic SEEG",
+        "Responsive neurostimulation (RNS) and ANT-DBS long-term outcomes",
+        "Focused ultrasound for hypothalamic hamartoma and tremor-epilepsy",
+        "SUDEP risk stratification and wearable seizure detection"
+      ]
+    },
+    {
+      "title": "Neuromuscular Disease",
+      "slug": "neuromuscular-disease",
+      "featured": true,
+      "description": "Neuromuscular medicine has been reshaped by genetically targeted therapies: nusinersen, onasemnogene abeparvovec and risdiplam in SMA, exon-skipping ASOs and Elevidys gene therapy in Duchenne, and tofersen for SOD1-ALS following the VALOR trial and accelerated approval. GCNN 2027 will assess the mixed signal for AMX0035 after PHOENIX, the post-marketing experience with tofersen and neurofilament-driven trial design, and the next wave of ALS programs targeting C9orf72, FUS, and ATXN2. The track also covers CIDP (efgartigimod, rozanolixizumab), myasthenia gravis FcRn and complement inhibitors, and CMT gene-therapy programs.",
+      "topics": [
+        "SMA: nusinersen, onasemnogene abeparvovec, risdiplam comparative outcomes",
+        "Duchenne: Elevidys gene therapy, exon-skipping ASOs, givinostat",
+        "ALS: tofersen for SOD1, AMX0035 PHOENIX, C9orf72 and FUS ASOs",
+        "Neurofilament light as a trial endpoint and accelerated-approval pathway",
+        "Myasthenia gravis: FcRn antagonists (efgartigimod, rozanolixizumab) and C5 inhibitors",
+        "CIDP and autoimmune neuropathies: nodal/paranodal antibodies",
+        "Charcot-Marie-Tooth and inherited neuropathy gene-therapy pipeline"
+      ]
+    },
+    {
+      "title": "Headache Medicine",
+      "slug": "headache-medicine",
+      "featured": true,
+      "description": "Migraine treatment has been revolutionized by the CGRP pathway, with four anti-CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab, eptinezumab) for prevention and the gepant class (ubrogepant, rimegepant, atogepant, zavegepant nasal spray) bridging acute and preventive use. GCNN 2027 will review long-term real-world effectiveness and safety, switching algorithms, and emerging data on gepants in menstrual and vestibular migraine. The track will also cover ditans (lasmiditan), remote electrical neuromodulation and non-invasive vagal stimulation, cluster headache (galcanezumab, occipital nerve stimulation), and the persistent challenge of medication overuse headache.",
+      "topics": [
+        "CGRP monoclonal antibodies: long-term safety, switching, pregnancy data",
+        "Gepants: atogepant, rimegepant, ubrogepant, zavegepant nasal",
+        "Lasmiditan and non-triptan acute therapy in cardiovascular risk",
+        "Cluster headache: galcanezumab, occipital nerve and SPG stimulation",
+        "Neuromodulation: REN, nVNS, eTNS in acute and preventive care",
+        "Pediatric and adolescent migraine treatment paradigms",
+        "Medication overuse headache: detoxification and bridging strategies"
+      ]
+    },
+    {
+      "title": "Neuro-Oncology",
+      "slug": "neuro-oncology",
+      "featured": true,
+      "description": "Neuro-oncology has been reshaped by the FDA approval of vorasidenib for IDH-mutant grade 2 gliomas (INDIGO trial), shifting practice toward earlier molecular-targeted intervention and away from immediate chemoradiation. GCNN 2027 will examine the maturing CAR-T pipeline for glioblastoma — including GD2, EGFRvIII and IL-13Ra2 constructs and dual-target intrathecal delivery — alongside tumor treating fields (Optune) integration and the disappointing immune checkpoint inhibitor signal in GBM. The track also covers BRAF/MEK inhibition in pediatric low-grade glioma, ANG1005 and HER2-ADCs for leptomeningeal disease, and modern stereotactic radiosurgery for brain metastases with neurocognitive sparing.",
+      "topics": [
+        "Vorasidenib in IDH-mutant glioma: INDIGO, sequencing with chemoradiation",
+        "Glioblastoma CAR-T: GD2, EGFRvIII, IL-13Ra2 and intrathecal delivery",
+        "Tumor treating fields and integration with chemoradiation",
+        "Pediatric low-grade glioma: BRAF/MEK inhibitors, type II RAF",
+        "Brain metastases: HER2-ADCs (T-DXd), tucatinib, and SRS",
+        "Leptomeningeal disease: intrathecal therapy and proton CSI",
+        "Liquid biopsy and CSF circulating tumor DNA for monitoring"
+      ]
+    },
+    {
+      "title": "Clinical Neuroscience & AI",
+      "slug": "clinical-neuroscience-and-ai",
+      "featured": true,
+      "description": "Artificial intelligence and brain-computer interfaces are moving from prototype to clinic. GCNN 2027 will showcase Neuralink and Synchron BCI early-feasibility outcomes for paralysis and ALS communication, speech-decoding cortical implants, and the regulatory pathway emerging at the FDA. AI-augmented imaging — large vessel occlusion triage (Viz.ai, RapidAI), automated MS lesion segmentation, hippocampal volumetry for AD, and foundation models for radiology — will be examined alongside seizure-forecasting wearables, smartphone-based cognitive and motor digital biomarkers, and the data, privacy and equity questions raised by ambient AI in the neurology clinic.",
+      "topics": [
+        "Brain-computer interfaces: Neuralink, Synchron, BrainGate clinical readouts",
+        "Speech and motor decoding cortical implants for paralysis and ALS",
+        "AI stroke triage: Viz.ai, RapidAI and door-to-puncture impact",
+        "Foundation models for neuroimaging: MS, AD, glioma segmentation",
+        "Wearable seizure forecasting and ambulatory EEG analytics",
+        "Digital biomarkers: smartphone gait, speech, cognition in PD and AD",
+        "Ambient AI scribes and equitable deployment in neurology clinics"
+      ]
+    },
+    {
+      "title": "Spinal Cord Injury",
+      "slug": "spinal-cord-injury",
+      "featured": true,
+      "description": "Spinal cord injury management has been transformed by neuromodulation, with Onward ARC-EX gaining FDA approval and multiple platforms in trials. The session covers epidural and transcutaneous spinal stimulation (Onward ARC-EX, ARC-IM, eXcelsior), robotic gait training (Lokomat, Andago, Wandercraft Atalante), neuropathic pain management in SCI, autonomic dysfunction including dysreflexia and orthostatic intolerance, regenerative approaches (Pre-IND scaffold-cell trials), and the multidisciplinary SCI care model. Discussion addresses functional electrical stimulation closed-loop systems, exoskeleton-assisted ambulation for home use, bowel and bladder management innovation, pressure-injury prevention with sensor technology, and quality-of-life outcomes beyond walking.",
+      "topics": [
+        "Onward ARC-EX FDA approval",
+        "Robotic gait training",
+        "Neuropathic pain in SCI",
+        "Autonomic dysfunction",
+        "Regenerative scaffold trials",
+        "Closed-loop FES",
+        "Home exoskeleton use",
+        "Pressure-injury sensor tech"
+      ]
+    },
+    {
+      "title": "Traumatic Brain Injury",
+      "slug": "traumatic-brain-injury",
+      "featured": true,
+      "description": "TBI care spans acute resuscitation to chronic disability and lifelong sequelae. The session covers concussion guidelines including the Living Concussion Guidelines update, blood biomarkers (GFAP, UCH-L1, NfL) for diagnosis and prognosis, CTE diagnosis with the Boston University tau-PET research, cognitive rehabilitation evidence base, post-traumatic seizure management, emerging neuroprotective therapies (cyclosporin, hyperbaric oxygen, ketamine), and pediatric TBI. Discussion addresses sports-related TBI including the youth football participation debate, military TBI and blast injury, the comparison of mild-moderate-severe TBI management pathways, return-to-play algorithms, and the integration of telehealth in post-TBI rehabilitation.",
+      "topics": [
+        "Living Concussion Guidelines",
+        "Blood biomarkers (GFAP, UCH-L1, NfL)",
+        "CTE tau-PET research",
+        "Cognitive rehabilitation",
+        "Post-traumatic seizures",
+        "Sports-related TBI",
+        "Military blast injury",
+        "Return-to-play algorithms"
+      ]
+    },
+    {
+      "title": "Sleep Disorders",
+      "slug": "sleep-disorders",
+      "featured": true,
+      "description": "Sleep medicine intersects neurology, pulmonology and psychiatry with major therapeutic advances. The session covers orexin-receptor agonists for narcolepsy (TAK-861 phase 3, oveporexton) as the first potentially disease-modifying therapy, restless legs syndrome management, REM sleep behaviour disorder (RBD) as prodromal alpha-synucleinopathy, obstructive sleep apnea management including GLP-1 (SURMOUNT-OSA), hypoglossal nerve stimulation (Inspire), and emerging sleep biomarkers. Discussion addresses insomnia therapeutics beyond DORAs (suvorexant, lemborexant, daridorexant), pediatric sleep medicine, the gut-microbiome and circadian-rhythm interface, sleep in neurodegenerative disease, and the role of wearables and AI in sleep diagnosis.",
+      "topics": [
+        "TAK-861 orexin agonist",
+        "Narcolepsy disease modification",
+        "RBD as prodromal synucleinopathy",
+        "SURMOUNT-OSA results",
+        "Hypoglossal nerve stimulation",
+        "DORAs (daridorexant)",
+        "Sleep wearables and AI",
+        "Sleep in neurodegeneration"
+      ]
+    },
+    {
+      "title": "Neuropathic Pain",
+      "slug": "neuropathic-pain",
+      "featured": true,
+      "description": "Neuropathic pain affects diverse populations with significant unmet need despite multiple available therapies. The session covers diabetic peripheral neuropathy and the new sodium-channel blockers (NaV1.8 inhibitor suzetrigine, NaV1.7 vixotrigine), post-herpetic neuralgia, trigeminal neuralgia management including microvascular decompression and gamma knife, gabapentinoid deprescribing and harm-reduction, spinal cord stimulation evidence in painful diabetic neuropathy, and emerging targets including TRPV1 and angiotensin-II receptors. Discussion addresses the chemotherapy-induced peripheral neuropathy frontier, neuropathic pain in cancer survivors, the role of cannabinoids, ketamine infusions, and the integration of pain rehabilitation with pharmacotherapy.",
+      "topics": [
+        "Suzetrigine NaV1.8 inhibitor",
+        "Vixotrigine NaV1.7",
+        "Trigeminal neuralgia management",
+        "Gabapentinoid deprescribing",
+        "SCS in diabetic neuropathy",
+        "CIPN treatment",
+        "Ketamine infusions",
+        "Cannabinoids in neuropathic pain"
+      ]
+    },
+    {
+      "title": "Cerebellar & Ataxia Disorders",
+      "slug": "cerebellar-and-ataxia-disorders",
+      "featured": true,
+      "description": "Hereditary and acquired ataxias have a rapidly growing therapeutic pipeline with multiple disease-specific approvals. The session covers spinocerebellar ataxia (SCA) genetics, Friedreich ataxia (FA) and omaveloxolone (Skyclarys), gluten ataxia and gluten-free diet response, paraneoplastic cerebellar degeneration, multiple system atrophy cerebellar type, and emerging gene therapies for SCA. Discussion addresses cerebellar imaging including MR spectroscopy and DAT-SPECT, episodic ataxia genetics and management, cerebellar cognitive affective syndrome, ataxia-telangiectasia and DNA-repair disorders, and the international ataxia registries (CRC-SCA, GEM-NPA) driving natural-history research.",
+      "topics": [
+        "SCA genetics",
+        "Omaveloxolone (Skyclarys) for FA",
+        "Gluten ataxia",
+        "Paraneoplastic cerebellar degeneration",
+        "MSA cerebellar type",
+        "Gene therapies for SCA",
+        "Cerebellar imaging",
+        "Ataxia-telangiectasia"
+      ]
+    },
+    {
+      "title": "Functional Neurological Disorders",
+      "slug": "functional-neurological-disorders",
+      "featured": true,
+      "description": "FND has emerged from rule-of-exclusion to positive diagnosis with growing evidence-based treatment. The session covers positive diagnostic signs (Hoover, Hoover's, give-way weakness, drift without pronation, midline-splitting sensory loss, tubular vision), CBT and physiotherapy for FND, the role of trauma history but not as requirement, multidisciplinary FND clinic models (UK NHS pathway, Mass General FND), functional movement disorders subtypes, and functional seizures (PNES). Discussion addresses pediatric FND, FND in long COVID, the comparison of FND with classical conversion disorder framework, stigma and communication with patients, and the integration of psychiatry, neurology and physiotherapy in care delivery.",
+      "topics": [
+        "Positive diagnostic signs",
+        "CBT for FND",
+        "Specialised physiotherapy",
+        "Mass General FND model",
+        "Functional seizures (PNES)",
+        "Pediatric FND",
+        "FND in long COVID",
+        "Multidisciplinary clinics"
+      ]
+    },
+    {
+      "title": "Pediatric Neurology",
+      "slug": "pediatric-neurology",
+      "featured": true,
+      "description": "Paediatric neurology spans infantile spasms to adolescent neurology with major recent therapeutic advances. The session covers SMA gene therapy real-world (Zolgensma 5-year follow-up), nusinersen and risdiplam comparison data, Duchenne therapeutics (Elevidys gene therapy approval and post-approval surveillance), paediatric epilepsy surgery and the new MR-guided laser ablation (Visualase, NeuroBlate), autism spectrum disorder neurobiology and emerging therapeutics, and adolescent transition to adult care. Discussion addresses tuberous sclerosis complex and mTOR inhibitors, Rett syndrome and trofinetide, neonatal seizure management, paediatric MS and AQP4-NMOSD/MOGAD, and emerging neuromodulation for paediatric epilepsy.",
+      "topics": [
+        "Zolgensma 5-year follow-up",
+        "Elevidys gene therapy",
+        "Pediatric epilepsy surgery",
+        "MR-guided laser ablation",
+        "Trofinetide for Rett syndrome",
+        "TSC and mTOR inhibitors",
+        "Pediatric MS/NMOSD/MOGAD",
+        "Adolescent transition"
+      ]
+    },
+    {
+      "title": "Neuroimmunology",
+      "slug": "neuroimmunology",
+      "featured": true,
+      "description": "Neuroimmunological diseases have undergone therapeutic revolution with multiple new mechanisms approved. The session covers BTK inhibitors in MS (evobrutinib, tolebrutinib, fenebrutinib phase 3 readouts), anti-CD19 cellular therapy in MS, NMOSD and MG (axiom-CD19 trials), aquaporin-4 NMOSD therapy (ravulizumab, satralizumab, eculizumab), MOGAD diagnostic criteria and management, myasthenia gravis FcRn inhibitors (efgartigimod, rozanolixizumab, nipocalimab), and CAR-T in refractory autoimmune neurology. Discussion addresses paraneoplastic syndromes and autoimmune encephalitis, the role of antibody profiling, neuroimmune biomarkers (NfL, GFAP), pregnancy considerations, and the equity considerations in expensive immunotherapy access.",
+      "topics": [
+        "BTK inhibitors in MS",
+        "Anti-CD19 cellular therapy",
+        "Ravulizumab/satralizumab in NMOSD",
+        "MOGAD diagnostic criteria",
+        "FcRn inhibitors in MG",
+        "CAR-T in autoimmune neurology",
+        "Paraneoplastic encephalitis",
+        "Neuroimmune biomarkers"
+      ]
+    },
+    {
+      "title": "Brain-Computer Interfaces",
+      "slug": "brain-computer-interfaces",
+      "featured": true,
+      "description": "BCIs have moved from research to clinical-trial year 2 with multiple platforms in human trials. The session covers Synchron Stentrode (the COMMAND trial), Neuralink (PRIME study) and Blackrock NeuroPort, speech restoration in ALS via cortical motor BCI (UCSF and Stanford studies), motor BCI for paralysis, closed-loop neuromodulation for depression and OCD, BCI ethics and pre-emptive policy frameworks, and the regulatory pathway under FDA Breakthrough Device. Discussion addresses non-invasive BCIs (EEG-based, near-infrared), the comparison of microelectrode vs ECoG vs endovascular approaches, BCI for psychiatric indications (depression, addiction, OCD), BCI in pediatric populations, and the data privacy and brain-data ownership debate.",
+      "topics": [
+        "Synchron Stentrode COMMAND trial",
+        "Neuralink PRIME study",
+        "Cortical speech BCI",
+        "Motor BCIs for paralysis",
+        "Closed-loop psychiatric DBS",
+        "Non-invasive BCIs",
+        "Endovascular vs microelectrode",
+        "BCI ethics frameworks"
+      ]
+    },
+    {
+      "title": "Migraine",
+      "slug": "migraine",
+      "featured": false,
+      "description": "Migraine prevention and acute treatment have been transformed by CGRP-targeted therapies with multiple agents now established. The session covers gepants for prevention (atogepant, rimegepant) and acute treatment (ubrogepant, rimegepant), monoclonal antibodies (erenumab, fremanezumab, galcanezumab, eptinezumab) and head-to-head data, zavegepant nasal as the first non-oral non-injectable acute treatment, ditans (lasmiditan), and emerging therapies for refractory migraine. Discussion addresses hormonal migraine and pregnancy considerations, vestibular migraine, pediatric migraine and FDA-approved options, the comparison of CGRP MAbs head-to-head, real-world adherence data, neuromodulation devices (Cefaly, gammaCore), and the equity considerations in expensive biologic migraine therapy.",
+      "topics": [
+        "Gepants (atogepant, ubrogepant)",
+        "CGRP MAbs head-to-head",
+        "Zavegepant nasal",
+        "Lasmiditan ditan",
+        "Hormonal migraine",
+        "Vestibular migraine",
+        "Pediatric migraine FDA approvals",
+        "Neuromodulation devices"
+      ]
+    },
+    {
+      "title": "Cluster Headache",
+      "slug": "cluster-headache",
+      "featured": false,
+      "description": "Cluster headache treatment options have expanded with CGRP-targeted and device-based therapies. The session covers galcanezumab in episodic cluster (the first FDA-approved preventive), eptinezumab in cluster head-to-head data, sphenopalatine ganglion stimulation (Pulsante implant), non-invasive vagus nerve stimulation (gammaCore), oxygen therapy optimisation, lithium prophylaxis with monitoring, and verapamil dosing strategies. Discussion addresses cluster-headache pathophysiology and hypothalamic involvement, chronic vs episodic cluster differentiation, suicide-risk awareness in cluster patients ('suicide headache'), pediatric cluster (rare but documented), psilocybin for cluster headache evidence, and emerging targets including PACAP-38 antagonists.",
+      "topics": [
+        "Galcanezumab in episodic cluster",
+        "Eptinezumab head-to-head",
+        "Pulsante SPG stimulation",
+        "gammaCore non-invasive VNS",
+        "Oxygen therapy optimisation",
+        "Lithium prophylaxis",
+        "Psilocybin in cluster",
+        "PACAP-38 antagonists"
+      ]
+    },
+    {
+      "title": "Dementia with Lewy Bodies",
+      "slug": "dementia-with-lewy-bodies",
+      "featured": false,
+      "description": "Lewy body disease care addresses both motor and cognitive symptoms with major diagnostic advances. The session covers alpha-synuclein seed amplification assays (SAA, RT-QuIC) as a diagnostic biomarker, cognitive fluctuations management, REM sleep behaviour disorder (RBD) as the strongest prodromal predictor, neuropsychiatric symptoms including hallucinations and Capgras phenomenon, the antipsychotic-sensitivity warning (avoid typical neuroleptics, cautious with atypicals, pimavanserin as alternative), and disease-modifying trials targeting alpha-synuclein. Discussion addresses visual hallucination management with rivastigmine and pimavanserin, autonomic features and management, the comparison of DLB vs PD-D vs AD diagnostic features, the staging biological definition under proposed criteria, and emerging biomarkers for early diagnosis.",
+      "topics": [
+        "Alpha-synuclein SAA biomarker",
+        "Cognitive fluctuations management",
+        "RBD as prodromal predictor",
+        "Antipsychotic-sensitivity warning",
+        "Pimavanserin in DLB",
+        "Disease-modifying alpha-synuclein trials",
+        "DLB vs PD-D vs AD differentiation",
+        "Biological staging criteria"
+      ]
+    },
+    {
+      "title": "Frontotemporal Dementia",
+      "slug": "frontotemporal-dementia",
+      "featured": false,
+      "description": "FTD management is advancing with progranulin-replacement therapy and emerging tau-targeted approaches. The session covers latozinemab (AL001) and the INFRONT-3 phase 3 trial, AL001 progranulin replacement mechanism, MAPT-targeted therapies in development, FTD-ALS spectrum and C9orf72 expansion, behavioural variant FTD (bvFTD) and primary progressive aphasia (PPA) subtypes, and the diagnostic criteria challenges. Discussion addresses NfL and other CSF biomarkers, FTD imaging biomarkers (FDG-PET, tau-PET), pre-symptomatic identification in familial FTD, caregiver burden in bvFTD specifically, the comparison with Alzheimer's disease management, and ALSFTD spectrum and the C9orf72 ASO programmes (BIIB078 lessons and newer-generation candidates).",
+      "topics": [
+        "Latozinemab INFRONT-3",
+        "Progranulin replacement mechanism",
+        "MAPT-targeted therapies",
+        "FTD-ALS spectrum (C9orf72)",
+        "bvFTD vs PPA subtypes",
+        "Pre-symptomatic familial FTD",
+        "Caregiver burden",
+        "C9orf72 ASO programmes"
+      ]
+    },
+    {
+      "title": "Huntington Disease",
+      "slug": "huntington-disease",
+      "featured": false,
+      "description": "Huntington disease research has pivoted after tominersen with multiple new programmes in clinical development. The session covers branaplam (SMN-stabiliser repurposed for HTT lowering, suspended for safety), AMT-130 AAV gene therapy (Phase 1/2 readouts at 24-36 months), post-GENERATION HD1 lessons and trial-design pivots, NfL and mHTT biomarker development, pre-manifest care models, and emerging non-coding RNA and small-molecule therapeutics. Discussion addresses HTT-lowering antisense oligonucleotides (newer-generation after tominersen failure), pre-manifest disease and trial enrolment ethics, the role of cognitive markers in early HD, juvenile HD considerations, genetic-counselling practice changes, and the international HD registries (Enroll-HD, REGISTRY) driving research.",
+      "topics": [
+        "Branaplam suspension",
+        "AMT-130 AAV gene therapy",
+        "Post-GENERATION HD1 pivots",
+        "NfL and mHTT biomarkers",
+        "Pre-manifest care",
+        "Newer HTT-lowering ASOs",
+        "Pre-manifest trial ethics",
+        "Enroll-HD registry"
+      ]
+    },
+    {
+      "title": "ALS",
+      "slug": "als",
+      "featured": false,
+      "description": "ALS treatment has been transformed by ASO and gene therapies, marking the first wave of disease-modifying interventions. The session covers tofersen (Qalsody) for SOD1 ALS with the VALOR open-label extension data, ulefnersen antisense ASO, C9orf72-targeted programmes (BIIB078 lessons, newer-generation candidates), the AMX0035 (Relyvrio) withdrawal after PHOENIX trial failure and lessons for accelerated approval, palliative ALS care principles, and the ALS Functional Rating Scale revised (ALSFRS-R) outcomes. Discussion addresses fasudil for sporadic ALS, IPS-cell-based therapy approaches, ALS in pediatric and young-adult populations, post-discharge home ventilation, multidisciplinary ALS clinics, and the role of NfL as a treatment-response biomarker.",
+      "topics": [
+        "Tofersen (Qalsody) for SOD1",
+        "Ulefnersen ASO",
+        "C9orf72 programmes",
+        "AMX0035 withdrawal lessons",
+        "Palliative ALS care",
+        "Fasudil for sporadic ALS",
+        "Multidisciplinary ALS clinics",
+        "NfL as biomarker"
+      ]
+    },
+    {
+      "title": "Tremor & Dystonia",
+      "slug": "tremor-and-dystonia",
+      "featured": false,
+      "description": "Tremor and dystonia management spans medication, botulinum toxin and neurosurgery with major recent advances. The session covers essential tremor pharmacotherapy (propranolol, primidone, topiramate, gabapentin), focused ultrasound thalamotomy (ExAblate Neuro), deep brain stimulation for tremor (Vim) and dystonia (GPi), dystonia botulinum toxin protocols (cervical, focal, hemifacial spasm), tardive dyskinesia treatment with VMAT2 inhibitors (valbenazine, deutetrabenazine), Wilson's disease management, and emerging therapies. Discussion addresses Holmes tremor, drug-induced tremor differentiation, focused ultrasound for bilateral indications and pallidotomy, neuromodulation programming for tremor, the role of physiotherapy in tremor management, and pediatric movement disorders.",
+      "topics": [
+        "Essential tremor pharmacology",
+        "Focused ultrasound thalamotomy",
+        "DBS for tremor and dystonia",
+        "Botulinum toxin protocols",
+        "VMAT2 inhibitors (valbenazine)",
+        "Wilson's disease",
+        "Holmes tremor",
+        "Pediatric movement disorders"
+      ]
+    },
+    {
+      "title": "Restless Legs Syndrome",
+      "slug": "restless-legs-syndrome",
+      "featured": false,
+      "description": "RLS management addresses augmentation and treatment refractoriness with growing evidence for non-dopaminergic approaches. The session covers gabapentinoids as first-line treatment (gabapentin enacarbil, pregabalin), iron supplementation (IV ferric carboxymaltose, ferric derisomaltose) and the iron-RLS link, dopamine-agonist augmentation problem and management, opioid use in refractory RLS (the OPEN OPRAH framework), the link between RLS and cardiovascular outcomes including hypertension, and pediatric RLS management. Discussion addresses periodic limb movements during sleep (PLMS), RLS in pregnancy, RLS in kidney disease and dialysis, the genetics of RLS (BTBD9, MEIS1), and emerging targets including dipraglurant and adenosine-receptor modulators.",
+      "topics": [
+        "Gabapentinoids as first-line",
+        "IV iron supplementation",
+        "Dopamine-agonist augmentation",
+        "Refractory RLS opioids",
+        "RLS and cardiovascular outcomes",
+        "RLS in pregnancy",
+        "RLS in kidney disease",
+        "RLS genetics (BTBD9, MEIS1)"
+      ]
+    },
+    {
+      "title": "Neuroinfectious Disease",
+      "slug": "neuroinfectious-disease",
+      "featured": false,
+      "description": "CNS infections require rapid diagnosis and treatment with growing capacity for molecular diagnostics. The session covers viral encephalitis (HSV-1/2, autoimmune encephalitis differential), bacterial meningitis empiric and pathogen-directed treatment, fungal CNS infections (Cryptococcus, Candida, Aspergillus, mucormycosis), tuberculous meningitis management and steroids, neurosyphilis resurgence and the new diagnostic algorithms, and the impact of mpox and other emerging viruses on the CNS. Discussion addresses CSF metagenomic next-generation sequencing (mNGS) for unknown encephalitis, post-pandemic Toxoplasma reactivation in immunosuppressed, JC virus and PML, COVID-19 neurological complications, and the international comparison of CNS infection epidemiology.",
+      "topics": [
+        "HSV vs autoimmune encephalitis",
+        "Bacterial meningitis pathogens",
+        "Cryptococcal/Aspergillus CNS",
+        "Tuberculous meningitis steroids",
+        "Neurosyphilis resurgence",
+        "CSF mNGS for unknown encephalitis",
+        "COVID-19 neurological",
+        "International epidemiology"
+      ]
+    },
+    {
+      "title": "Brain Tumors",
+      "slug": "brain-tumors",
+      "featured": false,
+      "description": "Brain tumor care advances with IDH-targeted therapies and the maturing immunotherapy landscape. The session covers vorasidenib in IDH-mutant glioma (INDIGO phase 3), ivosidenib and combination approaches, glioblastoma post-Stupp with TTFields (Optune), brain metastases management including stereotactic radiosurgery and whole-brain radiation alternatives, CSF ctDNA in CNS lymphoma and metastases, and immunotherapy in CNS tumours (the limited but emerging evidence). Discussion addresses pediatric brain tumours including diffuse midline glioma and H3K27M alterations, MGMT methylation and temozolomide, glioneural tumours, the role of awake craniotomy and intraoperative MRI, and emerging targets including CAR-T against EGFR-VIII and GD2.",
+      "topics": [
+        "Vorasidenib INDIGO trial",
+        "Ivosidenib in IDH-mutant",
+        "Glioblastoma TTFields",
+        "Stereotactic radiosurgery",
+        "CSF ctDNA in CNS lymphoma",
+        "Pediatric diffuse midline glioma",
+        "MGMT and temozolomide",
+        "CAR-T in brain tumours"
+      ]
+    },
+    {
+      "title": "Vestibular Disorders",
+      "slug": "vestibular-disorders",
+      "featured": false,
+      "description": "Vestibular disorders are common and disabling with effective interventions for most conditions. The session covers BPPV diagnosis and Epley/Semont maneuvers, vestibular migraine (the most common cause of recurrent vertigo), Meniere's disease management (low-salt diet, diuretics, intratympanic gentamicin, intratympanic steroids, endolymphatic sac surgery), vestibular neuritis (vestibular sedatives initially then vestibular rehabilitation), persistent postural-perceptual dizziness (PPPD), and vestibular rehabilitation protocols. Discussion addresses superior canal dehiscence, bilateral vestibulopathy, vestibular schwannoma management (observation, radiosurgery, microsurgery), pediatric dizziness, post-COVID vestibular dysfunction, and emerging telemedicine vestibular assessment platforms.",
+      "topics": [
+        "BPPV Epley/Semont maneuvers",
+        "Vestibular migraine",
+        "Meniere's disease management",
+        "Vestibular neuritis",
+        "PPPD diagnosis and treatment",
+        "Vestibular rehabilitation",
+        "Superior canal dehiscence",
+        "Post-COVID vestibular dysfunction"
+      ]
+    },
+    {
+      "title": "Autonomic Disorders",
+      "slug": "autonomic-disorders",
+      "featured": false,
+      "description": "Autonomic neuropathies impact multiple systems and quality of life with diverse aetiologies. The session covers postural orthostatic tachycardia syndrome (POTS) including the post-COVID surge, orthostatic hypotension management (droxidopa, midodrine, fludrocortisone, non-pharmacological), neurogenic bladder management, autonomic gastroparesis differential from diabetic and idiopathic, multi-system atrophy (MSA) autonomic features as defining vs Parkinson's, pure autonomic failure, and small-fibre neuropathy. Discussion addresses POTS subtyping (hyperadrenergic, neuropathic, hypovolemic), the autoimmune autonomic ganglionopathy and IVIG response, tilt-table testing protocols, Parkinson's disease autonomic features, vasovagal syncope treatment, and emerging therapeutics for orthostatic hypotension.",
+      "topics": [
+        "POTS post-COVID surge",
+        "Droxidopa/midodrine for OH",
+        "Neurogenic bladder",
+        "Autonomic gastroparesis",
+        "MSA vs PD autonomic features",
+        "Pure autonomic failure",
+        "Small-fibre neuropathy",
+        "Autoimmune autonomic ganglionopathy"
+      ]
+    },
+    {
+      "title": "Functional Imaging",
+      "slug": "functional-imaging",
+      "featured": false,
+      "description": "Functional neuroimaging spans research and clinical applications with growing clinical translation. The session covers fMRI in pre-surgical planning (language and motor mapping), FDG-PET in dementia diagnostic algorithms, amyloid PET (florbetaben, florbetapir) and tau PET (flortaucipir, MK-6240) imaging in Alzheimer's, dopamine transporter imaging (DaTscan, ioflupane) in Parkinsonism differentiation, connectivity-based functional MRI in psychiatry and OCD/depression, and DBS targeting imaging. Discussion addresses 7T MRI clinical applications, brain-machine interface preparation imaging, the role of imaging in DBS programming optimisation, dopaminergic vs noradrenergic imaging, novel tracers in neurology, and emerging imaging biomarkers for neurodegenerative disease.",
+      "topics": [
+        "fMRI for pre-surgical planning",
+        "FDG-PET in dementia",
+        "Amyloid and tau PET",
+        "DaTscan in Parkinsonism",
+        "Connectivity fMRI",
+        "7T MRI applications",
+        "BCI preparation imaging",
+        "Novel neurology tracers"
+      ]
+    },
+    {
+      "title": "Neuro-Ophthalmology",
+      "slug": "neuro-ophthalmology",
+      "featured": false,
+      "description": "Neuro-ophthalmology bridges neurology and ophthalmology with multiple sight-threatening emergencies. The session covers optic neuritis spectrum (MS, MOGAD, NMOSD differential), giant cell arteritis screening with ESR/CRP, idiopathic intracranial hypertension (IIH) management including acetazolomide, weight loss, and CSF diversion surgery, visual field interpretation in neuro-ophthalmology, the diagnostic workup of acute visual loss, and OCT applications in neurology beyond MS. Discussion addresses third/fourth/sixth cranial nerve palsy workup, internuclear ophthalmoplegia, Wernicke encephalopathy and ocular signs, papilledema vs pseudopapilledema, optic disc drusen, and the integration of OCT-angiography in neurological disease.",
+      "topics": [
+        "Optic neuritis spectrum",
+        "Giant cell arteritis screening",
+        "IIH management and surgery",
+        "Visual field interpretation",
+        "Acute visual loss workup",
+        "OCT in neurology",
+        "CN III/IV/VI palsy workup",
+        "OCT-angiography"
+      ]
+    },
+    {
+      "title": "Neuropsychology",
+      "slug": "neuropsychology",
+      "featured": false,
+      "description": "Neuropsychological assessment guides diagnosis and care planning across multiple neurological conditions. The session covers cognitive screening tools (MMSE, MoCA, ACE-III), dementia diagnosis pathway including subtype differentiation, MCI assessment and progression markers, post-stroke cognitive screening, computerised testing platforms (Cogstate, NeuroTrax), and neuropsychology in rehabilitation settings. Discussion addresses cultural and linguistic adaptation of neuropsychological tests, telehealth neuropsychology validation, performance validity testing, neuropsychology in epilepsy surgery workup, pediatric neuropsychology, and the role of neuropsychology in psychiatric differential diagnosis.",
+      "topics": [
+        "MMSE, MoCA, ACE-III screening",
+        "Dementia subtype differentiation",
+        "MCI progression markers",
+        "Post-stroke cognition",
+        "Computerised testing platforms",
+        "Telehealth neuropsychology",
+        "Cultural test adaptation",
+        "Performance validity testing"
+      ]
+    },
+    {
+      "title": "Movement Disorder Surgery",
+      "slug": "movement-disorder-surgery",
+      "featured": false,
+      "description": "Functional neurosurgery for movement disorders has matured with multiple approved and emerging technologies. The session covers DBS targets (STN, GPi, Vim) and their indications, closed-loop adaptive DBS (Medtronic Percept) and emerging directional leads (Boston Scientific Vercise, Abbott Infinity), focused ultrasound thalamotomy and pallidotomy (ExAblate Neuro), MRI-guided procedures, and the team-based selection of surgical candidates. Discussion addresses DBS programming complexity and remote monitoring, the comparison of unilateral vs bilateral procedures, dystonia DBS outcomes by aetiology, post-operative programming optimisation, the cost-effectiveness analyses, and emerging targets including ZI for tremor and PPN for gait freezing.",
+      "topics": [
+        "DBS targets (STN, GPi, Vim)",
+        "Adaptive closed-loop DBS",
+        "Directional DBS leads",
+        "Focused ultrasound thalamotomy",
+        "MRI-guided procedures",
+        "Remote DBS programming",
+        "PPN for gait freezing",
+        "Cost-effectiveness analyses"
+      ]
+    },
+    {
+      "title": "Genetic Counselling",
+      "slug": "genetic-counselling",
+      "featured": false,
+      "description": "Genetic counselling is increasingly important in neurology with growing test availability. The session covers Huntington pre-symptomatic testing protocols (including pre-test counselling, informed consent, post-test support), ALS genetic counselling (SOD1, C9orf72, FUS), familial Alzheimer's testing considerations (APP, PSEN1, PSEN2, APOE), polygenic risk score communication challenges, the ethical considerations of CNS genetic testing in childhood, and the return-of-results frameworks. Discussion addresses direct-to-consumer genetic testing implications, family-cascade testing approaches, the role of genetic counsellors in research, the patient-experience implications, and the equity and access considerations for genetic testing.",
+      "topics": [
+        "HD pre-symptomatic testing",
+        "ALS genetic counselling",
+        "Familial AD testing",
+        "Polygenic risk communication",
+        "Childhood testing ethics",
+        "Return-of-results frameworks",
+        "Direct-to-consumer testing",
+        "Family cascade testing"
+      ]
+    }
+  ]
+}

@@ -12601,3 +12601,216 @@ textarea.is-invalid {
     .lpb-hero { padding: 28px 20px 20px; gap: 28px; }
     .lpb-hero h1 .lpb-h1-name { white-space: normal; }
 }
+
+
+/* ==========================================================================
+   Ported from Sconconferences/neurology main site (app/globals.css)
+   so the /neurology landing page can mirror that home page exactly.
+   Block 1: .hero-spk-* — hero Featured Speakers slider
+   Block 2: .eb-*       — Early Bird countdown banner
+   ========================================================================== */
+
+/* --- Hero speaker block (right column) — speaker slider ------- */
+.hero-spk-wrap {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 520px;
+    animation: hc-enter 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero-spk-label {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 24px;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+}
+.hero-spk-line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.4; }
+.hero-spk-showcase {
+    position: relative; display: flex; align-items: stretch; gap: 0;
+    background: var(--card); border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: 0 32px 70px -22px rgba(11,35,70,0.22), 0 14px 28px -10px rgba(11,35,70,0.14);
+}
+.hero-spk-photo { flex-shrink: 0; width: 260px; min-height: 340px; overflow: hidden; background: color-mix(in srgb, var(--accent) 8%, #f0f0f0); }
+.hero-spk-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.hero-spk-showcase:hover .hero-spk-photo img { transform: scale(1.04); }
+.hero-spk-card { display: flex; flex-direction: column; justify-content: center; padding: 36px 28px; gap: 10px; flex: 1; }
+.hero-spk-badge {
+    display: inline-block; width: fit-content; font-family: var(--font-mono);
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #fff; background: var(--accent); padding: 6px 14px; border-radius: 4px; font-weight: 700;
+}
+.hero-spk-name { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--ink); letter-spacing: -0.02em; line-height: 1.2; margin: 6px 0 0; }
+.hero-spk-affil { font-size: 0.92rem; color: var(--muted); line-height: 1.5; margin: 0; }
+.hero-spk-country { font-size: 0.82rem; color: var(--accent); font-weight: 600; margin: 0; display: flex; align-items: center; gap: 6px; }
+.hero-spk-country i { font-size: 0.7rem; }
+.hero-spk-abstract { font-size: 0.82rem; color: var(--ink); font-weight: 600; line-height: 1.4; margin: 0; font-style: italic; opacity: 0.75; }
+.hero-spk-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; color: var(--accent); text-decoration: none; transition: gap 0.2s; }
+.hero-spk-link:hover { gap: 10px; }
+.hero-spk-link i { font-size: 0.75rem; }
+/* Slider dots */
+.hero-spk-dots { display: flex; justify-content: center; gap: 8px; margin-top: 18px; }
+.hero-spk-dot {
+    width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--accent);
+    background: transparent; cursor: pointer; padding: 0; transition: background 0.2s, transform 0.2s;
+}
+.hero-spk-dot.active { background: var(--accent); transform: scale(1.2); }
+/* No-photo placeholder */
+.hero-spk-placeholder {
+    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+    font-size: 3rem; font-weight: 800; color: var(--accent); opacity: 0.4;
+    background: color-mix(in srgb, var(--accent) 8%, #f0f0f0);
+}
+.hero-bg-image img { filter: brightness(0.95); }
+.hero-tagline { font-size: 1rem; color: var(--muted); line-height: 1.6; max-width: 540px; margin: 0 0 28px; }
+@media (max-width: 768px) {
+    .hero-spk-wrap { max-width: 100%; }
+    .hero-spk-photo { width: 180px; min-height: 260px; }
+    .hero-spk-card { padding: 24px 20px; }
+    .hero-spk-name { font-size: 1.2rem; }
+}
+@media (max-width: 480px) {
+    .hero-spk-showcase { flex-direction: column; }
+    .hero-spk-photo { width: 100%; min-height: 240px; max-height: 280px; }
+}
+
+
+.eb-banner {
+  position: sticky; top: 0; z-index: 1000;
+  background: linear-gradient(180deg,
+      color-mix(in srgb, var(--accent) 62%, #3c3a38) 0%,
+      color-mix(in srgb, var(--accent) 46%, #262422) 100%);
+  /* Explicit divider. Colour alone cannot separate the bar from the
+     .info-strip on every site — where accent and --ink share a hue
+     (surgery, neurology, gastroenterology) they sit only ~1.2-1.5
+     apart, and lightening the bar enough to fix that would drop white
+     text below AA on the lighter accents. A light accent-tinted rule
+     guarantees the edge on all ten (>=4.0 against both sides). */
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 55%, #ffffff);
+  color: #fff;
+  padding: 0 20px;
+}
+.eb-banner-inner {
+  max-width: 1400px; margin: 0 auto;
+  min-height: 46px;
+  display: flex; align-items: center; justify-content: center;
+  gap: 18px; flex-wrap: wrap;
+}
+
+/* 4. Eyebrow — deliberately quiet, with a live dot for the running clock */
+.eb-label {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 10.5px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.11em;
+  color: rgba(255, 255, 255, 0.88);
+  white-space: nowrap;
+}
+.eb-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: color-mix(in srgb, var(--accent) 30%, #ffffff);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 45%, transparent);
+  animation: eb-pulse 2.4s ease-out infinite;
+}
+@keyframes eb-pulse {
+  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 45%, transparent); }
+  70%  { box-shadow: 0 0 0 7px color-mix(in srgb, var(--accent) 0%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent); }
+}
+
+/* 1. Countdown — the hero. Contained chips so digits are scannable. */
+.eb-countdown { display: inline-flex; align-items: stretch; gap: 5px; }
+.eb-unit {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-width: 40px; padding: 4px 7px 3px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
+  line-height: 1;
+}
+.eb-unit strong {
+  font-size: 17px; font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+.eb-unit small {
+  margin-top: 3px;
+  font-size: 8px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.09em;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+/* 3. Rotating message — supporting detail, separated by a hairline rule */
+.eb-warning {
+  position: relative;
+  padding-left: 19px;
+  font-size: 12.5px; font-weight: 400;
+  color: rgba(255, 255, 255, 0.94);
+  white-space: nowrap;
+  animation: eb-fadein 0.5s ease-out;
+  /* The three rotating messages differ by ~89px (406 / 317 / 355px at this
+     font). In a centre-justified flex row that shoved the countdown and CTA
+     sideways on every swap. Reserving the width of the longest message —
+     'September 30, 2026' is the longest deadline across all 10 — keeps the
+     row geometry fixed, so only the text changes. */
+  flex: 0 0 auto;
+  width: 420px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.eb-warning::before {
+  content: ''; position: absolute; left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 1px; height: 15px;
+  background: rgba(255, 255, 255, 0.30);
+}
+@keyframes eb-fadein {
+  from { opacity: 0; transform: translateY(3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 2. CTA — the action. Solid white reads as the one clickable thing here. */
+.eb-cta {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: #fff; color: color-mix(in srgb, var(--accent) 62%, #000);
+  padding: 7px 15px; border-radius: 999px;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 0.01em; white-space: nowrap;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.eb-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.26);
+}
+.eb-cta i { font-size: 10px; transition: transform 0.15s ease; }
+.eb-cta:hover i { transform: translateX(2px); }
+
+.eb-message {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.94);
+}
+.eb-message i { margin-right: 7px; opacity: 0.7; }
+
+/* Tablet — drop the message first; the countdown and CTA carry the meaning */
+@media (max-width: 1080px) {
+  .eb-warning { display: none; }
+}
+/* Mobile — keep it to one compact line */
+@media (max-width: 640px) {
+  .eb-banner { padding: 0 12px; }
+  .eb-banner-inner { min-height: 42px; gap: 10px; }
+  .eb-label { font-size: 9.5px; letter-spacing: 0.08em; }
+  .eb-unit { min-width: 33px; padding: 3px 5px 2px; }
+  .eb-unit strong { font-size: 14px; }
+  .eb-unit small  { font-size: 7px; }
+  .eb-cta { padding: 6px 12px; font-size: 11px; }
+}
+@media (max-width: 400px) {
+  .eb-label { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eb-dot { animation: none; }
+  .eb-warning { animation: none; }
+  .eb-cta, .eb-cta i { transition: none; }
+  .eb-cta:hover { transform: none; }
+}

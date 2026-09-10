@@ -4,7 +4,7 @@
     {
       "id": "early",
       "label": "Early Bird",
-      "closes": "November 14, 2026"
+      "closes": "Nov 14, 2026"
     },
     {
       "id": "mid",
@@ -14,7 +14,7 @@
     {
       "id": "late",
       "label": "Late / On-site",
-      "closes": "June 22-23, 2027"
+      "closes": "June 17, 2027"
     }
   ],
   "categories": [
@@ -23,9 +23,9 @@
       "label": "Speaker / Presenter",
       "desc": "Oral or poster presenter (after abstract acceptance).",
       "prices": {
-        "early": 899,
-        "mid": 999,
-        "late": 1099
+        "early": 749,
+        "mid": 849,
+        "late": 949
       }
     },
     {
@@ -33,9 +33,9 @@
       "label": "Delegate / Listener",
       "desc": "Attend all sessions, posters and the welcome reception.",
       "prices": {
-        "early": 699,
-        "mid": 799,
-        "late": 899
+        "early": 899,
+        "mid": 999,
+        "late": 1099
       }
     },
     {
@@ -43,9 +43,9 @@
       "label": "Student",
       "desc": "Valid full-time student ID required at registration desk.",
       "prices": {
-        "early": 499,
-        "mid": 599,
-        "late": 799
+        "early": 349,
+        "mid": 449,
+        "late": 649
       }
     }
   ],
@@ -81,9 +81,13 @@
     }
   },
   "cancellation": [
-    "A full refund, minus a processing fee, will be issued for cancellations made 90 days before the conference begins.",
-    "Registrations or accommodations cancelled within 90 days of the conference start date are non-refundable; however, they can be transferred to your colleague/friend or to an upcoming event.",
-    "For more queries regarding our cancellation policy please write to us at gcnn@meetings.llc."
+    "Registration fees are generally non-refundable. Participants who may be unable to attend are encouraged to contact us as early as possible so that an alternative arrangement can be considered.",
+    "<strong>More than 60 calendar days before the Event.</strong> Where a written request is received more than 60 calendar days before the Event, the Organizer may consider substitution with another eligible Participant, transfer to another edition, a time-limited registration credit, or in exceptional circumstances a partial refund after deducting non-recoverable taxes, payment charges, administrative costs and expenses already incurred. The available option is assessed individually and must be confirmed by the Organizer in writing.",
+    "<strong>Within 60 calendar days of the Event.</strong> During the final 60 days, most major Event arrangements and expenses will normally have been committed. Therefore, a monetary refund cannot ordinarily be provided for cancellation, withdrawal or inability to attend. Where reasonably possible and requested before the Event begins, the Organizer may consider substitution or a credit toward a future Event, at its discretion and subject to availability.",
+    "<strong>Substitutions, transfers and credits.</strong> Requests must be submitted in writing with the replacement Participant\u2019s complete details, and the replacement must satisfy applicable registration, identity, academic, visa and payment requirements. Approved transfers and credits have no cash value, cannot ordinarily be combined with another offer, and may require payment of any fee difference. Unless otherwise confirmed, an approved credit is valid for 12 months from its date of issue.",
+    "<strong>Non-attendance and unused services.</strong> A refund or credit will not ordinarily be available for failure to attend without prior communication; late arrival or early departure; personal or professional schedule conflicts or illness; failure to obtain leave, funding or institutional approval; visa refusal or visa-processing delay; missed, delayed or cancelled travel; reasonable programme or speaker schedule changes; or included services the Participant chooses not to use. Participants are strongly encouraged to obtain appropriate travel, medical and cancellation insurance.",
+    "<strong>Refund processing.</strong> Where a refund is approved, the Organizer will ordinarily initiate it within 15 business days after receiving all information required to process the transaction. Refunds are issued through the original payment method and in the original transaction currency. Banks and intermediary institutions may require additional processing time, and the final amount received may be affected by currency fluctuations and banking charges, which cannot be reimbursed by the Organizer.",
+    "<strong>Circumstances beyond reasonable control.</strong> An Event may be affected by natural disasters, extreme weather, epidemic or pandemic, war, terrorism, civil disturbance, strikes, government restrictions, border closures, transportation disruption, venue failure, utility or internet outages, cyber incidents or public-health measures. The Organizer will make reasonable efforts to preserve the Event through rescheduling, relocation, format changes, virtual participation or registration credit. Any refund will depend on the circumstances, applicable law and the extent to which committed expenses can be recovered."
   ],
   "benefits_inperson": {
     "heading": "Registration Benefits for In-Person Attendees",
@@ -127,7 +131,7 @@
             "id": "listener",
             "label": "Listener (In-Person)",
             "standard_price": 999,
-            "total": 499,
+            "total": 899,
             "discount_pct": 50
           },
           {
@@ -147,14 +151,14 @@
             "id": "presenter_v",
             "label": "Presenter (Virtual)",
             "standard_price": 499,
-            "total": 249,
+            "total": 349,
             "discount_pct": 50
           },
           {
             "id": "listener_v",
             "label": "Listener (Virtual)",
             "standard_price": 399,
-            "total": 199,
+            "total": 449,
             "discount_pct": 50
           }
         ]
@@ -166,16 +170,16 @@
       "accompanying_per_person": 150
     },
     "checkin_dates": [
-      "June 21, 2027",
-      "June 22, 2027",
-      "June 23, 2027",
-      "June 24, 2027"
+      "April 25, 2027",
+      "April 26, 2027",
+      "April 27, 2027",
+      "April 28, 2027"
     ],
     "checkout_dates": [
-      "June 22, 2027",
-      "June 23, 2027",
-      "June 24, 2027",
-      "June 25, 2027"
+      "April 26, 2027",
+      "April 27, 2027",
+      "April 28, 2027",
+      "April 29, 2027"
     ],
     "title_options": [
       "Dr.",
