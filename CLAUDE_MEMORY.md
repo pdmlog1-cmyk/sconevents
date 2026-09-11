@@ -398,6 +398,44 @@ Do this before every brochure commit — verify the PDF against the site data.
 
 ## 11. Recent changes
 
+### 11 Sep 2026 — neurology logo matched to the main site — `14599f7`
+
+The `/neurology` logo now matches neuroscience-conference.com, checked against the live
+main site in a headless browser (the icon renders pixel-identical):
+
+- Lockup line reads **"June 22–23 | Prague"** (was the derived "Jun 22-23 | Czech Republic"),
+  in both header and footer. It comes from new optional `brand_dates` / `brand_place` in
+  `data/<slug>/conference.json`; conferences without them keep the derived
+  `"<Mon> <dd-dd> | <country>"`, so the other nine are unchanged (verified live).
+- Tile light corner hard-coded to the main site's `#581c87` in the neurology entry of
+  `lib/logoSvgs.ts`. The landing theme's `--ink-soft` (`#4c1d95`) was left alone — it
+  colours other text on the page.
+- `public/logos/neurology.svg` (favicon) replaced with the main site's `icon.svg`.
+
+Known leftover: the lockup's grey date text uses the landing theme's `--muted`
+(`#5a4a6a`); the main site's is `#6b5b7a`. Not changed, because `--muted` is page-wide.
+
+Pushed `67680ab..14599f7`; deployed from this copy, worker version
+`ceaf4846-ba01-45c9-8ab1-ca0d63f077ce`.
+
+### 11 Sep 2026 — neurology hero "Featured Speakers" card — `67680ab`
+
+`/neurology` now shows a rotating **Featured Speakers** card on the right of the hero —
+the first 4 (`HERO_SPEAKER_COUNT`) of the real speaker list in `data/neurology/speakers.json`
+→ `speakers` (same order as neuroscience-conference.com/speakers). Ported from the main
+site's `HeroSpeakerSlider` plus its `.hero-spk-*` CSS; `lib/getConfig.ts` passes the list
+through as `conf.speaker_records`. Only conferences with a `speakers` list get the card and
+the two-column `.lpb-hero--speakers` layout, so the other nine are untouched — verified live
+on `/cardiology`, `/addiction`, `/surgery`. Section numbering is unchanged (01–05).
+
+`npm run build` compiled successfully; pushed `2261467..67680ab`; deployed from
+`D:\SCON_landing-Pages\SCON_landing-Pages` (`wrangler whoami` = pdmlog1@gmail.com),
+worker version `4fe91513-84b3-48e0-bcce-a8d2c1bfc7ee`.
+
+> The user wants landing pages kept **identical to live** apart from the change asked
+> for. A "Speakers by session" section that renumbered the page was tried locally the
+> same day and removed at their request — never deployed.
+
 ### 11 Sep 2026 — neurology mirror REVERTED — `1a1ed18`
 
 The user asked for the 10 Sep `/neurology` mirror (below) to be taken back out.
