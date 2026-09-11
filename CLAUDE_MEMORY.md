@@ -1,6 +1,6 @@
 # SCON Events Landing Pages — Project Memory
 
-**Last updated: 10 Sep 2026**
+**Last updated: 11 Sep 2026**
 For step-by-step working instructions, read **`TEAM-GUIDE.txt`** in this same folder.
 This file is the technical reference: architecture, current data, and known traps.
 
@@ -133,10 +133,8 @@ Each `data/<slug>/` folder holds 10 JSON files:
 | `lib/config.ts` | `ConferenceConfig` type + default Addiction data (backwards compat) |
 | `lib/getConfig.ts` | Loads the per-conference JSON; `trackFromJson()` adapter |
 | `lib/forms.ts` | Form helpers incl. `verifyCaptcha()` |
-| `app/[conference]/page.tsx` | Conference route + gtag scripts + the `MAIN_SITE_MIRROR` switch |
-| `app/[conference]/LandingClient.tsx` | The landing page UI for the **nine** non-mirrored conferences |
-| `app/[conference]/NeurologyLanding.tsx` | `/neurology` only — mirrors the main-site home page (§11, 10 Sep) |
-| `components/MainSiteChrome.tsx` | Prop-driven main-site info strip / header / footer, used only by the mirror |
+| `app/[conference]/page.tsx` | Conference route + gtag scripts |
+| `app/[conference]/LandingClient.tsx` | The entire landing page UI, for all 10 conferences |
 | `app/[conference]/api/brochure/route.ts` | Brochure lead capture → CMS + email |
 | `components/LandingLeadModal.tsx` | The brochure download modal |
 | `public/logos/*.svg` | Static SVGs — used as **favicons only**, not in the header |
@@ -400,9 +398,22 @@ Do this before every brochure commit — verify the PDF against the site data.
 
 ## 11. Recent changes
 
-### 10 Sep 2026 — `/neurology` now mirrors its main site — `6b8cbcb`
+### 11 Sep 2026 — neurology mirror REVERTED — `1a1ed18`
 
-`/neurology` reproduces the **neuroscience-conference.com home page** instead of the
+The user asked for the 10 Sep `/neurology` mirror (below) to be taken back out.
+`git revert 6b8cbcb` — the code tree is byte-identical to `0f0a46b` again (verified with
+`git diff 0f0a46b HEAD -- . ':!CLAUDE_MEMORY.md'`, empty). All ten landing pages use
+`LandingClient.tsx` once more; the five mirror components, `sessions.json`, the two
+appended CSS blocks and the copied images are gone, and `data/neurology/` is back to its
+pre-mirror contents. Pushed and redeployed the same day.
+
+The 10 Sep entry is kept as a record of **how** to mirror a page if it is wanted again —
+`git revert 1a1ed18` would restore it exactly. Trap 9 (§10) and the heap flag in §8 are
+unaffected; they are about the build, not the mirror.
+
+### 10 Sep 2026 — `/neurology` mirrored its main site — `6b8cbcb` *(reverted 11 Sep)*
+
+`/neurology` reproduced the **neuroscience-conference.com home page** instead of the
 shared `LandingClient` layout. `app/[conference]/page.tsx` selects it via a
 `MAIN_SITE_MIRROR` set holding only `'neurology'`, so **the other nine are untouched** —
 verified live: `/addiction`, `/cardiology`, `/surgery` still serve 300 `lpb-` markers and
@@ -539,14 +550,6 @@ The page keeps `robots: noindex`, so it does not compete with the main site in s
 
 - **`TEAM-GUIDE.txt` is NOT in the repo.** It is untracked and exists only in the team
   folder, so a fresh `git clone` will not have it. Hand it over separately, or commit it.
-- **Three of the four `/neurology` hero speakers have no photo** — `speakers.json` carries
-  `"photo": ""` for Neuman, Danilov and Sunkara, so they render initials placeholders. The
-  main site has the same gap. Drop images into `public/assets/speakers/` and set the paths.
-- **The other nine landing pages could be mirrored the same way**, one at a time: add the
-  slug to `MAIN_SITE_MIRROR` and give it a component like `NeurologyLanding.tsx`. Neurology
-  alone was a deliberate choice on 10 Sep, to keep the blast radius at one page. Anything
-  done to `LandingClient.tsx` or `InfoStrip.tsx` instead would move all nine at once —
-  see TEAM-GUIDE rule 6.
 - **`BrochureModal.tsx` is dead code** and could be deleted.
 - **This file is committed to a public repo.** It deliberately contains no secrets — only
   the hCaptcha *sitekey* (public by design), the Cloudflare account ID, and file paths.
