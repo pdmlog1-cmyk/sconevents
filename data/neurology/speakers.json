@@ -138,5 +138,70 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Prof. Zhenhuan Liu",
+      "affiliation": "Guangzhou University of Chinese Medicine",
+      "country": "China",
+      "abstract_title": "Transcranial Painless Neurorehabilitation Scalp Acupuncture Electrical Stimulation for Neuroregulation of Autism Spectrum Disorder",
+      "photo": "/assets/speakers/zhenhuan-liu.jpg"
+    },
+    {
+      "name": "Prof. Manuela G. Neuman, MSc, PhD, FCAB",
+      "affiliation": "Adjunct Professor, Department of Pharmacology & Toxicology, Faculty of Medicine, University of Toronto; Founder & CEO, In Vitro Drug Safety and Biotechnology; Professor, Carol Davila University of Medicine and Pharmacy, Bucharest",
+      "country": "Canada",
+      "abstract_title": "Non-Invasive Personalized Biomarkers for Early Detection of Alzheimer's Disease",
+      "photo": ""
+    },
+    {
+      "name": "Prof. Sergei M. Danilov, MD, PhD",
+      "affiliation": "Department of Medicine, University of Illinois at Chicago",
+      "country": "United States",
+      "abstract_title": "ACE-dependent Alzheimer's Disease",
+      "photo": ""
+    },
+    {
+      "name": "Ms. Nishka Sunkara",
+      "affiliation": "",
+      "country": "United States",
+      "abstract_title": "Microglial-Mediated Neuroinflammation in Alzheimer's Disease: A Bibliometric Analysis of Gaps in Therapeutic Translation",
+      "photo": ""
+    },
+    {
+      "name": "Prof. Jacqueline London",
+      "affiliation": "Université Paris-Cité (Emeritus Professor)",
+      "country": "France",
+      "abstract_title": "Trisomy 21 as the genetic model for understanding Alzheimer's disease",
+      "photo": "/assets/speakers/jacqueline-london.jpg"
+    },
+    {
+      "name": "Dr. Carsten Tjell, MD, PhD",
+      "affiliation": "Otoneurologic Centre, Vennesla; formerly Senior Consultant, Sørlandet Hospital",
+      "country": "Norway",
+      "abstract_title": "Sudden vertigo – fateful or just fearful",
+      "photo": ""
+    },
+    {
+      "name": "Dr. Pınar Şengül",
+      "affiliation": "",
+      "country": "Turkey",
+      "abstract_title": "Neuroinflammatory Diseases",
+      "photo": ""
+    },
+    {
+      "name": "Prof. Nevzat Tarhan",
+      "affiliation": "Üsküdar University (Founder Rector); NP Istanbul Brain Hospital (CEO)",
+      "country": "Turkey",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Dr. Amir A. Ghavifekr",
+      "affiliation": "Assistant Professor of Control Engineering, University of Tabriz",
+      "country": "Iran",
+      "abstract_title": "",
+      "photo": ""
+    }
   ]
 }

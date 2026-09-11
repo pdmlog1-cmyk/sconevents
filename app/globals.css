@@ -12601,3 +12601,86 @@ textarea.is-invalid {
     .lpb-hero { padding: 28px 20px 20px; gap: 28px; }
     .lpb-hero h1 .lpb-h1-name { white-space: normal; }
 }
+
+
+/* ==========================================================================
+   Hero "Featured Speakers" card — .hero-spk-* copied from the main
+   conference site (Sconconferences/<slug>/app/globals.css). Only rendered
+   when a conference has a `speakers` list in speakers.json (neurology today).
+   ========================================================================== */
+/* --- Hero speaker block (right column) — speaker slider ------- */
+.hero-spk-wrap {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 520px;
+    animation: hc-enter 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero-spk-label {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 24px;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+}
+.hero-spk-line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0.4; }
+.hero-spk-showcase {
+    position: relative; display: flex; align-items: stretch; gap: 0;
+    background: var(--card); border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: 0 32px 70px -22px rgba(11,35,70,0.22), 0 14px 28px -10px rgba(11,35,70,0.14);
+}
+.hero-spk-photo { flex-shrink: 0; width: 260px; min-height: 340px; overflow: hidden; background: color-mix(in srgb, var(--accent) 8%, #f0f0f0); }
+.hero-spk-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.hero-spk-showcase:hover .hero-spk-photo img { transform: scale(1.04); }
+.hero-spk-card { display: flex; flex-direction: column; justify-content: center; padding: 36px 28px; gap: 10px; flex: 1; }
+.hero-spk-badge {
+    display: inline-block; width: fit-content; font-family: var(--font-mono);
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #fff; background: var(--accent); padding: 6px 14px; border-radius: 4px; font-weight: 700;
+}
+.hero-spk-name { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; color: var(--ink); letter-spacing: -0.02em; line-height: 1.2; margin: 6px 0 0; }
+.hero-spk-affil { font-size: 0.92rem; color: var(--muted); line-height: 1.5; margin: 0; }
+.hero-spk-country { font-size: 0.82rem; color: var(--accent); font-weight: 600; margin: 0; display: flex; align-items: center; gap: 6px; }
+.hero-spk-country i { font-size: 0.7rem; }
+.hero-spk-abstract { font-size: 0.82rem; color: var(--ink); font-weight: 600; line-height: 1.4; margin: 0; font-style: italic; opacity: 0.75; }
+.hero-spk-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-family: var(--font-display); font-size: 0.88rem; font-weight: 700; color: var(--accent); text-decoration: none; transition: gap 0.2s; }
+.hero-spk-link:hover { gap: 10px; }
+.hero-spk-link i { font-size: 0.75rem; }
+/* Slider dots */
+.hero-spk-dots { display: flex; justify-content: center; gap: 8px; margin-top: 18px; }
+.hero-spk-dot {
+    width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--accent);
+    background: transparent; cursor: pointer; padding: 0; transition: background 0.2s, transform 0.2s;
+}
+.hero-spk-dot.active { background: var(--accent); transform: scale(1.2); }
+/* No-photo placeholder */
+.hero-spk-placeholder {
+    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
+    font-size: 3rem; font-weight: 800; color: var(--accent); opacity: 0.4;
+    background: color-mix(in srgb, var(--accent) 8%, #f0f0f0);
+}
+@media (max-width: 768px) {
+    .hero-spk-wrap { max-width: 100%; }
+    .hero-spk-photo { width: 180px; min-height: 260px; }
+    .hero-spk-card { padding: 24px 20px; }
+    .hero-spk-name { font-size: 1.2rem; }
+}
+@media (max-width: 480px) {
+    .hero-spk-showcase { flex-direction: column; }
+    .hero-spk-photo { width: 100%; min-height: 240px; max-height: 280px; }
+}
+
+/* Two-column hero, applied only when the speakers card is present — every
+   other landing page keeps the single-column .lpb-hero above. */
+.lpb-hero.lpb-hero--speakers {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 500px);
+    align-items: center;
+}
+/* The one-line conference name (.lpb-h1-name is nowrap) no longer fits once the
+   text column shares the row, so let it wrap here instead of overflowing. */
+.lpb-hero--speakers h1 .lpb-h1-name { white-space: normal; }
+/* ...but keep "-2027" glued to the word before it — otherwise the line breaks
+   after the hyphen and the year sits alone on its own line. */
+.lpb-hero--speakers h1 .lpb-h1-year { white-space: nowrap; }
+@media (max-width: 1024px) {
+    .lpb-hero.lpb-hero--speakers { grid-template-columns: 1fr; }
+}

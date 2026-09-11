@@ -7,6 +7,7 @@
 import { useState, useEffect } from 'react';
 import LandingLeadModal from '@/components/LandingLeadModal';
 import InfoStrip from '@/components/InfoStrip';
+import HeroSpeakerSlider from '@/components/HeroSpeakerSlider';
 import type { ConferenceConfig } from '@/lib/config';
 import type { ConferenceTheme } from '@/lib/conferences';
 import { getLogoSvg } from '@/lib/logoSvgs';
@@ -37,6 +38,12 @@ const BENTO_POOL = [
   'audience3.jpg', 'applause.jpg', 'networking2.jpg', 'panel2.jpg', 'podium.jpg',
   'discussion.jpg', 'registration.jpg', 'smile.jpg', 'question.jpg', 'audience2.jpg',
 ].map(name => `${LEGACY}/${name}`);
+
+/* Hero "Featured Speakers" card: the first N entries of the conference's real
+   speaker list, in the same order as the main site's /speakers page. A
+   conference with no `speakers` list in speakers.json gets no card and keeps
+   the single-column hero — so this only shows where there is real data. */
+const HERO_SPEAKER_COUNT = 4;
 
 const BENTO_TICK_MS = 12000;     // image swap interval
 const BENTO_STAGGER_MS = 1500;   // delay between adjacent tile swaps
@@ -90,6 +97,7 @@ function BentoTile({
 
 export default function LandingClient({ conf, mainSiteUrl, theme, slug }: LandingClientProps) {
   const MAIN = mainSiteUrl;
+  const heroSpeakers = (conf.speaker_records ?? []).slice(0, HERO_SPEAKER_COUNT);
 
   // Dynamic theme CSS variables
   const themeStyles = `
@@ -154,7 +162,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
       {/* Hero — refined two-column with anatomical line-art on the right.
           Left: title block + CTAs + thin contact line.
           Right: large hand-drawn heart + ECG illustration, no card. */}
-      <section className="lpb-hero lpb-hero-art-wrap">
+      <section className={`lpb-hero lpb-hero-art-wrap${heroSpeakers.length ? ' lpb-hero--speakers' : ''}`}>
         <div className="lpb-hero-text">
           {/* All elements now share the same left edge — no quote indents,
               consistent vertical rhythm, hairline rules above and below the
@@ -210,7 +218,14 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <span className="lpb-contact-chip-arrow" aria-hidden><i className="fas fa-arrow-right" /></span>
             </a>
           </div>
-        </div>      </section>
+        </div>
+
+        {heroSpeakers.length > 0 && (
+          <aside className="lpb-hero-aside">
+            <HeroSpeakerSlider speakers={heroSpeakers} baseUrl={MAIN} />
+          </aside>
+        )}
+      </section>
 
       {/* From previous editions — asymmetric bento grid. Seven tiles,
           each cycling through a shared pool of cardiology-conference.com

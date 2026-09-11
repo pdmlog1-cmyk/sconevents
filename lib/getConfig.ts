@@ -4,7 +4,7 @@
    ============================================================================= */
 
 import { getConferenceMeta } from './conferences';
-import type { ConferenceConfig, Track, Stat, WhyItem, Testimonial, KeyDate, MarqueeItem, Speaker, OcmMember, Keynote } from './config';
+import type { ConferenceConfig, Track, Stat, WhyItem, Testimonial, KeyDate, MarqueeItem, Speaker, SpeakerRecord, OcmMember, Keynote } from './config';
 
 interface TrackJson {
   title: string;
@@ -113,6 +113,7 @@ export async function getConferenceConfig(slug: string): Promise<ConferenceConfi
       ocm: speakers.ocm as OcmMember[],
       keynotes: speakers.keynotes as Keynote[],
       speakers_all: speakers.speakers_all as Speaker[],
+      speaker_records: (speakers.speakers ?? []) as SpeakerRecord[],
 
       // Social
       social: conf.social,

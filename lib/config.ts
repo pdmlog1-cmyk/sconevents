@@ -29,6 +29,18 @@ export type Testimonial = [quote: string, name: string, role: string];
 export type KeyDate = [day: string, month: string, title: string, desc: string];
 export type MarqueeItem = [label: string, icon: string];
 
+/* One entry of the real speaker list — the `speakers` array in speakers.json,
+   same shape the main conference site's /speakers page renders. Object form,
+   unlike the placeholder tuples above, because it is copied verbatim from the
+   main site. Only conferences that have such a list carry the key. */
+export type SpeakerRecord = {
+  name: string;
+  affiliation: string;
+  country: string;
+  abstract_title: string;
+  photo: string;
+};
+
 export const trackSlug = (title: string) =>
   title.toLowerCase()
     .replace(/&/g, 'and')
@@ -55,6 +67,8 @@ export interface ConferenceConfig {
   testimonials_heading: string; testimonials_intro: string; testimonials: Testimonial[];
   key_dates: KeyDate[]; featured_speakers: Speaker[]; ocm: OcmMember[];
   keynotes: Keynote[]; speakers_all: Speaker[]; partners: string[];
+  /** Real speaker list; empty for conferences that do not have one yet. */
+  speaker_records?: SpeakerRecord[];
   social: Record<string, string>;
 }
 
