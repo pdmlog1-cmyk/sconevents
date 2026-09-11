@@ -125,6 +125,110 @@
         "Digital biomarkers: smartphone gait, speech, cognition in PD and AD",
         "Ambient AI scribes and equitable deployment in neurology clinics"
       ]
+    },
+    {
+      "title": "Spinal Cord Injury",
+      "tagline": "Acute management, rehabilitation and regenerative therapies."
+    },
+    {
+      "title": "Traumatic Brain Injury",
+      "tagline": "Concussion protocols, neuroprotection and long-term outcomes."
+    },
+    {
+      "title": "Sleep Disorders",
+      "tagline": "Narcolepsy, insomnia, circadian rhythm and sleep neuroscience."
+    },
+    {
+      "title": "Neuropathic Pain",
+      "tagline": "Central and peripheral pain syndromes, neuromodulation."
+    },
+    {
+      "title": "Cerebellar & Ataxia Disorders",
+      "tagline": "Spinocerebellar ataxias, Friedreich ataxia and emerging therapies."
+    },
+    {
+      "title": "Functional Neurological Disorders",
+      "tagline": "Conversion disorder, psychogenic symptoms and rehabilitation."
+    },
+    {
+      "title": "Pediatric Neurology",
+      "tagline": "Childhood epilepsy, neurodevelopmental disorders and genetics."
+    },
+    {
+      "title": "Neuroimmunology",
+      "tagline": "Autoimmune encephalitis, NMOSD and MOG antibody disease."
+    },
+    {
+      "title": "Brain-Computer Interfaces",
+      "tagline": "Neural implants, motor decoding and communication devices."
+    },
+    {
+      "title": "Migraine",
+      "tagline": "CGRP therapies, acute treatment and chronic migraine management."
+    },
+    {
+      "title": "Cluster Headache",
+      "tagline": "Oxygen therapy, galcanezumab and neuromodulation approaches."
+    },
+    {
+      "title": "Dementia with Lewy Bodies",
+      "tagline": "Diagnosis, cholinesterase inhibitors and management strategies."
+    },
+    {
+      "title": "Frontotemporal Dementia",
+      "tagline": "Behavioral variant, PPA, tau and TDP-43 targeted therapies."
+    },
+    {
+      "title": "Huntington Disease",
+      "tagline": "Gene silencing, tominersen and multidisciplinary care."
+    },
+    {
+      "title": "ALS",
+      "tagline": "Tofersen, gene therapy and emerging disease-modifying agents."
+    },
+    {
+      "title": "Tremor & Dystonia",
+      "tagline": "Essential tremor, DBS, focused ultrasound and botulinum toxin."
+    },
+    {
+      "title": "Restless Legs Syndrome",
+      "tagline": "Iron repletion, dopaminergic therapy and augmentation."
+    },
+    {
+      "title": "Neuroinfectious Disease",
+      "tagline": "CNS infections, meningitis, encephalitis and post-COVID neurology."
+    },
+    {
+      "title": "Brain Tumors",
+      "tagline": "Glioma management, molecular classification and immunotherapy."
+    },
+    {
+      "title": "Vestibular Disorders",
+      "tagline": "Vertigo, vestibular rehabilitation and Meniere disease."
+    },
+    {
+      "title": "Autonomic Disorders",
+      "tagline": "Dysautonomia, POTS, orthostatic hypotension and management."
+    },
+    {
+      "title": "Functional Imaging",
+      "tagline": "fMRI, PET tracers and advanced neuroimaging techniques."
+    },
+    {
+      "title": "Neuro-Ophthalmology",
+      "tagline": "Optic neuritis, papilledema and visual pathway disorders."
+    },
+    {
+      "title": "Neuropsychology",
+      "tagline": "Cognitive assessment, neuropsych testing and rehabilitation."
+    },
+    {
+      "title": "Movement Disorder Surgery",
+      "tagline": "DBS, lesioning techniques and surgical patient selection."
+    },
+    {
+      "title": "Genetic Counselling",
+      "tagline": "Hereditary neurological conditions and family planning."
     }
   ]
 }

@@ -2,12 +2,12 @@
   "pages": {
     "index": {
       "title": "Global Congress on Neurology & Neuroscience | GCNN 2027 Prague",
-      "description": "Join GCNN 2027 — June 22–23, 2027 in Prague, Czech Republic. 9+ scientific tracks, keynotes from leading institutions.",
+      "description": "Join GCNN 2027 — June 22-23, 2027 in Prague, Czech Republic. 9+ scientific tracks, keynotes from leading institutions.",
       "keywords": "Neurology Conference, GCNN 2027, Neurology 2027"
     },
     "sessions": {
-      "title": "Scientific Sessions | GCNN 2027",
-      "description": "Explore the 35 scientific sessions of GCNN 2027.",
+      "title": "Sessions & Tracks | GCNN 2027",
+      "description": "Explore the 9 scientific tracks of GCNN 2027.",
       "keywords": "GCNN 2027 Sessions, Neurology Tracks"
     },
     "scientific_program": {
@@ -43,7 +43,7 @@
     "venue": {
       "title": "Venue | GCNN 2027",
       "description": "Venue and travel information for GCNN 2027 in Prague, Czech Republic.",
-      "keywords": "GCNN 2027 Venue, Neurology Conference Czech Republic"
+      "keywords": "GCNN 2027 Venue, Neurology Conference Prague"
     },
     "sponsor_exhibitor": {
       "title": "Sponsorship & Exhibition | GCNN 2027",
@@ -62,7 +62,7 @@
     },
     "list_of_topics": {
       "title": "List of Topics | GCNN 2027",
-      "description": "Full list of session topics across the 35 scientific sessions of GCNN 2027.",
+      "description": "Full list of session topics across the 9 scientific tracks of GCNN 2027.",
       "keywords": "GCNN 2027 Topics, Neurology Session Topics"
     },
     "conferences_gallery": {

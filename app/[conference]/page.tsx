@@ -3,12 +3,6 @@ import Script from 'next/script';
 import { getConferenceConfig } from '@/lib/getConfig';
 import { getConferenceMeta, getAllConferenceSlugs } from '@/lib/conferences';
 import LandingClient from './LandingClient';
-import NeurologyLanding from './NeurologyLanding';
-
-/* Slugs whose landing page mirrors its own main-site home page instead of
-   using the shared LandingClient layout. Adding a slug here is the only
-   change needed to move that conference over. */
-const MAIN_SITE_MIRROR = new Set(['neurology']);
 
 interface PageProps {
   params: Promise<{ conference: string }>;
@@ -72,11 +66,7 @@ export default async function ConferencePage({ params }: PageProps) {
         gtag('js', new Date());
         gtag('config', '${gtagId}');
       `}</Script>
-      {MAIN_SITE_MIRROR.has(conference) ? (
-        <NeurologyLanding conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} slug={conference} />
-      ) : (
-        <LandingClient conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} slug={conference} />
-      )}
+      <LandingClient conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} slug={conference} />
     </>
   );
 }
