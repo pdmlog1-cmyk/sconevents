@@ -99,6 +99,14 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
   const MAIN = mainSiteUrl;
   const heroSpeakers = (conf.speaker_records ?? []).slice(0, HERO_SPEAKER_COUNT);
 
+  /* Logo lockup line: "Jun 22-23 | <country>" by default, or the main site's
+     exact wording when conference.json sets brand_dates / brand_place. */
+  const brandDates = conf.brand_dates ?? (() => {
+    const dm = conf.dates.match(/^(\w+)\s+([\d\-]+),\s*\d+/);
+    return dm ? `${dm[1].slice(0, 3)} ${dm[2]}` : conf.dates.replace(/,\s*\d{4}\s*$/, '');
+  })();
+  const brandPlace = conf.brand_place ?? conf.country;
+
   // Dynamic theme CSS variables
   const themeStyles = `
     :root {
@@ -135,11 +143,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
             <div className="brand-lockup">
               <div className="brand-line-1">{conf.discipline}-<span className="brand-year">20{conf.year_suffix}</span></div>
               <div className="brand-line-3">
-                {(() => {
-                  const dm = conf.dates.match(/^(\w+)\s+([\d\-]+),\s*\d+/);
-                  const ds = dm ? `${dm[1].slice(0, 3)} ${dm[2]}` : conf.dates.replace(/,\s*\d{4}\s*$/, '');
-                  return <>{ds}{conf.country ? <><span className="brand-sep">|</span><span className="brand-country">{conf.country}</span></> : null}</>;
-                })()}
+                {brandDates}{brandPlace ? <><span className="brand-sep">|</span><span className="brand-country">{brandPlace}</span></> : null}
               </div>
             </div>
           </a>
@@ -526,11 +530,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <div className="brand-lockup">
                 <div className="brand-line-1">{conf.discipline}-<span className="brand-year">20{conf.year_suffix}</span></div>
                 <div className="brand-line-3">
-                  {(() => {
-                    const dm = conf.dates.match(/^(\w+)\s+([\d\-]+),\s*\d+/);
-                    const ds = dm ? `${dm[1].slice(0, 3)} ${dm[2]}` : conf.dates.replace(/,\s*\d{4}\s*$/, '');
-                    return <>{ds}{conf.country ? <><span className="brand-sep">|</span><span className="brand-country">{conf.country}</span></> : null}</>;
-                  })()}
+                  {brandDates}{brandPlace ? <><span className="brand-sep">|</span><span className="brand-country">{brandPlace}</span></> : null}
                 </div>
               </div>
             </a>

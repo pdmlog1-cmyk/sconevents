@@ -59,6 +59,9 @@ export interface ConferenceConfig {
   hero_card: { status: string; venue_label: string; venue_fallback: string; countdown_label: string };
   dates: string; dates_short: string; start_date_iso: string;
   city: string; country: string; venue: string; venue_tagline: string; venue_desc: string;
+  /** Logo lockup date + place, matching the main site's logo. When absent the
+      landing page derives "Jun 22-23 | <country>" from `dates` and `country`. */
+  brand_dates?: string; brand_place?: string;
   venue_image: string; about_image: string; hero_image: string;
   abstract_deadline: string; early_bird_deadline: string;
   about_eyebrow: string; about_heading: string; about_lead: string; about_body: string;

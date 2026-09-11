@@ -74,6 +74,8 @@ export async function getConferenceConfig(slug: string): Promise<ConferenceConfi
       start_date_iso: conf.start_date_iso,
       city: conf.city,
       country: conf.country,
+      brand_dates: conf.brand_dates,
+      brand_place: conf.brand_place,
       venue: conf.venue,
       venue_tagline: conf.venue_tagline,
       venue_desc: conf.venue_desc,
