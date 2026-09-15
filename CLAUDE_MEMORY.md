@@ -50,20 +50,26 @@ Full names worth noting:
 
 ---
 
-## 3. Dates, Venues and Deadlines — authoritative (07 Sep 2026)
+## 3. Dates, Venues and Deadlines — authoritative (15 Sep 2026)
 
 | Short | City | Country | Venue | Dates | Early Bird Ends | Abstract Deadline | Acceptance |
 |-------|------|---------|-------|-------|-----------------|-------------------|------------|
-| GSBG 2027 | Singapore | Singapore | Hotel Village Changi | Mar 25–26, 2027 | Sep 30, 2026 | Nov 14, 2026 | Dec 14, 2026 |
-| WCPD 2027 | Singapore | Singapore | Hotel Village Changi | Mar 25–26, 2027 | Sep 30, 2026 | Nov 14, 2026 | Dec 14, 2026 |
-| GCCM 2027 | Barcelona | Spain | — | Apr 27–28, 2027 | Oct 15, 2026 | Dec 14, 2026 | Jan 14, 2027 |
-| GCSA 2027 | Barcelona | Spain | — | Apr 29–30, 2027 | Oct 15, 2026 | Dec 14, 2026 | Jan 14, 2027 |
-| WSPR 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 31, 2026 | Jan 14, 2027 | Feb 14, 2027 |
-| GSFS 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 31, 2026 | Jan 14, 2027 | Feb 14, 2027 |
-| GSOD 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 31, 2026 | Jan 14, 2027 | Feb 14, 2027 |
-| GCGD 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 31, 2026 | Jan 14, 2027 | Feb 14, 2027 |
-| GCNN 2027 | Prague | Czech Republic | — | Jun 22–23, 2027 | Nov 14, 2026 | Feb 14, 2027 | Mar 14, 2027 |
-| WCAB 2027 | Prague | Czech Republic | — | Jun 24–25, 2027 | Nov 14, 2026 | Feb 14, 2027 | Mar 14, 2027 |
+| GSBG 2027 | Singapore | Singapore | Hotel Village Changi | Mar 25–26, 2027 | Oct 2, 2026 | Sep 30, 2026 | Dec 14, 2026 |
+| WCPD 2027 | Singapore | Singapore | Hotel Village Changi | Mar 25–26, 2027 | Oct 2, 2026 | Sep 30, 2026 | Dec 14, 2026 |
+| GCCM 2027 | Barcelona | Spain | — | Apr 27–28, 2027 | Oct 16, 2026 | Oct 14, 2026 | Jan 14, 2027 |
+| GCSA 2027 | Barcelona | Spain | — | Apr 29–30, 2027 | Oct 16, 2026 | Oct 14, 2026 | Jan 14, 2027 |
+| WSPR 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 16, 2026 | Oct 14, 2026 | Feb 14, 2027 |
+| GSFS 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 16, 2026 | Oct 14, 2026 | Feb 14, 2027 |
+| GSOD 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 16, 2026 | Oct 14, 2026 | Feb 14, 2027 |
+| GCGD 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 16, 2026 | Oct 14, 2026 | Feb 14, 2027 |
+| GCNN 2027 | Prague | Czech Republic | — | Jun 22–23, 2027 | Oct 30, 2026 | Oct 28, 2026 | Mar 14, 2027 |
+| WCAB 2027 | Prague | Czech Republic | — | Jun 24–25, 2027 | Oct 30, 2026 | Oct 28, 2026 | Mar 14, 2027 |
+
+**15 Sep 2026 — abstract + early-bird deadlines moved earlier** (user-supplied list). The
+abstract date is now the **first round** of abstract submission — the Important Dates tile
+says "First round of abstract submission" instead of "Final submissions due". Early bird
+ends on the **Friday** two days after it. Acceptance dates were not part of the list and were
+left unchanged, so the *Acceptance = Abstract Deadline + 1 month* rule below no longer holds.
 
 **GCNN and WCAB are in June 2027, not April.** An earlier commit wrongly reverted their
 `marketing.json` "Conference Opens" to Apr 26. Fixed 31 Aug 2026.
@@ -397,6 +403,27 @@ Do this before every brochure commit — verify the PDF against the site data.
 ---
 
 ## 11. Recent changes
+
+### 15 Sep 2026 — abstract + early-bird deadlines moved earlier — `2f6ffd8`
+
+User-supplied list for all 10 conferences (table in §3): abstract Sep 30 / Oct 14 / Oct 28,
+early bird the Friday after (Oct 2 / Oct 16 / Oct 30, 2026). Changed in all five files per
+conference — 50 files, 2 lines each on average — by a script that required every old
+value to match exactly once before writing (some old early-bird dates equal new abstract
+dates, so a blind find-and-replace would have been wrong). The Important Dates tile's
+"Final submissions due" became **"First round of abstract submission"** on all 10.
+
+`npm run build` compiled successfully; pushed `4129487..2f6ffd8`; deployed from this copy
+(`wrangler whoami` = pdmlog1@gmail.com), worker version
+`8d0dd182-9d7a-4f61-9016-545f172f2950`. Verified live on all 10 slugs.
+
+> ⚠️ **Open items from this change:**
+> - **Acceptance dates were not supplied and still read Dec 14 / Jan 14 / Feb 14 / Mar 14.**
+> - **All 10 brochure PDFs still print the old deadlines** (checked with `pdftotext`,
+>   e.g. `gcnn-2027.pdf`: "Abstract Deadline: Feb 14th, 2027 · Early Bird Ends: Nov 14th,
+>   2026"). They need re-issuing by whoever designs them.
+> - With the fixed Important Dates order (§4), "Early Bird Ends" (e.g. 2 Oct) now shows
+>   before an earlier "Abstract Deadline" (30 Sep). Left as is — the order is deliberate.
 
 ### 11 Sep 2026 — neurology logo matched to the main site — `14599f7`
 
