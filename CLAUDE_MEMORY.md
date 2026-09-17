@@ -404,6 +404,40 @@ Do this before every brochure commit — verify the PDF against the site data.
 
 ## 11. Recent changes
 
+### 17 Sep 2026 — all 10 brochures re-issued — `c367cb0`
+
+The design team re-issued every `public/brochures/<short>-2027.pdf` with the 15 Sep
+deadlines (four rounds between 16 and 17 Sep; the files arrived in
+`D:\SCON_landing-Pages\brochures` with names like `Gastro 3.pdf`, `surgery 3.pdf`, so each
+was matched to its conference by the name inside the PDF, never by file name). The same
+file names are kept, so the landing page's download needs no code change.
+
+Checked before commit with `pdftotext` against `data/<slug>/conference.json` (conference
+dates, weekdays, schedule days, abstract + early-bird deadlines, prices $749/$499/$349 and
+virtual $249/$199, phone, website, email) and visually rendered in headless Chrome where
+the text layer was ambiguous. `pdftoppm` is not installed on this machine; the Chrome PDF
+viewer with `file:///…pdf#page=N` works, but only one browser at a time.
+
+`npm run build` compiled successfully; pushed `4eade96..c367cb0`; deployed from this copy
+(`wrangler whoami` = pdmlog1@gmail.com), worker version
+`9c656345-8f8c-4b19-b351-5b2eaae727f3`. Verified live: all 10 brochures downloaded from
+workers.dev are byte-identical to the committed files.
+
+> **Brochure checking traps:**
+> - `gccm-2027.pdf` stores its contact line twice, so `pdftotext` returns a scrambled
+>   email/website/phone ("mca@rdmioeloegtyi…"). The printed page is correct.
+> - "USA" in every brochure is the office address (415 Grover Street, Warrensburg, MO) — not
+>   a venue error.
+> - A re-issue once arrived truncated (`surgery 2.pdf`, 789 KB, no `%%EOF`). Check the file
+>   opens before copying it over a working brochure.
+> - The user reviewed a mistakes list and chose to go live without further rounds. **Still
+>   in the deployed brochures** (re-checked on the committed files, 17 Sep):
+>   `gsbg-2027.pdf` p5 bottom banner is WCAB's text ("…ADDICTION CARE, MENTAL WELL-BEING…")
+>   and writes "Oct 02nd"; `wspr-2027.pdf` p2 committee lists "Gadafi Iddrisu Balali" with
+>   University of Tabriz, Iran (the GSFS brochure shows the real Balali, Ghana — likely
+>   Dr. Amir A. Ghavifekr); `gcnn-2027.pdf` p2 "brain s / cience"; `gcsa-2027.pdf`
+>   "Anesthesiology". Map pins (GCCM/GCSA on Madrid) were not re-checked in this round.
+
 ### 15 Sep 2026 — abstract + early-bird deadlines moved earlier — `2f6ffd8`
 
 User-supplied list for all 10 conferences (table in §3): abstract Sep 30 / Oct 14 / Oct 28,
@@ -419,9 +453,8 @@ dates, so a blind find-and-replace would have been wrong). The Important Dates t
 
 > ⚠️ **Open items from this change:**
 > - **Acceptance dates were not supplied and still read Dec 14 / Jan 14 / Feb 14 / Mar 14.**
-> - **All 10 brochure PDFs still print the old deadlines** (checked with `pdftotext`,
->   e.g. `gcnn-2027.pdf`: "Abstract Deadline: Feb 14th, 2027 · Early Bird Ends: Nov 14th,
->   2026"). They need re-issuing by whoever designs them.
+> - ~~All 10 brochure PDFs still print the old deadlines~~ — **resolved 17 Sep 2026**,
+>   brochures re-issued and deployed (`c367cb0`, entry above).
 > - With the fixed Important Dates order (§4), "Early Bird Ends" (e.g. 2 Oct) now shows
 >   before an earlier "Abstract Deadline" (30 Sep). Left as is — the order is deliberate.
 
