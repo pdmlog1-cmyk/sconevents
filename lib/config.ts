@@ -30,8 +30,8 @@ export type KeyDate = [day: string, month: string, title: string, desc: string];
 export type MarqueeItem = [label: string, icon: string];
 
 /* One entry of the real speaker list — the `speakers` array in speakers.json,
-   same shape the main conference site's /speakers page renders. Object form,
-   unlike the placeholder tuples above, because it is copied verbatim from the
+   the same list the main conference site's /speakers page renders. Object
+   form, unlike the placeholder tuples above, because it is copied from the
    main site. Only conferences that have such a list carry the key. */
 export type SpeakerRecord = {
   name: string;
@@ -62,6 +62,13 @@ export interface ConferenceConfig {
   /** Logo lockup date + place, matching the main site's logo. When absent the
       landing page derives "Jun 22-23 | <country>" from `dates` and `country`. */
   brand_dates?: string; brand_place?: string;
+  /** Show the main site's top strip — early-bird countdown bar + the
+      Venue / Abstract Deadline / Expected Attendees / Registrations row —
+      instead of this repo's own InfoStrip. Off unless conference.json says so. */
+  main_site_top_strip?: boolean;
+  expected_attendees?: string; registrations_status?: string;
+  /** Real speaker list; empty for conferences that do not have one yet. */
+  speaker_records?: SpeakerRecord[];
   venue_image: string; about_image: string; hero_image: string;
   abstract_deadline: string; early_bird_deadline: string;
   about_eyebrow: string; about_heading: string; about_lead: string; about_body: string;
@@ -70,8 +77,6 @@ export interface ConferenceConfig {
   testimonials_heading: string; testimonials_intro: string; testimonials: Testimonial[];
   key_dates: KeyDate[]; featured_speakers: Speaker[]; ocm: OcmMember[];
   keynotes: Keynote[]; speakers_all: Speaker[]; partners: string[];
-  /** Real speaker list; empty for conferences that do not have one yet. */
-  speaker_records?: SpeakerRecord[];
   social: Record<string, string>;
 }
 

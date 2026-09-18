@@ -7,7 +7,9 @@
 import { useState, useEffect } from 'react';
 import LandingLeadModal from '@/components/LandingLeadModal';
 import InfoStrip from '@/components/InfoStrip';
-import HeroSpeakerSlider from '@/components/HeroSpeakerSlider';
+import EarlyBirdBanner from '@/components/EarlyBirdBanner';
+import MainInfoStrip from '@/components/MainInfoStrip';
+import SpeakersStrip from '@/components/SpeakersStrip';
 import type { ConferenceConfig } from '@/lib/config';
 import type { ConferenceTheme } from '@/lib/conferences';
 import { getLogoSvg } from '@/lib/logoSvgs';
@@ -39,11 +41,8 @@ const BENTO_POOL = [
   'discussion.jpg', 'registration.jpg', 'smile.jpg', 'question.jpg', 'audience2.jpg',
 ].map(name => `${LEGACY}/${name}`);
 
-/* Hero "Featured Speakers" card: the first N entries of the conference's real
-   speaker list, in the same order as the main site's /speakers page. A
-   conference with no `speakers` list in speakers.json gets no card and keeps
-   the single-column hero — so this only shows where there is real data. */
-const HERO_SPEAKER_COUNT = 4;
+/* How many speakers the "Meet Our Esteemed Experts" strip shows. */
+const SPEAKER_STRIP_COUNT = 4;
 
 const BENTO_TICK_MS = 12000;     // image swap interval
 const BENTO_STAGGER_MS = 1500;   // delay between adjacent tile swaps
@@ -97,7 +96,6 @@ function BentoTile({
 
 export default function LandingClient({ conf, mainSiteUrl, theme, slug }: LandingClientProps) {
   const MAIN = mainSiteUrl;
-  const heroSpeakers = (conf.speaker_records ?? []).slice(0, HERO_SPEAKER_COUNT);
 
   /* Logo lockup line: "Jun 22-23 | <country>" by default, or the main site's
      exact wording when conference.json sets brand_dates / brand_place. */
@@ -125,7 +123,16 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
   return (
     <main className="lpb">
       <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
-      <InfoStrip baseUrl={MAIN} conf={conf} />
+      {/* Top strip: the main site's early-bird bar + info row for conferences
+          that ask for it in conference.json, this repo's own strip otherwise. */}
+      {conf.main_site_top_strip ? (
+        <>
+          <EarlyBirdBanner conf={conf} baseUrl={MAIN} />
+          <MainInfoStrip conf={conf} baseUrl={MAIN} />
+        </>
+      ) : (
+        <InfoStrip baseUrl={MAIN} conf={conf} />
+      )}
 
       {/* Header — wraps content in .container so brand + nav left-edge align
           exactly with the InfoStrip "Days to Event" cell above.
@@ -166,7 +173,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
       {/* Hero — refined two-column with anatomical line-art on the right.
           Left: title block + CTAs + thin contact line.
           Right: large hand-drawn heart + ECG illustration, no card. */}
-      <section className={`lpb-hero lpb-hero-art-wrap${heroSpeakers.length ? ' lpb-hero--speakers' : ''}`}>
+      <section className="lpb-hero lpb-hero-art-wrap">
         <div className="lpb-hero-text">
           {/* All elements now share the same left edge — no quote indents,
               consistent vertical rhythm, hairline rules above and below the
@@ -222,14 +229,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <span className="lpb-contact-chip-arrow" aria-hidden><i className="fas fa-arrow-right" /></span>
             </a>
           </div>
-        </div>
-
-        {heroSpeakers.length > 0 && (
-          <aside className="lpb-hero-aside">
-            <HeroSpeakerSlider speakers={heroSpeakers} baseUrl={MAIN} />
-          </aside>
-        )}
-      </section>
+        </div>      </section>
 
       {/* From previous editions — asymmetric bento grid. Seven tiles,
           each cycling through a shared pool of cardiology-conference.com
@@ -248,6 +248,11 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
           ))}
         </div>
       </section>
+
+      {/* Speakers — above §01, deliberately unnumbered so the chapter
+          numbering below stays 01-05. Only shows where speakers.json has a
+          real speaker list (see SpeakersStrip). */}
+      <SpeakersStrip speakers={(conf.speaker_records ?? []).slice(0, SPEAKER_STRIP_COUNT)} baseUrl={MAIN} />
 
       {/* §01 Sessions — first content section after the hero
           (Welcome / Conference Overview has been removed per request) */}
@@ -295,27 +300,27 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
         </div>
 
         <div className="lpb-reg-grid">
-          {/* Student */}
+          {/* Presenter */}
           <article className="lpb-reg-card">
-            <div className="lpb-reg-icon"><i className="fas fa-graduation-cap" /></div>
+            <div className="lpb-reg-icon"><i className="fas fa-microphone-lines" /></div>
             <div className="lpb-reg-head">
-              <span className="lpb-reg-cat">Student / Young Researcher</span>
+              <span className="lpb-reg-cat">Presenter (In-Person)</span>
               <span className="lpb-reg-save">Save 50%</span>
             </div>
             <div className="lpb-reg-price">
-              <span className="lpb-reg-cur">$</span>349
-              <s>$699</s>
+              <span className="lpb-reg-cur">$</span>749
+              <s>$1,499</s>
             </div>
-            <p className="lpb-reg-desc">Valid full-time student ID required at check-in.</p>
+            <p className="lpb-reg-desc">Oral or poster — after abstract acceptance.</p>
             <ul className="lpb-reg-feats">
-              <li>All keynote &amp; plenary sessions</li>
-              <li>14 parallel tracks + posters</li>
-              <li>Conference kit &amp; proceedings</li>
-              <li>Lunches &amp; refreshments</li>
-              <li>Welcome reception</li>
+              <li>Everything in Listener, plus:</li>
+              <li>25-min talk + 5-min Q&amp;A</li>
+              <li>Endorsed presenter certificate</li>
+              <li>Published abstract (ISBN)</li>
+              <li>Best Paper / Poster award eligibility</li>
             </ul>
-            <a href={`${MAIN}/register?category=student`} className="btn btn-outline-ink btn-block">
-              Register as Student
+            <a href={`${MAIN}/register?category=presenter`} className="btn btn-outline-ink btn-block">
+              Register as Presenter
             </a>
           </article>
 
@@ -345,27 +350,27 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
             </a>
           </article>
 
-          {/* Presenter */}
+          {/* Student */}
           <article className="lpb-reg-card">
-            <div className="lpb-reg-icon"><i className="fas fa-microphone-lines" /></div>
+            <div className="lpb-reg-icon"><i className="fas fa-graduation-cap" /></div>
             <div className="lpb-reg-head">
-              <span className="lpb-reg-cat">Presenter (In-Person)</span>
+              <span className="lpb-reg-cat">Student / Young Researcher</span>
               <span className="lpb-reg-save">Save 50%</span>
             </div>
             <div className="lpb-reg-price">
-              <span className="lpb-reg-cur">$</span>749
-              <s>$1,499</s>
+              <span className="lpb-reg-cur">$</span>349
+              <s>$699</s>
             </div>
-            <p className="lpb-reg-desc">Oral or poster — after abstract acceptance.</p>
+            <p className="lpb-reg-desc">Valid full-time student ID required at check-in.</p>
             <ul className="lpb-reg-feats">
-              <li>Everything in Listener, plus:</li>
-              <li>25-min talk + 5-min Q&amp;A</li>
-              <li>Endorsed presenter certificate</li>
-              <li>Published abstract (ISBN)</li>
-              <li>Best Paper / Poster award eligibility</li>
+              <li>All keynote &amp; plenary sessions</li>
+              <li>14 parallel tracks + posters</li>
+              <li>Conference kit &amp; proceedings</li>
+              <li>Lunches &amp; refreshments</li>
+              <li>Welcome reception</li>
             </ul>
-            <a href={`${MAIN}/register?category=presenter`} className="btn btn-outline-ink btn-block">
-              Register as Presenter
+            <a href={`${MAIN}/register?category=student`} className="btn btn-outline-ink btn-block">
+              Register as Student
             </a>
           </article>
         </div>
