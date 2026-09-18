@@ -404,6 +404,41 @@ Do this before every brochure commit — verify the PDF against the site data.
 
 ## 11. Recent changes
 
+### 18 Sep 2026 — neurology top strip, speakers strip, pricing order — `b24fa72`
+
+Three changes asked for one at a time, all checked locally on `next dev -p 3001` first
+(port 3000 was another project's dev server):
+
+- **`/neurology` now carries the main site's top strip.** `components/EarlyBirdBanner.tsx`
+  (early-bird countdown + rotating message + Register CTA) and
+  `components/MainInfoStrip.tsx` (Venue / Abstract Deadline / Expected Attendees /
+  Registrations) replace this repo's `InfoStrip`. Both came back from the reverted mirror
+  commit `6b8cbcb` — the `.eb-*` CSS too, so it matches neuroscience-conference.com
+  exactly. Switched on per conference by `main_site_top_strip`, `expected_attendees` and
+  `registrations_status` in `data/<slug>/conference.json`; only neurology sets them, so the
+  other nine keep the old strip (verified live).
+- **New "Meet Our Esteemed Experts" strip** (`components/SpeakersStrip.tsx`, `.lpb-spk-*`)
+  above §01 and **deliberately unnumbered**, so the chapter numbers stay 01–05. It reads
+  `speaker_records` (speakers.json → `speakers`, the same list the main site's /speakers
+  page renders), shows `SPEAKER_STRIP_COUNT = 4`, features the first card, falls back to
+  first+family initials when a speaker has no photo (MN, SD, NS — as the main site does),
+  and fades cards in on scroll with IntersectionObserver.
+- **The hero Featured Speakers slider was removed** at the user's request (component, CSS
+  and `SpeakerRecord` plumbing deleted; `speaker_records` came back for the new strip).
+  `data/neurology/speakers.json` → `speakers` and `public/assets/speakers/*.jpg` stay.
+- **All ten pages:** registration cards reordered to Presenter → Listener (still the
+  featured middle card) → Student.
+
+`npm run build` compiled successfully; pushed `81641f9..b24fa72`; deployed from this copy
+(`wrangler whoami` = pdmlog1@gmail.com), worker version
+`9a8e2f41-0da8-46f7-92de-9501f4e4993a`.
+
+> **Machine note:** this box has ~8 GB RAM and usually runs three or four other Next dev
+> servers. Under ~1 GB free, headless Chrome dies with "Abnormal renderer termination" and
+> `next dev` throws `spawn UNKNOWN` and serves 500s — restart the dev server, don't go
+> hunting in the code. `curl` to Cloudflare hosts also started failing with SSL error 35
+> that day; `fetch` from Node worked, and was used to verify the deploy.
+
 ### 17 Sep 2026 — all 10 brochures re-issued — `c367cb0`
 
 The design team re-issued every `public/brochures/<short>-2027.pdf` with the 15 Sep
