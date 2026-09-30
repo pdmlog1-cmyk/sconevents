@@ -50,6 +50,7 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'biotechnology',
+    cid: '10010',
     name: 'Global Summit on Biotechnology & Genetic Engineering',
     short: 'GSBG 2027',
     mainSiteUrl: 'https://biotech-meetings.com',
