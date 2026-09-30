@@ -4,7 +4,7 @@
    ============================================================================= */
 
 import { getConferenceMeta } from './conferences';
-import type { ConferenceConfig, Track, Stat, WhyItem, Testimonial, KeyDate, MarqueeItem, Speaker, SpeakerRecord, OcmMember, Keynote } from './config';
+import type { ConferenceConfig, Track, Stat, WhyItem, Testimonial, KeyDate, MarqueeItem, Speaker, SpeakerRecord, OcmMember, Keynote, PriceTier } from './config';
 
 interface TrackJson {
   title: string;
@@ -26,11 +26,14 @@ export async function getConferenceConfig(slug: string): Promise<ConferenceConfi
     const tracksJson = await import(`@/data/${meta.dataFolder}/tracks.json`);
     const speakersJson = await import(`@/data/${meta.dataFolder}/speakers.json`);
     const marketingJson = await import(`@/data/${meta.dataFolder}/marketing.json`);
+    const registrationJson = await import(`@/data/${meta.dataFolder}/registration.json`);
 
     const conf = conferenceJson.default || conferenceJson;
     const tracks = tracksJson.default || tracksJson;
     const speakers = speakersJson.default || speakersJson;
     const marketing = marketingJson.default || marketingJson;
+    const registration = registrationJson.default || registrationJson;
+    const inPerson = (registration.form?.tabs ?? []).find((t: { id: string }) => t.id === 'inperson');
 
     return {
       // Identity / contact
@@ -79,6 +82,7 @@ export async function getConferenceConfig(slug: string): Promise<ConferenceConfi
       main_site_top_strip: conf.main_site_top_strip,
       expected_attendees: conf.expected_attendees,
       registrations_status: conf.registrations_status,
+      price_tiers: (inPerson?.categories ?? []) as PriceTier[],
       venue: conf.venue,
       venue_tagline: conf.venue_tagline,
       venue_desc: conf.venue_desc,

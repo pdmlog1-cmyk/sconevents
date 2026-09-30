@@ -97,6 +97,12 @@ function BentoTile({
 export default function LandingClient({ conf, mainSiteUrl, theme, slug }: LandingClientProps) {
   const MAIN = mainSiteUrl;
 
+  /* Registration prices come from the conference data; each call carries the
+     value the card used to hard-code, for a conference with no tiers. */
+  const tier = (id: string, total: number, standard_price: number) =>
+    conf.price_tiers?.find(t => t.id === id) ?? { total, standard_price };
+  const money = (n: number) => n.toLocaleString('en-US');
+
   /* Logo lockup line: "Jun 22-23 | <country>" by default, or the main site's
      exact wording when conference.json sets brand_dates / brand_place. */
   const brandDates = conf.brand_dates ?? (() => {
@@ -300,6 +306,8 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
         </div>
 
         <div className="lpb-reg-grid">
+          {/* Prices come from the conference's registration.json; the literals
+              below are only the fallback if a conference has no tiers. */}
           {/* Presenter */}
           <article className="lpb-reg-card">
             <div className="lpb-reg-icon"><i className="fas fa-microphone-lines" /></div>
@@ -308,8 +316,8 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <span className="lpb-reg-save">Save 50%</span>
             </div>
             <div className="lpb-reg-price">
-              <span className="lpb-reg-cur">$</span>749
-              <s>$1,499</s>
+              <span className="lpb-reg-cur">$</span>{money(tier('presenter', 749, 1499).total)}
+              <s>${money(tier('presenter', 749, 1499).standard_price)}</s>
             </div>
             <p className="lpb-reg-desc">Oral or poster — after abstract acceptance.</p>
             <ul className="lpb-reg-feats">
@@ -333,8 +341,8 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <span className="lpb-reg-save">Save 50%</span>
             </div>
             <div className="lpb-reg-price">
-              <span className="lpb-reg-cur">$</span>499
-              <s>$999</s>
+              <span className="lpb-reg-cur">$</span>{money(tier('listener', 499, 999).total)}
+              <s>${money(tier('listener', 499, 999).standard_price)}</s>
             </div>
             <p className="lpb-reg-desc">Attend every session, every poster, every break.</p>
             <ul className="lpb-reg-feats">
@@ -358,8 +366,8 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
               <span className="lpb-reg-save">Save 50%</span>
             </div>
             <div className="lpb-reg-price">
-              <span className="lpb-reg-cur">$</span>349
-              <s>$699</s>
+              <span className="lpb-reg-cur">$</span>{money(tier('student', 349, 699).total)}
+              <s>${money(tier('student', 349, 699).standard_price)}</s>
             </div>
             <p className="lpb-reg-desc">Valid full-time student ID required at check-in.</p>
             <ul className="lpb-reg-feats">

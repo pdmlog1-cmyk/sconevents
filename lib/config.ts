@@ -47,6 +47,14 @@ export const trackSlug = (title: string) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 
+export interface PriceTier {
+  id: string;
+  label: string;
+  standard_price: number;
+  total: number;
+  discount_pct: number;
+}
+
 export interface ConferenceConfig {
   name: string; short: string; initials: string; year_suffix: string;
   tagline: string; edition: string; volume: string; issue: string;
@@ -67,6 +75,9 @@ export interface ConferenceConfig {
       instead of this repo's own InfoStrip. Off unless conference.json says so. */
   main_site_top_strip?: boolean;
   expected_attendees?: string; registrations_status?: string;
+  /* In-person registration tiers, from the conference's registration.json, so
+     the landing page's price cards follow the data rather than literals. */
+  price_tiers?: PriceTier[];
   /** Real speaker list; empty for conferences that do not have one yet. */
   speaker_records?: SpeakerRecord[];
   venue_image: string; about_image: string; hero_image: string;
