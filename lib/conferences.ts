@@ -207,6 +207,7 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'surgery',
+    cid: '10014',
     name: 'Global Congress on Surgery & Anesthesia',
     short: 'GCSA 2027',
     mainSiteUrl: 'https://surgery-meetings.com',
