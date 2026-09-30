@@ -9,6 +9,9 @@
     "binding": "ASSETS"
   },
   "vars": {
+    // SCON CMS endpoint. A brochure lead posted here under the conference's own
+    // cid is what raises the Telegram alert; the landing pages need nothing else.
+    "CMS_URL": "https://api.sconcms.com",
     "HCAPTCHA_SECRET_KEY": "ES_d73cec7dfa444ce38db00cc32bb295b4"
   }
 }

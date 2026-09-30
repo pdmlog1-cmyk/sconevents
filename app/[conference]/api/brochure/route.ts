@@ -41,10 +41,13 @@ const WEBSITE_FORM: Record<string, string> = {
  * Forward to SCON CMS using the brochure_download / scientific_program_download
  * contract from the Postman collection. urlencoded body, base64 values.
  */
-async function forwardBrochureToCms(body: Body, kind: string): Promise<{ ok: boolean; status?: number; details?: string }> {
+async function forwardBrochureToCms(body: Body, kind: string, cid: string): Promise<{ ok: boolean; status?: number; details?: string }> {
   const cmsUrl = process.env.CMS_URL;
-  const cid = process.env.CID || '';
   if (!cmsUrl) return { ok: false, details: 'CMS_URL not configured' };
+  // Posting without the conference's own id files the lead under whichever
+  // conference the CMS defaults to, and the alert names that one instead. The
+  // CMS reports no error for it, so refuse to send rather than misfile.
+  if (!cid) return { ok: false, details: 'no cid for this conference' };
 
   const enc = (v: string | undefined | null) => utf8ToBase64(String(v ?? ''));
 
@@ -124,7 +127,7 @@ export async function POST(req: Request, { params }: { params: { conference: str
   const ref = generateToken('DL');
 
   const [cmsResult] = await Promise.all([
-    forwardBrochureToCms(body, kind),
+    forwardBrochureToCms(body, kind, confMeta?.cid ?? process.env.CID ?? ''),
     deliverSubmission({
       formType: `Download (${kind})`,
       subject: `${kind === 'brochure' ? 'Brochure' : 'Program'} download: ${body.first_name} (${ref})`,
