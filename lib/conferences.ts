@@ -91,6 +91,7 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'food',
+    cid: '10016',
     name: 'Global Summit on Food Science & Technology',
     short: 'GSFS 2027',
     mainSiteUrl: 'https://foodtech-conference.com',
