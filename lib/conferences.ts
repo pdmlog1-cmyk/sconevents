@@ -128,6 +128,7 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'neurology',
+    cid: '10012',
     name: 'Global Congress on Neurology & Neuroscience',
     short: 'GCNN 2027',
     mainSiteUrl: 'https://neuroscience-conference.com',
