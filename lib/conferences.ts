@@ -111,6 +111,7 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'gastroenterology',
+    cid: '10018',
     name: 'Global Congress on Gastroenterology & Digestive Disorders',
     short: 'GCGD 2027',
     mainSiteUrl: 'https://gastro-meetings.com',
