@@ -31,6 +31,7 @@ export interface ConferenceMeta {
 export const CONFERENCES: ConferenceMeta[] = [
   {
     slug: 'addiction',
+    cid: '10013',
     name: 'World Congress on Addiction Medicine & Behavioral Health',
     short: 'WCAB 2027',
     mainSiteUrl: 'https://addictionmedicine-conference.com',
