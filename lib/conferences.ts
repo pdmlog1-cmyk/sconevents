@@ -31,7 +31,6 @@ export interface ConferenceMeta {
 export const CONFERENCES: ConferenceMeta[] = [
   {
     slug: 'addiction',
-    cid: '10013',
     name: 'World Congress on Addiction Medicine & Behavioral Health',
     short: 'WCAB 2027',
     mainSiteUrl: 'https://addictionmedicine-conference.com',
@@ -51,7 +50,6 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'biotechnology',
-    cid: '10010',
     name: 'Global Summit on Biotechnology & Genetic Engineering',
     short: 'GSBG 2027',
     mainSiteUrl: 'https://biotech-meetings.com',
@@ -71,7 +69,6 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'cardiology',
-    cid: '10011',
     name: 'Global Congress on Cardiology & Cardiovascular Medicine',
     short: 'GCCM 2027',
     mainSiteUrl: 'https://cardiology-conference.com',
@@ -91,7 +88,6 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'food',
-    cid: '10016',
     name: 'Global Summit on Food Science & Technology',
     short: 'GSFS 2027',
     mainSiteUrl: 'https://foodtech-conference.com',
@@ -111,7 +107,6 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'gastroenterology',
-    cid: '10018',
     name: 'Global Congress on Gastroenterology & Digestive Disorders',
     short: 'GCGD 2027',
     mainSiteUrl: 'https://gastro-meetings.com',
@@ -131,7 +126,6 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'neurology',
-    cid: '10012',
     name: 'Global Congress on Neurology & Neuroscience',
     short: 'GCNN 2027',
     mainSiteUrl: 'https://neuroscience-conference.com',
@@ -151,7 +145,6 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'obesity',
-    cid: '10017',
     name: 'Global Summit on Obesity & Diabetes',
     short: 'GSOD 2027',
     mainSiteUrl: 'https://obesity-conferences.com',
@@ -191,7 +184,6 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'physicalmedicine',
-    cid: '10015',
     name: 'World Summit on Physical Medicine & Rehabilitation',
     short: 'WSPR 2027',
     mainSiteUrl: 'https://physicalmedicine-conference.com',
@@ -211,7 +203,6 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'surgery',
-    cid: '10014',
     name: 'Global Congress on Surgery & Anesthesia',
     short: 'GCSA 2027',
     mainSiteUrl: 'https://surgery-meetings.com',
