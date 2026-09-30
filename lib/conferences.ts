@@ -150,6 +150,7 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'obesity',
+    cid: '10017',
     name: 'Global Summit on Obesity & Diabetes',
     short: 'GSOD 2027',
     mainSiteUrl: 'https://obesity-conferences.com',
