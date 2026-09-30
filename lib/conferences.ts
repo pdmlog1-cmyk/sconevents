@@ -70,6 +70,7 @@ export const CONFERENCES: ConferenceMeta[] = [
   },
   {
     slug: 'cardiology',
+    cid: '10011',
     name: 'Global Congress on Cardiology & Cardiovascular Medicine',
     short: 'GCCM 2027',
     mainSiteUrl: 'https://cardiology-conference.com',
