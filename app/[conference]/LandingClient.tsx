@@ -103,6 +103,11 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
     conf.price_tiers?.find(t => t.id === id) ?? { total, standard_price };
   const money = (n: number) => n.toLocaleString('en-US');
 
+  /* Conferences whose main site runs the brochure form send people there —
+     ?brochure=open makes that page open its form on arrival. The rest keep
+     this page's own modal. */
+  const brochureHref = conf.brochure_on_main_site ? `${MAIN}/?brochure=open` : null;
+
   /* Logo lockup line: "Jun 22-23 | <country>" by default, or the main site's
      exact wording when conference.json sets brand_dates / brand_place. */
   const brandDates = conf.brand_dates ?? (() => {
@@ -207,13 +212,19 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
 
           <div className="lpb-cta">
             <a href={`${MAIN}/register`} className="btn btn-primary"><i className="fas fa-ticket" /> Book Your Slot!</a>
-            <button
-              type="button"
-              onClick={() => window.dispatchEvent(new Event('lpb-open-brochure'))}
-              className="btn btn-outline-ink"
-            >
-              <i className="fas fa-file-arrow-down" /> Download Brochure
-            </button>
+            {brochureHref ? (
+              <a href={brochureHref} className="btn btn-outline-ink">
+                <i className="fas fa-file-arrow-down" /> Download Brochure
+              </a>
+            ) : (
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new Event('lpb-open-brochure'))}
+                className="btn btn-outline-ink"
+              >
+                <i className="fas fa-file-arrow-down" /> Download Brochure
+              </button>
+            )}
           </div>
 
           {/* Contact chips — two pill cards, label + icon + value, hover lift */}
@@ -444,8 +455,8 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
         </div>
         <div className="lpb-dl-grid">
           <a
-            href="#"
-            onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('lpb-open-brochure')); }}
+            href={brochureHref ?? '#'}
+            onClick={brochureHref ? undefined : (e) => { e.preventDefault(); window.dispatchEvent(new Event('lpb-open-brochure')); }}
             className="lpb-dl-card"
           >
             <div className="lpb-dl-icon"><i className="fas fa-file-pdf" /></div>
@@ -580,10 +591,14 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
             <h5>Connect</h5>
             <a href={`${MAIN}/sponsor-exhibitor`}>Sponsor &amp; exhibit</a>
             <a href={`${MAIN}/contact`}>Contact us</a>
-            <a
-              href="#"
-              onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('lpb-open-brochure')); }}
-            >Download brochure</a>
+            {brochureHref ? (
+              <a href={brochureHref}>Download brochure</a>
+            ) : (
+              <a
+                href="#"
+                onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('lpb-open-brochure')); }}
+              >Download brochure</a>
+            )}
             <div className="lpb-foot-social" aria-label="Social media">
               <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in" /></a>
               <a href="#" aria-label="X / Twitter"><i className="fab fa-x-twitter" /></a>

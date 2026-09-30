@@ -80,6 +80,7 @@ export async function getConferenceConfig(slug: string): Promise<ConferenceConfi
       brand_dates: conf.brand_dates,
       brand_place: conf.brand_place,
       main_site_top_strip: conf.main_site_top_strip,
+      brochure_on_main_site: conf.brochure_on_main_site,
       expected_attendees: conf.expected_attendees,
       registrations_status: conf.registrations_status,
       price_tiers: (inPerson?.categories ?? []) as PriceTier[],

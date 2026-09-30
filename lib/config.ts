@@ -74,6 +74,9 @@ export interface ConferenceConfig {
       Venue / Abstract Deadline / Expected Attendees / Registrations row —
       instead of this repo's own InfoStrip. Off unless conference.json says so. */
   main_site_top_strip?: boolean;
+  /** Send "Download Brochure" to the main site's own form (?brochure=open)
+      instead of opening this page's modal. Off unless conference.json says so. */
+  brochure_on_main_site?: boolean;
   expected_attendees?: string; registrations_status?: string;
   /* In-person registration tiers, from the conference's registration.json, so
      the landing page's price cards follow the data rather than literals. */

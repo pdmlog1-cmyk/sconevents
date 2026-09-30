@@ -36,6 +36,7 @@
   "venue_image": "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&q=80",
   "abstract_deadline": "October 13, 2026",
   "early_bird_deadline": "October 15, 2026",
+  "brochure_on_main_site": true,
   "about_eyebrow": "Welcome Message",
   "about_heading": "Where pharmaceutical science meets the next decade.",
   "about_lead": "WCPD 2027 is a global forum for pioneering research, clinical translation and cross-disciplinary dialogue across the full spectrum of pharmaceutical sciences and drug development.",
