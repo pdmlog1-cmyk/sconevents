@@ -73,6 +73,12 @@ export interface ConferenceConfig {
   /** Show the main site's top strip — early-bird countdown bar + the
       Venue / Abstract Deadline / Expected Attendees / Registrations row —
       instead of this repo's own InfoStrip. Off unless conference.json says so. */
+  /** "v2" renders the redesigned landing page; anything else keeps LandingClient. */
+  landing_style?: string;
+  /** Artwork behind the redesigned hero, e.g. /assets/images/hero-<slug>.png. */
+  hero_banner?: string;
+  /** Artwork behind the closing call-to-action band. */
+  cta_banner?: string;
   main_site_top_strip?: boolean;
   /** Send "Download Brochure" to the main site's own form (?brochure=open)
       instead of opening this page's modal. Off unless conference.json says so. */

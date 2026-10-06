@@ -12,6 +12,12 @@ export interface ConferenceTheme {
   paper2: string;
   line: string;
   line2: string;
+  /* The main sites paint dark bands, solid CTAs and tinted sections in their
+     own colours rather than reusing --ink / --accent. Optional: the v2 landing
+     layout falls back to ink / accent / paper2 when a conference omits them. */
+  inkDeep?: string;
+  accentBtn?: string;
+  paper3?: string;
 }
 
 export interface ConferenceMeta {
@@ -141,12 +147,15 @@ export const CONFERENCES: ConferenceMeta[] = [
       ink: '#3b0764',
       paper: '#ffffff',
       accent: '#7e22ce',
-      muted: '#5a4a6a',
-      inkSoft: '#4c1d95',
+      muted: '#6b5b7a',
+      inkSoft: '#581c87',
       accentSoft: 'rgba(126,34,206,0.12)',
       paper2: '#faf5ff',
-      line: '#f3e8ff',
-      line2: '#e9d5ff',
+      line: '#e9d5ff',
+      line2: '#c4b5fd',
+      inkDeep: '#211638',
+      accentBtn: '#7541d4',
+      paper3: '#faf8fd',
     },
   },
   {

@@ -12939,3 +12939,1813 @@ textarea.is-invalid {
     .lpb-spk-more:hover { transform: none; }
 }
 
+/* ==========================================================================
+   Redesigned landing page (.gx-*) — app/[conference]/NeuroLanding.tsx.
+   Only used by conferences whose conference.json sets landing_style: "v2";
+   every other page keeps the .lpb-* layout above. Colours come from the
+   per-conference theme variables injected by the component.
+   ========================================================================== */
+/* Type follows neuroscience-conference.com: Inter throughout, headings heavy
+   and tightly tracked, anything that acts as a label uppercase and wide. */
+.gx {
+    background: var(--paper);
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    letter-spacing: -0.005em;
+}
+.gx p, .gx li { letter-spacing: -0.005em; }
+.gx * { box-sizing: border-box; }
+
+.gx .gx-h2 {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: clamp(28px, 3.6vw, 44px);
+    font-weight: 650;
+    letter-spacing: -0.045em;
+    line-height: 0.98;
+    color: var(--ink);
+    margin: 0 0 10px;
+    position: relative;
+    padding-bottom: 14px;
+}
+.gx .gx-h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 46px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent);
+}
+
+.gx-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+    padding-bottom: 2px;
+    transition: gap 0.2s ease;
+}
+.gx-link:hover { gap: 13px; }
+
+/* Buttons ---------------------------------------------------------------- */
+.gx-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    white-space: nowrap;
+    padding: 13px 24px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+.gx-btn-primary { background: var(--accent-btn); color: #fff; box-shadow: 0 14px 30px -14px var(--accent-btn); }
+.gx-btn-primary:hover, .gx-btn-primary:focus-visible { color: #fff; }
+.gx-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 36px -14px var(--accent-btn); }
+.gx-btn-ghost:hover, .gx-btn-ghost:focus-visible { color: #fff; }
+.gx-btn-outline:hover, .gx-btn-outline:focus-visible { color: var(--accent); }
+.gx-btn-ghost { background: rgba(255, 255, 255, 0.08); color: #fff; border-color: rgba(255, 255, 255, 0.45); }
+.gx-btn-ghost:hover { background: rgba(255, 255, 255, 0.16); transform: translateY(-2px); }
+.gx-hero-cta .gx-btn-primary:hover {
+    background: color-mix(in srgb, var(--accent-btn) 82%, var(--ink-deep));
+    box-shadow: 0 16px 34px -16px color-mix(in srgb, var(--accent-btn) 85%, transparent),
+                0 0 0 4px color-mix(in srgb, var(--accent-btn) 26%, transparent);
+}
+.gx-hero-cta .gx-btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 16px 34px -18px rgba(0, 0, 0, 0.6),
+                0 0 0 4px rgba(255, 255, 255, 0.14);
+}
+.gx-btn-outline { background: transparent; color: var(--ink); border-color: var(--line); }
+.gx-btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Reveal on scroll ------------------------------------------------------- */
+.gx-reveal > * {
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-reveal.is-in > * { opacity: 1; transform: none; }
+
+/* Header ----------------------------------------------------------------- */
+/* White bar: it sits between the light early-bird strip and the dark hero
+   artwork, so a hairline plus a soft drop shadow lift it off the photo. */
+/* The promo strip scrolls away and the nav takes over the top of the screen,
+   so it needs to sit above the strip's own z-index. */
+.gx .eb-banner { position: relative; }
+.gx-head {
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    background: #fff;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 14px 34px -22px color-mix(in srgb, var(--ink) 75%, transparent);
+    transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.gx-head.is-stuck {
+    background: color-mix(in srgb, #ffffff 88%, transparent);
+    backdrop-filter: blur(16px) saturate(165%);
+    -webkit-backdrop-filter: blur(16px) saturate(165%);
+    border-bottom-color: color-mix(in srgb, var(--accent) 22%, #ffffff);
+    box-shadow: 0 16px 38px -26px color-mix(in srgb, var(--ink) 85%, transparent);
+}
+.gx-head-inner {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    transition: padding 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-head.is-stuck .gx-head-inner { padding-top: 9px; padding-bottom: 9px; }
+/* The lockup keeps the shared .brand-v3 rules; only the emblem size and the
+   weights the main site computes are set here. */
+.gx-head .brand-v3 { text-decoration: none; }
+.gx-head .brand-icon { width: 52px; height: 52px; transition: width 0.3s ease, height 0.3s ease; }
+.gx-head.is-stuck .brand-icon { width: 44px; height: 44px; }
+.gx-head .brand-line-1 {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    white-space: nowrap;
+}
+.gx-head .brand-year { font-weight: 800; letter-spacing: 0.02em; color: var(--accent); }
+.gx-head .brand-line-3 {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--ink) 70%, #ffffff);
+    white-space: nowrap;
+}
+.gx-head .brand-sep { margin: 0 7px; color: var(--accent); }
+.gx-head .brand-country { color: var(--accent); }
+
+/* The main site separates its menu items with hairlines rather than space,
+   and two of them open a short list. */
+.gx-nav { margin-left: auto; }
+.gx-nav > ul { display: flex; align-items: center; list-style: none; margin: 0; padding: 0; }
+.gx-nav > ul > li { position: relative; }
+.gx-nav > ul > li + li { border-left: 1px solid var(--line); }
+.gx-nav a, .gx-nav-trigger {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--ink) 68%, #ffffff);
+    text-decoration: none;
+    padding: 8px 17px;
+    cursor: pointer;
+    transition: color 0.18s ease;
+}
+.gx-nav-trigger i { font-size: 9px; transition: transform 0.25s ease; }
+.gx-nav-group:hover .gx-nav-trigger i, .gx-nav-group:focus-within .gx-nav-trigger i { transform: rotate(180deg); }
+
+/* the list a group opens */
+.gx-nav-sub {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 5;
+    min-width: 196px;
+    margin: 0;
+    padding: 8px;
+    list-style: none;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    background: #fff;
+    box-shadow: 0 24px 48px -26px color-mix(in srgb, var(--ink) 70%, transparent);
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 6px);
+    transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.22, 0.61, 0.36, 1), visibility 0.25s;
+}
+.gx-nav-group:hover .gx-nav-sub, .gx-nav-group:focus-within .gx-nav-sub {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+.gx-nav-sub a {
+    display: block;
+    padding: 9px 12px;
+    border-radius: 9px;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+}
+.gx-nav-sub a:hover { background: color-mix(in srgb, var(--accent) 9%, transparent); color: var(--accent); }
+.gx-nav-sub a::after { display: none; }
+.gx-nav > ul > li > a::after, .gx-nav-trigger::after {
+    content: '';
+    position: absolute;
+    left: 17px;
+    right: 17px;
+    bottom: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-nav a:hover, .gx-nav-group:hover .gx-nav-trigger { color: var(--accent); }
+.gx-nav > ul > li > a:hover::after, .gx-nav-group:hover .gx-nav-trigger::after { transform: scaleX(1); }
+
+/* Burger and the panel it opens ------------------------------------------ */
+.gx-burger {
+    display: none;
+    position: relative;
+    width: 42px;
+    height: 42px;
+    margin-left: auto;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: #fff;
+    cursor: pointer;
+}
+.gx-burger span, .gx-burger span::before, .gx-burger span::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--ink);
+    transform: translateX(-50%);
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.2s ease;
+}
+.gx-burger span { top: 50%; margin-top: -1px; }
+.gx-burger span::before { top: -6px; left: 0; transform: none; }
+.gx-burger span::after { top: 6px; left: 0; transform: none; }
+.gx-burger.is-open span { background: transparent; }
+.gx-burger.is-open span::before { transform: translateY(6px) rotate(45deg); }
+.gx-burger.is-open span::after { transform: translateY(-6px) rotate(-45deg); }
+
+.gx-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 96px 24px 32px;
+    background: #fff;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-menu.is-open { opacity: 1; transform: none; }
+/* The rule above gives .gx-menu a display, which outranks the browser’s own
+   [hidden] { display: none }. Without this the closed panel stays a
+   full-screen fixed layer over the page and swallows every pointer event, so
+   nothing below it can be hovered or clicked. */
+.gx-menu[hidden] { display: none; }
+/* and it belongs to the burger, which only exists below 1100px */
+@media (min-width: 1101px) { .gx-menu { display: none; } }
+.gx-menu-block + .gx-menu-block { margin-top: 18px; }
+.gx-menu-head {
+    margin: 0 0 6px;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.gx-menu a {
+    display: block;
+    padding: 11px 0;
+    font-size: 17px;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+}
+.gx-menu-head + a { border-top: 1px solid var(--line); }
+.gx-menu-foot { display: grid; gap: 10px; }
+.gx-menu-foot .gx-btn { justify-content: center; }
+
+/* Date + city chip, the quiet counterpart to the solid Register button */
+.gx-head-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-left: auto;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--ink);
+}
+.gx-head-date i { font-size: 13px; color: var(--accent); }
+
+.gx-head-cta { padding: 12px 22px; font-size: 14px; }
+/* On white the brighter accent loses its weight — the deep ink reads as the
+   one thing to click, exactly as it does on the dark hero below. */
+.gx-head .gx-btn-primary { background: var(--accent-btn); box-shadow: 0 14px 28px -16px color-mix(in srgb, var(--accent-btn) 85%, transparent); }
+.gx-head .gx-btn-primary:hover {
+    background: color-mix(in srgb, var(--accent-btn) 82%, var(--ink-deep));
+    box-shadow: 0 16px 34px -16px color-mix(in srgb, var(--accent-btn) 85%, transparent),
+                0 0 0 4px color-mix(in srgb, var(--accent-btn) 16%, transparent);
+}
+
+/* Early-bird strip above the white header. The main site runs this as a solid
+   violet band with white type, which is what makes it read as a promotion
+   rather than a caption; the same here. Scoped to .gx, so the nine pages on
+   the old layout keep the bar they ship with today. */
+.gx .eb-banner {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg,
+        var(--accent-btn) 0%,
+        color-mix(in srgb, var(--accent-btn) 80%, var(--ink-deep)) 58%,
+        color-mix(in srgb, var(--accent-btn) 62%, var(--ink-deep)) 100%);
+    border-bottom: 0;
+    color: #fff;
+}
+/* a slow highlight travelling the band, so the eye catches it on arrival */
+.gx .eb-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 34%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.13), transparent);
+    animation: gx-eb-sheen 9s ease-in-out infinite;
+    pointer-events: none;
+}
+@keyframes gx-eb-sheen {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(414%); }
+}
+.gx .eb-banner-inner { position: relative; z-index: 1; min-height: 52px; }
+.gx .eb-label { color: #fff; font-weight: 700; letter-spacing: 0.14em; }
+.gx .eb-dot {
+    background: #fff;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+    animation: gx-eb-pulse 2.4s ease-out infinite;
+}
+@keyframes gx-eb-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.55); }
+    70% { box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+/* The numbers are the point of the bar, so they sit on a frosted chip rather
+   than a white box that would fight the band. */
+.gx .eb-unit {
+    min-width: 44px;
+    background: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+    color: #fff;
+    box-shadow: none;
+}
+.gx .eb-unit strong { font-size: 18px; }
+.gx .eb-unit small { color: rgba(255, 255, 255, 0.8); }
+.gx .eb-warning, .gx .eb-message { color: rgba(255, 255, 255, 0.95); }
+.gx .eb-warning::before { background: rgba(255, 255, 255, 0.35); }
+.gx .eb-cta { background: #fff; color: var(--accent-btn); }
+
+/* Hero ------------------------------------------------------------------- */
+.gx-hero { position: relative; overflow: hidden; color: #fff; isolation: isolate; }
+.gx-hero-media { position: absolute; inset: 0; z-index: -2; }
+.gx-hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 30%; }
+.gx-hero-veil {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(100deg, var(--ink-deep) 8%, color-mix(in srgb, var(--ink-deep) 82%, transparent) 48%, color-mix(in srgb, var(--ink-deep) 30%, transparent) 78%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 55%, transparent), transparent 55%);
+}
+/* faint "network" dots over the art */
+.gx-hero-net {
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+    background-image:
+        radial-gradient(circle, rgba(255,255,255,0.55) 1px, transparent 1.6px),
+        radial-gradient(circle, rgba(255,255,255,0.28) 1px, transparent 1.6px);
+    background-size: 46px 46px, 97px 97px;
+    background-position: 0 0, 23px 31px;
+    mask-image: linear-gradient(95deg, #000 0 42%, transparent 72%);
+    -webkit-mask-image: linear-gradient(95deg, #000 0 42%, transparent 72%);
+}
+.gx-hero-inner {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 74px 28px 78px;
+    max-width: min(1220px, 100%);
+}
+.gx-hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px 8px 13px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 11.5px;
+    letter-spacing: 0.3em;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0 0 18px;
+}
+.gx-hero-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent-btn, #fff);
+    box-shadow: 0 0 0 0 var(--accent-btn, #fff);
+    animation: gx-hero-pulse 2.6s ease-out infinite;
+}
+@keyframes gx-hero-pulse {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent-btn) 60%, transparent); }
+    70% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--accent-btn) 0%, transparent); }
+    100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent-btn) 0%, transparent); }
+}
+.gx-hero-title {
+    color: #fff;
+    /* The main site sets its h1 at weight 720 and about -0.045em; the same
+       here, so the landing page opens in the conference's own voice. */
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: clamp(40px, 5.4vw, 68px);
+    font-weight: 720;
+    line-height: 0.99;
+    letter-spacing: -0.045em;
+    margin: 0 0 14px;
+    max-width: 16ch;
+}
+.gx-hero-year { color: var(--line-2); }
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+    .gx-hero-year {
+        background: linear-gradient(112deg, #ffffff 0%, var(--line-2) 55%, var(--accent-btn) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+.gx-hero-tagline {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    font-size: clamp(19px, 2.2vw, 27px);
+    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.95);
+}
+.gx-hero-sub {
+    font-size: 15.5px;
+    line-height: 1.65;
+    max-width: 52ch;
+    color: rgba(255, 255, 255, 0.86);
+    margin: 0 0 30px;
+}
+.gx-hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+.gx-hero-scroll {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.gx-hero-scroll:hover { color: #fff; }
+.gx-hero-scroll-rail {
+    position: relative;
+    width: 34px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+/* a light runs down the rail, pointing at the section below */
+.gx-hero-scroll-rail::after {
+    content: '';
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 14px;
+    background: #fff;
+    animation: gx-hero-rail 2.2s cubic-bezier(0.6, 0, 0.3, 1) infinite;
+}
+@keyframes gx-hero-rail {
+    0% { transform: translateX(-16px); }
+    60%, 100% { transform: translateX(36px); }
+}
+
+.gx-hero-side {
+    position: absolute;
+    right: 34px;
+    top: 0;
+    bottom: 0;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+    text-align: right;
+    pointer-events: none;
+}
+.gx-hero-side-words { display: flex; flex-direction: column; gap: 7px; }
+.gx-hero-side-words em {
+    font-style: normal;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+}
+.gx-hero-side-note {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+.gx-hero-side-place {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.9;
+}
+
+/* Facts strip ------------------------------------------------------------ */
+/* The strip sits right under the hero, so it is the first thing that moves as
+   the page is scrolled: the three facts arrive in turn, each icon in a disc
+   that settles behind it. */
+.gx-facts { position: relative; background: var(--paper-2); border-bottom: 1px solid var(--line); overflow: hidden; }
+/* a slow accent sweep along the top edge, tying the strip to the dark hero */
+.gx-facts::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto auto 0;
+    height: 2px;
+    width: 42%;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    animation: gx-facts-sweep 7s ease-in-out infinite;
+}
+@keyframes gx-facts-sweep {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(338%); }
+}
+.gx-facts-inner {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 22px 28px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+.gx-fact {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 4px 0;
+    transition: transform 0.25s ease;
+}
+.gx-fact + .gx-fact { border-left: 1px solid var(--line); padding-left: 26px; }
+.gx-fact:hover { transform: translateY(-2px); }
+/* the icon sits in a disc that fills on hover */
+.gx-fact i {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 17px;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-fact:hover i {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.08) rotate(-6deg);
+}
+.gx-fact strong { display: block; font-size: 15.5px; color: var(--ink); font-weight: 650; letter-spacing: -0.02em; }
+.gx-fact span { font-size: 13px; color: var(--muted); }
+/* each fact rises on its own beat; the delays are set per element in the JSX */
+.gx-facts-inner.gx-reveal > .gx-fact {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-facts-inner.gx-reveal.is-in > .gx-fact { opacity: 1; transform: none; }
+
+/* Sections --------------------------------------------------------------- */
+.gx-sec { max-width: 1220px; margin: 0 auto; padding: 62px 28px; }
+.gx-sec-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+}
+.gx-sec-head .gx-h2 { margin-bottom: 0; }
+.gx-sec-lead { margin: 8px 0 0; font-size: 14.5px; line-height: 1.5; color: var(--muted); max-width: 46ch; }
+
+/* Why attend ------------------------------------------------------------- */
+/* Light full-bleed band: an oversized display heading against a vertical
+   brand rail, an arch-topped photo collage opposite. The two small frames
+   cycle through the shot list (see RotatingShot); the arch stays put. */
+.gx-why {
+    position: relative;
+    max-width: none;
+    overflow: hidden;
+    padding: 62px 0 68px;
+    /* warm paper, with a soft accent wash in the bottom-right corner */
+    background:
+        radial-gradient(40% 48% at 93% 90%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 72%),
+        var(--paper-3);
+}
+/* The hairline orbit that sweeps behind the collage, and the dot riding it */
+.gx-why::before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: 41%;
+    width: 76%;
+    height: 150%;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+    pointer-events: none;
+}
+.gx-why::after {
+    content: '';
+    position: absolute;
+    top: 10.5%;
+    left: 45.4%;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--accent) 52%, #ffffff);
+    pointer-events: none;
+}
+.gx-why-grid {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 28px 0 84px;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 44px;
+    align-items: center;
+}
+/* Hairline beside the rail label */
+.gx-why-grid::before {
+    content: '';
+    position: absolute;
+    left: 48px;
+    top: -28px;
+    bottom: -28px;
+    width: 1px;
+    background: color-mix(in srgb, var(--accent) 26%, transparent);
+}
+.gx-why-rail {
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    writing-mode: vertical-rl;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--accent) 76%, #ffffff);
+    white-space: nowrap;
+}
+
+/* Copy ------------------------------------------------------------------- */
+.gx .gx-why .gx-h2 {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: clamp(54px, 6.3vw, 142px);
+    font-weight: 500;
+    line-height: 0.86;
+    letter-spacing: -0.022em;
+    max-width: 7ch;
+    margin: 0;
+    padding-bottom: 28px;
+}
+.gx .gx-why .gx-h2 em {
+    font-style: normal;
+    color: var(--accent);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+    .gx .gx-why .gx-h2 em {
+        background: linear-gradient(112deg, var(--accent) 0%, var(--accent-btn) 58%,
+            color-mix(in srgb, var(--accent-btn) 72%, #ffffff) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+}
+/* the rule draws itself once the section arrives */
+.gx .gx-why .gx-h2::after {
+    width: 0;
+    height: 2px;
+    display: block;
+    transition: width 0.9s 0.34s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-reveal.is-in .gx-why-text .gx-h2::after { width: 64px; }
+.gx-why-text p {
+    margin: 24px 0 26px;
+    font-size: 17px;
+    line-height: 1.72;
+    color: var(--muted);
+    max-width: 44ch;
+}
+.gx-why-text .gx-link { font-size: 17px; gap: 14px; padding-bottom: 9px; }
+
+/* Collage ---------------------------------------------------------------- */
+.gx-why-collage { position: relative; }
+/* a soft bloom behind the arch, so the collage sits in light rather than on it */
+.gx-why-collage::before {
+    content: '';
+    position: absolute;
+    left: -8%;
+    top: -10%;
+    width: 84%;
+    aspect-ratio: 1;
+    z-index: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, color-mix(in srgb, var(--accent) 18%, transparent), transparent 66%);
+}
+/* The collage is left out of the container reveal so its pieces can arrive one
+   after another instead of as a single block. */
+.gx-why-grid > .gx-why-collage { opacity: 1; transform: none; transition: none; }
+.gx-why-collage .gx-shot, .gx-why-credo {
+    opacity: 0;
+    transform: translateY(26px) scale(0.97);
+    transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-reveal.is-in .gx-shot-lead { opacity: 1; transform: none; transition-delay: 0.06s; }
+.gx-reveal.is-in .gx-shot-a { opacity: 1; transform: none; transition-delay: 0.24s; }
+.gx-reveal.is-in .gx-shot-b { opacity: 1; transform: none; transition-delay: 0.36s; }
+.gx-reveal.is-in .gx-why-credo { opacity: 1; transform: none; transition-delay: 0.48s; }
+/* `translate` rather than `transform`, so the drift and the entrance above do
+   not fight over the same property */
+@keyframes gx-float { from { translate: 0 0; } to { translate: 0 -11px; } }
+@keyframes gx-kenburns { from { transform: scale(1); } to { transform: scale(1.08); } }
+.gx-shot {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.gx-shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Arch top, straight sides — the anchor of the collage */
+.gx-shot-lead {
+    width: 62%;
+    margin-left: 6%;
+    aspect-ratio: 5 / 6;
+    border-radius: 50% 50% 20px 20px / 34% 34% 20px 20px;
+    box-shadow: 0 40px 72px -40px color-mix(in srgb, var(--ink) 72%, transparent);
+}
+.gx-shot-lead img { object-position: 26% 50%; animation: gx-kenburns 24s ease-in-out infinite alternate; }
+/* The cycling frames stack every shot and fade the active one in */
+.gx-shot-cycle {
+    position: absolute;
+    border: 5px solid #fff;
+    box-shadow: 0 28px 50px -26px color-mix(in srgb, var(--ink) 62%, transparent);
+}
+.gx-shot-cycle img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    opacity: 0;
+    transform: scale(1.05);
+    transition: opacity 0.9s ease, transform 2.4s ease;
+}
+.gx-shot-cycle img.is-on { opacity: 1; transform: scale(1); }
+.gx-shot-a { top: 14%; right: 4%; width: 34%; aspect-ratio: 1 / 1; animation: gx-float 7.5s ease-in-out infinite alternate; }
+.gx-shot-b { bottom: 6%; left: 0; width: 30%; aspect-ratio: 1 / 1; animation: gx-float 9s -3s ease-in-out infinite alternate; }
+
+/* Credo ------------------------------------------------------------------ */
+.gx-why-credo {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 2%;
+    width: 31%;
+    margin: 0;
+    padding: 20px 0 6px 24px;
+    border-left: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-weight: 650;
+    font-size: clamp(21px, 2.4vw, 34px);
+    line-height: 1.2;
+    color: var(--ink);
+}
+.gx-why-credo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 24px;
+    width: 48px;
+    height: 2px;
+    background: var(--accent);
+}
+/* Experts ---------------------------------------------------------------- */
+.gx-expert-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+/* The conference may have portraits for fewer than four speakers, and three
+   cards in a four-column grid would sit against an empty cell. */
+.gx-expert-grid--1 { grid-template-columns: repeat(1, minmax(0, 1fr)); max-width: 320px; }
+.gx-expert-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 640px; }
+.gx-expert-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gx-expert {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease,
+                opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-expert:hover {
+    transform: translateY(-6px);
+    border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+    box-shadow: 0 28px 52px -28px color-mix(in srgb, var(--ink) 55%, transparent);
+}
+.gx-expert-photo {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    /* A card with no portrait gets the brand's own dark tile rather than a pale
+       panel, so it reads as a deliberate placeholder next to a photograph. */
+    background: linear-gradient(155deg, var(--ink-deep, var(--ink)), color-mix(in srgb, var(--accent) 60%, var(--ink)));
+}
+.gx-expert-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transition: transform 0.6s ease; }
+/* a whisper of shade at the foot of the photo, so every card meets its text
+   the same way whatever the picture does there */
+.gx-expert-scrim {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 32%;
+    background: linear-gradient(0deg, color-mix(in srgb, var(--ink) 30%, transparent), transparent);
+    pointer-events: none;
+}
+.gx-expert:hover .gx-expert-photo img { transform: scale(1.06); }
+/* A monogram has to look chosen, not like a missing image: it carries the same
+   frame, a soft ring and the display face. */
+.gx-expert-initials {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: clamp(34px, 3.4vw, 46px);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+.gx-expert-initials::before {
+    content: '';
+    position: absolute;
+    width: 54%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.12), transparent 70%);
+}
+.gx-expert-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    padding: 15px 16px 14px;
+}
+.gx-expert-body h3 {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.26;
+}
+/* Affiliations run from a few words to a full department address, so they are
+   held to three lines and every card in the row keeps the same shape. */
+.gx-expert-body p {
+    margin: 0;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.45;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.gx-expert-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 12px;
+}
+.gx-expert-place {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--ink) 62%, #ffffff);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.gx-expert-place i { font-size: 11px; color: var(--accent); }
+/* The arrow is the card's link, stretched over the whole card so the picture
+   and the name are clickable too. */
+.gx-expert .gx-round::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.gx-expert:hover .gx-round { background: var(--accent); color: #fff; }
+.gx-round {
+    flex: 0 0 auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color-mix(in srgb, var(--accent) 12%, var(--paper));
+    color: var(--accent);
+    font-size: 12px;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.gx-round:hover { background: var(--accent); color: #fff; transform: translateX(2px); }
+
+/* The roster rolling under the cards. Two identical passes sit side by side
+   and the track slides exactly one pass, so the loop has no seam. */
+.gx-roll {
+    position: relative;
+    margin-top: 26px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+}
+.gx-roll-track { display: flex; width: max-content; animation: gx-roll 38s linear infinite; }
+.gx-roll:hover .gx-roll-track { animation-play-state: paused; }
+@keyframes gx-roll { to { transform: translateX(-50%); } }
+.gx-roll ul { display: flex; align-items: center; gap: 34px; margin: 0; padding: 0 17px; list-style: none; }
+.gx-roll li { display: inline-flex; align-items: baseline; gap: 9px; white-space: nowrap; }
+.gx-roll li + li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    margin-right: 25px;
+    border-radius: 50%;
+    background: color-mix(in srgb, var(--accent) 45%, transparent);
+    align-self: center;
+}
+.gx-roll span { font-size: 14px; font-weight: 650; letter-spacing: -0.02em; color: var(--ink); }
+.gx-roll em {
+    font-style: normal;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+/* Sessions --------------------------------------------------------------- */
+.gx-sessions {
+    position: relative;
+    max-width: none;
+    overflow: hidden;
+    padding: 74px 0 80px;
+    color: #fff;
+    background:
+        radial-gradient(80% 65% at 82% 0%, color-mix(in srgb, var(--accent-btn) 52%, transparent), transparent 62%),
+        radial-gradient(70% 60% at 6% 100%, color-mix(in srgb, var(--accent) 28%, transparent), transparent 70%),
+        linear-gradient(162deg, color-mix(in srgb, var(--ink-deep) 92%, #000000), var(--ink-deep) 55%,
+            color-mix(in srgb, var(--ink-deep) 86%, #000000));
+}
+.gx-sessions > * { position: relative; max-width: 1220px; margin: 0 auto; padding-left: 28px; padding-right: 28px; }
+.gx .gx-sessions .gx-h2 { color: #fff; }
+.gx-sessions .gx-sec-lead { color: rgba(255, 255, 255, 0.72); }
+.gx-sessions .gx-link { color: #fff; border-bottom-color: rgba(255, 255, 255, 0.4); }
+.gx-sessions .gx-link:hover { color: #fff; }
+/* Six wide cards rather than six narrow columns: the data carries a line of
+   description per track, and at a sixth of the row there was no room for it. */
+.gx-topic-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.gx-topic {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 'icon no' 'title title' 'sub sub';
+    align-content: start;
+    gap: 6px 14px;
+    min-height: 182px;
+    overflow: hidden;
+    padding: 22px 22px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    text-decoration: none;
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), border-color 0.25s ease,
+                background 0.3s ease, box-shadow 0.3s ease,
+                opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+/* an accent wash that grows from the corner on hover */
+.gx-topic::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 70% 30%, color-mix(in srgb, var(--accent-btn) 45%, transparent), transparent 70%);
+    transform: translate(40%, -45%) scale(0.6);
+    opacity: 0;
+    transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.4s ease;
+}
+.gx-topic:hover::before { transform: translate(28%, -38%) scale(1); opacity: 1; }
+.gx-topic:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: color-mix(in srgb, var(--accent-btn) 70%, transparent);
+    box-shadow: 0 30px 56px -30px #000, 0 0 0 1px color-mix(in srgb, var(--accent-btn) 30%, transparent);
+}
+.gx-topic > * { position: relative; }
+
+.gx-topic-icon {
+    grid-area: icon;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-topic-icon i { font-size: 19px; }
+.gx-topic:hover .gx-topic-icon { background: var(--accent-btn); border-color: transparent; color: #fff; transform: rotate(-6deg) scale(1.06); }
+
+/* The icons carry the section: each tile swings in behind its card, then
+   breathes on its own beat so the grid never looks frozen. The glyph floats
+   inside the tile rather than the tile moving, so none of this fights the
+   hover transform above. */
+.gx-topic-grid.gx-reveal .gx-topic-icon {
+    opacity: 0;
+    transform: scale(0.72) rotate(-18deg);
+    transition: opacity 0.5s ease, background 0.3s ease, color 0.3s ease,
+                transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.gx-topic-grid.gx-reveal.is-in .gx-topic-icon { opacity: 1; transform: none; }
+.gx-topic-grid.gx-reveal.is-in .gx-topic:nth-child(1) .gx-topic-icon { transition-delay: 0.12s; }
+.gx-topic-grid.gx-reveal.is-in .gx-topic:nth-child(2) .gx-topic-icon { transition-delay: 0.19s; }
+.gx-topic-grid.gx-reveal.is-in .gx-topic:nth-child(3) .gx-topic-icon { transition-delay: 0.26s; }
+.gx-topic-grid.gx-reveal.is-in .gx-topic:nth-child(4) .gx-topic-icon { transition-delay: 0.33s; }
+.gx-topic-grid.gx-reveal.is-in .gx-topic:nth-child(5) .gx-topic-icon { transition-delay: 0.40s; }
+.gx-topic-grid.gx-reveal.is-in .gx-topic:nth-child(6) .gx-topic-icon { transition-delay: 0.47s; }
+
+@keyframes gx-topic-breathe {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-3.5px) rotate(3deg); }
+}
+.gx-topic-icon i { animation: gx-topic-breathe 5.2s ease-in-out infinite; }
+.gx-topic:nth-child(2) .gx-topic-icon i { animation-duration: 6.1s; animation-delay: -1.4s; }
+.gx-topic:nth-child(3) .gx-topic-icon i { animation-duration: 4.7s; animation-delay: -2.6s; }
+.gx-topic:nth-child(4) .gx-topic-icon i { animation-duration: 5.8s; animation-delay: -0.8s; }
+.gx-topic:nth-child(5) .gx-topic-icon i { animation-duration: 6.4s; animation-delay: -3.1s; }
+.gx-topic:nth-child(6) .gx-topic-icon i { animation-duration: 5s; animation-delay: -1.9s; }
+/* on hover the glyph stops drifting and gives one clear pop instead */
+@keyframes gx-topic-pop {
+    0% { transform: scale(1); }
+    45% { transform: scale(1.22) rotate(8deg); }
+    100% { transform: scale(1.1) rotate(0deg); }
+}
+.gx-topic:hover .gx-topic-icon i { animation: gx-topic-pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+
+/* Four of the glyphs answer to what they depict when the card is hovered.
+   Each selector carries :nth-child as well, so it outranks the shared pop
+   above. Font Awesome draws its glyph in ::before, so ::after is free for
+   anything drawn around it. */
+
+/* 01 brain — power arriving: the glyph brightens in pulses and throws light */
+@keyframes gx-icon-charge {
+    0%, 100% { transform: scale(1.06); filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0)); }
+    20% { transform: scale(1.16); filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.95)); }
+    38% { transform: scale(1.08); filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.35)); }
+    58% { transform: scale(1.2); filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1)); }
+    78% { transform: scale(1.1); filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.4)); }
+}
+.gx-topic:nth-child(1):hover .gx-topic-icon i { animation: gx-icon-charge 1.3s ease-in-out infinite; }
+
+/* 02 head — braces on hover, the same beat as the shield below */
+.gx-topic:nth-child(2):hover .gx-topic-icon i { animation: gx-icon-guard 1.5s ease-in-out infinite; }
+
+/* 04 walking figure — a step cycle, forward with a bob and back */
+@keyframes gx-icon-walk {
+    0% { transform: translateX(-5px) translateY(0) scale(1.06); }
+    25% { transform: translateX(-1px) translateY(-2px) scale(1.06); }
+    50% { transform: translateX(5px) translateY(0) scale(1.06); }
+    75% { transform: translateX(1px) translateY(-2px) scale(1.06); }
+    100% { transform: translateX(-5px) translateY(0) scale(1.06); }
+}
+.gx-topic:nth-child(4):hover .gx-topic-icon i { animation: gx-icon-walk 1.15s ease-in-out infinite; }
+
+/* 08 microscope — the lamp comes on: a warm pool of light under the glyph */
+.gx-topic:nth-child(8) .gx-topic-icon::before {
+    content: '';
+    position: absolute;
+    inset: -16px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 248, 222, 1) 0%, rgba(255, 226, 120, 0.75) 32%, rgba(255, 206, 70, 0.3) 52%, transparent 72%);
+    opacity: 0;
+    transform: scale(0.4);
+    transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes gx-icon-lamp {
+    0%, 100% { opacity: 0.85; }
+    45% { opacity: 1; }
+}
+.gx-topic:nth-child(8):hover .gx-topic-icon::before {
+    opacity: 1;
+    transform: scale(1);
+    animation: gx-icon-lamp 1.6s ease-in-out infinite;
+}
+.gx-topic:nth-child(8):hover .gx-topic-icon i {
+    animation: none;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 6px rgba(255, 240, 180, 0.9));
+}
+
+/* 03 shield — it holds: the glyph braces, then a ring expands off it */
+@keyframes gx-icon-guard {
+    0%, 100% { transform: scale(1.06); }
+    30% { transform: scale(0.94); }
+    46% { transform: scale(1.18); }
+    64% { transform: scale(1.04); }
+}
+.gx-topic:nth-child(3):hover .gx-topic-icon i { animation: gx-icon-guard 1.5s ease-in-out infinite; }
+
+/* 05 waveform — a signal running through it, with the jolt epilepsy implies */
+@keyframes gx-icon-signal {
+    0%, 100% { transform: translateX(-3px) scaleY(1.06); }
+    22% { transform: translateX(0) scaleY(1.3); }
+    38% { transform: translateX(2px) scaleY(0.8); }
+    56% { transform: translateX(3px) scaleY(1.24); }
+    74% { transform: translateX(1px) scaleY(0.9); }
+}
+.gx-topic:nth-child(5):hover .gx-topic-icon i { animation: gx-icon-signal 0.9s ease-in-out infinite; }
+
+/* 06 DNA — the helix turns on its own axis */
+@keyframes gx-icon-helix {
+    0% { transform: rotateY(0deg) scale(1.06); }
+    100% { transform: rotateY(360deg) scale(1.06); }
+}
+.gx-topic:nth-child(6):hover .gx-topic-icon i { animation: gx-icon-helix 2.2s linear infinite; }
+
+/* 07 bolt — it strikes: a hard flash, then dark, then another */
+@keyframes gx-icon-strike {
+    0%, 100% { opacity: 1; transform: scale(1.06); filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0)); }
+    8% { opacity: 0.25; transform: scale(0.96); }
+    16% { opacity: 1; transform: scale(1.26); filter: drop-shadow(0 0 9px rgba(255, 255, 255, 1)); }
+    26% { opacity: 0.4; transform: scale(1.02); }
+    34% { opacity: 1; transform: scale(1.18); filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.85)); }
+    50% { opacity: 1; transform: scale(1.06); filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0)); }
+}
+.gx-topic:nth-child(7):hover .gx-topic-icon i { animation: gx-icon-strike 1.8s ease-in-out infinite; }
+
+/* 09 robot — it looks around, the way a scan sweeps */
+@keyframes gx-icon-scan {
+    0%, 100% { transform: rotate(-9deg) scale(1.06); }
+    50% { transform: rotate(9deg) scale(1.06); }
+}
+.gx-topic:nth-child(9):hover .gx-topic-icon i { animation: gx-icon-scan 1.5s ease-in-out infinite; }
+.gx-topic:nth-child(9) .gx-topic-icon i::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 2px;
+    margin: -1px 0 0 -15px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.95), transparent);
+    opacity: 0;
+}
+@keyframes gx-icon-scanline {
+    0% { transform: translateY(-11px); opacity: 0; }
+    20%, 80% { opacity: 1; }
+    100% { transform: translateY(11px); opacity: 0; }
+}
+.gx-topic:nth-child(9):hover .gx-topic-icon i::after { animation: gx-icon-scanline 1.5s ease-in-out infinite; }
+
+/* the glyph has to be a positioned box for any of the above to sit on it */
+.gx-topic-icon i { position: relative; display: grid; place-items: center; }
+/* a ring that pulses out of the tile while the card is hovered */
+.gx-topic-icon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid var(--accent-btn);
+    opacity: 0;
+}
+@keyframes gx-topic-ring {
+    0% { transform: scale(1); opacity: 0.65; }
+    100% { transform: scale(1.7); opacity: 0; }
+}
+.gx-topic:hover .gx-topic-icon::after { animation: gx-topic-ring 1.1s ease-out infinite; }
+.gx-topic-no {
+    grid-area: no;
+    justify-self: start;
+    align-self: center;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.45);
+}
+.gx-topic-title {
+    grid-area: title;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 650;
+    line-height: 1.26;
+    letter-spacing: -0.025em;
+    color: #fff;
+}
+/* Track lines vary from five words to a full sentence, so two lines keeps
+   every card in the row the same height. */
+.gx-topic-sub {
+    grid-area: sub;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.68);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.gx-topic-go {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--ink-deep);
+    font-size: 11px;
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: opacity 0.25s ease, transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-topic:hover .gx-topic-go { opacity: 1; transform: none; }
+
+/* Pass ------------------------------------------------------------------- */
+.gx-pass { max-width: none; background: var(--paper-2); }
+.gx-pass-grid {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 2.2fr);
+    gap: 36px;
+    align-items: center;
+}
+.gx-pass-intro p { font-size: 15px; line-height: 1.7; color: var(--muted); margin: 6px 0 0; max-width: 34ch; }
+.gx-pass-note { font-size: 13.5px !important; margin-top: 14px !important; }
+.gx-pass-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: stretch; }
+.gx-pass-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px 22px 24px;
+}
+.gx-pass-card h3 { font-family: var(--font-ui), var(--font-body), system-ui, sans-serif; font-size: 17px; font-weight: 700; color: var(--ink); margin: 0; }
+.gx-price { font-family: var(--font-ui), var(--font-body), system-ui, sans-serif; font-size: 40px; font-weight: 700; color: var(--ink); margin: 0; line-height: 1; }
+.gx-price span { font-size: 22px; margin-right: 4px; color: var(--muted); }
+.gx-pass-card ul { list-style: none; margin: 4px 0 auto; padding: 0; display: grid; gap: 9px; }
+.gx-pass-card li { position: relative; padding-left: 24px; font-size: 13.5px; line-height: 1.45; color: var(--muted); }
+.gx-pass-card li::before {
+    content: '\f00c';
+    /* this project ships Font Awesome 7; the older names are listed as a fallback */
+    font-family: 'Font Awesome 7 Free', 'Font Awesome 6 Free', 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-size: 11px;
+    color: var(--accent);
+}
+.gx-pass-card .gx-btn { justify-content: center; margin-top: 16px; }
+.gx-pass-card-pop { background: var(--ink-deep); border-color: var(--ink-deep); color: #fff; }
+.gx-pass-card-pop h3, .gx-pass-card-pop .gx-price { color: #fff; }
+.gx-pass-card-pop .gx-price span { color: rgba(255, 255, 255, 0.7); }
+.gx-pass-card-pop li { color: rgba(255, 255, 255, 0.86); }
+.gx-pass-card-pop li::before { color: #fff; }
+.gx-pass-ribbon {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 14px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: #fff;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Journey ---------------------------------------------------------------- */
+/* Two dates carry the section, so each is a card that says what it is, how
+   long is left and what to do about it. The ring around each icon closes as
+   the date approaches, and the line between the cards fills on arrival. */
+.gx-journey {
+    position: relative;
+    max-width: none;
+    overflow: hidden;
+    padding: 70px 0 78px;
+    background:
+        radial-gradient(60% 50% at 18% 8%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 62%),
+        radial-gradient(55% 48% at 88% 92%, color-mix(in srgb, var(--accent-btn) 12%, transparent), transparent 66%),
+        linear-gradient(180deg, var(--paper-3, var(--paper-2)), #ffffff 74%);
+}
+.gx-journey > * { position: relative; max-width: 1220px; margin: 0 auto; padding-left: 28px; padding-right: 28px; }
+
+.gx-line {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 330px));
+    justify-content: center;
+    gap: 86px;
+    margin-top: 34px;
+}
+/* the track between the cards, the line that fills it, and the light that
+   keeps running once it has */
+.gx-line::before, .gx-line::after {
+    content: '';
+    position: absolute;
+    top: 108px;
+    left: calc(50% - 43px);
+    width: 86px;
+    height: 2px;
+}
+.gx-line::before { background: repeating-linear-gradient(90deg, var(--line-2) 0 7px, transparent 7px 13px); }
+.gx-line::after {
+    width: 0;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-btn));
+    box-shadow: 0 0 12px color-mix(in srgb, var(--accent-btn) 55%, transparent);
+}
+.gx-line.is-in::after { animation: gx-line-fill 1.1s cubic-bezier(0.65, 0, 0.35, 1) 0.5s forwards; }
+@keyframes gx-line-fill { from { width: 0; } to { width: 86px; } }
+.gx-line.is-in .gx-stop:first-child::after {
+    content: '';
+    position: absolute;
+    top: 105px;
+    right: -47px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-btn);
+    box-shadow: 0 0 10px var(--accent-btn);
+    animation: gx-line-pulse 2.6s ease-in-out 1.7s infinite;
+}
+@keyframes gx-line-pulse {
+    0% { transform: translateX(0); opacity: 0; }
+    15%, 85% { opacity: 1; }
+    100% { transform: translateX(86px); opacity: 0; }
+}
+
+.gx-stop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    padding: 26px 22px 22px;
+    text-align: center;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 18px 40px -32px color-mix(in srgb, var(--ink) 60%, transparent);
+    transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 0.3s ease,
+                border-color 0.25s ease, opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.gx-stop:hover {
+    transform: translateY(-5px);
+    border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+    box-shadow: 0 30px 56px -32px color-mix(in srgb, var(--ink) 65%, transparent);
+}
+/* the nearest date is the one to act on, so the card says so and keeps the
+   solid button */
+.gx-stop.is-next {
+    border-color: color-mix(in srgb, var(--accent-btn) 55%, var(--line));
+    box-shadow: 0 26px 52px -30px color-mix(in srgb, var(--accent-btn) 75%, transparent),
+                0 0 0 4px color-mix(in srgb, var(--accent-btn) 10%, transparent);
+}
+.gx-stop-tag {
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--accent-btn);
+    color: #fff;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    box-shadow: 0 8px 18px -8px color-mix(in srgb, var(--accent-btn) 85%, transparent);
+}
+.gx-stop-step {
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--ink) 42%, #ffffff);
+}
+
+/* conic sweep behind the icon; --gx-progress is set per card from the date */
+.gx-stop-ring {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: conic-gradient(var(--accent-btn) var(--gx-progress, 0%), color-mix(in srgb, var(--line-2) 65%, transparent) 0);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease, background 0.6s ease;
+}
+.gx-stop:hover .gx-stop-ring { transform: translateY(-3px) scale(1.04); }
+.gx-stop-ring::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-btn);
+    opacity: 0;
+}
+.gx-stop-dot {
+    position: relative;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: var(--accent);
+    font-size: 20px;
+}
+
+/* the count is the reason to read the card, so the number carries it */
+.gx-stop-count {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    min-height: 34px;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.gx-stop-count em {
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--accent-btn);
+}
+.gx-stop-count em.is-closed { font-size: 15px; color: var(--muted); letter-spacing: 0.06em; }
+.gx-stop strong { font-size: 19px; font-weight: 700; letter-spacing: -0.03em; color: var(--ink); }
+.gx-stop-title { font-size: 13.5px; font-weight: 650; color: var(--ink); }
+.gx-stop-desc { font-size: 12.5px; line-height: 1.45; color: var(--muted); max-width: 26ch; }
+.gx-stop-cta { margin-top: 12px; padding: 12px 22px; font-size: 12px; }
+
+/* the first ring lights as the line starts, the second goes off as it lands */
+.gx-line.gx-reveal .gx-stop-ring { transform: scale(0.84); opacity: 0.55; }
+.gx-line.gx-reveal.is-in .gx-stop-ring { transform: none; opacity: 1; }
+.gx-line.is-in .gx-stop:nth-child(1) .gx-stop-ring { transition-delay: 0.3s; }
+.gx-line.is-in .gx-stop:nth-child(2) .gx-stop-ring { transition-delay: 1.5s; }
+@keyframes gx-stop-ping {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    100% { transform: scale(1.9); opacity: 0; }
+}
+.gx-line.is-in .gx-stop:first-child .gx-stop-ring::after { animation: gx-stop-ping 0.8s ease-out 0.3s; }
+.gx-line.is-in .gx-stop:last-child .gx-stop-ring {
+    animation: gx-stop-blast 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 1.5s both;
+}
+@keyframes gx-stop-blast {
+    0% { transform: scale(0.84); }
+    40% { transform: scale(1.28); }
+    100% { transform: scale(1); }
+}
+.gx-line.is-in .gx-stop:last-child .gx-stop-ring::after { animation: gx-stop-ping 1.1s ease-out 1.6s 3; }
+
+/* Downloads -------------------------------------------------------------- */
+.gx-dl-row {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    align-items: center;
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 18px;
+}
+.gx-dl-title { margin: 0 !important; padding-bottom: 0 !important; font-size: clamp(20px, 2vw, 26px) !important; }
+.gx-dl-title::after { display: none; }
+.gx-dl-item {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 13px 14px;
+    border-radius: 12px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.gx-dl-item:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.gx-dl-item > i:first-child { font-size: 17px; color: var(--accent); }
+.gx-dl-item span { display: flex; flex-direction: column; margin-right: auto; }
+.gx-dl-item strong { font-size: 13px; color: var(--ink); font-weight: 600; line-height: 1.3; }
+.gx-dl-item small { font-family: var(--font-ui), var(--font-body), system-ui, sans-serif; font-size: 10px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+.gx-dl-arrow { font-size: 11px; color: var(--muted); }
+
+/* FAQ -------------------------------------------------------------------- */
+.gx-faq-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 18px; }
+.gx-faq-row { border: 1px solid var(--line); border-radius: 12px; background: var(--paper); overflow: hidden; }
+.gx-faq-row summary {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 14px;
+    color: var(--ink);
+}
+.gx-faq-row summary::-webkit-details-marker { display: none; }
+.gx-faq-row summary span { margin-right: auto; }
+.gx-faq-row summary::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex: 0 0 auto; }
+.gx-faq-row summary i { color: var(--accent); font-size: 12px; transition: transform 0.25s ease; }
+.gx-faq-row[open] summary i { transform: rotate(45deg); }
+.gx-faq-row p { margin: 0; padding: 0 16px 16px 33px; font-size: 13.5px; line-height: 1.6; color: var(--muted); }
+
+/* Closing CTA ------------------------------------------------------------ */
+.gx-end { position: relative; overflow: hidden; color: #fff; isolation: isolate; }
+.gx-end-media { position: absolute; inset: 0; z-index: -2; }
+.gx-end-media img { width: 100%; height: 100%; object-fit: cover; }
+.gx-end-veil {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(100deg, var(--ink-deep) 18%, color-mix(in srgb, var(--ink-deep) 88%, transparent) 62%, color-mix(in srgb, var(--ink-deep) 62%, transparent) 100%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 70%, transparent), transparent 70%);
+}
+.gx-end-inner {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 58px 28px 62px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.gx-end-inner h2 {
+    /* the global h1-h6 rule paints headings in --ink, which is invisible here */
+    color: #fff;
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: clamp(27px, 3.4vw, 40px);
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0 0 12px;
+}
+.gx-end-inner p { font-size: 14.5px; line-height: 1.6; color: rgba(255, 255, 255, 0.85); margin: 0 0 24px; max-width: 46ch; }
+.gx-end-meta { text-align: right; display: flex; flex-direction: column; gap: 6px; }
+.gx-end-meta span { font-family: var(--font-ui), var(--font-body), system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.24em; color: rgba(255, 255, 255, 0.7); }
+.gx-end-meta strong { font-family: var(--font-ui), var(--font-body), system-ui, sans-serif; font-size: 15px; font-weight: 600; max-width: 30ch; line-height: 1.35; }
+
+/* Responsive ------------------------------------------------------------- */
+@media (max-width: 1100px) {
+    .gx-hero-side { display: none; }
+    .gx-topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gx-expert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gx-pass-grid { grid-template-columns: minmax(0, 1fr); }
+    .gx-dl-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .gx-dl-title { grid-column: 1 / -1; }
+    .gx-nav { display: none; }
+    .gx-burger { display: block; }
+    /* the lockup and the burger are enough up here; the CTA moves into the panel */
+    .gx-head-cta { display: none; }
+}
+@media (max-width: 860px) {
+    .gx-head-date { display: none; }
+    /* Stacked: the rail, the orbit and every overlap go, so the collage
+       becomes a plain grid and nothing collides on a narrow screen. */
+    .gx-why { padding: 54px 0 60px; }
+    .gx-why::before, .gx-why::after, .gx-why-grid::before, .gx-why-rail { display: none; }
+    .gx-why-grid { grid-template-columns: minmax(0, 1fr); gap: 30px; padding-left: 28px; }
+    .gx .gx-why .gx-h2 { max-width: none; font-size: clamp(48px, 13vw, 84px); padding-bottom: 26px; }
+    .gx-why-collage { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .gx-shot-lead { grid-column: 1 / -1; width: 100%; margin: 0; aspect-ratio: 4 / 3;
+        border-radius: 46% 46% 18px 18px / 26% 26% 18px 18px; }
+    .gx-shot-cycle { position: relative; inset: auto; width: auto; aspect-ratio: 4 / 3; border-width: 0; }
+    .gx-why-credo {
+        position: relative;
+        inset: auto;
+        grid-column: 1 / -1;
+        width: auto;
+        margin-top: 4px;
+    }
+    .gx-facts-inner { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    .gx-fact + .gx-fact { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 14px; }
+    .gx-pass-cards { grid-template-columns: minmax(0, 1fr); }
+    .gx-pass-card-pop { order: -1; }
+    .gx-faq-grid { grid-template-columns: minmax(0, 1fr); }
+    .gx-line { grid-auto-flow: row; gap: 18px; }
+    .gx-line::before { left: 21px; right: auto; top: 10px; bottom: 10px; width: 2px; height: auto; background: repeating-linear-gradient(180deg, var(--line) 0 8px, transparent 8px 15px); }
+    .gx-stop { flex-direction: row; text-align: left; gap: 14px; align-items: center; }
+    .gx-stop strong { min-width: 118px; }
+}
+@media (max-width: 620px) {
+    .gx-sec { padding: 44px 18px; }
+    .gx-head-inner { padding: 10px 18px; gap: 14px; }
+    .gx-hero-inner { padding: 52px 18px 56px; }
+    .gx-topic-grid { grid-template-columns: minmax(0, 1fr); }
+    .gx-expert-grid { grid-template-columns: minmax(0, 1fr); }
+    /* One per row at this width, so each card lies down — a full-width 4:5
+       portrait would make the strip four screens tall. */
+    .gx-expert { flex-direction: row; }
+    .gx-expert-photo { flex: 0 0 38%; aspect-ratio: 1; }
+    .gx-expert-initials { font-size: 30px; }
+    .gx-expert-body { padding: 13px 14px; }
+    .gx-expert-body p { -webkit-line-clamp: 2; }
+    .gx-expert-foot { padding-top: 10px; }
+    .gx-why-collage { grid-template-columns: 1fr; }
+    .gx-facts-inner { padding: 18px; }
+    .gx-end-inner { padding: 42px 18px 46px; }
+    .gx-end-meta { text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .gx-reveal > * { opacity: 1; transform: none; transition: none; }
+    .gx-btn:hover, .gx-expert:hover, .gx-topic:hover, .gx-dl-item:hover, .gx-stop:hover .gx-stop-dot { transform: none; }
+    .gx-shot:hover img, .gx-expert:hover .gx-expert-photo img { transform: none; }
+    .gx-shot-lead img, .gx-shot-a, .gx-shot-b, .gx-facts::before { animation: none; }
+    .gx-facts-inner.gx-reveal > .gx-fact { opacity: 1; transform: none; transition: none; }
+    .gx-fact:hover, .gx-fact:hover i { transform: none; }
+    .gx-menu, .gx-nav-sub, .gx-burger span, .gx-burger span::before, .gx-burger span::after { transition: none; }
+    .gx .eb-banner::after, .gx .eb-dot { animation: none; }
+    .gx-topic:hover, .gx-topic:hover .gx-topic-icon { transform: none; }
+    .gx-topic-icon i, .gx-topic:hover .gx-topic-icon i, .gx-topic:hover .gx-topic-icon::after { animation: none; }
+    .gx-topic:hover .gx-topic-icon i::after { animation: none; }
+    .gx-roll-track { animation: none; }
+    .gx-line::after, .gx-stop-dot::after, .gx-stop-dot::before,
+    .gx-line.is-in .gx-stop:last-child .gx-stop-dot { animation: none; }
+    .gx-line::after { width: 240px; }
+    .gx-line.gx-reveal .gx-stop-dot { transform: none; opacity: 1; }
+    .gx-topic-grid.gx-reveal .gx-topic-icon { opacity: 1; transform: none; transition: none; }
+    .gx-hero--banner .gx-hero-inner > *, .gx-hero--banner .gx-hero-media img,
+    .gx-hero-dot, .gx-hero-scroll-rail::after { animation: none; }
+    .gx-why-collage .gx-shot, .gx-why-credo { opacity: 1; transform: none; transition: none; }
+    .gx .gx-why .gx-h2::after { width: 64px; transition: none; }
+}
+
+/* Conference-supplied hero artwork (already cropped to the artwork itself, no
+   wording baked in): it fills the right of the hero, the copy sits on the dark
+   left, and a gradient blends the two. */
+.gx-hero--banner { background: var(--ink-deep); }
+.gx-hero--banner .gx-hero-media { left: 0; right: 0; width: 100%; }
+.gx-hero--banner .gx-hero-media img { object-position: 60% 38%; }
+.gx-hero--banner .gx-hero-side { display: none; }
+.gx-hero--banner .gx-hero-veil {
+    background:
+        /* the veil is inside the media, so these stops run across the artwork:
+           solid behind the copy column, cleared again before the speaker */
+        linear-gradient(90deg,
+            var(--ink-deep) 0 26%,
+            color-mix(in srgb, var(--ink-deep) 90%, transparent) 40%,
+            color-mix(in srgb, var(--ink-deep) 56%, transparent) 52%,
+            color-mix(in srgb, var(--ink-deep) 20%, transparent) 62%,
+            transparent 72%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 40%, transparent), transparent 48%);
+}
+.gx-hero--banner .gx-hero-inner { padding-top: 48px; padding-bottom: 54px; max-width: 1220px; }
+/* The hero is above the fold, so it plays on load rather than on scroll. */
+@keyframes gx-hero-in { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+.gx-hero--banner .gx-hero-inner > * { animation: gx-hero-in 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+.gx-hero--banner .gx-hero-eyebrow { animation-delay: 0.08s; }
+.gx-hero--banner .gx-hero-title { animation-delay: 0.2s; }
+.gx-hero--banner .gx-hero-tagline { animation-delay: 0.34s; }
+.gx-hero--banner .gx-hero-sub { animation-delay: 0.46s; }
+.gx-hero--banner .gx-hero-cta { animation-delay: 0.58s; }
+.gx-hero--banner .gx-hero-scroll { animation-delay: 0.8s; }
+/* and the artwork pushes in slowly behind it */
+.gx-hero--banner .gx-hero-media img { animation: gx-kenburns 30s ease-in-out infinite alternate; }
+.gx-hero--banner .gx-hero-title {
+    font-size: clamp(34px, 4.4vw, 56px);
+    margin-bottom: 12px;
+    /* a soft halo so the letterforms hold their edge wherever the artwork is
+       light behind them */
+    text-shadow: 0 2px 22px color-mix(in srgb, var(--ink-deep) 75%, transparent);
+}
+.gx-hero--banner .gx-hero-tagline { font-size: clamp(17px, 1.9vw, 23px); margin-bottom: 14px; color: #fff; }
+.gx-hero--banner .gx-hero-sub { font-size: 15px; margin-bottom: 22px; color: rgba(255, 255, 255, 0.94); }
+.gx-hero--banner .gx-hero-eyebrow { margin-bottom: 12px; color: #fff; }
+.gx-hero--banner .gx-hero-title, .gx-hero--banner .gx-hero-sub { max-width: 19ch; }
+.gx-hero--banner .gx-hero-sub { max-width: 42ch; }
+@media (max-width: 1100px) {
+    .gx-hero--banner .gx-hero-media { width: 50%; }
+    .gx-hero--banner .gx-hero-title { max-width: 14ch; }
+}
+@media (max-width: 860px) {
+    /* one column: artwork behind, darkened so the copy stays readable */
+    .gx-hero--banner .gx-hero-media { left: 0; right: 0; width: 100%; }
+    .gx-hero--banner .gx-hero-media img { object-position: 60% 22%; }
+    .gx-hero--banner .gx-hero-veil {
+        background:
+            linear-gradient(180deg, color-mix(in srgb, var(--ink-deep) 92%, transparent) 0 46%, color-mix(in srgb, var(--ink-deep) 74%, transparent) 100%);
+    }
+    .gx-hero--banner .gx-hero-title, .gx-hero--banner .gx-hero-sub { max-width: none; }
+}
+
+/* Host-city artwork behind the closing CTA: the copy sits on the left, so the
+   veil is heaviest there and clears the skyline on the right. */
+.gx-end--banner .gx-end-media img { object-position: 62% 46%; }
+.gx-end--banner .gx-end-veil {
+    background:
+        linear-gradient(90deg, var(--ink-deep) 0 16%, color-mix(in srgb, var(--ink-deep) 74%, transparent) 38%, color-mix(in srgb, var(--ink-deep) 25%, transparent) 66%, transparent 88%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 45%, transparent), transparent 55%);
+}
+@media (max-width: 860px) {
+    .gx-end--banner .gx-end-veil {
+        background: linear-gradient(180deg, color-mix(in srgb, var(--ink-deep) 88%, transparent) 0 52%, color-mix(in srgb, var(--ink-deep) 70%, transparent) 100%);
+    }
+}
+

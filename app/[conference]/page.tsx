@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { getConferenceConfig } from '@/lib/getConfig';
 import { getConferenceMeta, getAllConferenceSlugs } from '@/lib/conferences';
 import LandingClient from './LandingClient';
+import NeuroLanding from './NeuroLanding';
 
 interface PageProps {
   params: Promise<{ conference: string }>;
@@ -53,6 +54,7 @@ export default async function ConferencePage({ params }: PageProps) {
   }
 
   const gtagId = meta.gtagId;
+  const logoName = getLogoName(conference);
 
   return (
     <>
@@ -66,7 +68,19 @@ export default async function ConferencePage({ params }: PageProps) {
         gtag('js', new Date());
         gtag('config', '${gtagId}');
       `}</Script>
-      <LandingClient conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} slug={conference} />
+      {/* conference.json picks the layout: "v2" is the redesigned page, and
+          anything else keeps the original LandingClient the other pages use. */}
+      {conf.landing_style === 'v2' ? (
+        <NeuroLanding
+          conf={conf}
+          mainSiteUrl={meta.mainSiteUrl}
+          theme={meta.theme}
+          slug={conference}
+          logoName={logoName}
+        />
+      ) : (
+        <LandingClient conf={conf} mainSiteUrl={meta.mainSiteUrl} theme={meta.theme} slug={conference} />
+      )}
     </>
   );
 }

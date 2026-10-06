@@ -37,11 +37,9 @@ const ROTATING_MESSAGES = [
 
 type Props = {
   conf: ConferenceConfig;
-  /** Absolute URL of the canonical main site — the CTA leaves this deployment. */
-  baseUrl: string;
 };
 
-export default function EarlyBirdBanner({ conf, baseUrl }: Props) {
+export default function EarlyBirdBanner({ conf }: Props) {
   const deadline = parseDeadline(conf.early_bird_deadline);
   const [timeLeft, setTimeLeft] = useState<ReturnType<typeof getTimeLeft>>(null);
   const [dismissed, setDismissed] = useState(false);
@@ -104,13 +102,11 @@ export default function EarlyBirdBanner({ conf, baseUrl }: Props) {
               ))}
             </span>
 
+            {/* No Register CTA here — the header below already carries one,
+                and two of them side by side read as a duplicate. */}
             <span className="eb-warning" key={msgIndex}>
               {ROTATING_MESSAGES[msgIndex](conf.early_bird_deadline)}
             </span>
-
-            <a href={`${baseUrl}/register`} className="eb-cta">
-              Register Now <i className="fas fa-arrow-right" />
-            </a>
           </>
         )}
       </div>

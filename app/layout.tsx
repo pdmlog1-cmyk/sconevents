@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
-import { Source_Sans_3, Source_Serif_4, JetBrains_Mono } from 'next/font/google';
+import { Source_Sans_3, Source_Serif_4, JetBrains_Mono, Inter } from 'next/font/google';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './globals.css';
 
@@ -21,6 +21,15 @@ const jetbrainsMono = JetBrains_Mono({
   variable: '--font-mono',
   display: 'swap',
 });
+/* The v2 landing layout is set in Inter, the face its main site uses, so the
+   two read as one brand. Not preloaded: only /neurology uses it today, so the
+   other nine pages should not pay for the file. */
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-ui',
+  display: 'swap',
+  preload: false,
+});
 
 export const metadata: Metadata = {
   title: 'SCON Events',
@@ -39,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${sourceSans.variable} ${sourceSerif.variable} ${jetbrainsMono.variable}`}
+      className={`${sourceSans.variable} ${sourceSerif.variable} ${jetbrainsMono.variable} ${inter.variable}`}
     >
       <head>
         <link rel="preconnect" href="https://js.hcaptcha.com" crossOrigin="" />

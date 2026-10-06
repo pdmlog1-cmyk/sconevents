@@ -250,7 +250,9 @@ export default function LandingLeadModal({ conf: confProp, mainSiteUrl, slug }: 
               <textarea name="message" rows={3} placeholder="Anything we should know?" />
             </div>
             <div className="form-captcha">
-              <div className="h-captcha" data-sitekey={conf.hcaptcha_sitekey} data-theme="light" data-size="compact" />
+              {/* Normal (wide) widget: checkbox left, hCaptcha logo right. The
+                  .form-captcha rules scale it down on narrow screens. */}
+              <div className="h-captcha" data-sitekey={conf.hcaptcha_sitekey} data-theme="light" data-size="normal" />
               <FieldError msg={errors.captcha} />
             </div>
             {globalError && (

@@ -10,6 +10,7 @@ import InfoStrip from '@/components/InfoStrip';
 import EarlyBirdBanner from '@/components/EarlyBirdBanner';
 import MainInfoStrip from '@/components/MainInfoStrip';
 import SpeakersStrip from '@/components/SpeakersStrip';
+import LandingFooter from '@/components/LandingFooter';
 import type { ConferenceConfig } from '@/lib/config';
 import type { ConferenceTheme } from '@/lib/conferences';
 import { getLogoSvg } from '@/lib/logoSvgs';
@@ -138,7 +139,7 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
           that ask for it in conference.json, this repo's own strip otherwise. */}
       {conf.main_site_top_strip ? (
         <>
-          <EarlyBirdBanner conf={conf} baseUrl={MAIN} />
+          <EarlyBirdBanner conf={conf} />
           <MainInfoStrip conf={conf} baseUrl={MAIN} />
         </>
       ) : (
@@ -541,83 +542,14 @@ export default function LandingClient({ conf, mainSiteUrl, theme, slug }: Landin
         </div>
       </section>
 
-      <footer className="lpb-foot">
-        <div className="container lpb-foot-inner">
-          {/* Brand column — same full BrandLogo emblem as the header, sized
-              for the footer and adapted for the dark background. */}
-          <div className="lpb-foot-brand">
-            <a href={MAIN} className="brand brand-v3 brand-footer" aria-label={`${conf.short} home`}>
-              {getLogoSvg(slug)
-                ? <div className="brand-icon" dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
-                : <div className="brand-icon"><img src={`/logos/${getLogoName(slug)}.svg`} alt={`${conf.short} logo`} width={80} height={80} /></div>}
-              <div className="brand-divider" />
-              <div className="brand-lockup">
-                <div className="brand-line-1">{conf.discipline}-<span className="brand-year">20{conf.year_suffix}</span></div>
-                <div className="brand-line-3">
-                  {brandDates}{brandPlace ? <><span className="brand-sep">|</span><span className="brand-country">{brandPlace}</span></> : null}
-                </div>
-              </div>
-            </a>
-            <p className="lpb-foot-tag">{conf.name}</p>
-            <ul className="lpb-foot-contact">
-              <li><i className="fas fa-calendar" /><span>{conf.dates}</span></li>
-              <li><i className="fas fa-location-dot" /><span>{conf.country} · Hybrid</span></li>
-              <li><a href={`mailto:${conf.email}`}><i className="fas fa-envelope" /><span>{conf.email}</span></a></li>
-              <li><a href={`tel:${conf.phone.replace(/\D/g, '')}`}><i className="fas fa-phone" /><span>{conf.phone}</span></a></li>
-            </ul>
-          </div>
-
-          {/* Programme links */}
-          <nav className="lpb-foot-col" aria-label="Programme">
-            <h5>Programme</h5>
-            <a href={`${MAIN}/sessions`}>Sessions &amp; tracks</a>
-            <a href={`${MAIN}/speakers`}>Speakers</a>
-            <a href={`${MAIN}/committee`}>Committee</a>
-            <a href={`${MAIN}/scientific-program`}>Schedule</a>
-          </nav>
-
-          {/* Attendees links */}
-          <nav className="lpb-foot-col" aria-label="Attendees">
-            <h5>Attendees</h5>
-            <a href={`${MAIN}/register`}>Register</a>
-            <a href={`${MAIN}/call-for-abstract-submission`}>Submit abstract</a>
-            <a href={`${MAIN}/guidelines`}>Author guidelines</a>
-            <a href={`${MAIN}/venue`}>Venue &amp; travel</a>
-            <a href={`${MAIN}/faqs`}>FAQs</a>
-          </nav>
-
-          {/* Connect links */}
-          <nav className="lpb-foot-col" aria-label="Connect">
-            <h5>Connect</h5>
-            <a href={`${MAIN}/sponsor-exhibitor`}>Sponsor &amp; exhibit</a>
-            <a href={`${MAIN}/contact`}>Contact us</a>
-            {brochureHref ? (
-              <a href={brochureHref}>Download brochure</a>
-            ) : (
-              <a
-                href="#"
-                onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('lpb-open-brochure')); }}
-              >Download brochure</a>
-            )}
-            <div className="lpb-foot-social" aria-label="Social media">
-              <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in" /></a>
-              <a href="#" aria-label="X / Twitter"><i className="fab fa-x-twitter" /></a>
-              <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f" /></a>
-              <a href="#" aria-label="YouTube"><i className="fab fa-youtube" /></a>
-            </div>
-          </nav>
-        </div>
-
-        {/* Bottom bar — copyright + legal */}
-        <div className="container lpb-foot-bottom">
-          <small>© {conf.hero_title_year} {conf.short}. All rights reserved.</small>
-          <nav>
-            <a href={`${MAIN}/terms-of-use`}>Terms of Use</a>
-            <a href={`${MAIN}/privacy-policy`}>Privacy Policy</a>
-            <a href={`${MAIN}/contact`}>Cookies</a>
-          </nav>
-        </div>
-      </footer>
+      <LandingFooter
+        conf={conf}
+        mainSiteUrl={MAIN}
+        slug={slug}
+        logoName={getLogoName(slug)}
+        brandDates={brandDates}
+        brandPlace={brandPlace}
+      />
 
       <LandingLeadModal conf={conf} mainSiteUrl={MAIN} slug={slug} />
     </main>
