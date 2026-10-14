@@ -73,10 +73,11 @@
     ]
   ],
   "social": {
-    "twitter": "#",
+    "twitter": "https://x.com/sconconferences",
     "linkedin": "#",
-    "facebook": "#",
-    "youtube": "#"
+    "facebook": "https://www.facebook.com/profile.php?id=61593661671764",
+    "youtube": "https://www.youtube.com/@SCONCONFERENCES-Videos",
+    "instagram": "https://www.instagram.com/sconconferences/"
   },
   "logo_lockup": "/logos/lockup/pharmaceutical.svg"
 }
