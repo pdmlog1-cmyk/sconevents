@@ -126,30 +126,95 @@ function useReveal<T extends HTMLElement>() {
   return { ref, cls: shown ? ' is-in' : '' };
 }
 
-/** One collage frame that cross-fades through ROTATING_SHOTS. `offset` keeps
-    the two frames on different photos. */
-function RotatingShot({ className, offset }: { className: string; offset: number }) {
+/** One collage frame that cross-fades through `shots`. `offset` keeps the two
+    frames on different photos. The list is passed in rather than read from the
+    module so each conference can show its own collage. */
+function RotatingShot({ className, offset, shots }: { className: string; offset: number; shots: string[] }) {
   const [step, setStep] = useState(0);
   useEffect(() => {
     if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
     const id = setInterval(() => setStep(s => s + 1), SHOT_INTERVAL_MS);
     return () => clearInterval(id);
   }, []);
-  const active = (step + offset) % ROTATING_SHOTS.length;
+  const active = (step + offset) % shots.length;
   /* Only the frames that have actually been shown are in the DOM, so the first
      paint fetches one picture per frame rather than the whole set; the rest
      arrive as the rotation reaches them. */
-  const [seen, setSeen] = useState<number[]>([offset % ROTATING_SHOTS.length]);
+  const [seen, setSeen] = useState<number[]>([offset % shots.length]);
   useEffect(() => {
     setSeen(prev => (prev.includes(active) ? prev : [...prev, active]));
   }, [active]);
   return (
     <figure className={`gx-shot gx-shot-cycle ${className}`}>
-      {ROTATING_SHOTS.map((src, i) => (seen.includes(i) ? (
+      {shots.map((src, i) => (seen.includes(i) ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img key={src} src={src} alt="" loading="lazy" className={i === active ? 'is-on' : undefined} />
       ) : null))}
     </figure>
+  );
+}
+
+/** Hero portrait wall: two columns of speaker photographs drifting in opposite
+    directions behind the hero copy. The list is duplicated so the loop has no
+    seam, and the copy is marked aria-hidden because the same people are listed
+    properly in the experts section below. */
+function HeroSpeakerWall({ people }: { people: SpeakerRecord[] }) {
+  const withPhoto = people.filter(p => p.photo);
+  if (withPhoto.length === 0) return null;
+  const columns: SpeakerRecord[][] = [withPhoto, [...withPhoto].reverse()];
+  return (
+    <div className="gx-wall" aria-hidden>
+      {columns.map((list, col) => (
+        <div key={col} className={`gx-wall-col gx-wall-col--${col === 0 ? 'up' : 'down'}`}>
+          <div className="gx-wall-run">
+            {[0, 1].map(pass => list.map(p => (
+              <figure className="gx-wall-card" key={`${col}-${pass}-${p.name}`}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={p.photo} alt="" loading="lazy" />
+                <figcaption>
+                  <strong>{p.name}</strong>
+                  {p.country && <span>{p.country}</span>}
+                </figcaption>
+              </figure>
+            )))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/** One of the hero's two discs, cross-fading through the conference's own
+    speakers. `offset` keeps the two discs on different people. */
+function HeroDisc({ pics, offset, className }: { pics: SpeakerRecord[]; offset: number; className: string }) {
+  const [step, setStep] = useState(0);
+  useEffect(() => {
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+    const id = setInterval(() => setStep(s => s + 1), 4200);
+    return () => clearInterval(id);
+  }, []);
+  const active = (step + offset) % pics.length;
+  const [seen, setSeen] = useState<number[]>([offset % pics.length]);
+  useEffect(() => { setSeen(prev => (prev.includes(active) ? prev : [...prev, active])); }, [active]);
+  return (
+    <figure className={`gx-hero-disc ${className}`}>
+      {pics.map((p, i) => (seen.includes(i) ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img key={p.name} src={p.photo} alt="" loading="lazy" className={i === active ? 'is-on' : undefined} />
+      ) : null))}
+    </figure>
+  );
+}
+
+/** The two discs the light hero artwork leaves for portraits. */
+function HeroDiscs({ people }: { people: SpeakerRecord[] }) {
+  const pics = people.filter(p => p.photo);
+  if (pics.length === 0) return null;
+  return (
+    <div className="gx-hero-discs" aria-hidden>
+      <HeroDisc pics={pics} offset={0} className="gx-hero-disc--a" />
+      <HeroDisc pics={pics} offset={1 % pics.length} className="gx-hero-disc--b" />
+    </div>
   );
 }
 
@@ -160,6 +225,14 @@ function Reveal({ children, className = '' }: { children: React.ReactNode; class
 
 export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName }: Props) {
   const MAIN = mainSiteUrl;
+  /* Why-attend collage. Each conference names its own photos in
+     conference.json so the ten pages do not all show the same pictures;
+     without them the shared defaults above are used. */
+  /* "speakers" hero: portraits drift behind the copy instead of one photo. */
+  const heroLight = conf.hero_style === 'light';
+  const heroWall = conf.hero_style === 'speakers' && (conf.speaker_records ?? []).some(p => p.photo);
+  const whyPhoto = conf.why_photo || `${LEGACY}/networking.webp`;
+  const whyShots = conf.why_shots?.length ? conf.why_shots : ROTATING_SHOTS;
   /* Four speakers, the ones with a portrait first, so the row opens on faces
      and any monogram falls at the end. */
   const speakers: SpeakerRecord[] = [...(conf.speaker_records ?? [])]
@@ -234,7 +307,7 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
   }, [menuOpen]);
 
   return (
-    <main className="lpb gx">
+    <main className={`lpb gx gx--${slug}`}>
       <style dangerouslySetInnerHTML={{ __html: themeStyles }} />
 
       {conf.main_site_top_strip && <EarlyBirdBanner conf={conf} />}
@@ -245,9 +318,20 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
           {/* The main site's lockup, markup and classes unchanged, so the two
               headers carry the same emblem, name and date line. */}
           <a href={MAIN} className="brand brand-v3 gx-brand" aria-label={`${conf.short} home`}>
-            {getLogoSvg(slug)
-              ? <div className="brand-icon" dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
-              : <div className="brand-icon"><img src={`/logos/${logoName}.svg`} alt="" width={80} height={80} /></div>}
+            {/* A conference can supply its whole lockup as one SVG — emblem,
+                name, year and date line already set — in which case it stands
+                in for the composed brand below. */}
+            {conf.logo_lockup ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img className="brand-lockup-img" src={conf.logo_lockup} alt={`${conf.short} logo`} />
+            ) : (
+            <>
+            {conf.logo_image
+              // eslint-disable-next-line @next/next/no-img-element
+              ? <div className="brand-icon"><img src={conf.logo_image} alt="" width={80} height={80} /></div>
+              : getLogoSvg(slug)
+                ? <div className="brand-icon" dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
+                : <div className="brand-icon"><img src={`/logos/${logoName}.svg`} alt="" width={80} height={80} /></div>}
             <div className="brand-divider" />
             <div className="brand-lockup">
               <div className="brand-line-1">{conf.discipline}-<span className="brand-year">20{conf.year_suffix}</span></div>
@@ -255,6 +339,8 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
                 {brandDates}{brandPlace ? <><span className="brand-sep">|</span><span className="brand-country">{brandPlace}</span></> : null}
               </div>
             </div>
+            </>
+            )}
           </a>
 
           {/* A group opens on hover and on focus-within, so it works from the
@@ -324,22 +410,33 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
       </div>
 
       {/* ── Hero ───────────────────────────────────────────────── */}
-      <section className={`gx-hero${conf.hero_banner ? ' gx-hero--banner' : ''}`}>
+      <section className={`gx-hero${heroWall ? ' gx-hero--wall' : heroLight ? ' gx-hero--banner gx-hero--light' : conf.hero_banner ? ' gx-hero--banner' : ''}${conf.hero_veil === 'soft' ? ' gx-hero--veil-soft' : ''} gx-hero--${slug}`}>
+        {heroWall && <HeroSpeakerWall people={conf.speaker_records ?? []} />}
+        {heroLight && conf.hero_discs !== false && <HeroDiscs people={conf.speaker_records ?? []} />}
+        {!heroWall && (
         <div className="gx-hero-media" aria-hidden>
           {/* A conference can supply its own hero artwork; it is cropped to the
               right so the artwork's own wording sits outside the frame and the
               text below stays the only copy on screen. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={conf.hero_banner || `${LEGACY}/speaker.jpg`} alt="" />
-          <span className="gx-hero-veil" />
-          {!conf.hero_banner && <span className="gx-hero-net" />}
+          <img
+            src={conf.hero_banner || `${LEGACY}/speaker.jpg`}
+            alt=""
+            style={{
+              ...(conf.hero_focus ? { objectPosition: conf.hero_focus } : {}),
+              ...(conf.hero_zoom === false ? { animation: 'none' } : {}),
+            }}
+          />
+          {!heroLight && <span className="gx-hero-veil" />}
+          {!conf.hero_banner && !heroLight && <span className="gx-hero-net" />}
         </div>
+        )}
 
         <div className="gx-hero-inner">
           <p className="gx-hero-eyebrow"><span className="gx-hero-dot" aria-hidden />{heroDate}</p>
           <h1 className="gx-hero-title">
-            {conf.hero_title_lead}<br />
-            {conf.hero_title_main} <span className="gx-hero-year">{conf.hero_title_year}</span>
+            <span className="gx-hero-lead">{conf.hero_title_lead}</span><br />
+            <span className="gx-hero-main">{conf.hero_title_main}</span> <span className="gx-hero-year">{conf.hero_title_year}</span>
           </h1>
           <p className="gx-hero-tagline">{conf.about_heading}</p>
           <p className="gx-hero-sub">{conf.hero_subtitle}</p>
@@ -396,13 +493,17 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
       </section>
 
       {/* ── Meet global experts ────────────────────────────────── */}
-      {speakers.length > 0 && (
+      {/* The row is built for four; with fewer the grid reads as a gap rather
+          than a line-up, so conferences that do not have four yet skip it. */}
+      {speakers.length >= 4 && (
         <section className="gx-sec gx-experts">
           <div className="gx-sec-head">
             <div>
               <h2 className="gx-h2">Meet global experts</h2>
               <p className="gx-sec-lead">
-              {roster.length} speakers from {countries.length} countries, presenting across the two days.
+              {/* "experts", not "speakers": most conferences fill this row from their
+                  organising committee, who are not necessarily presenting. */}
+              {roster.length} {roster.length === 1 ? 'expert' : 'experts'} from {countries.length} {countries.length === 1 ? 'country' : 'countries'}.
             </p>
             </div>
             <a href={`${MAIN}/speakers`} className="gx-link">
@@ -473,7 +574,14 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
         </div>
         <Reveal className="gx-topic-grid">
           {tracks.map(([title, tagline], i) => (
-            <a key={title} href={`${MAIN}/sessions`} className="gx-topic" style={{ transitionDelay: `${i * 70}ms` }}>
+            <a
+              key={title}
+              href={`${MAIN}/sessions`}
+              className="gx-topic"
+              /* Tile 08 shares tile 07's delay, so the two arrive together
+                 rather than 08 trailing a step behind. */
+              style={{ transitionDelay: `${(i === 7 ? 6 : i) * 70}ms` }}
+            >
               <span className="gx-topic-no" aria-hidden>{String(i + 1).padStart(2, '0')}</span>
               <span className="gx-topic-icon" aria-hidden>
                 <i className={`fas ${SESSION_ICONS[i % SESSION_ICONS.length]}`} />
@@ -503,10 +611,10 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
           <div className="gx-why-collage">
             <figure className="gx-shot gx-shot-lead">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={`${LEGACY}/networking.webp`} alt="" loading="lazy" />
+              <img src={whyPhoto} alt="" loading="lazy" />
             </figure>
-            <RotatingShot className="gx-shot-a" offset={0} />
-            <RotatingShot className="gx-shot-b" offset={2} />
+            <RotatingShot className="gx-shot-a" offset={0} shots={whyShots} />
+            <RotatingShot className="gx-shot-b" offset={2} shots={whyShots} />
             <p className="gx-why-credo">Ideas.<br />Connections.<br />Impact.</p>
           </div>
         </Reveal>
@@ -515,17 +623,17 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
       {/* ── Choose your pass ───────────────────────────────────── */}
       <section className="gx-sec gx-pass">
         <div className="gx-pass-grid">
-          <div className="gx-pass-intro">
+          <Reveal className="gx-pass-intro">
             <h2 className="gx-h2">Choose your pass</h2>
             <p>
               Flexible options for every professional. Join in person or online and tailor
               your experience to your goals.
             </p>
             <p className="gx-pass-note">Early-bird through <strong>{conf.early_bird_deadline}</strong>.</p>
-          </div>
+          </Reveal>
 
-          <div className="gx-pass-cards">
-            <article className="gx-pass-card">
+          <Reveal className="gx-pass-cards">
+            <article className="gx-pass-card" style={{ transitionDelay: '0ms' }}>
               <h3>Presenter (In-Person)</h3>
               <p className="gx-price"><span>$</span>{tier('presenter', 749)}</p>
               <ul>
@@ -537,7 +645,7 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
               <a href={`${MAIN}/register?category=presenter`} className="gx-btn gx-btn-outline">Select this option</a>
             </article>
 
-            <article className="gx-pass-card gx-pass-card-pop">
+            <article className="gx-pass-card gx-pass-card-pop" style={{ transitionDelay: '110ms' }}>
               <span className="gx-pass-ribbon">Most popular</span>
               <h3>Listener (In-Person)</h3>
               <p className="gx-price"><span>$</span>{tier('listener', 499)}</p>
@@ -553,7 +661,7 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
               </a>
             </article>
 
-            <article className="gx-pass-card">
+            <article className="gx-pass-card" style={{ transitionDelay: '220ms' }}>
               <h3>Student / Trainee</h3>
               <p className="gx-price"><span>$</span>{tier('student', 349)}</p>
               <ul>
@@ -564,7 +672,7 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
               </ul>
               <a href={`${MAIN}/register?category=student`} className="gx-btn gx-btn-outline">Select this option</a>
             </article>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -689,7 +797,7 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
         <div className="gx-end-inner">
           <div>
             <h2>Your next breakthrough<br />starts here.</h2>
-            <p>Join leading minds in {conf.city || conf.country} and be part of what&apos;s next in {conf.discipline.toLowerCase()} and neuroscience.</p>
+            <p>Join leading minds in {conf.city || conf.country} and be part of what&apos;s next in {conf.discipline.toLowerCase()}.</p>
             <div className="gx-hero-cta">
               <a href={`${MAIN}/register`} className="gx-btn gx-btn-primary">
                 Register now <i className="fas fa-arrow-right" />
