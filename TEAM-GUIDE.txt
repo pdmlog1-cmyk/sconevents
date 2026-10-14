@@ -1,0 +1,320 @@
+==========================================================================
+  SCON EVENTS LANDING PAGES  --  TEAM GUIDE
+  Folder : D:\Companies\SCON\Websites\SCON_landing-Pages
+  Live   : https://www.sconevents.com
+  Repo   : https://github.com/pdmlog1-cmyk/sconevents   (PUBLIC)
+  Updated: 01 Sep 2026
+==========================================================================
+
+
+--------------------------------------------------------------------------
+  0.  WHAT THIS PROJECT IS
+--------------------------------------------------------------------------
+
+This is ONE single website that serves landing pages for 10 conferences.
+One code base, 10 pages:
+
+    sconevents.com/addiction          WCAB 2027
+    sconevents.com/biotechnology      GSBG 2027
+    sconevents.com/cardiology         GCCM 2027
+    sconevents.com/food               GSFS 2027
+    sconevents.com/gastroenterology   GCGD 2027
+    sconevents.com/neurology          GCNN 2027
+    sconevents.com/obesity            GSOD 2027
+    sconevents.com/pharmaceutical     WCPD 2027
+    sconevents.com/physicalmedicine   WSPR 2027
+    sconevents.com/surgery            GCSA 2027
+
+Tech    : Next.js 14  (TypeScript)
+Hosting : Cloudflare Workers  (via OpenNext)   -- Vercel is no longer used
+Node    : version 22 required
+
+
+--------------------------------------------------------------------------
+  1.  DOWNLOADING THE CODE
+--------------------------------------------------------------------------
+
+The repo is PUBLIC. You do NOT need any key to download this code.
+No password, no token. A plain git clone is enough.
+
+Install these once:
+    Git         https://git-scm.com/download/win
+    Node.js 22  https://nodejs.org      (LTS version)
+
+Then open Command Prompt and run:
+
+    cd D:\Companies\SCON\Websites
+    git clone https://github.com/pdmlog1-cmyk/sconevents.git SCON_landing-Pages
+    cd SCON_landing-Pages
+    npm install
+
+npm install takes 2-3 minutes. You need an internet connection.
+
+  >>> THIS IS ALREADY DONE. The code is already downloaded in this folder.
+  >>> You only need to run   npm install
+
+
+--------------------------------------------------------------------------
+  2.  GETTING THE LATEST CODE
+--------------------------------------------------------------------------
+
+When someone else makes a change and pushes it, get the latest with:
+
+    cd D:\Companies\SCON\Websites\SCON_landing-Pages
+    git pull
+
+IMPORTANT: ALWAYS run  git pull  before you start working.
+Otherwise you will be working on an old version of the code.
+
+
+--------------------------------------------------------------------------
+  3.  RUNNING THE SITE ON YOUR COMPUTER
+--------------------------------------------------------------------------
+
+    cd D:\Companies\SCON\Websites\SCON_landing-Pages
+    npm run dev
+
+Then open in your browser:
+
+    http://localhost:3000/addiction
+    http://localhost:3000/cardiology
+    ... or any other slug
+
+To stop it, press  Ctrl + C  in the terminal.
+
+Note: when you save a file, the browser refreshes automatically.
+
+
+--------------------------------------------------------------------------
+  4.  WHERE TO EDIT WHAT
+--------------------------------------------------------------------------
+
+Each conference has its own folder under  data\<slug>\
+For example:   data\cardiology\
+
+That folder contains 10 JSON files:
+
+  conference.json    Conference name, short name, dates, city, venue, email
+  marketing.json     Home page "Important Dates" box, headlines, CTA text
+  registration.json  Pricing, Early Bird / Late phases, closing dates
+  tracks.json        35 session tracks (only the first 6 show on the page)
+  speakers.json      Speakers list
+  committee.json     Organizing committee
+  gallery.json       Photos
+  common.json        FAQ questions & answers, footer text
+  navigation.json    Menu links
+  seo.json           Title & description shown in Google
+
+To change design / layout (CAREFUL -- this affects all 10 pages):
+
+  app\[conference]\LandingClient.tsx    Full page UI
+  lib\conferences.ts                    Theme colors, gtag ID, main site URL
+  lib\logoSvgs.ts                       All 10 logos (inline SVG)
+
+When editing JSON, watch your commas , and brackets { } carefully.
+A single wrong comma will stop the page from opening.
+
+
+--------------------------------------------------------------------------
+  5.  ***  CHANGING DATES  --  5 FILES  ***
+--------------------------------------------------------------------------
+
+THIS IS VERY IMPORTANT. If a conference date changes, you must update it
+in 5 files. If you miss even one, the SAME page will show TWO different
+dates.
+
+  1. data\<slug>\conference.json
+        dateline, dates, dates_short, start_date_iso,
+        abstract_deadline, early_bird_deadline
+
+  2. data\<slug>\marketing.json
+        key_dates  ->  Abstract Deadline, Early Bird Ends,
+                       Acceptance, Conference Opens
+
+  3. data\<slug>\registration.json
+        phases[Early Bird].closes, phases[Late].closes,
+        form.checkin_dates, form.checkout_dates
+
+  4. data\<slug>\common.json
+        FAQ entry "How can I register"            (early bird date)
+        FAQ entry "abstract submission deadline"
+
+  5. data\<slug>\seo.json
+        pages.index.description       (conference dates)
+        pages.abstract.description    (deadline)
+
+After changing them, scroll through the whole page in the browser and
+confirm the date is the same everywhere.
+
+
+--------------------------------------------------------------------------
+  6.  DATES & LOCATIONS TABLE   (Authoritative -- 15 Sep 2026)
+--------------------------------------------------------------------------
+
+ Short      City       Venue                 Dates             EarlyBird     Abstract
+ --------   ---------  --------------------  ---------------   -----------   -----------
+ GSBG 2027  Singapore  Hotel Village Changi  Mar 25-26, 2027   Oct 2 2026    Sep 30 2026
+ WCPD 2027  Singapore  Hotel Village Changi  Mar 25-26, 2027   Oct 2 2026    Sep 30 2026
+ GCCM 2027  Barcelona  --                    Apr 27-28, 2027   Oct 16 2026   Oct 14 2026
+ GCSA 2027  Barcelona  --                    Apr 29-30, 2027   Oct 16 2026   Oct 14 2026
+ WSPR 2027  Singapore  Hotel Village Changi  May 27-28, 2027   Oct 16 2026   Oct 14 2026
+ GSFS 2027  Singapore  Hotel Village Changi  May 27-28, 2027   Oct 16 2026   Oct 14 2026
+ GSOD 2027  Singapore  Hotel Village Changi  May 27-28, 2027   Oct 16 2026   Oct 14 2026
+ GCGD 2027  Singapore  Hotel Village Changi  May 27-28, 2027   Oct 16 2026   Oct 14 2026
+ GCNN 2027  Prague     --                    Jun 22-23, 2027   Oct 30 2026   Oct 28 2026
+ WCAB 2027  Prague     --                    Jun 24-25, 2027   Oct 30 2026   Oct 28 2026
+
+ Abstract = FIRST ROUND of abstract submission (changed 15 Sep 2026).
+ Early bird always ends on the Friday after it.
+
+ GCNN and WCAB are in  JUNE 2027.
+ (NOT April. They were wrongly set to April once before and were
+  corrected on 31 Aug 2026.)
+
+ The "Important Dates" box always uses this fixed order:
+      1. Early Bird Ends    2. Abstract Deadline
+      3. Acceptance         4. Conference Opens
+
+
+--------------------------------------------------------------------------
+  7.  BUILD   (Check that your change is correct)
+--------------------------------------------------------------------------
+
+ALWAYS run the build before you push:
+
+    npm run build
+
+If it says "Compiled successfully", you are fine.
+If you get an error -- DO NOT PUSH. Fix the error first.
+
+IMPORTANT:  npm run dev  does NOT catch these errors.
+            Only  npm run build  catches them.
+            That is why you must run the build before pushing.
+
+
+--------------------------------------------------------------------------
+  8.  PUSHING YOUR CHANGES TO GITHUB
+--------------------------------------------------------------------------
+
+    git status                    (see what you changed)
+    git add .
+    git commit -m "Update cardiology dates and venue"
+    git push origin main
+
+The first time you push, GitHub will ask you to log in.
+You need your GitHub username + a Personal Access Token (NOT your password).
+
+How to create the token:
+    github.com  -->  Settings  -->  Developer settings
+    -->  Personal access tokens  -->  Tokens (classic)
+    -->  Generate new token  -->  tick the "repo" scope  -->  Generate
+    Copy the token and paste it where the password is asked.
+    (The token is shown only once -- save it somewhere safe.)
+
+CAREFUL: git push sends your work to the main branch. Along with your
+         change, any other pending commits will also go live.
+         So before pushing, run:
+
+             git log HEAD..origin/main
+
+         If anything shows up in the result, tell the team.
+
+
+--------------------------------------------------------------------------
+  9.  DEPLOYING TO THE LIVE SITE   (Cloudflare)
+--------------------------------------------------------------------------
+
+  ***  TEAM MEMBERS SHOULD NOT DO THIS.  ADMIN ONLY.  ***
+  ***  Deploying needs the Cloudflare API token, which is not shared.  ***
+
+What you should do: push your code, then tell the admin.
+
+--- Admin only (for reference) ---
+
+    npm run build:cf
+    set CLOUDFLARE_API_TOKEN=<token from .env file>
+    npx wrangler whoami        <-- must print "pdmlog1@gmail.com"
+    npx wrangler deploy
+
+  Cloudflare account : pdmlog1@gmail.com
+  Account ID         : 71e2bd85acab89c801465786b37e0fcd
+  Worker name        : sconevents
+  Token location     : C:\xampp\htdocs\SCON\sconevents-landing\.env
+                       (gitignored -- NEVER commit it)
+
+
+
+--------------------------------------------------------------------------
+  10.  VERIFYING THE LIVE SITE   (After deploy)
+--------------------------------------------------------------------------
+
+In the browser:
+    https://www.sconevents.com/cardiology
+
+If you test  www.sconevents.com  from the command line, it returns 403.
+That is NOT a bug -- it is Cloudflare bot protection. It works fine in a
+browser. For command line testing, use this URL instead:
+
+    https://sconevents.pdmlog1.workers.dev/cardiology
+
+If your change does not appear immediately because of Cloudflare cache,
+press  Ctrl + Shift + R  to do a hard refresh.
+
+
+--------------------------------------------------------------------------
+  11.  RULES  --  PLEASE REMEMBER THESE
+--------------------------------------------------------------------------
+
+  1. ALWAYS run  git pull  before you start working
+
+  2. If dates change, update all 5 FILES  (see Section 5)
+
+  3. ALWAYS run  npm run build  before pushing
+     If you do not get "Compiled successfully", do not push
+
+  4. NEVER commit the  .env  file to GitHub
+     It contains the live Cloudflare key
+
+  5. Only edit your own conference folder
+     data\<your-slug>\ ...  do not touch the others
+
+  6. If you are editing  LandingClient.tsx  or anything in  lib\
+     it affects all 10 pages -- tell the team first
+
+  7. Only the admin deploys. You just push and inform them.
+
+  8. If your local site becomes slow or starts returning 404,
+     press Ctrl+C and run  npm run dev  again. This is a common issue.
+
+
+--------------------------------------------------------------------------
+  12.  TROUBLESHOOTING
+--------------------------------------------------------------------------
+
+  Page will not open / 500 error
+      -->  There is a wrong comma or bracket in the JSON file you edited.
+           Paste that file into  https://jsonlint.com  to check it.
+
+  "npm is not recognized"
+      -->  Node.js is not installed. Install it from nodejs.org, then
+           close Command Prompt and open it again.
+
+  npm run dev  --  port already in use
+      -->  Another dev server is already running. Close the other
+           terminal, or use   npm run dev -- -p 3001
+
+  git pull  gives a conflict
+      -->  Your changes clash with someone else's changes.
+           Do not try to fix it yourself -- tell the team.
+
+  I changed the date but the page still shows the old one
+      -->  You missed one of the 5 files. Check Section 5 again.
+
+  Build fails with "Type error"
+      -->  This is a TypeScript problem. Take a screenshot and send it
+           to the team.
+
+
+==========================================================================
+  End of guide.   If you have any doubts, ask your team lead.
+==========================================================================
