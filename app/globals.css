@@ -14749,3 +14749,878 @@ textarea.is-invalid {
     }
 }
 
+
+/* ==========================================================================
+   Hero portrait wall — used when a conference sets hero_style: "speakers".
+   Two columns of speaker photographs drift slowly in opposite directions
+   behind the hero copy, in place of a single hero photograph.
+   ========================================================================== */
+.gx-hero--wall { background: var(--ink-deep, var(--ink)); }
+.gx-hero--wall .gx-hero-side { display: none; }
+/* Keep the copy clear of the portraits on wide screens. */
+.gx-hero--wall .gx-hero-inner { padding-right: clamp(28px, 38vw, 560px); }
+
+.gx-wall {
+    position: absolute;
+    top: 0; bottom: 0; right: 0;
+    width: min(42%, 560px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding: 0 22px;
+    overflow: hidden;
+    z-index: -1;
+}
+.gx-wall-col { overflow: hidden; }
+.gx-wall-run { display: flex; flex-direction: column; gap: 18px; will-change: transform; }
+.gx-wall-col--up   .gx-wall-run { animation: gx-wall-up   46s linear infinite; }
+.gx-wall-col--down .gx-wall-run { animation: gx-wall-down 54s linear infinite; }
+/* The list is rendered twice, so travelling exactly half the track loops seamlessly. */
+@keyframes gx-wall-up   { from { transform: translateY(0); }    to { transform: translateY(-50%); } }
+@keyframes gx-wall-down { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+
+.gx-wall-card {
+    position: relative;
+    margin: 0;
+    flex: 0 0 auto;
+    aspect-ratio: 4 / 5;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.65);
+    background: color-mix(in srgb, var(--accent) 22%, var(--ink));
+}
+.gx-wall-card img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; display: block; }
+.gx-wall-card figcaption {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 26px 12px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.82), transparent);
+    color: #fff;
+}
+.gx-wall-card figcaption strong { font-size: 12px; font-weight: 700; line-height: 1.25; }
+.gx-wall-card figcaption span {
+    font-size: 9.5px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* Melt the wall into the hero: fade on the left, and at top and bottom. */
+.gx-wall::before, .gx-wall::after { content: ''; position: absolute; pointer-events: none; z-index: 2; }
+.gx-wall::before {
+    inset: 0 auto 0 0; width: 34%;
+    background: linear-gradient(to right, var(--ink-deep, var(--ink)), transparent);
+}
+.gx-wall::after {
+    inset: 0; 
+    background:
+        linear-gradient(to bottom, var(--ink-deep, var(--ink)) 0%, transparent 16%, transparent 84%, var(--ink-deep, var(--ink)) 100%);
+}
+
+/* Below this the copy needs the full width, so the wall steps aside. */
+@media (max-width: 1100px) {
+    .gx-wall { display: none; }
+    .gx-hero--wall .gx-hero-inner { padding-right: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .gx-wall-col--up .gx-wall-run, .gx-wall-col--down .gx-wall-run { animation: none; }
+}
+
+/* ==========================================================================
+   Light hero — used when a conference sets hero_style: "light".
+   The artwork already carries its own headline; a light wash over the left
+   hides that baked-in copy so the real, live text can sit on top of it.
+   ========================================================================== */
+.gx-hero--light { background: #fdf7f7; color: var(--ink); }
+.gx-hero--light .gx-hero-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+        #fdf7f7 0%, #fdf7f7 46%,
+        rgba(253, 247, 247, 0.92) 54%,
+        rgba(253, 247, 247, 0.45) 62%,
+        transparent 70%);
+}
+/* Date pill: light, with the conference's own red. */
+.gx-hero--light .gx-hero-eyebrow {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
+    color: var(--ink);
+    box-shadow: 0 6px 18px -10px rgba(60, 10, 14, 0.5);
+}
+.gx-hero--light .gx-hero-dot { background: var(--accent); }
+/* "World Congress on" stays near-black; the conference name takes the red. */
+.gx-hero--light .gx-hero-title { color: #16100f; text-shadow: none; }
+.gx-hero--light .gx-hero-main { color: var(--accent-deep, var(--accent)); }
+.gx-hero--light .gx-hero-year { color: color-mix(in srgb, var(--accent) 55%, #ffffff); }
+.gx-hero--light .gx-hero-tagline { color: #1b1413; }
+/* A short rule under the tagline, as in the artwork. */
+.gx-hero--light .gx-hero-tagline::after {
+    content: '';
+    display: block;
+    width: 84px;
+    height: 3px;
+    margin: 18px 0 0;
+    border-radius: 2px;
+    background: var(--accent-deep, var(--accent));
+}
+.gx-hero--light .gx-hero-sub { color: #4a3f3e; }
+.gx-hero--light .gx-btn-ghost {
+    background: rgba(255, 255, 255, 0.75);
+    border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+    color: var(--accent-deep, var(--accent));
+}
+.gx-hero--light .gx-btn-ghost:hover { background: #fff; }
+.gx-hero--light .gx-hero-scroll { color: #6b5b59; }
+.gx-hero--light .gx-hero-scroll-rail { background: rgba(80, 40, 40, 0.3); }
+/* On narrow screens the art sits behind the copy, so wash the whole thing. */
+@media (max-width: 860px) {
+    .gx-hero--light .gx-hero-media::after {
+        background: linear-gradient(to bottom, rgba(253,247,247,0.95), rgba(253,247,247,0.82));
+    }
+}
+
+/* --- Light hero: fixed proportions, tighter copy, portrait discs ---------
+   The hero takes the artwork's own aspect ratio, so the art is never cropped
+   and the two discs can be pinned to the exact spots the artwork leaves for
+   them — at any screen width. */
+.gx-hero--light {
+    aspect-ratio: 1672 / 577;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+}
+.gx-hero--light .gx-hero-media img { object-position: 50% 50%; }
+.gx-hero--light .gx-hero-inner {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/* Copy trimmed to sit inside the shorter hero. */
+.gx-hero--light .gx-hero-eyebrow { margin-bottom: 14px; }
+.gx-hero--light .gx-hero-title { font-size: clamp(26px, 3.2vw, 44px); margin-bottom: 10px; }
+.gx-hero--light .gx-hero-tagline { font-size: clamp(15px, 1.35vw, 20px); margin-bottom: 6px; }
+.gx-hero--light .gx-hero-tagline::after { margin-top: 12px; }
+.gx-hero--light .gx-hero-sub { font-size: clamp(13px, 1.05vw, 15px); margin: 12px 0 18px; max-width: 42ch; }
+.gx-hero--light .gx-hero-cta { margin-top: 4px; }
+.gx-hero--light .gx-hero-scroll { display: none; }
+
+.gx-hero-discs { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.gx-hero-disc {
+    position: absolute;
+    margin: 0;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    box-shadow: 0 18px 44px -18px rgba(60, 10, 14, 0.55);
+    background: color-mix(in srgb, var(--accent) 12%, #e9e2e2);
+}
+.gx-hero-disc img {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    /* Anchored to the very top of the portrait: the circular mask curves in
+       over the crown of the head, so any crop there clips it. */
+    object-position: 50% 0%;
+    opacity: 0; transition: opacity 0.9s ease;
+}
+.gx-hero-disc img.is-on { opacity: 1; }
+/* Pinned over the discs the artwork already draws, a touch larger so the
+   printed ones disappear underneath. */
+.gx-hero-disc--a { left: 85.4%; top: 52.3%; height: 69%; }
+.gx-hero-disc--b { left: 70.8%; top: 69.5%; height: 43%; }
+
+@media (max-width: 860px) {
+    .gx-hero--light { aspect-ratio: auto; }
+    .gx-hero--light .gx-hero-inner { padding-top: 40px; padding-bottom: 44px; }
+    .gx-hero-discs { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .gx-hero-disc img { transition: none; }
+}
+
+/* --- Light hero, quieter ------------------------------------------------
+   The artwork was pulling the eye before the headline did, and the hard edge
+   between the washed left and the photograph read as two separate blocks.
+   The art is now blurred back and the wash carries across the full width, so
+   it behaves as one soft backdrop and the copy leads. */
+.gx-hero--light .gx-hero-media img {
+    filter: blur(5px) saturate(0.78) brightness(1.1);
+    /* scaled up so the blur does not bleed a soft edge in from the frame */
+    transform: scale(1.06);
+}
+.gx-hero--light .gx-hero-media::after {
+    background:
+        linear-gradient(to right,
+            #fdf7f7 0%,
+            #fdf7f7 38%,
+            rgba(253, 247, 247, 0.93) 52%,
+            rgba(253, 247, 247, 0.80) 66%,
+            rgba(253, 247, 247, 0.70) 82%,
+            rgba(253, 247, 247, 0.66) 100%),
+        linear-gradient(to bottom, rgba(253, 247, 247, 0.35), rgba(253, 247, 247, 0) 45%);
+}
+/* The discs stay sharp against the softened backdrop — they are the one
+   place a face should read clearly — but sit a little smaller and calmer. */
+.gx-hero-disc {
+    border-width: 4px;
+    box-shadow: 0 14px 32px -18px rgba(60, 10, 14, 0.45);
+}
+.gx-hero-disc--a { height: 60%; }
+.gx-hero-disc--b { height: 37%; left: 70.2%; top: 72%; }
+
+/* --- Light hero: artwork further back, portrait panels instead of discs ---
+   The artwork prints its own two circles. Rather than try to erase them, the
+   backdrop is faded far enough that they read as soft shapes in the wash,
+   and the portraits sit on top as tall rounded panels. */
+.gx-hero--light .gx-hero-media img {
+    filter: blur(7px) saturate(0.7) brightness(1.14);
+    transform: scale(1.08);
+}
+.gx-hero--light .gx-hero-media::after {
+    background:
+        linear-gradient(to right,
+            #fdf7f7 0%, #fdf7f7 40%,
+            rgba(253, 247, 247, 0.95) 54%,
+            rgba(253, 247, 247, 0.88) 70%,
+            rgba(253, 247, 247, 0.85) 100%),
+        linear-gradient(to bottom, rgba(253, 247, 247, 0.4), rgba(253, 247, 247, 0.15) 60%);
+}
+/* Tall rounded panels, as in the reference — not circles. */
+.gx-hero-disc {
+    aspect-ratio: 0.66;
+    border-radius: 46% / 26%;
+    border: 5px solid #fff;
+    box-shadow: 0 22px 48px -20px rgba(60, 10, 14, 0.5);
+}
+.gx-hero-disc img { object-position: 50% 12%; }
+.gx-hero-disc--a { left: 77%; top: 50%; height: 84%; }
+.gx-hero-disc--b { left: 93%; top: 70%; aspect-ratio: 0.72; border-radius: 22% / 15%; height: 50%; }
+
+/* --- Light hero panels, matched to the reference ------------------------
+   Large panel: a true oval — the side edges curve all the way, so the
+   horizontal radius is a full half-width. Small panel: a rounded rectangle
+   with a modest radius, set lower and to the right with a small gap. */
+.gx-hero-disc--a {
+    aspect-ratio: 0.64;
+    border-radius: 50% / 32%;
+    border-width: 4px;
+    left: 76%;
+    top: 50%;
+    height: 86%;
+}
+.gx-hero-disc--b {
+    aspect-ratio: 0.72;
+    border-radius: 12% / 8%;
+    border-width: 4px;
+    left: 92.5%;
+    top: 66%;
+    height: 52%;
+}
+/* Portraits are wider than these tall frames, so they crop at the sides;
+   centre them and keep the head just below the top curve. */
+.gx-hero-disc img { object-position: 50% 16%; }
+
+/* --- Light hero: larger type, portrait panels ---------------------------
+   The copy is the point of the hero, so it gets the size. The hero is no
+   longer pinned to the artwork's exact proportions — the printed circles are
+   washed out now, so the panels no longer need to line up with them, and the
+   box can grow to fit bigger text. */
+.gx-hero--light {
+    aspect-ratio: auto;
+    min-height: min(540px, 38vw);
+}
+.gx-hero--light .gx-hero-inner { padding-top: 44px; padding-bottom: 48px; }
+.gx-hero--light .gx-hero-title {
+    font-size: clamp(32px, 4.2vw, 58px);
+    line-height: 1.04;
+    margin-bottom: 14px;
+}
+.gx-hero--light .gx-hero-tagline {
+    font-size: clamp(17px, 1.65vw, 25px);
+    font-weight: 600;
+}
+.gx-hero--light .gx-hero-sub {
+    font-size: clamp(14px, 1.15vw, 17px);
+    line-height: 1.65;
+    max-width: 46ch;
+    margin: 16px 0 22px;
+}
+.gx-hero--light .gx-hero-eyebrow { font-size: clamp(11px, 0.9vw, 13px); }
+
+/* Both panels portrait, as in the reference — the smaller one was reading
+   as a square. */
+.gx-hero-disc--a { aspect-ratio: 0.62; height: 88%; left: 76.5%; top: 50%; }
+.gx-hero-disc--b { aspect-ratio: 0.60; height: 56%; left: 92.5%; top: 68%; }
+
+/* Both hero panels share the same oval, so the pair reads as one set. */
+.gx-hero-disc--b { border-radius: 50% / 32%; }
+
+/* --- Choose your pass: motion -------------------------------------------
+   The cards rise in as the section arrives (staggered by the inline delays),
+   lift on hover, and the popular card carries a slow shine across its ribbon
+   so the eye lands there first. */
+.gx-pass-card {
+    transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
+                box-shadow 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
+                border-color 0.35s ease;
+    will-change: transform;
+}
+.gx-pass-card:hover {
+    transform: translateY(-8px);
+    border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+    box-shadow: 0 26px 50px -24px rgba(32, 10, 12, 0.45);
+}
+.gx-pass-card-pop { transform: translateY(-6px); }
+.gx-pass-card-pop:hover { transform: translateY(-14px); }
+.gx-pass-card .gx-btn { transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+.gx-pass-card:hover .gx-btn i { transform: translateX(3px); }
+.gx-pass-card .gx-btn i { transition: transform 0.25s ease; }
+
+/* Ribbon shine on the popular card. */
+.gx-pass-ribbon { position: relative; overflow: hidden; }
+.gx-pass-ribbon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+    animation: gx-ribbon-shine 4.5s ease-in-out infinite;
+}
+@keyframes gx-ribbon-shine {
+    0%, 62% { left: -120%; }
+    100% { left: 130%; }
+}
+/* The price counts up very slightly in scale as the card lands. */
+.gx-reveal.gx-pass-cards.is-in .gx-price { animation: gx-price-pop 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) both; }
+@keyframes gx-price-pop {
+    from { transform: scale(0.92); opacity: 0.4; }
+    to   { transform: scale(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .gx-pass-card, .gx-pass-card:hover, .gx-pass-card-pop, .gx-pass-card-pop:hover { transition: none; transform: none; }
+    .gx-pass-ribbon::after { animation: none; display: none; }
+    .gx-reveal.gx-pass-cards.is-in .gx-price { animation: none; }
+}
+
+/* Tile 08 hovers like tile 07: the lamp glow behind the microscope is dropped
+   and the glyph strikes with the same flicker the bolt uses. */
+.gx-topic:nth-child(8) .gx-topic-icon::before { content: none; }
+.gx-topic:nth-child(8):hover .gx-topic-icon i {
+    animation: gx-icon-strike 1.8s ease-in-out infinite;
+    transform: none;
+    filter: none;
+}
+
+/* --- Light hero, venue artwork -----------------------------------------
+   This artwork carries no headline of its own, so it needs no heavy wash to
+   hide one. A light touch keeps the venue and the arriving delegates legible
+   while the left stays clean enough for the copy. */
+.gx-hero--light .gx-hero-media img {
+    filter: blur(1.5px) saturate(0.95) brightness(1.04);
+    transform: scale(1.03);
+}
+.gx-hero--light .gx-hero-media::after {
+    background:
+        linear-gradient(to right,
+            rgba(253, 247, 247, 0.97) 0%,
+            rgba(253, 247, 247, 0.92) 34%,
+            rgba(253, 247, 247, 0.62) 50%,
+            rgba(253, 247, 247, 0.22) 64%,
+            rgba(253, 247, 247, 0.08) 100%);
+}
+
+/* The venue artwork is shown as supplied: no blur, no wash. Its left side is
+   already near-white, so the dark copy reads against it unaided. */
+.gx-hero--light .gx-hero-media img { filter: none; transform: none; }
+.gx-hero--light .gx-hero-media::after { background: none; }
+
+/* --- Light hero: lift the copy off the artwork --------------------------
+   A soft light panel sits under the text only, fading out before the venue,
+   so the headline reads strongly while the artwork stays as supplied. */
+.gx-hero--light .gx-hero-media::after {
+    background: linear-gradient(to right,
+        rgba(253, 247, 247, 0.97) 0%,
+        rgba(253, 247, 247, 0.93) 24%,
+        rgba(253, 247, 247, 0.72) 38%,
+        rgba(253, 247, 247, 0.32) 48%,
+        rgba(253, 247, 247, 0.06) 56%,
+        transparent 62%);
+}
+/* A faint white halo keeps the letters crisp where the art is busiest. */
+.gx-hero--light .gx-hero-title,
+.gx-hero--light .gx-hero-tagline { text-shadow: 0 2px 14px rgba(255, 255, 255, 0.9); }
+.gx-hero--light .gx-hero-sub {
+    color: #3a2d2c;
+    text-shadow: 0 1px 10px rgba(255, 255, 255, 0.95);
+}
+.gx-hero--light .gx-hero-eyebrow { box-shadow: 0 8px 22px -12px rgba(60, 10, 14, 0.55); }
+
+/* --- Light hero: the obesity hero's gradient ----------------------------
+   The cream wash read as a flat panel laid over the left of the artwork.
+   This replaces it with the same veil the banner heroes use: the conference's
+   deep ink solid behind the copy, thinning across the picture and clearing it
+   entirely on the right, plus a soft lift from the bottom edge. The copy
+   turns light to sit on it, exactly as it does on /obesity. */
+.gx-hero--light { background: var(--ink-deep); color: #fff; }
+.gx-hero--light .gx-hero-media::after {
+    background:
+        linear-gradient(90deg,
+            var(--ink-deep) 0 26%,
+            color-mix(in srgb, var(--ink-deep) 90%, transparent) 40%,
+            color-mix(in srgb, var(--ink-deep) 56%, transparent) 52%,
+            color-mix(in srgb, var(--ink-deep) 20%, transparent) 62%,
+            transparent 72%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 40%, transparent), transparent 48%);
+}
+/* Copy, back to the light-on-dark set the other heroes use. */
+.gx-hero--light .gx-hero-eyebrow {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: rgba(255, 255, 255, 0.82);
+    box-shadow: none;
+}
+.gx-hero--light .gx-hero-dot { background: var(--accent-btn, #fff); }
+.gx-hero--light .gx-hero-title,
+.gx-hero--light .gx-hero-main {
+    color: #fff;
+    text-shadow: 0 2px 22px color-mix(in srgb, var(--ink-deep) 75%, transparent);
+}
+.gx-hero--light .gx-hero-year {
+    color: var(--line-2);
+    text-shadow: none;
+}
+.gx-hero--light .gx-hero-tagline {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 2px 18px color-mix(in srgb, var(--ink-deep) 70%, transparent);
+}
+.gx-hero--light .gx-hero-tagline::after {
+    background: var(--accent-btn, var(--accent));
+}
+.gx-hero--light .gx-hero-sub {
+    color: rgba(255, 255, 255, 0.88);
+    text-shadow: 0 1px 14px color-mix(in srgb, var(--ink-deep) 65%, transparent);
+}
+.gx-hero--light .gx-btn-ghost {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+.gx-hero--light .gx-btn-ghost:hover { background: rgba(255, 255, 255, 0.18); }
+.gx-hero--light .gx-hero-scroll { color: rgba(255, 255, 255, 0.7); }
+.gx-hero--light .gx-hero-scroll-rail { background: rgba(255, 255, 255, 0.3); }
+/* Narrow screens: the artwork sits behind the copy, so the veil covers it. */
+@media (max-width: 860px) {
+    .gx-hero--light .gx-hero-media::after {
+        background: linear-gradient(180deg,
+            color-mix(in srgb, var(--ink-deep) 92%, transparent) 0 46%,
+            color-mix(in srgb, var(--ink-deep) 74%, transparent) 100%);
+    }
+}
+
+/* --- Hero artwork that arrives with its own gradient --------------------
+   Some supplied artwork already carries a wash across its left side in the
+   conference's own deep ink. Stacking the full veil on top of that paints the
+   picture twice and the midtones go muddy, so this variant only tops the wash
+   up: a light hand where the artwork is already dark, clearing by the time the
+   artwork does. The bottom lift is kept — it sits where no baked wash runs. */
+.gx-hero--veil-soft .gx-hero-veil {
+    background:
+        linear-gradient(90deg,
+            color-mix(in srgb, var(--ink-deep) 64%, transparent) 0 32%,
+            color-mix(in srgb, var(--ink-deep) 52%, transparent) 46%,
+            color-mix(in srgb, var(--ink-deep) 34%, transparent) 58%,
+            color-mix(in srgb, var(--ink-deep) 16%, transparent) 68%,
+            transparent 78%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 38%, transparent), transparent 50%);
+}
+@media (max-width: 860px) {
+    /* one column: the artwork runs behind the copy, so it needs the full veil
+       the other heroes use on narrow screens. */
+    .gx-hero--veil-soft .gx-hero-veil {
+        background: linear-gradient(180deg,
+            color-mix(in srgb, var(--ink-deep) 88%, transparent) 0 46%,
+            color-mix(in srgb, var(--ink-deep) 70%, transparent) 100%);
+    }
+}
+
+/* --- WSPR hero headline -------------------------------------------------
+   The lead line is an introduction, not the title, so it steps back: smaller,
+   regular weight, slightly spaced. The year picks up the conference's orange
+   rather than the pale default, so it reads as part of the brand. Scoped to
+   this conference — the other nine keep the headline they have. */
+.gx-hero--physicalmedicine .gx-hero-year {
+    color: var(--accent);
+    /* the shared rule paints the year with a gradient via background-clip, so
+       that has to go for the flat orange to show */
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--accent);
+}
+
+/* The artwork was competing with the copy, so it is held back a little: a
+   straight brightness cut on the picture itself, with a touch of saturation
+   off so the blues sit quieter against the conference's orange. */
+.gx-hero--physicalmedicine .gx-hero-media img {
+    filter: brightness(0.76) saturate(0.92);
+}
+
+/* --- GSFS hero ----------------------------------------------------------
+   The banner holds the whole photograph rather than a crop of it (the sides are
+   filled with a blurred, darkened copy of the picture itself), so nothing is cut
+   off. The picture read too bright and too busy behind the copy, so it is dimmed
+   here and the veil is carried further across it than the shared banner one. */
+.gx-hero--food .gx-hero-media img {
+    filter: brightness(0.78) saturate(0.95);
+    /* wide enough that nothing is cropped sideways */
+    object-position: 50% 50%;
+}
+.gx-hero--food .gx-hero-veil {
+    background:
+        linear-gradient(90deg,
+            var(--ink-deep) 0 30%,
+            color-mix(in srgb, var(--ink-deep) 88%, transparent) 44%,
+            color-mix(in srgb, var(--ink-deep) 68%, transparent) 56%,
+            color-mix(in srgb, var(--ink-deep) 46%, transparent) 68%,
+            color-mix(in srgb, var(--ink-deep) 28%, transparent) 80%,
+            color-mix(in srgb, var(--ink-deep) 16%, transparent) 90%,
+            color-mix(in srgb, var(--ink-deep) 10%, transparent) 100%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 52%, transparent), transparent 54%);
+}
+/* Narrow: the copy sits over the middle of the picture, so the wash runs down
+   it instead of across. */
+@media (max-width: 860px) {
+    .gx-hero--food .gx-hero-veil {
+        background: linear-gradient(180deg,
+            color-mix(in srgb, var(--ink-deep) 86%, transparent) 0 46%,
+            color-mix(in srgb, var(--ink-deep) 72%, transparent) 100%);
+    }
+
+    /* a narrow frame crops hard sideways, so it is panned onto the group
+       rather than the fill to the left of it */
+    .gx-hero--food .gx-hero-media img {
+        object-position: 62% 50%;
+    }
+}
+
+/* GSFS: the year in the conference's own amber. var(--accent) resolves to
+   #ca8a04 for this conference, so it stays tied to the theme. */
+.gx-hero--food .gx-hero-year {
+    color: var(--accent);
+    /* the shared rule paints the year through background-clip, which has to be
+       cleared for a flat colour to show */
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--accent);
+}
+
+/* GCNN: the year in the conference's own purple. var(--accent) resolves to
+   #7e22ce for this conference, so it stays tied to the theme. */
+.gx-hero--neurology .gx-hero-year {
+    color: var(--accent);
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--accent);
+}
+
+/* --- GCCM hero ----------------------------------------------------------
+   The artwork was reading brighter than the copy, so it is held back and the
+   veil is carried further across it; the year takes the conference's own rose.
+   var(--accent) resolves to #e8536e here, so it stays tied to the theme. */
+.gx-hero--cardiology .gx-hero-media img {
+    filter: brightness(0.68) saturate(0.88);
+}
+.gx-hero--cardiology .gx-hero-veil {
+    background:
+        linear-gradient(90deg,
+            var(--ink-deep) 0 28%,
+            color-mix(in srgb, var(--ink-deep) 84%, transparent) 42%,
+            color-mix(in srgb, var(--ink-deep) 58%, transparent) 54%,
+            color-mix(in srgb, var(--ink-deep) 34%, transparent) 64%,
+            color-mix(in srgb, var(--ink-deep) 16%, transparent) 74%,
+            color-mix(in srgb, var(--ink-deep) 5%, transparent) 84%,
+            transparent 92%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 40%, transparent), transparent 48%);
+}
+.gx-hero--cardiology .gx-hero-year {
+    color: var(--accent);
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--accent);
+}
+
+/* GSBG: the year in the conference's own emerald. var(--accent) resolves to
+   #059669 for this conference, so it stays tied to the theme. */
+.gx-hero--biotechnology .gx-hero-year {
+    color: var(--accent);
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--accent);
+}
+
+/* --- WSPR hero: the same veil GCCM uses ---------------------------------
+   This artwork arrives with its own wash baked into its left third, which is
+   why it had the lighter veil-soft treatment. The conference's deep ink is
+   near enough to that baked colour that the full GCCM gradient lays over it
+   without a seam, so the two heroes now carry the same wash. It comes after
+   .gx-hero--veil-soft, so it wins at equal specificity. */
+.gx-hero--physicalmedicine .gx-hero-veil {
+    background:
+        linear-gradient(90deg,
+            var(--ink-deep) 0 34%,
+            color-mix(in srgb, var(--ink-deep) 94%, transparent) 46%,
+            color-mix(in srgb, var(--ink-deep) 76%, transparent) 58%,
+            color-mix(in srgb, var(--ink-deep) 52%, transparent) 68%,
+            color-mix(in srgb, var(--ink-deep) 28%, transparent) 78%,
+            color-mix(in srgb, var(--ink-deep) 10%, transparent) 88%,
+            transparent 96%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 56%, transparent), transparent 54%);
+}
+/* Narrow screens put the copy over the picture, so both of these heroes need
+   the vertical veil the shared rule uses — these scoped rules sit after it in
+   the file and would otherwise keep the horizontal wash on mobile. */
+@media (max-width: 860px) {
+    .gx-hero--physicalmedicine .gx-hero-veil,
+    .gx-hero--cardiology .gx-hero-veil {
+        background: linear-gradient(180deg,
+            color-mix(in srgb, var(--ink-deep) 90%, transparent) 0 46%,
+            color-mix(in srgb, var(--ink-deep) 72%, transparent) 100%);
+    }
+}
+
+/* --- GSBG hero ----------------------------------------------------------
+   The artwork's left wash is repainted in this conference's ink in the file
+   itself, so the veil here only tops it up and carries it across the photo,
+   rather than laying a second full wash over one that is already there. */
+.gx-hero--biotechnology .gx-hero-media img {
+    filter: brightness(0.78) saturate(0.95);
+}
+/* This artwork carries no wash of its own, so the veil is a full one rather
+   than the top-up the previous picture needed. */
+.gx-hero--biotechnology .gx-hero-veil {
+    background:
+        linear-gradient(90deg,
+            var(--ink-deep) 0 30%,
+            color-mix(in srgb, var(--ink-deep) 86%, transparent) 44%,
+            color-mix(in srgb, var(--ink-deep) 62%, transparent) 56%,
+            color-mix(in srgb, var(--ink-deep) 38%, transparent) 66%,
+            color-mix(in srgb, var(--ink-deep) 18%, transparent) 76%,
+            color-mix(in srgb, var(--ink-deep) 6%, transparent) 86%,
+            transparent 94%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 46%, transparent), transparent 50%);
+}
+@media (max-width: 860px) {
+    .gx-hero--biotechnology .gx-hero-veil {
+        background: linear-gradient(180deg,
+            color-mix(in srgb, var(--ink-deep) 88%, transparent) 0 46%,
+            color-mix(in srgb, var(--ink-deep) 70%, transparent) 100%);
+    }
+}
+
+/* --- WCAB hero: the same veil WSPR uses ---------------------------------
+   The light hero has no .gx-hero-veil span — it paints through the media's
+   ::after — so the stops are repeated here rather than shared. Same shape,
+   in this conference's own ink. */
+.gx-hero--addiction .gx-hero-media::after {
+    background:
+        linear-gradient(90deg,
+            var(--ink-deep) 0 34%,
+            color-mix(in srgb, var(--ink-deep) 94%, transparent) 46%,
+            color-mix(in srgb, var(--ink-deep) 76%, transparent) 58%,
+            color-mix(in srgb, var(--ink-deep) 52%, transparent) 68%,
+            color-mix(in srgb, var(--ink-deep) 28%, transparent) 78%,
+            color-mix(in srgb, var(--ink-deep) 10%, transparent) 88%,
+            transparent 96%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 56%, transparent), transparent 54%);
+}
+@media (max-width: 860px) {
+    .gx-hero--addiction .gx-hero-media::after {
+        background: linear-gradient(180deg,
+            color-mix(in srgb, var(--ink-deep) 90%, transparent) 0 46%,
+            color-mix(in srgb, var(--ink-deep) 72%, transparent) 100%);
+    }
+}
+
+/* WCPD: the year in the conference's own teal. var(--accent) resolves to
+   #0a9396 for this conference, so it stays tied to the theme. */
+.gx-hero--pharmaceutical .gx-hero-year {
+    color: var(--accent);
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--accent);
+}
+
+/* WCPD: the veil carried a little further across the panel, so the headline
+   holds the left while the capsule and the speakers stay readable. */
+.gx-hero--pharmaceutical .gx-hero-veil {
+    background:
+        linear-gradient(90deg,
+            var(--ink-deep) 0 30%,
+            color-mix(in srgb, var(--ink-deep) 86%, transparent) 44%,
+            color-mix(in srgb, var(--ink-deep) 62%, transparent) 56%,
+            color-mix(in srgb, var(--ink-deep) 38%, transparent) 66%,
+            color-mix(in srgb, var(--ink-deep) 18%, transparent) 76%,
+            color-mix(in srgb, var(--ink-deep) 6%, transparent) 86%,
+            transparent 94%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 44%, transparent), transparent 50%);
+}
+@media (max-width: 860px) {
+    .gx-hero--pharmaceutical .gx-hero-veil {
+        background: linear-gradient(180deg,
+            color-mix(in srgb, var(--ink-deep) 90%, transparent) 0 46%,
+            color-mix(in srgb, var(--ink-deep) 72%, transparent) 100%);
+    }
+}
+
+/* GCGD: the year in the conference's own magenta. var(--accent) resolves to
+   #86198f for this conference, so it stays tied to the theme. */
+.gx-hero--gastroenterology .gx-hero-year {
+    color: var(--accent);
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--accent);
+}
+
+/* --- GCNN header lockup: the main site's, exactly -----------------------
+   The shared .brand-* rules in this file are already the main site's own, but
+   .gx-head then shrinks the emblem and restyles both lines for this layout's
+   slimmer bar. For neurology the lockup is meant to match
+   neuroscience-conference.com rather than this layout, so those overrides are
+   handed back to the shared rules — emblem at 72px, display face on line 1,
+   mono at 16px on line 3. Scoped to this conference; the other nine keep the
+   slimmer header. */
+.gx--neurology .gx-head .brand-icon { width: 72px; height: 72px; }
+.gx--neurology .gx-head.is-stuck .brand-icon { width: 72px; height: 72px; }
+.gx--neurology .gx-head .brand-line-1 {
+    /* the main site's --font-display is Inter; this project binds that name to
+       Source Serif and loads Inter as --font-ui, so the face is named here */
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+}
+.gx--neurology .gx-head .brand-year {
+    color: var(--accent);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+.gx--neurology .gx-head .brand-line-3 {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    margin-top: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.gx--neurology .gx-head .brand-sep { margin: 0 4px; color: var(--accent); font-weight: 400; opacity: 0.7; }
+.gx--neurology .gx-head .brand-country { color: var(--accent); font-weight: 700; letter-spacing: 0.06em; }
+
+/* --- Supplied brand lockup ----------------------------------------------
+   A conference can ship its whole lockup as one SVG. It is sized by height so
+   every conference's bar matches regardless of how wide its wordmark runs,
+   and it shrinks with the header the way the emblem does. */
+.gx-head .brand-lockup-img {
+    height: 52px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+    transition: height 0.3s ease;
+}
+.gx-head.is-stuck .brand-lockup-img { height: 44px; }
+@media (max-width: 1100px) { .gx-head .brand-lockup-img { height: 46px; } }
+@media (max-width: 860px)  { .gx-head .brand-lockup-img { height: 40px; } }
+@media (max-width: 540px)  { .gx-head .brand-lockup-img { height: 34px; } }
+
+/* GCSA: the year in the conference's own blue. var(--accent) resolves to
+   #2563eb for this conference, so it stays tied to the theme. */
+.gx-hero--surgery .gx-hero-year {
+    color: var(--accent);
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--accent);
+}
+
+/* GCSA: the artwork held back a touch so the headline leads — a lighter hand
+   than the other heroes, since this picture is already deep blue. */
+.gx-hero--surgery .gx-hero-media img {
+    filter: brightness(0.86) saturate(0.97);
+}
+
+/* WCAB hero headline: the lead line reads as an introduction above the title
+   rather than part of it — smaller and at regular weight. Scoped to this
+   conference; the other nine keep their own headline. */
+
+/* --- Hero headline lead line, all conferences --------------------------
+   "World Congress on", "Global Summit on" and the rest introduce the title
+   rather than forming part of it, so the line steps back: about half the
+   title's size and at regular weight instead of the headline's 720. */
+.gx-hero .gx-hero-lead {
+    display: inline-block;
+    font-size: 0.5em;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+
+
+
+/* --- Closing CTA: a pool behind the date and conference name ------------
+   The band's veil runs from the left and is clear by 88%, which is exactly
+   where the meta sits, so on every conference those two lines washed out
+   against the lit city artwork. One soft ellipse behind the text fixes it
+   without touching the rest of the band — no edges, and each conference
+   renders it in its own ink. */
+.gx-end--banner .gx-end-veil {
+    background:
+        radial-gradient(ellipse 28% 46% at 84% 64%,
+            color-mix(in srgb, var(--ink-deep) 86%, transparent) 0%,
+            color-mix(in srgb, var(--ink-deep) 66%, transparent) 46%,
+            color-mix(in srgb, var(--ink-deep) 28%, transparent) 72%,
+            transparent 100%),
+        linear-gradient(90deg,
+            var(--ink-deep) 0 16%,
+            color-mix(in srgb, var(--ink-deep) 74%, transparent) 38%,
+            color-mix(in srgb, var(--ink-deep) 25%, transparent) 66%,
+            transparent 88%),
+        linear-gradient(0deg, color-mix(in srgb, var(--ink-deep) 45%, transparent), transparent 55%);
+}
+@media (max-width: 860px) {
+    /* one column: the copy sits over the artwork, so the whole band is washed */
+    .gx-end--banner .gx-end-veil {
+        background: linear-gradient(180deg,
+            color-mix(in srgb, var(--ink-deep) 88%, transparent) 0 52%,
+            color-mix(in srgb, var(--ink-deep) 70%, transparent) 100%);
+    }
+}
+
+/* WCAB: close the gap between the date pill and the lead line. The hero is
+   sized by its content here, so the band tightens with it. */
+.gx-hero--addiction .gx-hero-eyebrow { margin-bottom: 4px; }
+
+/* WCAB: a shorter hero band — the floor comes down and the inner padding with
+   it, so the content sits in a tighter frame. */
+.gx-hero--addiction { min-height: min(470px, 33vw); }
+.gx-hero--addiction .gx-hero-inner { padding-top: 32px; padding-bottom: 36px; }
