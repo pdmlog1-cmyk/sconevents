@@ -138,5 +138,56 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Prof. Thomas J. Webster",
+      "affiliation": "Brown University",
+      "country": "United States",
+      "abstract_title": "",
+      "photo": "/assets/speakers/thomas-webster.jpg"
+    },
+    {
+      "name": "Dr. Yasser Mohammed Hassanain Elsayed",
+      "affiliation": "Critical Care and Emergency Medicine Consultant",
+      "country": "Egypt",
+      "abstract_title": "",
+      "photo": "/assets/speakers/yasser-elsayed-portrait.jpg"
+    },
+    {
+      "name": "Prof. Zhenhuan Liu",
+      "affiliation": "Nanhai Maternity and Children's Hospital, Guangzhou University of Chinese Medicine",
+      "country": "China",
+      "abstract_title": "",
+      "photo": "/assets/committee/zhenhuan-liu.jpg"
+    },
+    {
+      "name": "Prof. Ephraim Suhir",
+      "affiliation": "Bell Labs (ret.) / UCLA / Portland State University",
+      "country": "USA",
+      "abstract_title": "",
+      "photo": "/assets/committee/ephraim-suhir.jpg"
+    },
+    {
+      "name": "Prof. Uchenna Cosmas Ugwu",
+      "affiliation": "University of Nigeria, Nsukka",
+      "country": "Nigeria",
+      "abstract_title": "",
+      "photo": "/assets/committee/uchenna-ugwu.jpg"
+    },
+    {
+      "name": "Prof. Hadi Seyedarabi",
+      "affiliation": "Faculty of Electrical and Computer Engineering, University of Tabriz",
+      "country": "Iran",
+      "abstract_title": "",
+      "photo": "/assets/committee/hadi-seyedarabi.jpg"
+    },
+    {
+      "name": "Prof. Manal Hassanien",
+      "affiliation": "Department of Rheumatology and Rehabilitation, Assiut University Hospital, Faculty of Medicine, Assiut University",
+      "country": "Egypt",
+      "abstract_title": "",
+      "photo": ""
+    }
   ]
 }

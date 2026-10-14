@@ -144,62 +144,76 @@
       "name": "Prof. Zhenhuan Liu",
       "affiliation": "Guangzhou University of Chinese Medicine",
       "country": "China",
-      "abstract_title": "Transcranial Painless Neurorehabilitation Scalp Acupuncture Electrical Stimulation for Neuroregulation of Autism Spectrum Disorder",
-      "photo": "/assets/speakers/zhenhuan-liu.webp"
-    },
-    {
-      "name": "Prof. Manuela G. Neuman, MSc, PhD, FCAB",
-      "affiliation": "Adjunct Professor, Department of Pharmacology & Toxicology, Faculty of Medicine, University of Toronto; Founder & CEO, In Vitro Drug Safety and Biotechnology; Professor, Carol Davila University of Medicine and Pharmacy, Bucharest",
-      "country": "Canada",
-      "abstract_title": "Non-Invasive Personalized Biomarkers for Early Detection of Alzheimer's Disease",
-      "photo": ""
+      "abstract_title": "",
+      "photo": "/assets/speakers/zhenhuan-liu.jpg"
     },
     {
       "name": "Prof. Sergei M. Danilov, MD, PhD",
       "affiliation": "Department of Medicine, University of Illinois at Chicago",
       "country": "United States",
-      "abstract_title": "ACE-dependent Alzheimer's Disease",
-      "photo": "/assets/speakers/sergei-danilov.webp"
-    },
-    {
-      "name": "Ms. Nishka Sunkara",
-      "affiliation": "",
-      "country": "United States",
-      "abstract_title": "Microglial-Mediated Neuroinflammation in Alzheimer's Disease: A Bibliometric Analysis of Gaps in Therapeutic Translation",
-      "photo": ""
+      "abstract_title": "",
+      "photo": "/assets/speakers/sergei-danilov.png"
     },
     {
       "name": "Prof. Jacqueline London",
       "affiliation": "Université Paris-Cité (Emeritus Professor)",
       "country": "France",
-      "abstract_title": "Trisomy 21 as the genetic model for understanding Alzheimer's disease",
+      "abstract_title": "",
       "photo": "/assets/speakers/jacqueline-london-enhanced.webp"
+    },
+    {
+      "name": "Prof. Wanyang Dai",
+      "affiliation": "Nanjing University",
+      "country": "China",
+      "abstract_title": "",
+      "photo": "/assets/committee/wanyang-dai.jpg"
+    },
+    {
+      "name": "Dr. Chelli Devi",
+      "affiliation": "Kalasalingam Academy of Research and Education",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/chelli-devi.jpg"
+    },
+    {
+      "name": "Dr. Amir A. Ghavifekr",
+      "affiliation": "Assistant Professor of Control Engineering, University of Tabriz",
+      "country": "Iran",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Prof. Manuela G. Neuman, MSc, PhD, FCAB",
+      "affiliation": "Department of Pharmacology & Toxicology, University of Toronto",
+      "country": "Canada",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Ms. Nishka Sunkara",
+      "affiliation": "",
+      "country": "United States",
+      "abstract_title": "",
+      "photo": ""
     },
     {
       "name": "Dr. Carsten Tjell, MD, PhD",
       "affiliation": "Otoneurologic Centre, Vennesla; formerly Senior Consultant, Sørlandet Hospital",
       "country": "Norway",
-      "abstract_title": "Sudden vertigo – fateful or just fearful",
+      "abstract_title": "",
       "photo": ""
     },
     {
       "name": "Dr. Pınar Şengül",
       "affiliation": "",
       "country": "Turkey",
-      "abstract_title": "Neuroinflammatory Diseases",
+      "abstract_title": "",
       "photo": ""
     },
     {
       "name": "Prof. Nevzat Tarhan",
       "affiliation": "Üsküdar University (Founder Rector); NP Istanbul Brain Hospital (CEO)",
       "country": "Turkey",
-      "abstract_title": "",
-      "photo": ""
-    },
-    {
-      "name": "Dr. Amir A. Ghavifekr",
-      "affiliation": "Assistant Professor of Control Engineering, University of Tabriz",
-      "country": "Iran",
       "abstract_title": "",
       "photo": ""
     }

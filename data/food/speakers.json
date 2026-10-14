@@ -138,5 +138,126 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Prof. Shaojin Wang",
+      "affiliation": "College of Mechanical and Electronic Engineering, Northwest A&F University",
+      "country": "China",
+      "abstract_title": "",
+      "photo": "/assets/speakers/shaojin-wang.jpg"
+    },
+    {
+      "name": "Prof. Cervantes Lee",
+      "affiliation": "Global Innovation Institute (GII) / University of Nevada, Las Vegas",
+      "country": "United States",
+      "abstract_title": "",
+      "photo": "/assets/speakers/cervantes-lee.jpg"
+    },
+    {
+      "name": "Prof. Wojciech Piekoszewski",
+      "affiliation": "Department of Analytical Chemistry, Jagiellonian University",
+      "country": "Poland",
+      "abstract_title": "",
+      "photo": "/assets/committee/wojciech-piekoszewski.jpg"
+    },
+    {
+      "name": "Prof. Luan Ramos",
+      "affiliation": "Federal Institute of Education, Science and Technology of Espírito Santo",
+      "country": "Brazil",
+      "abstract_title": "",
+      "photo": "/assets/committee/luan-ramos.jpg"
+    },
+    {
+      "name": "Dr. Gadafi Iddrisu Balali",
+      "affiliation": "Kwame Nkrumah University of Science and Technology",
+      "country": "Ghana",
+      "abstract_title": "",
+      "photo": "/assets/committee/gadafi-balali.jpg"
+    },
+    {
+      "name": "Prof. K. D. Prasanna Gunathilake",
+      "affiliation": "Department of Food Science and Technology, Wayamba University of Sri Lanka",
+      "country": "Sri Lanka",
+      "abstract_title": "",
+      "photo": "/assets/committee/prasanna-gunathilake.jpg"
+    },
+    {
+      "name": "Prof. Farooq Ahmad Masoodi",
+      "affiliation": "Department of Food Science and Technology, University of Kashmir",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/farooq-masoodi.jpg"
+    },
+    {
+      "name": "Prof. Vikas Nanda",
+      "affiliation": "Department of Food Engineering & Technology, Sant Longowal Institute of Engineering and Technology",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/vikas-nanda.jpg"
+    },
+    {
+      "name": "Dr. Ajai Prakash Gupta",
+      "affiliation": "CSIR-IIIM, Jammu",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/ajai-gupta.jpg"
+    },
+    {
+      "name": "Prof. Bing-Huei Chen",
+      "affiliation": "Fu Jen University, Taipei",
+      "country": "Taiwan",
+      "abstract_title": "",
+      "photo": "/assets/committee/bing-huei-chen.jpg"
+    },
+    {
+      "name": "Prof. Christine Amaka Ikpeme",
+      "affiliation": "University of Calabar",
+      "country": "Nigeria",
+      "abstract_title": "",
+      "photo": "/assets/committee/christine-ikpeme.jpg"
+    },
+    {
+      "name": "Dr. Nasser Alshawaaf",
+      "affiliation": "Arab Open University – Kuwait",
+      "country": "Kuwait",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Ms. Habiba Butt",
+      "affiliation": "Department of Food Science and Technology, PMAS-Arid Agriculture University, Rawalpindi",
+      "country": "Pakistan",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Prof. Irene Binag",
+      "affiliation": "Sultan Kudarat State University",
+      "country": "Philippines",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Ms. Nancy Cherono Kosgey",
+      "affiliation": "Mount Kenya University",
+      "country": "Kenya",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Ms. Wathsala Pathiraja Ranathunga",
+      "affiliation": "Department of Food Science and Technology, Faculty of Livestock, Fisheries and Nutrition, Wayamba University of Sri Lanka",
+      "country": "Sri Lanka",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Dr. Avinash Sharma",
+      "affiliation": "Faculty of Agricultural Sciences, Arunachal University of Studies, Namsai, Arunachal Pradesh",
+      "country": "India",
+      "abstract_title": "",
+      "photo": ""
+    }
   ]
 }

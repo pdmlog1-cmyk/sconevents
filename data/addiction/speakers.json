@@ -138,5 +138,35 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Dr. Michael Anjello Jothi Rajan",
+      "affiliation": "Aadhavan Educational and Research Trust",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/speakers/michael-jothi-rajan.jpg"
+    },
+    {
+      "name": "Dr. Angelo Reynolds",
+      "affiliation": "Transformers Academy, LLC",
+      "country": "United States",
+      "abstract_title": "",
+      "photo": "/assets/speakers/angelo-reynolds.jpg"
+    },
+    {
+      "name": "Dr. Mahboubeh Dadfar",
+      "affiliation": "School of Behavioral Sciences and Mental Health, Iran University of Medical Sciences, Tehran",
+      "country": "Iran",
+      "abstract_title": "",
+      "photo": "/assets/committee/mahboubeh-dadfar.jpg"
+    },
+    {
+      "name": "Prof. Meera Vaswani, PhD",
+      "affiliation": "WHO Collaborative National Drug Dependence Treatment Center, All India Institute of Medical Sciences, New Delhi",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/meera-vaswani.jpg"
+    }
   ]
 }

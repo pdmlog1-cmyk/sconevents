@@ -138,5 +138,28 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Prof. Bobin Mi",
+      "affiliation": "Huazhong University of Science and Technology",
+      "country": "China",
+      "abstract_title": "",
+      "photo": "/assets/speakers/bobin-mi.jpg"
+    },
+    {
+      "name": "Prof. Sergey V. Nedogoda, MD, PhD",
+      "affiliation": "Volgograd State Medical University",
+      "country": "Russia",
+      "abstract_title": "",
+      "photo": "/assets/committee/sergey-nedogoda.jpg"
+    },
+    {
+      "name": "Dr. Przemysław Jaźwiec, MD, PhD",
+      "affiliation": "Medical University in Wroclaw, Wroclaw",
+      "country": "Poland",
+      "abstract_title": "",
+      "photo": "/assets/committee/przemyslaw-jazwiec-v2.jpg"
+    }
   ]
 }

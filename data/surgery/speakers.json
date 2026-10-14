@@ -138,5 +138,21 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Mobile Kampanga",
+      "affiliation": "Independent Researcher",
+      "country": "Democratic Republic of Congo",
+      "abstract_title": "",
+      "photo": ""
+    },
+    {
+      "name": "Dr. Yafet Bekele",
+      "affiliation": "MCM Comprehensive Specialized Hospital",
+      "country": "Ethiopia",
+      "abstract_title": "",
+      "photo": ""
+    }
   ]
 }

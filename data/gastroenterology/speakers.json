@@ -138,5 +138,42 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Assoc. Prof. Kwang Chien Yee",
+      "affiliation": "Associate Professor in Medicine and Gastroenterologist, Tasmanian School of Medicine, University of Tasmania",
+      "country": "Australia",
+      "abstract_title": "",
+      "photo": "/assets/speakers/kwang-chien-yee.jpg"
+    },
+    {
+      "name": "Dr. Mangesh M. Londhe",
+      "affiliation": "Seth GS Medical College & KEM Hospital, Mumbai",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/mangesh-londhe.jpg"
+    },
+    {
+      "name": "Dr. Naina Chakravarty",
+      "affiliation": "Department of Pediatric Gastroenterology, New Delhi",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/naina-chakravarty.jpg"
+    },
+    {
+      "name": "Dr. Hifzur R. Siddique",
+      "affiliation": "Aligarh Muslim University",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/hifzur-siddique.jpg"
+    },
+    {
+      "name": "Dr. Vaishali Bhardwaj",
+      "affiliation": "ABVIMS & Dr RML Hospital, New Delhi",
+      "country": "India",
+      "abstract_title": "",
+      "photo": ""
+    }
   ]
 }

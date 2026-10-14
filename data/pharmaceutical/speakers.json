@@ -138,5 +138,77 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Aziz Maleki",
+      "affiliation": "Zanjan University of Medical Sciences",
+      "country": "Iran",
+      "abstract_title": "",
+      "photo": "/assets/speakers/aziz-maleki.jpg"
+    },
+    {
+      "name": "P.C. Morais",
+      "affiliation": "University of Brasília",
+      "country": "Brazil",
+      "abstract_title": "",
+      "photo": "/assets/speakers/pc-morais.jpg"
+    },
+    {
+      "name": "Dr. Andreas M. Papas",
+      "affiliation": "Adjunct Professor, East Tennessee State University; CEO, Antares Health Products",
+      "country": "USA",
+      "abstract_title": "",
+      "photo": "/assets/speakers/andreas-papas.jpg"
+    },
+    {
+      "name": "Prof. Irina Galkina",
+      "affiliation": "Department of Chemistry, Kazan Federal University, Kazan, Russia",
+      "country": "Russia",
+      "abstract_title": "",
+      "photo": "/assets/speakers/irina-galkina.jpg"
+    },
+    {
+      "name": "Dr. Sandra Suarez-Sharp",
+      "affiliation": "Global Head, Regulatory Strategies, Simulations Plus",
+      "country": "United States",
+      "abstract_title": "",
+      "photo": "/assets/speakers/sandra-suarez-sharp.jpg"
+    },
+    {
+      "name": "Dr Ka-Liong Tan",
+      "affiliation": "Faculty of Medicine and Health Sciences, Universiti Sains Islam Malaysia",
+      "country": "Malaysia",
+      "abstract_title": "",
+      "photo": "/assets/committee/ka-liong-tan.jpg"
+    },
+    {
+      "name": "Prof. Shoukat Iqbal Khattak",
+      "affiliation": "School of Business Administration, Jimei University",
+      "country": "China",
+      "abstract_title": "",
+      "photo": "/assets/committee/shoukat-iqbal-khattak.jpg"
+    },
+    {
+      "name": "Dr Alexander D. Lykov",
+      "affiliation": "Research Institute of Clinical and Experimental Lymphology, Siberian Branch of the Russian Academy of Sciences, Novosibirsk",
+      "country": "Russia",
+      "abstract_title": "",
+      "photo": "/assets/committee/lykov-alexander.jpg"
+    },
+    {
+      "name": "Prof. Heba Mohamed",
+      "affiliation": "Faculty of Pharmacy, Cairo University",
+      "country": "Egypt",
+      "abstract_title": "",
+      "photo": "/assets/committee/heba-mohamed.jpg"
+    },
+    {
+      "name": "Mr. Vahid Mirghasemi",
+      "affiliation": "M.Sc. in Molecular Genetics",
+      "country": "Iran",
+      "abstract_title": "",
+      "photo": ""
+    }
   ]
 }

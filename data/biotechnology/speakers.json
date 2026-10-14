@@ -138,5 +138,77 @@
       "TU Munich, Germany",
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&q=80"
     ]
+  ],
+  "speakers": [
+    {
+      "name": "Prof. Hossain Uddin Shekhar",
+      "affiliation": "Gopalganj Science and Technology University",
+      "country": "Bangladesh",
+      "abstract_title": "",
+      "photo": "/assets/committee/hossain-uddin-shekhar.jpg"
+    },
+    {
+      "name": "Prof. Rui Liu",
+      "affiliation": "Sichuan University",
+      "country": "China",
+      "abstract_title": "",
+      "photo": "/assets/committee/rui-liu.jpg"
+    },
+    {
+      "name": "Prof. Force Tefo Thema",
+      "affiliation": "Botswana University of Agriculture and Natural Resources",
+      "country": "Botswana",
+      "abstract_title": "",
+      "photo": "/assets/committee/force-thema.jpg"
+    },
+    {
+      "name": "Prof. Mohammed Kuddus",
+      "affiliation": "College of Medicine, University of Hail",
+      "country": "Saudi Arabia",
+      "abstract_title": "",
+      "photo": "/assets/committee/mohammed-kuddus.jpg"
+    },
+    {
+      "name": "Dr. Kathirvelu Baskar",
+      "affiliation": "Ross Lifescience Limited (OECD GLP), Pune",
+      "country": "India",
+      "abstract_title": "",
+      "photo": "/assets/committee/kathirvelu-baskar.jpg"
+    },
+    {
+      "name": "Prof. Marko Vinceković",
+      "affiliation": "University of Zagreb",
+      "country": "Croatia",
+      "abstract_title": "",
+      "photo": "/assets/committee/marko-vincekovic.jpg"
+    },
+    {
+      "name": "Dr. Ingrid Rodríguez-Buenfil",
+      "affiliation": "CIATEJ Southeast Branch",
+      "country": "Mexico",
+      "abstract_title": "",
+      "photo": "/assets/committee/ingrid-rodriguez.jpg"
+    },
+    {
+      "name": "Dr. Salma M. Abdelnasser",
+      "affiliation": "National Research Center (NRC), Cairo",
+      "country": "Egypt",
+      "abstract_title": "",
+      "photo": "/assets/committee/salma-abdelnasser.jpg"
+    },
+    {
+      "name": "Assoc. Prof. Mostafa Norizadeh",
+      "affiliation": "Department of Biotechnology, Tehran University of Medical Science",
+      "country": "Iran",
+      "abstract_title": "",
+      "photo": "/assets/committee/mostafa-norizadeh.jpeg"
+    },
+    {
+      "name": "Xingyu Jiang",
+      "affiliation": "",
+      "country": "China",
+      "abstract_title": "",
+      "photo": ""
+    }
   ]
 }
