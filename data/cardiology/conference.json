@@ -36,6 +36,18 @@
   },
   "hero_subtitle": "An intimate two-day congress convening cardiology's researchers, clinicians and industry leaders.",
   "hero_image": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1400&q=85",
+  "landing_style": "v2",
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/images/hero-cardiology-speaker.webp",
+  "hero_focus": "50% 45%",
+  "hero_zoom": false,
+  "cta_banner": "/assets/images/cta-barcelona.jpg",
+  "why_photo": "/assets/legacy/podium.jpg",
+  "why_shots": [
+    "/assets/legacy/audience3.jpg",
+    "/assets/legacy/question.jpg",
+    "/assets/legacy/smile.jpg"
+  ],
   "dates": "April 27-28, 2027",
   "dates_short": "Apr 2027",
   "start_date_iso": "2027-04-27T09:00:00",
@@ -75,5 +87,6 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "logo_lockup": "/logos/lockup/cardiology.svg"
 }

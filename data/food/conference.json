@@ -25,6 +25,17 @@
   "hero_title_year": "2027",
   "hero_subtitle": "An intimate two-day congress convening food scientists, technologists and industry leaders shaping the future of food.",
   "hero_image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=1400&q=85",
+  "landing_style": "v2",
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/legacy/networking-food.jpg",
+  "hero_zoom": false,
+  "cta_banner": "/assets/images/cta-singapore.jpg",
+  "why_photo": "/assets/legacy/lunch.jpg",
+  "why_shots": [
+    "/assets/legacy/chat.jpg",
+    "/assets/legacy/tabletalk.jpg",
+    "/assets/legacy/badging.jpg"
+  ],
   "dates": "May 27-28, 2027",
   "dates_short": "May 2027",
   "start_date_iso": "2027-05-27T09:00:00",
@@ -64,5 +75,6 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "logo_lockup": "/logos/lockup/food.svg"
 }

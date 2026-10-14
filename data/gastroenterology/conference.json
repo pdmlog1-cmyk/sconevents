@@ -25,6 +25,16 @@
   "hero_title_year": "2027",
   "hero_subtitle": "An intimate two-day congress convening gastroenterologists, hepatologists and digestive disease researchers.",
   "hero_image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1400&q=85",
+  "landing_style": "v2",
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/images/hero-gastroenterology.webp",
+  "cta_banner": "/assets/images/cta-singapore.jpg",
+  "why_photo": "/assets/legacy/discussion.jpg",
+  "why_shots": [
+    "/assets/legacy/posterview.jpg",
+    "/assets/legacy/audience.jpg",
+    "/assets/legacy/networking.jpg"
+  ],
   "dates": "May 27-28, 2027",
   "dates_short": "May 2027",
   "start_date_iso": "2027-05-27T09:00:00",
@@ -64,5 +74,8 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "logo_lockup": "/logos/lockup/gastroenterology.svg",
+  "hero_focus": "50% 45%",
+  "hero_veil": "soft"
 }

@@ -25,6 +25,16 @@
   "hero_title_year": "2027",
   "hero_subtitle": "An intimate two-day congress convening endocrinologists, nutritionists and metabolic scientists shaping the future of weight care.",
   "hero_image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1400&q=85",
+  "landing_style": "v2",
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/legacy/audience2.jpg",
+  "cta_banner": "/assets/images/cta-singapore.jpg",
+  "why_photo": "/assets/legacy/applause.jpg",
+  "why_shots": [
+    "/assets/legacy/discussion2.jpg",
+    "/assets/legacy/registration.jpg",
+    "/assets/legacy/smile.jpg"
+  ],
   "dates": "May 27-28, 2027",
   "dates_short": "May 2027",
   "start_date_iso": "2027-05-27T09:00:00",
@@ -64,5 +74,6 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "logo_lockup": "/logos/lockup/obesity.svg"
 }

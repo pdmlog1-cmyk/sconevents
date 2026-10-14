@@ -25,6 +25,18 @@
   "hero_title_year": "2027",
   "hero_subtitle": "An intimate two-day congress convening scientists, regulators and industry leaders at the forefront of pharmaceutical sciences and drug development.",
   "hero_image": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1400&q=85",
+  "landing_style": "v2",
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/images/hero-pharmaceutical-panel2.webp",
+  "hero_focus": "24% 45%",
+  "hero_zoom": false,
+  "cta_banner": "/assets/images/cta-singapore.jpg",
+  "why_photo": "/assets/legacy/poster2.jpg",
+  "why_shots": [
+    "/assets/legacy/speaker.jpg",
+    "/assets/legacy/posterview.jpg",
+    "/assets/legacy/signin.jpg"
+  ],
   "dates": "March 25-26, 2027",
   "dates_short": "Mar 2027",
   "start_date_iso": "2027-03-25T09:00:00",
@@ -65,5 +77,6 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "logo_lockup": "/logos/lockup/pharmaceutical.svg"
 }

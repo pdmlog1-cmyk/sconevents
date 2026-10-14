@@ -13,6 +13,7 @@
   "phone": "+1 775 243 6888",
   "base": "",
   "hcaptcha_sitekey": "e3021954-d6b0-4d1a-b36c-c5e2d3062916",
+  "logo_image": "/logos/addiction-wcab.png",
   "theme_primary": "From Neurobiology to Recovery: Advancing Addiction Medicine",
   "theme_pillars": [
     "Neurobiology",
@@ -25,6 +26,20 @@
   "hero_title_year": "2027",
   "hero_subtitle": "An intimate two-day congress convening clinicians, researchers and recovery leaders advancing addiction medicine and behavioral health.",
   "hero_image": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1400&q=85",
+  "landing_style": "v2",
+  "hero_style": "light",
+  "hero_discs": false,
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/images/hero-addiction-speaker.webp",
+  "hero_focus": "58% 42%",
+  "hero_zoom": false,
+  "cta_banner": "/assets/images/cta-prague.webp",
+  "why_photo": "/assets/legacy/speaker.jpg",
+  "why_shots": [
+    "/assets/legacy/applause.jpg",
+    "/assets/legacy/audience.jpg",
+    "/assets/legacy/chat.jpg"
+  ],
   "dates": "June 24-25, 2027",
   "dates_short": "Jun 2027",
   "start_date_iso": "2027-06-24T09:00:00",
@@ -64,5 +79,6 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "logo_lockup": "/logos/lockup/addiction.svg"
 }

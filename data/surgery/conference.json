@@ -25,6 +25,16 @@
   "hero_title_year": "2027",
   "hero_subtitle": "An intimate two-day congress convening surgeons, anaesthesiologists and industry leaders advancing operative care.",
   "hero_image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1400&q=85",
+  "landing_style": "v2",
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/images/hero-surgery.webp",
+  "cta_banner": "/assets/images/cta-barcelona.jpg",
+  "why_photo": "/assets/legacy/smile.jpg",
+  "why_shots": [
+    "/assets/legacy/panel2.jpg",
+    "/assets/legacy/audience3.jpg",
+    "/assets/legacy/registration2.jpg"
+  ],
   "dates": "April 29-30, 2027",
   "dates_short": "Apr 2027",
   "start_date_iso": "2027-04-29T09:00:00",
@@ -64,5 +74,7 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "logo_lockup": "/logos/lockup/surgery.svg",
+  "hero_focus": "50% 45%"
 }

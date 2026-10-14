@@ -25,6 +25,18 @@
   "hero_title_year": "2027",
   "hero_subtitle": "An intimate two-day congress convening scientists, engineers and industry leaders at the forefront of biotechnology, genomics and bioengineering.",
   "hero_image": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=1400&q=85",
+  "landing_style": "v2",
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/images/hero-biotechnology-panel.webp",
+  "hero_focus": "50% 44%",
+  "hero_zoom": false,
+  "cta_banner": "/assets/images/cta-singapore.jpg",
+  "why_photo": "/assets/legacy/posterview.jpg",
+  "why_shots": [
+    "/assets/legacy/poster2.jpg",
+    "/assets/legacy/networking.jpg",
+    "/assets/legacy/panel.jpg"
+  ],
   "dates": "March 25-26, 2027",
   "dates_short": "Mar 2027",
   "start_date_iso": "2027-03-25T09:00:00",
@@ -64,5 +76,6 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "logo_lockup": "/logos/lockup/biotechnology.svg"
 }

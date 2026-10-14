@@ -77,8 +77,29 @@ export interface ConferenceConfig {
   landing_style?: string;
   /** Artwork behind the redesigned hero, e.g. /assets/images/hero-<slug>.png. */
   hero_banner?: string;
+  /** Where the hero art is anchored when cropped, e.g. "60% 18%". Defaults to
+      the stylesheet value; raise the second number to keep more of the top. */
+  hero_focus?: string;
+  /** false turns off the slow hero zoom, which crops a little more as it runs. */
+  hero_zoom?: boolean;
+  /** A supplied full lockup (emblem + name + date line) as one SVG. When
+      set it replaces the composed header brand outright. */
+  logo_lockup?: string;
+  /** A supplied emblem image, used in place of the built-in inline SVG. */
+  logo_image?: string;
+  /** false leaves the light hero artwork alone — no portrait panels over it. */
+  hero_discs?: boolean;
+  /** "speakers" swaps the hero photo for a slow wall of speaker portraits. */
+  hero_style?: string;
+  /** "soft" lightens the hero veil, for artwork that already carries a
+      gradient of its own — the two would otherwise stack and go muddy. */
+  hero_veil?: string;
   /** Artwork behind the closing call-to-action band. */
   cta_banner?: string;
+  /** Lead photo of the Why-attend collage. */
+  why_photo?: string;
+  /** Photos the two Why-attend frames cycle through. */
+  why_shots?: string[];
   main_site_top_strip?: boolean;
   /** Send "Download Brochure" to the main site's own form (?brochure=open)
       instead of opening this page's modal. Off unless conference.json says so. */

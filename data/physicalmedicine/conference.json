@@ -25,6 +25,16 @@
   "hero_title_year": "2027",
   "hero_subtitle": "An intimate two-day congress convening physiatrists, therapists and rehabilitation scientists advancing functional recovery.",
   "hero_image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=1400&q=85",
+  "landing_style": "v2",
+  "main_site_top_strip": true,
+  "hero_banner": "/assets/images/hero-physicalmedicine-ball.webp",
+  "cta_banner": "/assets/images/cta-singapore.jpg",
+  "why_photo": "/assets/legacy/audience.jpg",
+  "why_shots": [
+    "/assets/legacy/podium.jpg",
+    "/assets/legacy/networking2.jpg",
+    "/assets/legacy/checkin.jpg"
+  ],
   "dates": "May 27-28, 2027",
   "dates_short": "May 2027",
   "start_date_iso": "2027-05-27T09:00:00",
@@ -64,5 +74,9 @@
     "linkedin": "#",
     "facebook": "#",
     "youtube": "#"
-  }
+  },
+  "hero_veil": "soft",
+  "hero_focus": "50% 46%",
+  "hero_zoom": false,
+  "logo_lockup": "/logos/lockup/physicalmedicine.svg"
 }
