@@ -306,3 +306,98 @@ export function jsonError(message: string, status = 400, details?: unknown): Res
 export function jsonSuccess(extra: Record<string, unknown> = {}): Response {
   return Response.json({ success: true, ...extra });
 }
+
+/* -------------------------------------------------------------------------- */
+/*  The letter sent to whoever downloaded the brochure                        */
+/* -------------------------------------------------------------------------- */
+
+export type BrochureLetter = {
+  /** The address typed into the form — this letter is for them, not us. */
+  to: string;
+  /** Their name, for the greeting. */
+  name: string;
+  /** e.g. "WCAB 2027" */
+  short: string;
+  /** e.g. "World Congress on Addiction Medicine & Behavioral Health" */
+  conferenceName: string;
+  /** Main site, used for the abstract-submission link. */
+  mainSiteUrl: string;
+  /** Who signs it. */
+  managerName: string;
+  /** Where a reply lands. The letter asks twice for a reply, so this has to
+      be a mailbox somebody actually reads. */
+  replyTo?: string;
+  /** The conference's own address, so the letter comes from the congress the
+      reader asked about rather than one shared sender. */
+  fromEmail?: string;
+};
+
+/**
+ * Send the brochure letter.
+ *
+ * Sent over the conferences' own Brevo SMTP relay, through a small client
+ * written for the Workers runtime — see lib/smtp.ts for why nodemailer cannot
+ * be used here.
+ *
+ * Returns false when it could not send — the caller carries on regardless,
+ * since the visitor gets their download from the page either way.
+ */
+export async function sendBrochureLetter(letter: BrochureLetter): Promise<boolean> {
+  const host = process.env.SMTP_HOST;
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  const from = letter.fromEmail || process.env.FORM_FROM_EMAIL || letter.replyTo;
+  if (!host || !user || !pass || !from || !letter.to) return false;
+
+  const { sendMailSmtp } = await import('@/lib/smtp');
+  const r = await sendMailSmtp({
+    host,
+    port: Number(process.env.SMTP_PORT || 587),
+    user,
+    pass,
+    from,
+    fromName: letter.conferenceName,
+    to: letter.to,
+    subject: `Thank you for downloading the ${letter.short} brochure`,
+    html: renderBrochureLetter(letter),
+    replyTo: letter.replyTo,
+  });
+  if (!r.ok) {
+    // eslint-disable-next-line no-console
+    console.error('[brochure-letter] smtp failed:', r.detail);
+  }
+  return r.ok;
+}
+
+function renderBrochureLetter(
+  { name, short, conferenceName, mainSiteUrl, managerName }: BrochureLetter,
+): string {
+  const esc = (v: string) =>
+    v.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  const abstractUrl = `${mainSiteUrl.replace(/\/+$/, '')}/call-for-abstract-submission`;
+
+  const font = 'font-family:Arial,Helvetica,sans-serif';
+  const p = `margin:0 0 18px;font-size:15px;line-height:1.6;color:#333;${font}`;
+  const li = `margin:0 0 10px;font-size:15px;line-height:1.6;color:#333;${font}`;
+  const link = 'color:#d6336c;text-decoration:underline';
+
+  return `<!doctype html>
+<html><body style="margin:0;padding:24px;background:#ffffff">
+<div style="max-width:620px;margin:0 auto">
+<p style="${p}">Dear ${esc(name)},</p>
+<p style="${p}">Thank you for downloading the brochure for the <strong>${esc(conferenceName)}</strong> (${esc(short)}). We appreciate your interest in our upcoming congress.</p>
+<p style="${p}">If you are interested in participating as a speaker, we invite you to take the following steps:</p>
+<ul style="margin:0 0 18px;padding-left:22px">
+  <li style="${li}"><strong>Submit your abstract:</strong> <a href="${esc(abstractUrl)}" style="${link}">${esc(abstractUrl)}</a></li>
+  <li style="${li}"><strong>Share your profile:</strong> Reply to this email with your recent photograph, a brief biography, and your institutional affiliation.</li>
+</ul>
+<p style="${p}">Once we receive your abstract, our Scientific Committee will review it. Following the review, we will notify you of the outcome and, if accepted, provide your official acceptance letter along with the registration link.</p>
+<p style="${p}">If you have any questions or need assistance with the submission process, simply reply to this email. Our conference secretariat will be happy to assist you.</p>
+<p style="${p}">We look forward to the possibility of welcoming you to ${esc(short)}.</p>
+<p style="${p}">Warm regards,</p>
+<p style="margin:0 0 2px;font-size:15px;line-height:1.5;color:#333;${font}"><strong>${esc(managerName)}</strong></p>
+<p style="margin:0 0 2px;font-size:15px;line-height:1.5;color:#333;${font}">Conference Manager</p>
+<p style="margin:0;font-size:15px;line-height:1.5;color:#999;${font}">${esc(conferenceName)}</p>
+</div>
+</body></html>`;
+}

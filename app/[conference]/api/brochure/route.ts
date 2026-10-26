@@ -14,6 +14,8 @@ import {
 } from '@/lib/forms';
 import { utf8ToBase64 } from '@/lib/encode';
 import { getConferenceMeta } from '@/lib/conferences';
+import { sendBrochureLetter } from '@/lib/forms';
+import { verifyEmail } from '@/lib/emailCheck';
 
 // Cloudflare Workers runs at the edge by default — no explicit runtime needed.
 
@@ -31,6 +33,24 @@ type Body = {
 };
 
 const BROCHURE_BASE = '/brochures';
+
+/* Each conference writes from, and is replied to at, its own mailbox. Brevo
+   accepts all of these as senders — checked against the relay before rollout. */
+const CONFERENCE_EMAIL: Record<string, string> = {
+  addiction: 'wcab@meetings.llc',
+  biotechnology: 'gsbg@meetings.llc',
+  cardiology: 'gccm@meetings.llc',
+  food: 'gsfs@meetings.llc',
+  gastroenterology: 'gcgd@meetings.llc',
+  neurology: 'gcnn@meetings.llc',
+  obesity: 'gsod@meetings.llc',
+  pharmaceutical: 'wcpd@meetings.llc',
+  physicalmedicine: 'wspr@meetings.llc',
+  surgery: 'gcsa@meetings.llc',
+};
+
+/* Who signs the letter — the same conference manager across all ten. */
+const MANAGER_NAME = 'Olivia Miller';
 
 const WEBSITE_FORM: Record<string, string> = {
   brochure: 'brochure_download',
@@ -126,8 +146,27 @@ export async function POST(req: Request, { params }: { params: { conference: str
   const downloadUrl = `${BROCHURE_BASE}/${brochureSlug}.pdf`;
   const ref = generateToken('DL');
 
+  // Check the address before writing to it. The lead is filed either way —
+  // a bad address is still a lead the organisers may want to chase.
+  const verdict = await verifyEmail(body.email || '');
+  if (!verdict.send) {
+    // eslint-disable-next-line no-console
+    console.log(`[brochure] letter withheld: ${verdict.status}/${verdict.subStatus ?? ''}`);
+  }
+
   const [cmsResult] = await Promise.all([
     forwardBrochureToCms(body, kind, confMeta?.cid ?? process.env.CID ?? ''),
+    // the letter goes to whoever filled the form, not to us
+    verdict.send ? sendBrochureLetter({
+      to: body.email || '',
+      name: body.first_name || 'there',
+      short: confMeta?.short ?? params.conference,
+      conferenceName: confMeta?.name ?? confMeta?.short ?? params.conference,
+      mainSiteUrl: confMeta?.mainSiteUrl ?? '',
+      managerName: MANAGER_NAME,
+      fromEmail: CONFERENCE_EMAIL[params.conference],
+      replyTo: CONFERENCE_EMAIL[params.conference],
+    }) : Promise.resolve(false),
     deliverSubmission({
       formType: `Download (${kind})`,
       subject: `${kind === 'brochure' ? 'Brochure' : 'Program'} download: ${body.first_name} (${ref})`,

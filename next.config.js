@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // This machine is short on RAM and the page file cannot grow, so the build
+  // is kept to a single worker rather than one per core. Slower, but it stops
+  // the worker being killed mid-compile.
+  experimental: { cpus: 1, workerThreads: false },
+  productionBrowserSourceMaps: false,
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
