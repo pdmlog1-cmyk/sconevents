@@ -15624,3 +15624,15 @@ textarea.is-invalid {
    it, so the content sits in a tighter frame. */
 .gx-hero--addiction { min-height: min(470px, 33vw); }
 .gx-hero--addiction .gx-hero-inner { padding-top: 32px; padding-bottom: 36px; }
+
+/* GCCM: on wide screens the whole page scales up, so a 1920px laptop shows
+   the same layout a ~1450px one does instead of a 1220px column floating in
+   empty margins. Below 1600px nothing changes. The brochure popup is undone
+   back to 1, or at 1920x1080 it grows taller than the window. */
+.gx--cardiology { zoom: var(--gx-wide-zoom, 1); }
+.gx--cardiology .lead-modal { zoom: calc(1 / var(--gx-wide-zoom, 1)); }
+@media (min-width: 1600px) { .gx--cardiology { --gx-wide-zoom: 1.1; } }
+@media (min-width: 1760px) { .gx--cardiology { --gx-wide-zoom: 1.2; } }
+@media (min-width: 1920px) { .gx--cardiology { --gx-wide-zoom: 1.3; } }
+@media (min-width: 2240px) { .gx--cardiology { --gx-wide-zoom: 1.5; } }
+@media (min-width: 2560px) { .gx--cardiology { --gx-wide-zoom: 1.7; } }
