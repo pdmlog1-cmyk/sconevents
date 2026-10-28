@@ -239,6 +239,7 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
     .sort((a, b) => Number(!!b.photo) - Number(!!a.photo))
     .slice(0, 4);
   const tracks = conf.tracks.slice(0, 9);
+  const nav = conf.landing_nav ?? NAV;
 
   const brandDates = conf.brand_dates ?? (() => {
     const dm = conf.dates.match(/^(\w+)\s+([\d\-–]+),\s*\d+/);
@@ -347,7 +348,7 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
               keyboard without a button that would have to claim a state. */}
           <nav className="gx-nav" aria-label="Primary">
             <ul>
-              {NAV.map(item => (
+              {nav.map(item => (
                 <li key={item.label} className={item.items ? 'gx-nav-group' : undefined}>
                   {item.items ? (
                     <>
@@ -379,6 +380,11 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
             <span aria-hidden />
           </button>
 
+          {conf.landing_nav_abstract && (
+            <a href={`${MAIN}/call-for-abstract-submission`} className="gx-btn gx-btn-outline gx-head-cta">
+              Submit Abstract
+            </a>
+          )}
           <a href={`${MAIN}/register`} className="gx-btn gx-btn-primary gx-head-cta">
             Register now <i className="fas fa-arrow-right" />
           </a>
@@ -388,7 +394,7 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
       {/* Below the nav's breakpoint the same menu opens as a panel. */}
       <div id="gx-menu" className={`gx-menu${menuOpen ? ' is-open' : ''}`} hidden={!menuOpen}>
         <nav aria-label="Primary mobile">
-          {NAV.map(item => (
+          {nav.map(item => (
             <div key={item.label} className="gx-menu-block">
               {item.items ? (
                 <>
@@ -565,7 +571,9 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
           <div>
             <h2 className="gx-h2">Sessions &amp; topics</h2>
             <p className="gx-sec-lead">
-              Nine of {conf.tracks.length} tracks running across the two days.
+              {conf.tracks.length > 9
+                ? <>Nine of {conf.tracks.length} tracks running across the two days.</>
+                : <>{conf.tracks.length} tracks running across the two days.</>}
             </p>
           </div>
           <a href={`${MAIN}/sessions`} className="gx-link">
@@ -573,10 +581,10 @@ export default function NeuroLanding({ conf, mainSiteUrl, theme, slug, logoName 
           </a>
         </div>
         <Reveal className="gx-topic-grid">
-          {tracks.map(([title, tagline], i) => (
+          {tracks.map(([title, tagline, , , id], i) => (
             <a
               key={title}
-              href={`${MAIN}/sessions`}
+              href={`${MAIN}/sessions${id ? `#${id}` : ''}`}
               className="gx-topic"
               /* Tile 08 shares tile 07's delay, so the two arrive together
                  rather than 08 trailing a step behind. */

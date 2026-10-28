@@ -22,7 +22,7 @@ import marketingJson from '@/data/addiction/marketing.json';
 export type Speaker = [name: string, role: string, affiliation: string, photo: string];
 export type Keynote = [name: string, talk: string, affiliation: string, photo: string];
 export type OcmMember = [name: string, role: string, affiliation: string, photo: string];
-export type Track = [title: string, description: string, details?: string, subtopics?: string[]];
+export type Track = [title: string, description: string, details?: string, subtopics?: string[], id?: string];
 export type Stat = [value: string, label: string];
 export type WhyItem = [icon: string, title: string, description: string];
 export type Testimonial = [quote: string, name: string, role: string];
@@ -85,6 +85,11 @@ export interface ConferenceConfig {
   /** A supplied full lockup (emblem + name + date line) as one SVG. When
       set it replaces the composed header brand outright. */
   logo_lockup?: string;
+  /** The landing header's menu, when it should differ from the shared one —
+      same shape: a link, or a label opening a short list. */
+  landing_nav?: { label: string; href?: string; items?: { label: string; href: string }[] }[];
+  /** true adds a Submit Abstract button beside Register now in the header. */
+  landing_nav_abstract?: boolean;
   /** A supplied emblem image, used in place of the built-in inline SVG. */
   logo_image?: string;
   /** false leaves the light hero artwork alone — no portrait panels over it. */
@@ -130,10 +135,12 @@ interface TrackJson {
   tagline: string;
   details?: string;
   subtopics?: string[];
+  /** Anchor of this track on the main site's /sessions page. */
+  id?: string;
 }
 
 const trackFromJson = (t: TrackJson): Track =>
-  [t.title, t.tagline, t.details, t.subtopics] as Track;
+  [t.title, t.tagline, t.details, t.subtopics, t.id] as Track;
 
 /* -------------------------------------------------------------------------- */
 /*  Build the conf object — same shape the app expects                        */

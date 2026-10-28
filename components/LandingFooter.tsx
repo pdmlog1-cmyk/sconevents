@@ -101,7 +101,7 @@ export default function LandingFooter({
               const href = conf.social?.[key];
               return href && href !== '#';
             }).map(({ key, label, path }) => (
-              <a key={label} href={conf.social[key]} aria-label={label}
+              <a key={label} href={conf.social[key]} aria-label={label} data-net={key}
                  target="_blank" rel="noreferrer noopener">
                 <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden>
                   <path d={path} />

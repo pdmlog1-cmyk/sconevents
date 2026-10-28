@@ -11,10 +11,12 @@ interface TrackJson {
   tagline: string;
   details?: string;
   subtopics?: string[];
+  /** Anchor of this track on the main site's /sessions page. */
+  id?: string;
 }
 
 const trackFromJson = (t: TrackJson): Track =>
-  [t.title, t.tagline, t.details, t.subtopics] as Track;
+  [t.title, t.tagline, t.details, t.subtopics, t.id] as Track;
 
 export async function getConferenceConfig(slug: string): Promise<ConferenceConfig | null> {
   const meta = getConferenceMeta(slug);
@@ -87,6 +89,8 @@ export async function getConferenceConfig(slug: string): Promise<ConferenceConfi
       hero_discs: conf.hero_discs,
       logo_image: conf.logo_image,
       logo_lockup: conf.logo_lockup,
+      landing_nav: conf.landing_nav,
+      landing_nav_abstract: conf.landing_nav_abstract,
       hero_focus: conf.hero_focus,
       hero_zoom: conf.hero_zoom,
       why_photo: conf.why_photo,
