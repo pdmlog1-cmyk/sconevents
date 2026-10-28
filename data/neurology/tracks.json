@@ -1,234 +1,111 @@
 {
   "tracks": [
     {
-      "title": "Stroke & Cerebrovascular Disease",
-      "tagline": "Thrombectomy, mobile stroke units and stroke prevention.",
-      "details": "Acute stroke care has been redefined by tenecteplase displacing alteplase as the preferred thrombolytic, late-window thrombectomy out to 24 hours guided by perfusion imaging (DAWN, DEFUSE-3), and increasingly the treatment of medium and distal vessel occlusions. GCNN 2027 will examine direct-to-angio-suite workflows, mobile stroke units, and the expanding evidence for thrombectomy in large core infarcts (SELECT2, ANGEL-ASPECT). The track will also cover secondary prevention with factor XI inhibitors, PFO closure post-RoPE, and the persistent gap in primary prevention for cerebral small vessel disease.",
+      "id": "stroke-neurocritical",
+      "title": "Stroke, Neurocritical Care & Rehabilitation",
+      "tagline": "Acute brain and spinal injury, the critical care around it, and the rehabilitation that decides how much function comes back.",
+      "details": "Acute brain and spinal injury, the critical care around it, and the rehabilitation that decides how much function comes back.",
       "subtopics": [
-        "Tenecteplase vs alteplase: AcT, ATTEST-2, and dosing strategies",
-        "Late-window and large-core thrombectomy: SELECT2, ANGEL-ASPECT",
-        "Medium and distal vessel occlusion thrombectomy trials",
-        "Mobile stroke units and direct-to-angio-suite workflows",
-        "Factor XI inhibitors (asundexian, abelacimab) in secondary prevention",
-        "Cerebral small vessel disease and vascular cognitive impairment",
-        "Intracerebral hemorrhage: bundle care, minimally invasive evacuation"
+        "Stroke & Cerebrovascular Disease",
+        "Traumatic Brain Injury",
+        "Spinal Cord Injury",
+        "Neurocritical Care",
+        "Neurorehabilitation"
       ]
     },
     {
-      "title": "Alzheimer’s & Dementia",
-      "tagline": "Anti-amyloid therapies, biomarkers and early detection.",
-      "details": "The approval of lecanemab and donanemab has transformed Alzheimer’s disease into a treatable condition for patients with early symptomatic disease and confirmed amyloid pathology. GCNN 2027 will present long-term CLARITY-AD and TRAILBLAZER-ALZ open-label extension data, real-world ARIA-E and ARIA-H rates stratified by APOE4 status, and operational models for safe infusion-clinic delivery. Sessions will examine the rapid emergence of plasma p-tau217 as a triage biomarker rivaling CSF and amyloid-PET, the next-wave tau-directed therapeutics, and GLP-1 receptor agonists (evoke, evoke+) as a potential disease-modifying class.",
+      "id": "dementia-cognitive",
+      "title": "Dementia, Cognitive & Behavioural Neurology",
+      "tagline": "Cognitive decline across its causes — Alzheimer's, Lewy body and frontotemporal disease, neuropsychological assessment and functional presentations.",
+      "details": "Cognitive decline across its causes — Alzheimer's, Lewy body and frontotemporal disease, neuropsychological assessment and functional presentations.",
       "subtopics": [
-        "Lecanemab and donanemab: long-term efficacy, ARIA monitoring, APOE4 stratification",
-        "Plasma p-tau217 and the blood biomarker triage pathway",
-        "Tau-directed therapeutics: antisense oligonucleotides and active immunotherapy",
-        "GLP-1 receptor agonists in neurodegeneration: evoke, evoke+ readouts",
-        "Lewy body and frontotemporal dementia: TDP-43 and progranulin programs",
-        "Subcutaneous lecanemab and at-home administration models",
-        "Preclinical AD: DIAN-TU, AHEAD 3-45 and primary prevention"
+        "Alzheimer’s & Dementia",
+        "Dementia with Lewy Bodies",
+        "Frontotemporal Dementia",
+        "Neuropsychology",
+        "Functional Neurological Disorders"
       ]
     },
     {
-      "title": "Multiple Sclerosis",
-      "tagline": "BTK inhibitors, remyelination and progressive MS.",
-      "details": "The MS pipeline is converging on the central goal of halting smoldering, compartmentalized CNS inflammation that drives progression independent of relapse activity (PIRA). GCNN 2027 will review head-to-head data on anti-CD20 therapies (ocrelizumab, ofatumumab, ublituximab) and the maturing BTK inhibitor class — tolebrutinib (GEMINI, HERCULES), evobrutinib, fenebrutinib and remibrutinib — which uniquely penetrate the CNS to target microglia and B cells. The track also covers EBV as a causal driver, remyelination strategies, and the role of serum neurofilament light and GFAP as routine monitoring biomarkers.",
+      "id": "movement-disorders",
+      "title": "Movement Disorders",
+      "tagline": "Parkinson's disease and the wider movement spectrum, from medical management of tremor and dystonia to deep brain stimulation and functional surgery.",
+      "details": "Parkinson's disease and the wider movement spectrum, from medical management of tremor and dystonia to deep brain stimulation and functional surgery.",
       "subtopics": [
-        "BTK inhibitors in MS: tolebrutinib HERCULES, evobrutinib, fenebrutinib",
-        "Anti-CD20 therapies: ocrelizumab, ofatumumab, ublituximab subcutaneous",
-        "Progression independent of relapse activity (PIRA) and smoldering MS",
-        "Remyelination strategies: clemastine, elezanumab, anti-LINGO-1",
-        "EBV as a causal driver and EBV-directed T-cell therapies",
-        "Serum neurofilament light and GFAP as monitoring biomarkers",
-        "High-efficacy first vs escalation: DELIVER-MS, TREAT-MS"
+        "Parkinson’s & Movement Disorders",
+        "Huntington Disease",
+        "Tremor & Dystonia",
+        "Movement Disorder Surgery"
       ]
     },
     {
-      "title": "Parkinson’s & Movement Disorders",
-      "tagline": "Advanced therapies, DBS, GBA-targeted treatments.",
-      "details": "Movement disorders are entering a precision-medicine era, with genetically stratified trials in GBA1 (LTI-291/venglustat lessons, BIA 28-6156) and LRRK2 (BIIB122/DNL151) carriers redefining trial design. GCNN 2027 will cover the expanding device-aided therapy landscape — subcutaneous levodopa (ND0612, ABBV-951/foslevodopa-foscarbidopa), adaptive closed-loop DBS, and MRI-guided focused ultrasound subthalamotomy and pallidotomy. The track also addresses alpha-synuclein seed amplification assays as a biological diagnostic, prasinezumab and other anti-aggregation programs, and the emerging GLP-1 signal in Parkinson’s (exenatide LixiPark readout).",
+      "id": "epilepsy-sleep-autonomic",
+      "title": "Epilepsy, Sleep & Autonomic Disorders",
+      "tagline": "Seizure medicine and the disorders of sleep and autonomic regulation that sit alongside it, including surgical and device-based options.",
+      "details": "Seizure medicine and the disorders of sleep and autonomic regulation that sit alongside it, including surgical and device-based options.",
       "subtopics": [
-        "GBA1 and LRRK2 stratified trials: ambroxol, BIIB122, BIA 28-6156",
-        "Subcutaneous levodopa pumps: ND0612, foslevodopa-foscarbidopa",
-        "Adaptive closed-loop DBS and directional leads",
-        "MRI-guided focused ultrasound: subthalamotomy, pallidotomy, tremor",
-        "Alpha-synuclein seed amplification assays as a biological diagnostic",
-        "Disease modification: prasinezumab, GLP-1 agonists (exenatide, lixisenatide)",
-        "Atypical parkinsonism: PSP, MSA tau and synuclein programs"
+        "Epilepsy",
+        "Sleep Disorders",
+        "Autonomic Disorders"
       ]
     },
     {
-      "title": "Epilepsy",
-      "tagline": "Drug-resistant epilepsy, surgical approaches and genetic epilepsies.",
-      "details": "Drug-resistant epilepsy continues to affect roughly a third of patients despite an expanding pharmacopeia, prompting earlier escalation to surgical and neuromodulation approaches. GCNN 2027 will examine cenobamate’s seizure-freedom rates in focal epilepsy, ganaxolone for CDKL5 deficiency disorder, and the genetic-epilepsy pipeline targeting SCN1A (Dravet — STK-001 antisense), SCN2A, SCN8A and KCNQ2. Surgical content covers MRI-guided laser interstitial thermal therapy, robotic stereo-EEG, focused ultrasound for hypothalamic hamartoma, and the maturation of responsive neurostimulation (RNS) and deep brain stimulation of the anterior nucleus of the thalamus.",
+      "id": "ms-neuroimmunology",
+      "title": "Multiple Sclerosis, Neuroimmunology & Infection",
+      "tagline": "Immune-mediated and infectious disease of the nervous system — disease-modifying therapy, antibody-mediated syndromes and CNS infection.",
+      "details": "Immune-mediated and infectious disease of the nervous system — disease-modifying therapy, antibody-mediated syndromes and CNS infection.",
       "subtopics": [
-        "Cenobamate and the new wave of focal-epilepsy ASMs",
-        "Genetic epilepsies: STK-001 for Dravet, ganaxolone for CDKL5",
-        "SCN2A, SCN8A, KCNQ2 precision medicine and ASOs",
-        "MRI-guided laser interstitial thermal therapy and robotic SEEG",
-        "Responsive neurostimulation (RNS) and ANT-DBS long-term outcomes",
-        "Focused ultrasound for hypothalamic hamartoma and tremor-epilepsy",
-        "SUDEP risk stratification and wearable seizure detection"
+        "Multiple Sclerosis",
+        "Neuroimmunology",
+        "Neuroinfectious Disease"
       ]
     },
     {
-      "title": "Neuromuscular Disease",
-      "tagline": "ALS, SMA gene therapy and neuropathies.",
-      "details": "Neuromuscular medicine has been reshaped by genetically targeted therapies: nusinersen, onasemnogene abeparvovec and risdiplam in SMA, exon-skipping ASOs and Elevidys gene therapy in Duchenne, and tofersen for SOD1-ALS following the VALOR trial and accelerated approval. GCNN 2027 will assess the mixed signal for AMX0035 after PHOENIX, the post-marketing experience with tofersen and neurofilament-driven trial design, and the next wave of ALS programs targeting C9orf72, FUS, and ATXN2. The track also covers CIDP (efgartigimod, rozanolixizumab), myasthenia gravis FcRn and complement inhibitors, and CMT gene-therapy programs.",
+      "id": "neuromuscular-inherited",
+      "title": "Neuromuscular, Motor Neuron & Inherited Disease",
+      "tagline": "Nerve, muscle and motor neuron disease together with the inherited and early-onset conditions that present through the same clinics.",
+      "details": "Nerve, muscle and motor neuron disease together with the inherited and early-onset conditions that present through the same clinics.",
       "subtopics": [
-        "SMA: nusinersen, onasemnogene abeparvovec, risdiplam comparative outcomes",
-        "Duchenne: Elevidys gene therapy, exon-skipping ASOs, givinostat",
-        "ALS: tofersen for SOD1, AMX0035 PHOENIX, C9orf72 and FUS ASOs",
-        "Neurofilament light as a trial endpoint and accelerated-approval pathway",
-        "Myasthenia gravis: FcRn antagonists (efgartigimod, rozanolixizumab) and C5 inhibitors",
-        "CIDP and autoimmune neuropathies: nodal/paranodal antibodies",
-        "Charcot-Marie-Tooth and inherited neuropathy gene-therapy pipeline"
+        "Neuromuscular Disease",
+        "ALS",
+        "Cerebellar & Ataxia Disorders",
+        "Pediatric Neurology",
+        "Neurogenetics"
       ]
     },
     {
-      "title": "Headache Medicine",
-      "tagline": "CGRP antagonists, cluster headache and chronic migraine.",
-      "details": "Migraine treatment has been revolutionized by the CGRP pathway, with four anti-CGRP monoclonal antibodies (erenumab, fremanezumab, galcanezumab, eptinezumab) for prevention and the gepant class (ubrogepant, rimegepant, atogepant, zavegepant nasal spray) bridging acute and preventive use. GCNN 2027 will review long-term real-world effectiveness and safety, switching algorithms, and emerging data on gepants in menstrual and vestibular migraine. The track will also cover ditans (lasmiditan), remote electrical neuromodulation and non-invasive vagal stimulation, cluster headache (galcanezumab, occipital nerve stimulation), and the persistent challenge of medication overuse headache.",
+      "id": "headache-pain",
+      "title": "Headache & Pain Medicine",
+      "tagline": "Primary headache disorders and neuropathic pain — mechanisms, preventive therapy and the CGRP era in practice.",
+      "details": "Primary headache disorders and neuropathic pain — mechanisms, preventive therapy and the CGRP era in practice.",
       "subtopics": [
-        "CGRP monoclonal antibodies: long-term safety, switching, pregnancy data",
-        "Gepants: atogepant, rimegepant, ubrogepant, zavegepant nasal",
-        "Lasmiditan and non-triptan acute therapy in cardiovascular risk",
-        "Cluster headache: galcanezumab, occipital nerve and SPG stimulation",
-        "Neuromodulation: REN, nVNS, eTNS in acute and preventive care",
-        "Pediatric and adolescent migraine treatment paradigms",
-        "Medication overuse headache: detoxification and bridging strategies"
+        "Headache Medicine",
+        "Migraine",
+        "Neuropathic Pain"
       ]
     },
     {
-      "title": "Neuro-Oncology",
-      "tagline": "Glioblastoma, brain metastases and novel immunotherapies.",
-      "details": "Neuro-oncology has been reshaped by the FDA approval of vorasidenib for IDH-mutant grade 2 gliomas (INDIGO trial), shifting practice toward earlier molecular-targeted intervention and away from immediate chemoradiation. GCNN 2027 will examine the maturing CAR-T pipeline for glioblastoma — including GD2, EGFRvIII and IL-13Ra2 constructs and dual-target intrathecal delivery — alongside tumor treating fields (Optune) integration and the disappointing immune checkpoint inhibitor signal in GBM. The track also covers BRAF/MEK inhibition in pediatric low-grade glioma, ANG1005 and HER2-ADCs for leptomeningeal disease, and modern stereotactic radiosurgery for brain metastases with neurocognitive sparing.",
+      "id": "neuro-oncology-sensory",
+      "title": "Neuro-Oncology & Sensory Neurology",
+      "tagline": "Tumours of the nervous system and the specialist sensory clinics — neuro-ophthalmology and vestibular medicine.",
+      "details": "Tumours of the nervous system and the specialist sensory clinics — neuro-ophthalmology and vestibular medicine.",
       "subtopics": [
-        "Vorasidenib in IDH-mutant glioma: INDIGO, sequencing with chemoradiation",
-        "Glioblastoma CAR-T: GD2, EGFRvIII, IL-13Ra2 and intrathecal delivery",
-        "Tumor treating fields and integration with chemoradiation",
-        "Pediatric low-grade glioma: BRAF/MEK inhibitors, type II RAF",
-        "Brain metastases: HER2-ADCs (T-DXd), tucatinib, and SRS",
-        "Leptomeningeal disease: intrathecal therapy and proton CSI",
-        "Liquid biopsy and CSF circulating tumor DNA for monitoring"
+        "Neuro-Oncology",
+        "Brain Tumors",
+        "Neuro-Ophthalmology",
+        "Vestibular Disorders"
       ]
     },
     {
-      "title": "Clinical Neuroscience & AI",
-      "tagline": "Digital biomarkers, seizure detection and imaging AI.",
-      "details": "Artificial intelligence and brain-computer interfaces are moving from prototype to clinic. GCNN 2027 will showcase Neuralink and Synchron BCI early-feasibility outcomes for paralysis and ALS communication, speech-decoding cortical implants, and the regulatory pathway emerging at the FDA. AI-augmented imaging — large vessel occlusion triage (Viz.ai, RapidAI), automated MS lesion segmentation, hippocampal volumetry for AD, and foundation models for radiology — will be examined alongside seizure-forecasting wearables, smartphone-based cognitive and motor digital biomarkers, and the data, privacy and equity questions raised by ambient AI in the neurology clinic.",
+      "id": "digital-ai-imaging",
+      "title": "Digital Neurology, AI & Imaging",
+      "tagline": "Machine learning in diagnosis and prognosis, functional and structural imaging, and the brain-computer interfaces moving into clinical trials.",
+      "details": "Machine learning in diagnosis and prognosis, functional and structural imaging, and the brain-computer interfaces moving into clinical trials.",
       "subtopics": [
-        "Brain-computer interfaces: Neuralink, Synchron, BrainGate clinical readouts",
-        "Speech and motor decoding cortical implants for paralysis and ALS",
-        "AI stroke triage: Viz.ai, RapidAI and door-to-puncture impact",
-        "Foundation models for neuroimaging: MS, AD, glioma segmentation",
-        "Wearable seizure forecasting and ambulatory EEG analytics",
-        "Digital biomarkers: smartphone gait, speech, cognition in PD and AD",
-        "Ambient AI scribes and equitable deployment in neurology clinics"
+        "Clinical Neuroscience & AI",
+        "Neuroimaging",
+        "Brain-Computer Interfaces"
       ]
-    },
-    {
-      "title": "Spinal Cord Injury",
-      "tagline": "Acute management, rehabilitation and regenerative therapies."
-    },
-    {
-      "title": "Traumatic Brain Injury",
-      "tagline": "Concussion protocols, neuroprotection and long-term outcomes."
-    },
-    {
-      "title": "Sleep Disorders",
-      "tagline": "Narcolepsy, insomnia, circadian rhythm and sleep neuroscience."
-    },
-    {
-      "title": "Neuropathic Pain",
-      "tagline": "Central and peripheral pain syndromes, neuromodulation."
-    },
-    {
-      "title": "Cerebellar & Ataxia Disorders",
-      "tagline": "Spinocerebellar ataxias, Friedreich ataxia and emerging therapies."
-    },
-    {
-      "title": "Functional Neurological Disorders",
-      "tagline": "Conversion disorder, psychogenic symptoms and rehabilitation."
-    },
-    {
-      "title": "Pediatric Neurology",
-      "tagline": "Childhood epilepsy, neurodevelopmental disorders and genetics."
-    },
-    {
-      "title": "Neuroimmunology",
-      "tagline": "Autoimmune encephalitis, NMOSD and MOG antibody disease."
-    },
-    {
-      "title": "Brain-Computer Interfaces",
-      "tagline": "Neural implants, motor decoding and communication devices."
-    },
-    {
-      "title": "Migraine",
-      "tagline": "CGRP therapies, acute treatment and chronic migraine management."
-    },
-    {
-      "title": "Cluster Headache",
-      "tagline": "Oxygen therapy, galcanezumab and neuromodulation approaches."
-    },
-    {
-      "title": "Dementia with Lewy Bodies",
-      "tagline": "Diagnosis, cholinesterase inhibitors and management strategies."
-    },
-    {
-      "title": "Frontotemporal Dementia",
-      "tagline": "Behavioral variant, PPA, tau and TDP-43 targeted therapies."
-    },
-    {
-      "title": "Huntington Disease",
-      "tagline": "Gene silencing, tominersen and multidisciplinary care."
-    },
-    {
-      "title": "ALS",
-      "tagline": "Tofersen, gene therapy and emerging disease-modifying agents."
-    },
-    {
-      "title": "Tremor & Dystonia",
-      "tagline": "Essential tremor, DBS, focused ultrasound and botulinum toxin."
-    },
-    {
-      "title": "Restless Legs Syndrome",
-      "tagline": "Iron repletion, dopaminergic therapy and augmentation."
-    },
-    {
-      "title": "Neuroinfectious Disease",
-      "tagline": "CNS infections, meningitis, encephalitis and post-COVID neurology."
-    },
-    {
-      "title": "Brain Tumors",
-      "tagline": "Glioma management, molecular classification and immunotherapy."
-    },
-    {
-      "title": "Vestibular Disorders",
-      "tagline": "Vertigo, vestibular rehabilitation and Meniere disease."
-    },
-    {
-      "title": "Autonomic Disorders",
-      "tagline": "Dysautonomia, POTS, orthostatic hypotension and management."
-    },
-    {
-      "title": "Functional Imaging",
-      "tagline": "fMRI, PET tracers and advanced neuroimaging techniques."
-    },
-    {
-      "title": "Neuro-Ophthalmology",
-      "tagline": "Optic neuritis, papilledema and visual pathway disorders."
-    },
-    {
-      "title": "Neuropsychology",
-      "tagline": "Cognitive assessment, neuropsych testing and rehabilitation."
-    },
-    {
-      "title": "Movement Disorder Surgery",
-      "tagline": "DBS, lesioning techniques and surgical patient selection."
-    },
-    {
-      "title": "Genetic Counselling",
-      "tagline": "Hereditary neurological conditions and family planning."
     }
   ]
 }
