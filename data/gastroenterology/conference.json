@@ -26,6 +26,18 @@
   "hero_subtitle": "An intimate two-day congress convening gastroenterologists, hepatologists and digestive disease researchers.",
   "hero_image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1400&q=85",
   "landing_style": "v2",
+  "landing_nav": [
+    { "label": "Sessions", "href": "/sessions" },
+    { "label": "Past Conferences", "href": "/conferences-gallery" },
+    { "label": "Speakers", "href": "/speakers" },
+    { "label": "Info", "items": [
+      { "label": "Sponsor / Exhibitor", "href": "/sponsor-exhibitor" },
+      { "label": "Guidelines", "href": "/guidelines" },
+      { "label": "FAQs", "href": "/faqs" }
+    ] },
+    { "label": "Venue", "href": "/venue" }
+  ],
+  "landing_nav_abstract": true,
   "main_site_top_strip": true,
   "hero_banner": "/assets/images/hero-gastroenterology.webp",
   "cta_banner": "/assets/images/cta-singapore.jpg",
@@ -71,7 +83,7 @@
   ],
   "social": {
     "twitter": "https://x.com/sconconferences",
-    "linkedin": "#",
+    "linkedin": "https://www.linkedin.com/company/scon-scientific-conferences/",
     "facebook": "https://www.facebook.com/profile.php?id=61593661671764",
     "youtube": "https://www.youtube.com/@SCONCONFERENCES-Videos",
     "instagram": "https://www.instagram.com/sconconferences/"
