@@ -1,0 +1,453 @@
+/* =============================================================================
+   sconevents.com home — the network page above the ten congress landing pages.
+   Everything is scoped under .sh so none of it reaches the landing layouts.
+   Each card / list item sets --c-accent and --c-ink inline, so one rule set
+   paints every congress in its own colours.
+   ============================================================================= */
+
+.sh {
+    --sh-ink: #14111f;
+    --sh-ink-2: #1f1a30;
+    --sh-paper: #ffffff;
+    --sh-tint: #f6f4fa;
+    --sh-line: #e7e3ef;
+    --sh-muted: #5f5a6e;
+    --sh-gold: #f0b429;
+    background: var(--sh-paper);
+    color: var(--sh-ink);
+    font-family: var(--font-ui), var(--font-body), system-ui, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.sh *, .sh *::before, .sh *::after { box-sizing: border-box; }
+.sh a { color: inherit; text-decoration: none; }
+.sh img { display: block; max-width: 100%; }
+/* globals.css colours every heading, paragraph and link for the landing
+   pages; here they take the colour of the section they sit in. */
+.sh h1, .sh h2, .sh h3 { margin: 0; letter-spacing: -0.02em; color: inherit; }
+.sh p { margin: 0; color: inherit; }
+
+.sh-wrap { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+
+/* Buttons ------------------------------------------------------------------ */
+.sh .sh-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 24px; border-radius: 999px;
+    font-size: 14px; font-weight: 700; letter-spacing: 0.02em;
+    border: 1.5px solid transparent;
+    transition: transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease;
+    white-space: nowrap;
+}
+.sh .sh-btn:hover { transform: translateY(-2px); }
+.sh .sh-btn-primary { background: var(--sh-gold); color: var(--sh-ink); box-shadow: 0 14px 30px -14px rgba(240,180,41,.7); }
+.sh .sh-btn-primary:hover { background: #ffc94d; }
+.sh .sh-btn-ghost { border-color: rgba(255,255,255,.28); color: #fff; }
+.sh .sh-btn-ghost:hover { border-color: #fff; }
+.sh .sh-btn-light { background: #fff; color: var(--sh-ink); padding: 11px 20px; font-size: 13px; }
+/* the way out to sconconferences.com: gold, so it reads as the network's own site */
+.sh .sh-btn-main { background: var(--sh-gold); color: var(--sh-ink); padding: 11px 20px; font-size: 13px; }
+.sh .sh-btn-main:hover { background: #ffc94d; }
+.sh-btn-main + .sh-btn-light { margin-left: -20px; }
+
+/* Top bar ------------------------------------------------------------------ */
+.sh-top {
+    position: sticky; top: 0; z-index: 30;
+    background: rgba(20,17,31,.86);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+    color: #fff;
+}
+.sh-top-row { display: flex; align-items: center; gap: 32px; padding-top: 14px; padding-bottom: 14px; }
+.sh-mark { display: flex; align-items: center; flex: none; }
+.sh-mark img { display: block; height: 58px; width: auto; }
+.sh-top-nav { display: flex; gap: 28px; margin-left: auto; }
+.sh-top-nav a { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.78); transition: color .2s; }
+.sh-top-nav a:hover { color: #fff; }
+
+/* Hero --------------------------------------------------------------------- */
+.sh-hero {
+    position: relative;
+    background:
+        radial-gradient(900px 520px at 85% 10%, rgba(117,65,212,.35), transparent 60%),
+        radial-gradient(700px 480px at 10% 90%, rgba(232,83,110,.22), transparent 60%),
+        linear-gradient(180deg, var(--sh-ink), var(--sh-ink-2));
+    color: #fff;
+    padding: 84px 0 56px;
+    overflow: hidden;
+}
+.sh-hero::before {
+    /* faint grid, like a poster board */
+    content: ''; position: absolute; inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(180deg, #000, transparent 85%);
+    pointer-events: none;
+}
+.sh-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 7px 14px; border-radius: 999px;
+    background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14);
+    font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+    margin-bottom: 26px;
+}
+.sh-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sh-gold); box-shadow: 0 0 0 4px rgba(240,180,41,.25); }
+.sh-hero h1 {
+    font-family: var(--font-ui), system-ui, sans-serif;
+    font-size: clamp(36px, 4.4vw, 56px); font-weight: 700; line-height: 1.04;
+}
+.sh-hero h1 em {
+    font-family: var(--font-display), Georgia, serif; font-style: italic; font-weight: 500;
+    background: linear-gradient(90deg, #f0b429, #e8536e 60%, #a78bfa);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.sh .sh-lead { margin-top: 24px; max-width: 540px; font-size: 18px; line-height: 1.6; color: rgba(255,255,255,.76); }
+.sh-hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+
+/* Photo hero: the congress photos stack and cross-fade behind a veil that is
+   darkest on the left, where the heading sits, and at the foot, under the
+   stats; the people in each photo stand on the right and stay visible. */
+.sh-hero--photo { padding: 72px 0 32px; min-height: 560px; display: flex; flex-direction: column; justify-content: flex-end; }
+.sh-hero--photo::before { display: none; }
+.sh-hero-slides { position: absolute; inset: 0; }
+.sh-hero-slides img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    opacity: 0; transform: scale(1.06);
+    transition: opacity 1.2s ease, transform 7s ease-out;
+}
+.sh-hero-slides img.is-on { opacity: 1; transform: scale(1); }
+.sh-hero-veil {
+    position: absolute; inset: 0;
+    background:
+        linear-gradient(90deg, rgba(14,11,24,.92) 0%, rgba(14,11,24,.78) 34%, rgba(14,11,24,.25) 62%, rgba(14,11,24,.05) 80%),
+        linear-gradient(0deg, rgba(14,11,24,.95) 0%, rgba(14,11,24,.4) 26%, transparent 46%);
+}
+.sh-hero-content { position: relative; z-index: 1; display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+.sh-hero--photo .sh-hero-text { max-width: 640px; }
+/* a column flexbox would shrink each wrap to its content; keep them full width */
+.sh-hero--photo > .sh-wrap { position: relative; z-index: 1; width: 100%; }
+
+.sh-hero-now { display: flex; flex-direction: column; align-items: flex-end; gap: 14px; }
+.sh .sh-hero-caption {
+    display: flex; flex-direction: column; gap: 4px; margin: 0;
+    padding: 12px 18px; border-radius: 14px;
+    background: rgba(14,11,24,.55); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,.14); border-left: 4px solid var(--c-accent);
+    color: #fff; min-width: 240px;
+}
+.sh-hero-caption-tag { font-size: 10px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; opacity: .6; }
+.sh-hero-caption b { font-size: 16px; font-weight: 700; }
+.sh-hero-dots { display: flex; gap: 8px; }
+.sh-hero-dots button {
+    width: 10px; height: 10px; padding: 0; border: 0; border-radius: 999px; cursor: pointer;
+    background: rgba(255,255,255,.35); transition: width .3s ease, background .3s ease;
+}
+.sh-hero-dots button.is-on { width: 30px; background: var(--c-accent); filter: brightness(1.4); }
+.sh-hero-dots button:hover { background: rgba(255,255,255,.7); }
+
+.sh-stats {
+    position: relative;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    margin: 36px 0 0; padding: 22px 0 0;
+    border-top: 1px solid rgba(255,255,255,.12);
+}
+.sh-stats div { padding-right: 20px; }
+.sh-stats div + div { border-left: 1px solid rgba(255,255,255,.12); padding-left: 28px; }
+.sh-stats dt { font-size: 34px; font-weight: 800; letter-spacing: -0.02em; }
+.sh-stats dd { margin: 4px 0 0; font-size: 13px; color: rgba(255,255,255,.62); letter-spacing: .04em; text-transform: uppercase; }
+
+/* Discipline ribbon -------------------------------------------------------- */
+.sh-ribbon { background: #fff; border-bottom: 1px solid var(--sh-line); overflow: hidden; padding: 16px 0; }
+.sh-ribbon-track { display: flex; gap: 14px; width: max-content; animation: sh-scroll 50s linear infinite; }
+.sh-ribbon span {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 9px 18px; border-radius: 999px;
+    background: color-mix(in srgb, var(--c-accent) 9%, #fff);
+    border: 1px solid color-mix(in srgb, var(--c-accent) 25%, #fff);
+    color: var(--c-ink); font-size: 14px; font-weight: 700; white-space: nowrap;
+}
+.sh-ribbon span i { width: 8px; height: 8px; border-radius: 50%; background: var(--c-accent); }
+@keyframes sh-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .sh-ribbon-track { animation: none; } }
+
+/* Sections ----------------------------------------------------------------- */
+.sh-sec { padding: 96px 0; }
+.sh-sec-tint { background: var(--sh-tint); }
+.sh-sec-head {
+    display: grid; grid-template-columns: 1fr minmax(0, 420px); gap: 40px; align-items: end;
+    margin-bottom: 48px;
+}
+.sh .sh-sec-head > p { color: var(--sh-muted); font-size: 16px; line-height: 1.6; }
+.sh .sh-kicker { font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #7541d4; margin-bottom: 12px !important; }
+.sh-sec h2 { font-size: clamp(30px, 3.6vw, 46px); font-weight: 800; line-height: 1.08; }
+
+/* Congress cards ----------------------------------------------------------- */
+.sh-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
+.sh-card {
+    display: flex; flex-direction: column;
+    background: #fff; border-radius: 22px; overflow: hidden;
+    border: 1px solid var(--sh-line);
+    box-shadow: 0 1px 0 rgba(20,17,31,.02);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.sh-card:hover {
+    transform: translateY(-6px);
+    border-color: color-mix(in srgb, var(--c-accent) 45%, #fff);
+    box-shadow: 0 30px 50px -30px color-mix(in srgb, var(--c-accent) 70%, transparent);
+}
+/* Ten cards in threes leave one alone on the last row; it spans the row and
+   lies on its side instead. */
+@media (min-width: 1101px) {
+    .sh-card:last-child:nth-child(3n + 1) { grid-column: 1 / -1; flex-direction: row; }
+    .sh-card:last-child:nth-child(3n + 1) .sh-card-photo { flex: 0 0 calc((100% - 52px) / 3 * 2 + 26px); aspect-ratio: auto; min-height: 280px; }
+    .sh-card:last-child:nth-child(3n + 1) .sh-card-body { padding: 32px 36px; justify-content: center; }
+    .sh-card:last-child:nth-child(3n + 1) .sh-card-cta { margin-top: 22px; }
+}
+.sh-card-photo { position: relative; display: block; aspect-ratio: 16 / 10; overflow: hidden; background: var(--c-ink); }
+.sh-card-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.sh-card:hover .sh-card-photo img { transform: scale(1.06); }
+.sh-card-photo::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 38%, color-mix(in srgb, var(--c-ink) 85%, transparent));
+}
+.sh-card-date {
+    position: absolute; top: 14px; left: 14px; z-index: 1;
+    display: flex; flex-direction: column; align-items: center;
+    min-width: 62px; padding: 8px 10px; border-radius: 14px;
+    background: #fff; color: var(--c-ink);
+    font-size: 18px; font-weight: 800; line-height: 1.05;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.5);
+}
+.sh-card-date b { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--c-accent); }
+/* The congress name across the photo, its year in the congress colour —
+   lifted toward white so even the darkest accents read on the dark wash. */
+.sh-card-title {
+    position: absolute; left: 20px; right: 20px; bottom: 18px; z-index: 1;
+    color: #fff; font-size: 20px; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em;
+    text-shadow: 0 2px 14px rgba(0,0,0,.45);
+}
+.sh-card-title small {
+    display: block; margin-bottom: 4px;
+    font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; opacity: .82;
+}
+.sh-card-title em { font-style: normal; color: color-mix(in srgb, var(--c-accent) 55%, #fff); }
+
+.sh-card-body { display: flex; flex-direction: column; flex: 1; padding: 20px 22px 22px; }
+.sh-card-id { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
+.sh-card-logo { flex: none; width: 40px; height: 40px; border-radius: 10px; }
+.sh-card-id div { display: flex; flex-direction: column; min-width: 0; }
+.sh-card-id b { font-size: 15px; font-weight: 800; letter-spacing: .02em; color: var(--c-ink); }
+.sh-card-id small { font-size: 13px; color: var(--sh-muted); }
+.sh-card-id small i { margin-right: 6px; color: var(--c-accent); }
+.sh-card-cta {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    margin-top: auto; padding-top: 16px; border-top: 1px solid var(--sh-line);
+}
+.sh .sh-btn-card { background: var(--c-accent); color: #fff; padding: 11px 18px; font-size: 13px; }
+.sh .sh-btn-card:hover { background: var(--c-ink); }
+.sh-card-site { font-size: 13px; font-weight: 700; color: var(--sh-muted); display: inline-flex; gap: 8px; align-items: center; }
+.sh .sh-card-site:hover { color: var(--c-accent); }
+
+/* Past congresses ----------------------------------------------------------
+   The three archived editions as a strip, then a mosaic of their photos: two
+   large, two wide and eight single tiles fill four columns with no gaps. */
+.sh-past { background: var(--sh-tint); }
+.sh-past-eds { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 28px; }
+.sh-past-ed {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 18px; border-radius: 18px; background: #fff; border: 1px solid var(--sh-line);
+}
+.sh-past-ed-no {
+    flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
+    background: var(--sh-ink); color: var(--sh-gold); font-weight: 800; font-size: 14px;
+}
+.sh-past-ed b { display: block; font-size: 15px; font-weight: 800; line-height: 1.3; margin-bottom: 6px; }
+.sh-past-ed small { display: block; font-size: 13px; color: var(--sh-muted); line-height: 1.6; }
+.sh-past-ed small i { width: 16px; color: #7541d4; }
+
+.sh-past-grid {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 200px; grid-auto-flow: dense; gap: 12px;
+}
+.sh-past-photo { position: relative; margin: 0; overflow: hidden; border-radius: 18px; background: var(--sh-ink); }
+.sh-past-photo.is-big { grid-column: span 2; grid-row: span 2; }
+.sh-past-photo.is-wide { grid-column: span 2; }
+.sh-past-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.sh-past-photo::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 55%, rgba(14,11,24,.85));
+    transition: opacity .3s ease;
+}
+.sh-past-photo:hover img { transform: scale(1.06); }
+.sh-past-photo figcaption {
+    position: absolute; left: 16px; right: 16px; bottom: 14px; z-index: 1; color: #fff;
+    display: flex; flex-direction: column;
+}
+.sh-past-photo figcaption b { font-size: 15px; font-weight: 700; }
+.sh-past-photo figcaption small { font-size: 12px; opacity: .75; }
+.sh-past-photo.is-big figcaption b { font-size: 20px; }
+.sh-past-cta { display: flex; justify-content: center; margin-top: 32px; }
+.sh .sh-btn-dark { background: var(--sh-ink); color: #fff; }
+.sh .sh-btn-dark:hover { background: #7541d4; }
+
+/* Calendar: the season on one board -----------------------------------------
+   A dark board, one row per month. The month is a desk-calendar page; its
+   congresses share the row equally, so every row is the same width whether it
+   holds two or four. Each card glows in its congress's colour. */
+.sh-season {
+    position: relative; overflow: hidden; color: #fff;
+    background:
+        radial-gradient(700px 400px at 100% 0%, rgba(117,65,212,.28), transparent 60%),
+        radial-gradient(600px 400px at 0% 100%, rgba(11,143,138,.2), transparent 60%),
+        linear-gradient(180deg, var(--sh-ink), var(--sh-ink-2));
+}
+.sh .sh-season .sh-kicker { color: var(--sh-gold); }
+.sh-season-sum { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.sh-season-sum span {
+    padding: 8px 14px; border-radius: 999px;
+    background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14);
+    font-size: 13px; color: rgba(255,255,255,.75);
+}
+.sh-season-sum b { color: #fff; font-size: 15px; margin-right: 4px; }
+.sh .sh-season-sum p { flex-basis: 100%; margin-top: 6px; font-size: 15px; color: rgba(255,255,255,.65); }
+
+.sh-tl { position: relative; display: grid; gap: 16px; }
+.sh-tl::before {
+    /* the rail down through the calendar pages */
+    content: ''; position: absolute; left: 64px; top: 20px; bottom: 20px; width: 0;
+    border-left: 2px dashed rgba(255,255,255,.18);
+}
+.sh-tl-month { position: relative; display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 22px; align-items: stretch; }
+
+.sh-tl-cal {
+    position: relative; align-self: center;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 18px 10px 12px; border-radius: 16px;
+    background: #fff; color: var(--sh-ink);
+    box-shadow: 0 18px 34px -18px rgba(0,0,0,.8);
+    overflow: hidden;
+}
+.sh-tl-cal-top {
+    position: absolute; left: 0; right: 0; top: 0; height: 12px;
+    background: linear-gradient(90deg, #f0b429, #e8536e, #7541d4);
+}
+.sh-tl-cal-top i {
+    position: absolute; top: 4px; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--sh-ink);
+}
+.sh-tl-cal-top i:first-child { left: 30%; }
+.sh-tl-cal-top i:last-child { right: 30%; }
+.sh-tl-cal b { font-size: 34px; font-weight: 900; letter-spacing: -0.02em; line-height: 1; text-transform: uppercase; margin-top: 4px; }
+.sh-tl-cal-year { font-size: 12px; font-weight: 700; color: var(--sh-muted); letter-spacing: .12em; }
+.sh-tl-cal small {
+    margin-top: 8px; padding: 3px 9px; border-radius: 999px;
+    background: var(--sh-tint); font-size: 11px; font-weight: 700; color: var(--sh-ink); white-space: nowrap;
+}
+
+.sh-tl-month ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 14px; }
+.sh-tl-month li { flex: 1 1 0; min-width: 0; display: flex; }
+.sh .sh-tl-card {
+    position: relative; flex: 1; display: flex; align-items: center; gap: 16px;
+    min-height: 120px; padding: 14px; border-radius: 18px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.1);
+    color: #fff;
+    transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.sh .sh-tl-card::before {
+    /* the congress colour, as a glowing edge */
+    content: ''; position: absolute; left: -1px; top: 16px; bottom: 16px; width: 4px; border-radius: 4px;
+    background: var(--c-accent); box-shadow: 0 0 18px var(--c-accent);
+}
+.sh .sh-tl-card:hover {
+    transform: translateY(-3px);
+    background: color-mix(in srgb, var(--c-accent) 16%, rgba(255,255,255,.04));
+    border-color: color-mix(in srgb, var(--c-accent) 55%, transparent);
+    box-shadow: 0 22px 40px -24px var(--c-accent);
+}
+.sh-tl-card img { flex: none; width: 92px; height: 92px; border-radius: 14px; object-fit: cover; }
+.sh-tl-info { display: flex; flex-direction: column; min-width: 0; }
+.sh-tl-days {
+    display: flex; align-items: baseline; gap: 6px;
+    font-size: 24px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.05;
+    color: color-mix(in srgb, var(--c-accent) 45%, #fff);
+}
+.sh-tl-days small { font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+.sh-tl-info b { margin-top: 4px; font-size: 16px; font-weight: 800; color: #fff; }
+.sh-tl-disc { font-size: 13px; color: rgba(255,255,255,.7); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sh-tl-info em { font-style: normal; font-size: 12px; color: rgba(255,255,255,.55); margin-top: 3px; }
+.sh-tl-info em i { margin-right: 5px; color: color-mix(in srgb, var(--c-accent) 50%, #fff); }
+
+/* a wide card has room for an arrow; four to a row do not */
+.sh-tl-go {
+    margin-left: auto; flex: none;
+    width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+    background: rgba(255,255,255,.08); color: #fff;
+    transition: background .2s, transform .2s;
+}
+.sh .sh-tl-card:hover .sh-tl-go { background: var(--c-accent); transform: translateX(3px); }
+.sh-tl-month ul.is-crowded .sh-tl-go { display: none; }
+.sh-tl-month ul.is-crowded .sh-tl-card img { width: 72px; height: 72px; }
+.sh-tl-flag {
+    position: absolute; top: -9px; right: 14px;
+    padding: 3px 10px; border-radius: 999px;
+    background: var(--sh-gold); color: var(--sh-ink);
+    font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
+}
+
+/* Closing band + footer ---------------------------------------------------- */
+.sh-end {
+    background:
+        radial-gradient(600px 300px at 90% 0%, rgba(240,180,41,.25), transparent 60%),
+        linear-gradient(120deg, #7541d4, #e8536e);
+    color: #fff; padding: 64px 0;
+}
+.sh-end-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.sh-end h2 { font-size: clamp(28px, 3.4vw, 42px); font-weight: 800; }
+.sh .sh-end p { margin-top: 10px; font-size: 17px; opacity: .88; max-width: 560px; }
+.sh-foot { background: var(--sh-ink); color: rgba(255,255,255,.6); padding: 28px 0; font-size: 13px; }
+.sh-foot-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.sh-foot nav { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.sh-foot nav a { font-weight: 700; letter-spacing: .04em; }
+.sh-foot nav a:hover { color: #fff; }
+
+/* Responsive --------------------------------------------------------------- */
+@media (max-width: 1100px) {
+    .sh-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .sh-past-eds { grid-template-columns: 1fr; }
+    .sh-past-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 180px; }
+    /* four to a row gets too narrow: the month sits above its congresses */
+    .sh-tl::before { display: none; }
+    .sh-tl-month { grid-template-columns: 1fr; gap: 12px; }
+    .sh-tl-cal { align-self: flex-start; flex-direction: row; gap: 10px; padding: 18px 16px 10px; }
+    .sh-tl-cal b { font-size: 24px; margin-top: 0; }
+    .sh-tl-cal small { margin-top: 0; }
+    .sh-tl-month ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 960px) {
+    .sh-hero--photo { min-height: 520px; }
+    /* the heading spans the width here, so the whole photo is dimmed */
+    .sh-hero-veil { background: linear-gradient(0deg, rgba(14,11,24,.96) 0%, rgba(14,11,24,.7) 45%, rgba(14,11,24,.45) 100%); }
+    .sh-hero-now { align-items: flex-start; }
+    .sh-sec-head { grid-template-columns: 1fr; gap: 14px; }
+    .sh-top-nav { display: none; }
+    .sh-top-row > .sh-btn-main { margin-left: auto; }
+}
+@media (max-width: 640px) {
+    .sh-wrap { padding: 0 18px; }
+    .sh-hero--photo { padding: 56px 0 28px; min-height: 0; }
+    .sh-hero-caption { display: none !important; }
+    .sh-stats { grid-template-columns: repeat(2, 1fr); row-gap: 20px; }
+    .sh-stats div:nth-child(3) { border-left: 0; padding-left: 0; }
+    .sh-cards { grid-template-columns: 1fr; }
+    .sh-past-grid { grid-auto-rows: 150px; gap: 8px; }
+    .sh-tl-month ul { grid-template-columns: 1fr; }
+    .sh-sec { padding: 64px 0; }
+    /* one button fits: the way to the main website stays */
+    .sh-top-row > .sh-btn-light { display: none; }
+    .sh .sh-btn-main { padding: 9px 14px; font-size: 12px; }
+    .sh-top-row { gap: 12px; padding-top: 10px; padding-bottom: 10px; }
+    .sh-mark img { height: 46px; }
+    .sh-top-row > .sh-btn-main { margin-left: auto; }
+}
