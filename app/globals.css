@@ -15565,7 +15565,7 @@ textarea.is-invalid {
 /* Per-conference lockup sizes, tuned by eye against Cardiology and Food */
 .gx--addiction { --lockup-scale: 1.06; } /* 55px: Its wordmark is drawn large inside the lockup; a little above the shared height matches the others. */
 .gx--biotechnology { --lockup-scale: 1.3; } /* 68px: Its wordmark is drawn small beside a tall emblem, so at 52px the name read tiny. */
-.gx--cardiology { --lockup-scale: 1.3; } /* 68px: Its wordmark is drawn small beside a tall emblem, so at 52px the name read tiny. */
+.gx--cardiology { --lockup-scale: 1.45; } /* 75px: the tallest emblem and smallest wordmark of the set (3.4:1); even 68px left the name tiny. */
 .gx--food { --lockup-scale: 1.25; } /* 65px: Its wordmark is drawn small beside the emblem, so at 52px the name read tiny. */
 .gx--gastroenterology { --lockup-scale: 1.23; } /* 64px: One of the smallest-drawn wordmarks; at 52px it was barely legible. */
 .gx--neurology { --lockup-scale: 1.2; } /* 62px: Its wordmark read small at the shared height. */
