@@ -15563,6 +15563,7 @@ textarea.is-invalid {
 @media (max-width: 540px)  { .gx-head .brand-lockup-img { height: calc(34px * var(--lockup-scale, 1)); } }
 
 /* Per-conference lockup sizes, tuned by eye against Cardiology and Food */
+.gx--addiction { --lockup-scale: 1.06; } /* 55px: Its wordmark is drawn large inside the lockup; a little above the shared height matches the others. */
 
 /* GCSA: the year in the conference's own blue. var(--accent) resolves to
    #2563eb for this conference, so it stays tied to the theme. */
