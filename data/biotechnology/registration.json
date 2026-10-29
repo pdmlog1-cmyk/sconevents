@@ -4,7 +4,7 @@
     {
       "id": "early",
       "label": "Early Bird",
-      "closes": "October 15, 2026"
+      "closes": "November 30, 2026"
     },
     {
       "id": "mid",
@@ -14,7 +14,7 @@
     {
       "id": "late",
       "label": "Late / On-site",
-      "closes": "March 25-26, 2027"
+      "closes": "August 5-6, 2027"
     }
   ],
   "categories": [
@@ -166,16 +166,16 @@
       "accompanying_per_person": 150
     },
     "checkin_dates": [
-      "March 24, 2027",
-      "March 25, 2027",
-      "March 26, 2027",
-      "March 27, 2027"
+      "August 4, 2027",
+      "August 5, 2027",
+      "August 6, 2027",
+      "August 7, 2027"
     ],
     "checkout_dates": [
-      "March 25, 2027",
-      "March 26, 2027",
-      "March 27, 2027",
-      "March 28, 2027"
+      "August 5, 2027",
+      "August 6, 2027",
+      "August 7, 2027",
+      "August 8, 2027"
     ],
     "title_options": [
       "Dr.",
