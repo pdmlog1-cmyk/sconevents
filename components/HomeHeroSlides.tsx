@@ -2,8 +2,9 @@
 
 /* The sconevents.com hero: photos from SCON's own past congresses fill the
    band in turn, with the heading laid over them. The caption says what each
-   moment is; the dots jump to any one. Visitors who ask for reduced motion get
-   the first photo and the dots, but no automatic change. */
+   moment is; the dots jump to any one. A visit opens on the last photo, then
+   the show carries on from the first. Visitors who ask for reduced motion get
+   that opening photo and the dots, but no automatic change. */
 
 import { useEffect, useState, type ReactNode } from 'react';
 
@@ -22,7 +23,8 @@ const DOT_COLOURS = ['#f0b429', '#e8536e', '#7541d4', '#0b8f8a', '#2f6fec'];
 export default function HomeHeroSlides({
   slides, children, footer,
 }: { slides: HeroSlide[]; children: ReactNode; footer: ReactNode }) {
-  const [idx, setIdx] = useState(0);
+  const opening = Math.max(slides.length - 1, 0);
+  const [idx, setIdx] = useState(opening);
   const [paused, setPaused] = useState(false);
 
   useEffect(() => {
@@ -50,7 +52,7 @@ export default function HomeHeroSlides({
             key={s.src}
             src={s.src}
             alt=""
-            loading={i === 0 ? 'eager' : 'lazy'}
+            loading={i === opening ? 'eager' : 'lazy'}
             className={i === idx ? 'is-on' : undefined}
             style={{ objectPosition: s.focus }}
           />

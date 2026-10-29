@@ -301,7 +301,7 @@ export default async function HomePage() {
           </div>
 
           <div className="sh-past-cta">
-            <a href={`${cards[0]?.mainSite ?? ''}/conferences-gallery`} className="sh-btn sh-btn-dark" target="_blank" rel="noopener noreferrer">
+            <a href="https://sconconferences.com/gallery" className="sh-btn sh-btn-dark" target="_blank" rel="noopener noreferrer">
               Browse the full gallery <i className="fas fa-arrow-up-right-from-square" aria-hidden />
             </a>
           </div>
