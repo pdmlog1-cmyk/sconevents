@@ -15572,6 +15572,7 @@ textarea.is-invalid {
 .gx--obesity { --lockup-scale: 1.23; } /* 64px: One of the smallest-drawn wordmarks; at 52px it was barely legible. */
 .gx--pharmaceutical { --lockup-scale: 0.85; } /* 44px: Its wordmark runs half as wide again as the others (7:1); at 52px it pushes the header buttons off the bar (48px still overflows at 1280px), so it sits lower. */
 .gx--physicalmedicine { --lockup-scale: 1.2; } /* 62px: Its wordmark read small at the shared height. */
+.gx--surgery { --lockup-scale: 1.2; } /* 62px: Its wordmark read small at the shared height. */
 
 /* GCSA: the year in the conference's own blue. var(--accent) resolves to
    #2563eb for this conference, so it stays tied to the theme. */
