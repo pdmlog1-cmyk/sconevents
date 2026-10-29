@@ -13061,12 +13061,14 @@ textarea.is-invalid {
     box-shadow: 0 16px 38px -26px color-mix(in srgb, var(--ink) 85%, transparent);
 }
 .gx-head-inner {
-    max-width: 1220px;
+    /* wider than the 1220px content column: the full-size lockup, the menu and
+       both buttons need about 1240px between them */
+    max-width: 1320px;
     margin: 0 auto;
     padding: 14px 28px;
     display: flex;
     align-items: center;
-    gap: 26px;
+    gap: 18px;
     transition: padding 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .gx-head.is-stuck .gx-head-inner { padding-top: 9px; padding-bottom: 9px; }
@@ -13109,11 +13111,11 @@ textarea.is-invalid {
     gap: 7px;
     font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.075em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: color-mix(in srgb, var(--ink) 68%, #ffffff);
     text-decoration: none;
-    padding: 8px 17px;
+    padding: 8px 12px;
     cursor: pointer;
     transition: color 0.18s ease;
 }
@@ -13266,7 +13268,11 @@ textarea.is-invalid {
 }
 .gx-head-date i { font-size: 13px; color: var(--accent); }
 
-.gx-head-cta { padding: 12px 22px; font-size: 14px; }
+.gx-head-cta { padding: 11px 18px; font-size: 13px; }
+/* Below this width the lockup, menu and two buttons no longer fit on one line;
+   Submit Abstract steps out (it is in the hero and the menu panel) and
+   Register now stays. */
+@media (max-width: 1279px) { .gx-head .gx-head-cta.gx-btn-outline { display: none; } }
 /* On white the brighter accent loses its weight — the deep ink reads as the
    one thing to click, exactly as it does on the dark hero below. */
 .gx-head .gx-btn-primary { background: var(--accent-btn); box-shadow: 0 14px 28px -16px color-mix(in srgb, var(--accent-btn) 85%, transparent); }
@@ -15538,16 +15544,25 @@ textarea.is-invalid {
    every conference's bar matches regardless of how wide its wordmark runs,
    and it shrinks with the header the way the emblem does. */
 .gx-head .brand-lockup-img {
-    height: 52px;
+    /* --lockup-scale: per conference, since the lockups are drawn at different
+       proportions — a small emblem and wordmark read tiny at the shared height */
+    height: calc(52px * var(--lockup-scale, 1));
     width: auto;
+    max-width: none;
     display: block;
     flex-shrink: 0;
     transition: height 0.3s ease;
 }
-.gx-head.is-stuck .brand-lockup-img { height: 44px; }
-@media (max-width: 1100px) { .gx-head .brand-lockup-img { height: 46px; } }
-@media (max-width: 860px)  { .gx-head .brand-lockup-img { height: 40px; } }
-@media (max-width: 540px)  { .gx-head .brand-lockup-img { height: 34px; } }
+/* The link around the lockup must not give way to the menu either: once it
+   shrank, the image's max-width followed it and the SVG drew itself small
+   inside a box narrower than its own width (121px for a 177px lockup). */
+.gx-head .gx-brand:has(.brand-lockup-img) { flex-shrink: 0; }
+.gx-head.is-stuck .brand-lockup-img { height: calc(44px * var(--lockup-scale, 1)); }
+@media (max-width: 1100px) { .gx-head .brand-lockup-img { height: calc(46px * var(--lockup-scale, 1)); } }
+@media (max-width: 860px)  { .gx-head .brand-lockup-img { height: calc(40px * var(--lockup-scale, 1)); } }
+@media (max-width: 540px)  { .gx-head .brand-lockup-img { height: calc(34px * var(--lockup-scale, 1)); } }
+
+/* Per-conference lockup sizes, tuned by eye against Cardiology and Food */
 
 /* GCSA: the year in the conference's own blue. var(--accent) resolves to
    #2563eb for this conference, so it stays tied to the theme. */
