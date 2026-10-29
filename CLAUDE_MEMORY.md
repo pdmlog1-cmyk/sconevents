@@ -54,8 +54,8 @@ Full names worth noting:
 
 | Short | City | Country | Venue | Dates | Early Bird Ends | Abstract Deadline | Acceptance |
 |-------|------|---------|-------|-------|-----------------|-------------------|------------|
-| GSBG 2027 | Singapore | Singapore | Hotel Village Changi | Mar 25–26, 2027 | Oct 2, 2026 | Sep 30, 2026 | Dec 14, 2026 |
-| WCPD 2027 | Singapore | Singapore | Hotel Village Changi | Mar 25–26, 2027 | Oct 2, 2026 | Sep 30, 2026 | Dec 14, 2026 |
+| GSBG 2027 | Singapore | Singapore | Hotel Village Changi | **Aug 5–6, 2027** | Nov 30, 2026 | Nov 28, 2026 | Jan 15, 2027 |
+| WCPD 2027 | Singapore | Singapore | Hotel Village Changi | **Aug 5–6, 2027** | Nov 30, 2026 | Nov 28, 2026 | Jan 15, 2027 |
 | GCCM 2027 | Barcelona | Spain | — | Apr 27–28, 2027 | Oct 16, 2026 | Oct 14, 2026 | Jan 14, 2027 |
 | GCSA 2027 | Barcelona | Spain | — | Apr 29–30, 2027 | Oct 16, 2026 | Oct 14, 2026 | Jan 14, 2027 |
 | WSPR 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 16, 2026 | Oct 14, 2026 | Feb 14, 2027 |
@@ -64,6 +64,8 @@ Full names worth noting:
 | GCGD 2027 | Singapore | Singapore | Hotel Village Changi | May 27–28, 2027 | Oct 16, 2026 | Oct 14, 2026 | Feb 14, 2027 |
 | GCNN 2027 | Prague | Czech Republic | — | Jun 22–23, 2027 | Oct 30, 2026 | Oct 28, 2026 | Mar 14, 2027 |
 | WCAB 2027 | Prague | Czech Republic | — | Jun 24–25, 2027 | Oct 30, 2026 | Oct 28, 2026 | Mar 14, 2027 |
+
+**29 Oct 2026 — GSBG and WCPD moved from March to August 5–6, 2027** (their main sites and new logo lockups say so; main site venue: Village Hotel Changi). Abstract deadline Nov 28, early bird Nov 30, 2026 — changed in all five files. Acceptance (Jan 15, 2027) and the Standard registration phase (closes Feb 28, 2027) were not on the main site and were left as they were.
 
 **15 Sep 2026 — abstract + early-bird deadlines moved earlier** (user-supplied list). The
 abstract date is now the **first round** of abstract submission — the Important Dates tile
