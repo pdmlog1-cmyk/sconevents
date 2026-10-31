@@ -86,6 +86,13 @@ which broke the ordering once abstract deadlines moved past it.)
 
 ## 4. Changing a date — all 5 files
 
+> **31 Oct 2026: abstract and early-bird dates on the landing pages now come live from each
+> main site's home page** (`lib/liveDates.ts`), cached 10 minutes, so a change there needs no
+> deploy here. The values in `data/<slug>/` are only the fallback for those two. It reads the
+> wording "31 Oct 2026 Abstract Deadline" / "31 Oct 2026 Early Bird…"; if a main site changes
+> that wording, the page keeps its last good dates. `app/[conference]/page.tsx` is therefore
+> rendered per request, not prerendered. Everything else below still needs all five files.
+
 A conference date lives in **five** files. Miss one and the same page shows two different
 dates. There is no single source of truth.
 

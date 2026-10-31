@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import { getConferenceConfig } from '@/lib/getConfig';
-import { getConferenceMeta, getAllConferenceSlugs } from '@/lib/conferences';
+import { getConferenceMeta } from '@/lib/conferences';
+import { applyLiveDates, getLiveDates } from '@/lib/liveDates';
 import LandingClient from './LandingClient';
 import NeuroLanding from './NeuroLanding';
 
@@ -9,11 +10,9 @@ interface PageProps {
   params: Promise<{ conference: string }>;
 }
 
-export async function generateStaticParams() {
-  return getAllConferenceSlugs().map((slug) => ({
-    conference: slug,
-  }));
-}
+/* Rendered per request, not prerendered: the abstract and early-bird dates come
+   from the main site (lib/liveDates.ts) and must change without a deploy. */
+export const dynamic = 'force-dynamic';
 
 // Map conference slug prefix to logo filename
 function getLogoName(slug: string): string {
@@ -46,12 +45,14 @@ export async function generateMetadata({ params }: PageProps) {
 
 export default async function ConferencePage({ params }: PageProps) {
   const { conference } = await params;
-  const conf = await getConferenceConfig(conference);
+  const baseConf = await getConferenceConfig(conference);
   const meta = getConferenceMeta(conference);
 
-  if (!conf || !meta) {
+  if (!baseConf || !meta) {
     notFound();
   }
+
+  const conf = applyLiveDates(baseConf, await getLiveDates(conference, meta.mainSiteUrl));
 
   const gtagId = meta.gtagId;
   const logoName = getLogoName(conference);
