@@ -49,8 +49,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       className={`${sourceSans.variable} ${sourceSerif.variable} ${jetbrainsMono.variable} ${inter.variable}`}
+      suppressHydrationWarning
     >
       <head>
+        {/* Fluid page scale for the v2 landing pages (see .gx in globals.css):
+            window width / 1240, never below 1. Runs before first paint so the
+            page does not jump, and again on every resize. */}
+        <script
+          dangerouslySetInnerHTML={{ __html: `(function(){var d=document.documentElement;function f(){var w=d.clientWidth||window.innerWidth;d.style.setProperty('--gx-fluid-zoom',String(w>=1240?w/1240:1));}f();window.addEventListener('resize',f);})();` }}
+        />
         <link rel="preconnect" href="https://js.hcaptcha.com" crossOrigin="" />
         <link rel="preconnect" href="https://newassets.hcaptcha.com" crossOrigin="" />
         <link rel="preconnect" href="https://hcaptcha.com" crossOrigin="" />

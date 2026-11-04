@@ -15654,18 +15654,20 @@ textarea.is-invalid {
    the same layout a ~1450px one does instead of a 1220px column floating in
    empty margins. Below 1600px nothing changes. The brochure popup is undone
    back to 1, or at 1920x1080 it grows taller than the window. */
-/* WCAB uses the same wide-screen scaling (added 04 Nov 2026). */
-.gx--cardiology, .gx--addiction { zoom: var(--gx-wide-zoom, 1); }
-.gx--cardiology .lead-modal, .gx--addiction .lead-modal { zoom: calc(1 / var(--gx-wide-zoom, 1)); }
-/* WCAB also scales on 1440-1599px — a 1920px laptop at 125% Windows scaling
-   reports 1536px, which the GCCM steps above never reached. */
-@media (min-width: 1440px) { .gx--addiction { --gx-wide-zoom: 1.08; } }
-@media (min-width: 1500px) { .gx--addiction { --gx-wide-zoom: 1.15; } }
-@media (min-width: 1600px) { .gx--cardiology { --gx-wide-zoom: 1.1; } .gx--addiction { --gx-wide-zoom: 1.15; } }
-@media (min-width: 1760px) { .gx--cardiology, .gx--addiction { --gx-wide-zoom: 1.2; } }
-@media (min-width: 1920px) { .gx--cardiology, .gx--addiction { --gx-wide-zoom: 1.3; } }
-@media (min-width: 2240px) { .gx--cardiology, .gx--addiction { --gx-wide-zoom: 1.5; } }
-@media (min-width: 2560px) { .gx--cardiology, .gx--addiction { --gx-wide-zoom: 1.7; } }
+/* All v2 pages (04 Nov 2026): fluid scaling instead of fixed steps. The page
+   is laid out at 1240px and zoomed by (window width / 1240), so every laptop
+   and monitor shows the same layout in the same proportions, whatever its
+   resolution or Windows scaling. 1240 keeps the 1220px column close to the
+   edges, the way it looks at 125% browser zoom. --gx-fluid-zoom is set by the
+   inline script in app/layout.tsx before first paint. Below 1240px it stays
+   1 and the normal responsive layout takes over. */
+@media (min-width: 1240px) {
+    .gx { zoom: var(--gx-fluid-zoom, 1); }
+    .gx .lead-modal { zoom: calc(1 / var(--gx-fluid-zoom, 1)); }
+    /* vw sizes grow with the zoom as well, which pushed "Connections." past
+       the right edge; a fixed size scales with the page like everything else. */
+    .gx .gx-why-credo { font-size: 26px; width: auto; }
+}
 
 /* The main sites' menu has a two-word item ("Past Conferences"), which would
    otherwise break onto a second line in the header. */
