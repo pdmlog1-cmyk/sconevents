@@ -15654,13 +15654,18 @@ textarea.is-invalid {
    the same layout a ~1450px one does instead of a 1220px column floating in
    empty margins. Below 1600px nothing changes. The brochure popup is undone
    back to 1, or at 1920x1080 it grows taller than the window. */
-.gx--cardiology { zoom: var(--gx-wide-zoom, 1); }
-.gx--cardiology .lead-modal { zoom: calc(1 / var(--gx-wide-zoom, 1)); }
-@media (min-width: 1600px) { .gx--cardiology { --gx-wide-zoom: 1.1; } }
-@media (min-width: 1760px) { .gx--cardiology { --gx-wide-zoom: 1.2; } }
-@media (min-width: 1920px) { .gx--cardiology { --gx-wide-zoom: 1.3; } }
-@media (min-width: 2240px) { .gx--cardiology { --gx-wide-zoom: 1.5; } }
-@media (min-width: 2560px) { .gx--cardiology { --gx-wide-zoom: 1.7; } }
+/* WCAB uses the same wide-screen scaling (added 04 Nov 2026). */
+.gx--cardiology, .gx--addiction { zoom: var(--gx-wide-zoom, 1); }
+.gx--cardiology .lead-modal, .gx--addiction .lead-modal { zoom: calc(1 / var(--gx-wide-zoom, 1)); }
+/* WCAB also scales on 1440-1599px — a 1920px laptop at 125% Windows scaling
+   reports 1536px, which the GCCM steps above never reached. */
+@media (min-width: 1440px) { .gx--addiction { --gx-wide-zoom: 1.08; } }
+@media (min-width: 1500px) { .gx--addiction { --gx-wide-zoom: 1.15; } }
+@media (min-width: 1600px) { .gx--cardiology { --gx-wide-zoom: 1.1; } .gx--addiction { --gx-wide-zoom: 1.15; } }
+@media (min-width: 1760px) { .gx--cardiology, .gx--addiction { --gx-wide-zoom: 1.2; } }
+@media (min-width: 1920px) { .gx--cardiology, .gx--addiction { --gx-wide-zoom: 1.3; } }
+@media (min-width: 2240px) { .gx--cardiology, .gx--addiction { --gx-wide-zoom: 1.5; } }
+@media (min-width: 2560px) { .gx--cardiology, .gx--addiction { --gx-wide-zoom: 1.7; } }
 
 /* The main sites' menu has a two-word item ("Past Conferences"), which would
    otherwise break onto a second line in the header. */
