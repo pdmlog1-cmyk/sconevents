@@ -7,7 +7,7 @@
   "edition": "Inaugural Edition · International",
   "volume": "Vol. I",
   "issue": "No. 1",
-  "dateline": "JUNE 24–25, 2027",
+  "dateline": "JUNE 22–23, 2027",
   "discipline": "Addiction Medicine",
   "email": "secretariat@addictionmedicine-conference.com",
   "phone": "+1 775 243 6888",
@@ -52,9 +52,9 @@
     "/assets/legacy/audience.jpg",
     "/assets/legacy/chat.jpg"
   ],
-  "dates": "June 24-25, 2027",
+  "dates": "June 22-23, 2027",
   "dates_short": "Jun 2027",
-  "start_date_iso": "2027-06-24T09:00:00",
+  "start_date_iso": "2027-06-22T09:00:00",
   "city": "Prague",
   "country": "Czech Republic",
   "venue": "",
@@ -93,5 +93,6 @@
     "youtube": "https://www.youtube.com/@SCONCONFERENCES-Videos",
     "instagram": "https://www.instagram.com/sconconferences/"
   },
-  "logo_lockup": "/logos/lockup/addiction.svg"
+  "logo_lockup": "/logos/lockup/addiction.svg",
+  "footer_logo_lockup": "/logos/lockup/addiction-footer.svg"
 }

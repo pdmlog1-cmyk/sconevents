@@ -89,6 +89,7 @@ export async function getConferenceConfig(slug: string): Promise<ConferenceConfi
       hero_discs: conf.hero_discs,
       logo_image: conf.logo_image,
       logo_lockup: conf.logo_lockup,
+      footer_logo_lockup: conf.footer_logo_lockup,
       landing_nav: conf.landing_nav,
       landing_nav_abstract: conf.landing_nav_abstract,
       hero_focus: conf.hero_focus,

@@ -85,6 +85,8 @@ export interface ConferenceConfig {
   /** A supplied full lockup (emblem + name + date line) as one SVG. When
       set it replaces the composed header brand outright. */
   logo_lockup?: string;
+  /** Light version of the lockup for the dark footer (falls back to the composed brand). */
+  footer_logo_lockup?: string;
   /** The landing header's menu, when it should differ from the shared one —
       same shape: a link, or a label opening a short list. */
   landing_nav?: { label: string; href?: string; items?: { label: string; href: string }[] }[];

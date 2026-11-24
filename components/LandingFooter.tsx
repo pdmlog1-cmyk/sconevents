@@ -42,6 +42,10 @@ export default function LandingFooter({
             for the footer and adapted for the dark background. */}
         <div className="lpb-foot-brand">
           <a href={MAIN} className="brand brand-v3 brand-footer" aria-label={`${conf.short} home`}>
+            {conf.footer_logo_lockup ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img className="brand-lockup-img brand-lockup-img--footer" src={conf.footer_logo_lockup} alt={`${conf.short} logo`} />
+            ) : (<>
             {getLogoSvg(slug)
               ? <div className="brand-icon" dangerouslySetInnerHTML={{ __html: getLogoSvg(slug)! }} />
               : <div className="brand-icon"><img src={`/logos/${logoName}.svg`} alt={`${conf.short} logo`} width={80} height={80} /></div>}
@@ -52,6 +56,7 @@ export default function LandingFooter({
                 {brandDates}{brandPlace ? <><span className="brand-sep">|</span><span className="brand-country">{brandPlace}</span></> : null}
               </div>
             </div>
+            </>)}
           </a>
           <p className="lpb-foot-tag">{conf.name}</p>
           <ul className="lpb-foot-contact">
